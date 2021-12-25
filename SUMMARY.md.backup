@@ -1,0 +1,16 @@
+# Summary
+
+* [1. Introduction](01-introduction.md)
+* [2. Starting Out ](02-starting-out.md)
+* [3. Types and Typeclasses](03-types-and-typeclasses.md)
+* [4. Syntax in Functions](04-syntax-in-functions.md)
+* [5. Recursion](05-recursion.md)
+* [6. Higher Order Functions](06-higher-order-functions.md)
+* [7. Modules](07-modules.md)
+* [8. Making Our Own Types and Typeclasses](08-making-our-own-types-and-typeclasses.md)
+* [9. Input and Output](09-input-and-output.md)
+* [10. Functionally Solving Problems](10-functionally-solving-problems.md)
+* [11. Functors, Applicative Functors and Monoids](11-functors-applicative-functors-and-monoids.md)
+* [12. A Fistful of Monads](12-a-fistful-of-monads.md)
+* [13. For a Few Monads More](13-for-a-few-monads-more.md)
+* [14. Zippers](14-zippers.md)
