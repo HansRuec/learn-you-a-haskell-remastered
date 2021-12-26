@@ -1,0 +1,2267 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>13. For a Few Monads More · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.23">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="14-zippers.html" />
+    
+    
+    <link rel="prev" href="12-a-fistful-of-monads.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01-first-things-first.html">
+            
+                <a href="01-first-things-first.html">
+            
+                    
+                    1. First-Things-First
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="02-starting-out.html">
+            
+                <a href="02-starting-out.html">
+            
+                    
+                    2. Starting Out 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="03-types-and-typeclasses.html">
+            
+                <a href="03-types-and-typeclasses.html">
+            
+                    
+                    3. Types and Typeclasses
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="04-syntax-in-functions.html">
+            
+                <a href="04-syntax-in-functions.html">
+            
+                    
+                    4. Syntax in Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="05-recursion.html">
+            
+                <a href="05-recursion.html">
+            
+                    
+                    5. Recursion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="06-higher-order-functions.html">
+            
+                <a href="06-higher-order-functions.html">
+            
+                    
+                    6. Higher Order Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="07-modules.html">
+            
+                <a href="07-modules.html">
+            
+                    
+                    7. Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="08-making-our-own-types-and-typeclasses.html">
+            
+                <a href="08-making-our-own-types-and-typeclasses.html">
+            
+                    
+                    8. Making Our Own Types and Typeclasses
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="09-input-and-output.html">
+            
+                <a href="09-input-and-output.html">
+            
+                    
+                    9. Input and Output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="10-functionally-solving-problems.html">
+            
+                <a href="10-functionally-solving-problems.html">
+            
+                    
+                    10. Functionally Solving Problems
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="11-functors-applicative-functors-and-monoids.html">
+            
+                <a href="11-functors-applicative-functors-and-monoids.html">
+            
+                    
+                    11. Functors, Applicative Functors and Monoids
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="12-a-fistful-of-monads.html">
+            
+                <a href="12-a-fistful-of-monads.html">
+            
+                    
+                    12. A Fistful of Monads
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.14" data-path="13-for-a-few-monads-more.html">
+            
+                <a href="13-for-a-few-monads-more.html">
+            
+                    
+                    13. For a Few Monads More
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="14-zippers.html">
+            
+                <a href="14-zippers.html">
+            
+                    
+                    14. Zippers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >13. For a Few Monads More</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="for-a-few-monads-more">For a Few Monads More</h1>
+<p><img src="img/clint.png" alt="there are two kinds of people in the world, my friend. those who learn
+them a haskell and those who have the job of coding
+java"></p>
+<p>We&apos;ve seen how monads can be used to take values with contexts and apply
+them to functions and how using <code>&gt;&gt;=</code> or <code>do</code> notation allows us to focus
+on the values themselves while the context gets handled for us.</p>
+<p>We&apos;ve met the <code>Maybe</code> monad and seen how it adds a context of possible
+failure to values. We&apos;ve learned about the list monad and saw how it
+lets us easily introduce non-determinism into our programs. We&apos;ve also
+learned how to work in the <code>IO</code> monad, even before we knew what a monad
+was!</p>
+<p>In this chapter, we&apos;re going to learn about a few other monads. We&apos;ll
+see how they can make our programs clearer by letting us treat all sorts
+of values as monadic ones. Exploring a few monads more will also
+solidify our intuition for monads.</p>
+<p>The monads that we&apos;ll be exploring are all part of the <code>mtl</code> package. A
+Haskell package is a collection of modules. The <code>mtl</code> package comes with
+the Haskell Platform, so you probably already have it. To check if you
+do, type <code>ghc-pkg list</code> in the command-line. This will show which Haskell
+packages you have installed and one of them should be <code>mtl</code>, followed by a
+version number.</p>
+<h2 id="writer-i-hardly-know-her">Writer? I hardly know her!</h2>
+<p>We&apos;ve loaded our gun with the <code>Maybe</code> monad, the list monad and the <code>IO</code>
+monad. Now let&apos;s put the <code>Writer</code> monad in the chamber and see what
+happens when we fire it!</p>
+<p>Whereas <code>Maybe</code> is for values with an added context of failure and the
+list is for non-deterministic values, the <code>Writer</code> monad is for values
+that have another value attached that acts as a sort of log value.
+<code>Writer</code> allows us to do computations while making sure that all the log
+values are combined into one log value that then gets attached to the
+result.</p>
+<p>For instance, we might want to equip our values with strings that
+explain what&apos;s going on, probably for debugging purposes. Consider a
+function that takes a number of bandits in a gang and tells us if that&apos;s
+a big gang or not. That&apos;s a very simple function:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">isBigGang</span> :: <span class="hljs-type">Int</span> -&gt; <span class="hljs-type">Bool</span>
+<span class="hljs-title">isBigGang</span> x = x &gt; <span class="hljs-number">9</span>
+</code></pre>
+<p>Now, what if instead of just giving us a <code>True</code> or <code>False</code> value, we want it
+to also return a log string that says what it did? Well, we just make
+that string and return it alongside our <code>Bool</code>:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">isBigGang</span> :: <span class="hljs-type">Int</span> -&gt; (<span class="hljs-type">Bool</span>, <span class="hljs-type">String</span>)
+<span class="hljs-title">isBigGang</span> x = (x &gt; <span class="hljs-number">9</span>, <span class="hljs-string">&quot;Compared gang size to 9.&quot;</span>)
+</code></pre>
+<p>So now instead of just returning a <code>Bool</code>, we return a tuple where the
+first component of the tuple is the actual value and the second
+component is the string that accompanies that value. There&apos;s some added
+context to our value now. Let&apos;s give this a go:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; isBigGang <span class="hljs-number">3</span>
+(<span class="hljs-type">False</span>,<span class="hljs-string">&quot;Compared gang size to 9.&quot;</span>)
+<span class="hljs-title">ghci</span>&gt; isBigGang <span class="hljs-number">30</span>
+(<span class="hljs-type">True</span>,<span class="hljs-string">&quot;Compared gang size to 9.&quot;</span>)
+</code></pre>
+<p><img src="img/tuco.png" alt="when you have to poop, poop, don&apos;t
+talk"></p>
+<p>So far so good. <code>isBigGang</code> takes a normal value and returns a value with
+a context. As we&apos;ve just seen, feeding it a normal value is not a
+problem. Now what if we already have a value that has a log string
+attached to it, such as <code>(3, &quot;Smallish gang.&quot;)</code>, and we want to feed it to
+<code>isBigGang</code>? It seems like once again, we&apos;re faced with this question: if
+we have a function that takes a normal value and returns a value with a
+context, how do we take a value with a context and feed it to the
+function?</p>
+<p>When we were exploring the <code>Maybe</code> monad, we made a function <code>applyMaybe</code>,
+which took a <code>Maybe a</code> value and a function of type <code>a -&gt; Maybe b</code> and fed
+that <code>Maybe a</code> value into the function, even though the function takes a
+normal <code>a</code> instead of a <code>Maybe a</code>. It did this by minding the context that
+comes with <code>Maybe a</code> values, which is that they are values with possible
+failure. But inside the <code>a -&gt; Maybe b</code> function, we were able to treat
+that value as just a normal value, because <code>applyMaybe</code> (which later
+became <code>&gt;&gt;=</code>) took care of checking if it was a <code>Nothing</code> or a <code>Just</code> value.</p>
+<p>In the same vein, let&apos;s make a function that takes a value with an
+attached log, that is, an <code>(a,String)</code> value and a function of type
+<code>a -&gt; (b,String)</code> and feeds that value into the function. We&apos;ll call it
+<code>applyLog</code>. But because an <code>(a,String)</code> value doesn&apos;t carry with it a
+context of possible failure, but rather a context of an additional log
+value, <code>applyLog</code> is going to make sure that the log of the original value
+isn&apos;t lost, but is joined together with the log of the value that
+results from the function. Here&apos;s the implementation of <code>applyLog</code>:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">applyLog</span> :: (a,<span class="hljs-type">String</span>) -&gt; (a -&gt; (b,<span class="hljs-type">String</span>)) -&gt; (b,<span class="hljs-type">String</span>)
+<span class="hljs-title">applyLog</span> (x,log) f = <span class="hljs-keyword">let</span> (y,newLog) = f x <span class="hljs-keyword">in</span> (y,log ++ newLog)
+</code></pre>
+<p>When we have a value with a context and we want to feed it to a
+function, we usually try to separate the actual value from the context
+and then try to apply the function to the value and then see that the
+context is taken care of. In the <code>Maybe</code> monad, we checked if the value
+was a <code>Just x</code> and if it was, we took that <code>x</code> and applied the function to
+it. In this case, it&apos;s very easy to find the actual value, because we&apos;re
+dealing with a pair where one component is the value and the other a
+log. So first we just take the value, which is <code>x</code> and we apply the
+function <code>f</code> to it. We get a pair of <code>(y,newLog)</code>, where <code>y</code> is the new result
+and <code>newLog</code> the new log. But if we returned that as the result, the old
+log value wouldn&apos;t be included in the result, so we return a pair of
+<code>(y,log ++ newLog)</code>. We use <code>++</code> to append the new log to the old one.</p>
+<p>Here&apos;s <code>applyLog</code> in action:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; (<span class="hljs-number">3</span>, <span class="hljs-string">&quot;Smallish gang.&quot;</span>) `applyLog` isBigGang
+(<span class="hljs-type">False</span>,<span class="hljs-string">&quot;Smallish gang.Compared gang size to 9&quot;</span>)
+<span class="hljs-title">ghci</span>&gt; (<span class="hljs-number">30</span>, <span class="hljs-string">&quot;A freaking platoon.&quot;</span>) `applyLog` isBigGang
+(<span class="hljs-type">True</span>,<span class="hljs-string">&quot;A freaking platoon.Compared gang size to 9&quot;</span>)
+</code></pre>
+<p>The results are similar to before, only now the number of people in the
+gang had its accompanying log and it got included in the result log.
+Here are a few more examples of using <code>applyLog</code>:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; (<span class="hljs-string">&quot;Tobin&quot;</span>,<span class="hljs-string">&quot;Got outlaw name.&quot;</span>) `applyLog` (\x -&gt; (length x, <span class="hljs-string">&quot;Applied length.&quot;</span>))
+(<span class="hljs-number">5</span>,<span class="hljs-string">&quot;Got outlaw name.Applied length.&quot;</span>)
+<span class="hljs-title">ghci</span>&gt; (<span class="hljs-string">&quot;Bathcat&quot;</span>,<span class="hljs-string">&quot;Got outlaw name.&quot;</span>) `applyLog` (\x -&gt; (length x, <span class="hljs-string">&quot;Applied length&quot;</span>))
+(<span class="hljs-number">7</span>,<span class="hljs-string">&quot;Got outlaw name.Applied length&quot;</span>)
+</code></pre>
+<p>See how inside the lambda, <code>x</code> is just a normal string and not a tuple and
+how <code>applyLog</code> takes care of appending the logs.</p>
+<h3 id="monoids-to-the-rescue">Monoids to the rescue</h3>
+<blockquote>
+<p>Be sure you know what <a href="#monoids">monoids</a> are at this point! Cheers.</p>
+</blockquote>
+<p>Right now, <code>applyLog</code> takes values of type <code>(a,String)</code>, but is there a
+reason that the log has to be a <code>String</code>? It uses <code>++</code> to append the logs,
+so wouldn&apos;t this work on any kind of list, not just a list of
+characters? Sure it would. We can go ahead and change its type to this:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">applyLog</span> :: (a,[c]) -&gt; (a -&gt; (b,[c])) -&gt; (b,[c])
+</code></pre>
+<p>Now, the log is a list. The type of values contained in the list has to
+be the same for the original list as well as for the list that the
+function returns, otherwise we wouldn&apos;t be able to use <code>++</code> to stick them
+together.</p>
+<p>Would this work for bytestrings? There&apos;s no reason it shouldn&apos;t.
+However, the type we have now only works for lists. It seems like we&apos;d
+have to make a separate <code>applyLog</code> for bytestrings. But wait! Both lists
+and bytestrings are monoids. As such, they are both instances of the
+<code>Monoid</code> type class, which means that they implement the <code>mappend</code> function.
+And for both lists and bytestrings, <code>mappend</code> is for appending. Watch:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>] `mappend` [<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>]
+[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>]
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-type">B</span>.pack [<span class="hljs-number">99</span>,<span class="hljs-number">104</span>,<span class="hljs-number">105</span>] `mappend` <span class="hljs-type">B</span>.pack [<span class="hljs-number">104</span>,<span class="hljs-number">117</span>,<span class="hljs-number">97</span>,<span class="hljs-number">104</span>,<span class="hljs-number">117</span>,<span class="hljs-number">97</span>]
+<span class="hljs-type">Chunk</span> <span class="hljs-string">&quot;chi&quot;</span> (<span class="hljs-type">Chunk</span> <span class="hljs-string">&quot;huahua&quot;</span> <span class="hljs-type">Empty</span>)
+</code></pre>
+<p>Cool! Now our <code>applyLog</code> can work for any monoid. We have to change the
+type to reflect this, as well as the implementation, because we have to
+change <code>++</code> to <code>mappend</code>:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">applyLog</span> :: (<span class="hljs-type">Monoid</span> m) =&gt; (a,m) -&gt; (a -&gt; (b,m)) -&gt; (b,m)
+<span class="hljs-title">applyLog</span> (x,log) f = <span class="hljs-keyword">let</span> (y,newLog) = f x <span class="hljs-keyword">in</span> (y,log `mappend` newLog)
+</code></pre>
+<p>Because the accompanying value can now be any monoid value, we no longer
+have to think of the tuple as a value and a log, but now we can think of
+it as a value with an accompanying monoid value. For instance, we can
+have a tuple that has an item name and an item price as the monoid
+value. We just use the <code>Sum</code> newtype to make sure that the prices get
+added as we operate with the items. Here&apos;s a function that adds drink to
+some cowboy food:</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> Data.Monoid
+
+<span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">Food</span> = <span class="hljs-type">String</span></span>
+<span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">Price</span> = <span class="hljs-type">Sum</span> <span class="hljs-type">Int</span></span>
+
+<span class="hljs-title">addDrink</span> :: <span class="hljs-type">Food</span> -&gt; (<span class="hljs-type">Food</span>,<span class="hljs-type">Price</span>)
+<span class="hljs-title">addDrink</span> <span class="hljs-string">&quot;beans&quot;</span> = (<span class="hljs-string">&quot;milk&quot;</span>, <span class="hljs-type">Sum</span> <span class="hljs-number">25</span>)
+<span class="hljs-title">addDrink</span> <span class="hljs-string">&quot;jerky&quot;</span> = (<span class="hljs-string">&quot;whiskey&quot;</span>, <span class="hljs-type">Sum</span> <span class="hljs-number">99</span>)
+<span class="hljs-title">addDrink</span> _ = (<span class="hljs-string">&quot;beer&quot;</span>, <span class="hljs-type">Sum</span> <span class="hljs-number">30</span>)
+</code></pre>
+<p>We use strings to represent foods and an <code>Int</code> in a <code>Sum</code> <code>newtype</code> wrapper to
+keep track of how many cents something costs. Just a reminder, doing
+<code>mappend</code> with <code>Sum</code> results in the wrapped values getting added together:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Sum</span> <span class="hljs-number">3</span> `mappend` <span class="hljs-type">Sum</span> <span class="hljs-number">9</span>
+<span class="hljs-type">Sum</span> {getSum = <span class="hljs-number">12</span>}
+</code></pre>
+<p>The <code>addDrink</code> function is pretty simple. If we&apos;re eating beans, it
+returns <code>&quot;milk&quot;</code> along with <code>Sum 25</code>, so 25 cents wrapped in <code>Sum</code>. If we&apos;re
+eating jerky we drink whiskey and if we&apos;re eating anything else we drink
+beer. Just normally applying this function to a food wouldn&apos;t be
+terribly interesting right now, but using <code>applyLog</code> to feed a food that
+comes with a price itself into this function is interesting:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; (<span class="hljs-string">&quot;beans&quot;</span>, <span class="hljs-type">Sum</span> <span class="hljs-number">10</span>) `applyLog` addDrink
+(<span class="hljs-string">&quot;milk&quot;</span>,<span class="hljs-type">Sum</span> {getSum = <span class="hljs-number">35</span>})
+<span class="hljs-title">ghci</span>&gt; (<span class="hljs-string">&quot;jerky&quot;</span>, <span class="hljs-type">Sum</span> <span class="hljs-number">25</span>) `applyLog` addDrink
+(<span class="hljs-string">&quot;whiskey&quot;</span>,<span class="hljs-type">Sum</span> {getSum = <span class="hljs-number">124</span>})
+<span class="hljs-title">ghci</span>&gt; (<span class="hljs-string">&quot;dogmeat&quot;</span>, <span class="hljs-type">Sum</span> <span class="hljs-number">5</span>) `applyLog` addDrink
+(<span class="hljs-string">&quot;beer&quot;</span>,<span class="hljs-type">Sum</span> {getSum = <span class="hljs-number">35</span>})
+</code></pre>
+<p>Milk costs <code>25</code> cents, but if we eat it with beans that cost <code>10</code> cents,
+we&apos;ll end up paying <code>35</code> cents. Now it&apos;s clear how the attached value
+doesn&apos;t always have to be a log, it can be any monoid value and how two
+such values are combined into one depends on the monoid. When we were
+doing logs, they got appended, but now, the numbers are being added up.</p>
+<p>Because the value that <code>addDrink</code> returns is a tuple of type <code>(Food,Price)</code>,
+we can feed that result to <code>addDrink</code> again, so that it tells us what we
+should drink along with our drink and how much that will cost us. Let&apos;s
+give it a shot:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; (<span class="hljs-string">&quot;dogmeat&quot;</span>, <span class="hljs-type">Sum</span> <span class="hljs-number">5</span>) `applyLog` addDrink `applyLog` addDrink
+(<span class="hljs-string">&quot;beer&quot;</span>,<span class="hljs-type">Sum</span> {getSum = <span class="hljs-number">65</span>})
+</code></pre>
+<p>Adding a drink to some dog meat results in a beer and an additional <code>30</code>
+cents, so <code>(&quot;beer&quot;, Sum 35)</code>. And if we use <code>applyLog</code> to feed that to
+<code>addDrink</code>, we get another beer and the result is <code>(&quot;beer&quot;, Sum 65)</code>.</p>
+<h3 id="the-writer-type">The <code>Writer</code> type</h3>
+<p>Now that we&apos;ve seen that a value with an attached monoid acts like a
+monadic value, let&apos;s examine the <code>Monad</code> instance for types of such
+values. The <code>Control.Monad.Writer</code> module exports the <code>Writer w a</code> type
+along with its <code>Monad</code> instance and some useful functions for dealing with
+values of this type.</p>
+<p>First, let&apos;s examine the type itself. To attach a monoid to a value, we
+just need to put them together in a tuple. The <code>Writer w a</code> type is just a
+<code>newtype</code> wrapper for this. Its definition is very simple:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">newtype</span> <span class="hljs-type">Writer</span> w a = <span class="hljs-type">Writer</span> { <span class="hljs-title">runWriter</span> :: (<span class="hljs-title">a</span>, <span class="hljs-title">w</span>) }</span>
+</code></pre>
+<p>It&apos;s wrapped in a <code>newtype</code> so that it can be made an instance of <code>Monad</code>
+and that its type is separate from a normal tuple. The <code>a</code> type parameter
+represents the type of the value and the <code>w</code> type parameter the type of
+the attached monoid value.</p>
+<p>Its <code>Monad</code> instance is defined like so:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">instance</span> (<span class="hljs-type">Monoid</span> <span class="hljs-title">w</span>) =&gt; <span class="hljs-type">Monad</span> (<span class="hljs-type">Writer</span> <span class="hljs-title">w</span>) <span class="hljs-keyword">where</span></span>
+    return x = <span class="hljs-type">Writer</span> (x, mempty)
+    (<span class="hljs-type">Writer</span> (x,v)) &gt;&gt;= f = <span class="hljs-keyword">let</span> (<span class="hljs-type">Writer</span> (y, v&apos;)) = f x <span class="hljs-keyword">in</span> <span class="hljs-type">Writer</span> (y, v `mappend` v&apos;)
+</code></pre>
+<p><img src="img/angeleyes.png" alt="when you have to poop, poop, don&apos;t
+talk"></p>
+<p>First off, let&apos;s examine <code>&gt;&gt;=</code>. Its implementation is essentially the
+same as <code>applyLog</code>, only now that our tuple is wrapped in the
+<code>Writer newtype</code>, we have to unwrap it when pattern matching. We take the value <code>x</code>
+and apply the function <code>f</code> to it. This gives us a <code>Writer w a</code> value and we
+use a <code>let</code> expression to pattern match on it. We present <code>y</code> as the new
+result and use <code>mappend</code> to combine the old monoid value with the new one.
+We pack that up with the result value in a tuple and then wrap that with
+the <code>Writer</code> constructor so that our result is a <code>Writer</code> value instead of
+just an unwrapped tuple.</p>
+<p>So, what about <code>return</code>? It has to take a value and put it in a default
+minimal context that still presents that value as the result. So what
+would such a context be for <code>Writer</code> values? If we want the accompanying
+monoid value to affect other monoid values as little as possible, it
+makes sense to use <code>mempty</code>. <code>mempty</code> is used to present identity monoid
+values, such as <code>&quot;&quot;</code> and <code>Sum 0</code> and empty bytestrings. Whenever we use
+<code>mappend</code> between <code>mempty</code> and some other monoid value, the result is that
+other monoid value. So if we use <code>return</code> to make a <code>Writer</code> value and then
+use <code>&gt;&gt;=</code> to feed that value to a function, the resulting monoid value
+will be only what the function returns. Let&apos;s use <code>return</code> on the number <code>3</code>
+a bunch of times, only we&apos;ll pair it with a different monoid every time:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; runWriter (return <span class="hljs-number">3</span> :: <span class="hljs-type">Writer</span> <span class="hljs-type">String</span> <span class="hljs-type">Int</span>)
+(<span class="hljs-number">3</span>,<span class="hljs-string">&quot;&quot;</span>)
+<span class="hljs-title">ghci</span>&gt; runWriter (return <span class="hljs-number">3</span> :: <span class="hljs-type">Writer</span> (<span class="hljs-type">Sum</span> <span class="hljs-type">Int</span>) <span class="hljs-type">Int</span>)
+(<span class="hljs-number">3</span>,<span class="hljs-type">Sum</span> {getSum = <span class="hljs-number">0</span>})
+<span class="hljs-title">ghci</span>&gt; runWriter (return <span class="hljs-number">3</span> :: <span class="hljs-type">Writer</span> (<span class="hljs-type">Product</span> <span class="hljs-type">Int</span>) <span class="hljs-type">Int</span>)
+(<span class="hljs-number">3</span>,<span class="hljs-type">Product</span> {getProduct = <span class="hljs-number">1</span>})
+</code></pre>
+<p>Because <code>Writer</code> doesn&apos;t have a <code>Show</code> instance, we had to use <code>runWriter</code> to
+convert our <code>Writer</code> values to normal tuples that can be shown. For
+<code>String</code>, the monoid value is the empty string. With <code>Sum</code>, it&apos;s <code>0</code>, because
+if we add 0 to something, that something stays the same. For <code>Product</code>,
+the identity is <code>1</code>.</p>
+<p>The <code>Writer</code> instance doesn&apos;t feature an implementation for <code>fail</code>, so if a
+pattern match fails in <code>do</code> notation, <code>error</code> is called.</p>
+<h3 id="using-do-notation-with-writer">Using do notation with Writer</h3>
+<p>Now that we have a <code>Monad</code> instance, we&apos;re free to use <code>do</code> notation for
+<code>Writer</code> values. It&apos;s handy for when we have a several <code>Writer</code> values and
+we want to do stuff with them. Like with other monads, we can treat them
+as normal values and the context gets taken for us. In this case, all
+the monoid values that come attached get <code>mappend</code>ed and so are reflected
+in the final result. Here&apos;s a simple example of using <code>do</code> notation with
+<code>Writer</code> to multiply two numbers:</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> Control.Monad.Writer
+
+<span class="hljs-title">logNumber</span> :: <span class="hljs-type">Int</span> -&gt; <span class="hljs-type">Writer</span> [<span class="hljs-type">String</span>] <span class="hljs-type">Int</span>
+<span class="hljs-title">logNumber</span> x = <span class="hljs-type">Writer</span> (x, [<span class="hljs-string">&quot;Got number: &quot;</span> ++ show x])
+
+<span class="hljs-title">multWithLog</span> :: <span class="hljs-type">Writer</span> [<span class="hljs-type">String</span>] <span class="hljs-type">Int</span>
+<span class="hljs-title">multWithLog</span> = <span class="hljs-keyword">do</span>
+    a &lt;- logNumber <span class="hljs-number">3</span>
+    b &lt;- logNumber <span class="hljs-number">5</span>
+    return (a*b)
+</code></pre>
+<p><code>logNumber</code> takes a number and makes a <code>Writer</code> value out of it. For the
+monoid, we use a list of strings and we equip the number with a
+singleton list that just says that we have that number. <code>multWithLog</code> is a
+<code>Writer</code> value which multiplies <code>3</code> and <code>5</code> and makes sure that their attached
+logs get included in the final log. We use <code>return</code> to present <code>a*b</code> as the
+result. Because <code>return</code> just takes something and puts it in a minimal
+context, we can be sure that it won&apos;t add anything to the log. Here&apos;s
+what we see if we run this:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; runWriter multWithLog
+(<span class="hljs-number">15</span>,[<span class="hljs-string">&quot;Got number: 3&quot;</span>,<span class="hljs-string">&quot;Got number: 5&quot;</span>])
+</code></pre>
+<p>Sometimes we just want some monoid value to be included at some
+particular point. For this, the <code>tell</code> function is useful. It&apos;s part of
+the <code>MonadWriter</code> type class and in the case of <code>Writer</code> it takes a monoid
+value, like <code>[&quot;This is going on&quot;]</code> and creates a <code>Writer</code> value that
+presents the dummy value <code>()</code> as its result but has our desired monoid
+value attached. When we have a monadic value that has () as its result,
+we don&apos;t bind it to a variable. Here&apos;s <code>multWithLog</code> but with some extra
+reporting included:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">multWithLog</span> :: <span class="hljs-type">Writer</span> [<span class="hljs-type">String</span>] <span class="hljs-type">Int</span>
+<span class="hljs-title">multWithLog</span> = <span class="hljs-keyword">do</span>
+    a &lt;- logNumber <span class="hljs-number">3</span>
+    b &lt;- logNumber <span class="hljs-number">5</span>
+    tell [<span class="hljs-string">&quot;Gonna multiply these two&quot;</span>]
+    return (a*b)
+</code></pre>
+<p>It&apos;s important that <code>return (a*b)</code> is the last line, because the result
+of the last line in a <code>do</code> expression is the result of the whole <code>do</code>
+expression. Had we put <code>tell</code> as the last line, <code>()</code> would have been the
+result of this <code>do</code> expression. We&apos;d lose the result of the
+multiplication. However, the log would be the same. Here is this in
+action:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; runWriter multWithLog
+(<span class="hljs-number">15</span>,[<span class="hljs-string">&quot;Got number: 3&quot;</span>,<span class="hljs-string">&quot;Got number: 5&quot;</span>,<span class="hljs-string">&quot;Gonna multiply these two&quot;</span>])
+</code></pre>
+<h3 id="adding-logging-to-programs">Adding logging to programs</h3>
+<p>Euclid&apos;s algorithm is an algorithm that takes two numbers and computes
+their greatest common divisor. That is, the biggest number that still
+divides both of them. Haskell already features the <code>gcd</code> function, which
+does exactly this, but let&apos;s implement our own and then equip it with
+logging capabilities. Here&apos;s the normal algorithm:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">gcd&apos;</span> :: <span class="hljs-type">Int</span> -&gt; <span class="hljs-type">Int</span> -&gt; <span class="hljs-type">Int</span>
+<span class="hljs-title">gcd&apos;</span> a b
+    | b == <span class="hljs-number">0</span>    = a
+    | otherwise = gcd&apos; b (a `mod` b)
+</code></pre>
+<p>The algorithm is very simple. First, it checks if the second number is</p>
+<ol>
+<li>If it is, then the result is the first number. If it isn&apos;t, then the
+result is the greatest common divisor of the second number and the
+remainder of dividing the first number with the second one. For
+instance, if we want to know what the greatest common divisor of 8 and 3
+is, we just follow the algorithm outlined. Because 3 isn&apos;t 0, we have to
+find the greatest common divisor of 3 and 2 (if we divide 8 by 3, the
+remainder is 2). Next, we find the greatest common divisor of 3 and 2. 2
+still isn&apos;t 0, so now we have have 2 and 1. The second number isn&apos;t 0,
+so we run the algorithm again for 1 and 0, as dividing 2 by 1 gives us a
+remainder of 0. And finally, because the second number is now 0, the
+final result is 1. Let&apos;s see if our code agrees:</li>
+</ol>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; gcd&apos; <span class="hljs-number">8</span> <span class="hljs-number">3</span>
+<span class="hljs-number">1</span>
+</code></pre>
+<p>It does. Very good! Now, we want to equip our result with a context, and
+the context will be a monoid value that acts as a log. Like before,
+we&apos;ll use a list of strings as our monoid. So the type of our new <code>gcd&apos;</code>
+function should be:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">gcd&apos;</span> :: <span class="hljs-type">Int</span> -&gt; <span class="hljs-type">Int</span> -&gt; <span class="hljs-type">Writer</span> [<span class="hljs-type">String</span>] <span class="hljs-type">Int</span>
+</code></pre>
+<p>All that&apos;s left now is to equip our function with log values. Here&apos;s the
+code:</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> Control.Monad.Writer
+
+<span class="hljs-title">gcd&apos;</span> :: <span class="hljs-type">Int</span> -&gt; <span class="hljs-type">Int</span> -&gt; <span class="hljs-type">Writer</span> [<span class="hljs-type">String</span>] <span class="hljs-type">Int</span>
+<span class="hljs-title">gcd&apos;</span> a b
+    | b == <span class="hljs-number">0</span> = <span class="hljs-keyword">do</span>
+        tell [<span class="hljs-string">&quot;Finished with &quot;</span> ++ show a]
+        return a
+    | otherwise = <span class="hljs-keyword">do</span>
+        tell [show a ++ <span class="hljs-string">&quot; mod &quot;</span> ++ show b ++ <span class="hljs-string">&quot; = &quot;</span> ++ show (a `mod` b)]
+        gcd&apos; b (a `mod` b)
+</code></pre>
+<p>This function takes two normal <code>Int</code> values and returns a <code>Writer [String] Int</code>,
+that is, an <code>Int</code> that has a log context. In the case where <code>b</code> is <code>0</code>,
+instead of just giving <code>a</code> as the result, we use a <code>do</code> expression to put
+together a <code>Writer</code> value as a result. First we use <code>tell</code> to report that
+we&apos;re finished and then we use <code>return</code> to present <code>a</code> as the result of the
+<code>do</code> expression. Instead of this <code>do</code> expression, we could have also written
+this:</p>
+<pre><code class="lang-haskell"><span class="hljs-type">Writer</span> (a, [<span class="hljs-string">&quot;Finished with &quot;</span> ++ show a])
+</code></pre>
+<p>However, I think the <code>do</code> expression is easier to read. Next, we have the
+case when <code>b</code> isn&apos;t <code>0</code>. In this case, we log that we&apos;re using <code>mod</code> to figure
+out the remainder of dividing <code>a</code> and <code>b</code>. Then, the second line of the <code>do</code>
+expression just recursively calls <code>gcd&apos;</code>. Remember, <code>gcd&apos;</code> now ultimately
+returns a <code>Writer</code> value, so it&apos;s perfectly valid that
+<code>gcd&apos; b (a `mod` b)</code> is a line in a <code>do</code> expression.</p>
+<p>While it may be kind of useful to trace the execution of this new <code>gcd&apos;</code>
+by hand to see how the logs get appended, I think it&apos;s more insightful
+to just look at the big picture and view these as values with a context
+and from that gain insight as to what the final result will be.</p>
+<p>Let&apos;s try our new <code>gcd&apos;</code> out. Its result is a <code>Writer [String] Int</code> value
+and if we unwrap that from its <code>newtype</code>, we get a tuple. The first part
+of the tuple is the result. Let&apos;s see if it&apos;s okay:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; fst $ runWriter (gcd&apos; <span class="hljs-number">8</span> <span class="hljs-number">3</span>)
+<span class="hljs-number">1</span>
+</code></pre>
+<p>Good! Now what about the log? Because the log is a list of strings,
+let&apos;s use <code>mapM_ putStrLn</code> to print those strings to the screen:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; mapM_ putStrLn $ snd $ runWriter (gcd&apos; <span class="hljs-number">8</span> <span class="hljs-number">3</span>)
+<span class="hljs-number">8</span> mod <span class="hljs-number">3</span> = <span class="hljs-number">2</span>
+<span class="hljs-number">3</span> mod <span class="hljs-number">2</span> = <span class="hljs-number">1</span>
+<span class="hljs-number">2</span> mod <span class="hljs-number">1</span> = <span class="hljs-number">0</span>
+<span class="hljs-type">Finished</span> with <span class="hljs-number">1</span>
+</code></pre>
+<p>I think it&apos;s awesome how we were able to change our ordinary algorithm
+to one that reports what it does as it goes along just by changing
+normal values to monadic values and letting the implementation of <code>&gt;&gt;=</code>
+for <code>Writer</code> take care of the logs for us. We can add a logging mechanism
+to pretty much any function. We just replace normal values with <code>Writer</code>
+values where we want and change normal function application to <code>&gt;&gt;=</code> (or
+<code>do</code> expressions if it increases readability).</p>
+<h3 id="inefficient-list-construction">Inefficient list construction</h3>
+<p>When using the <code>Writer</code> monad, you have to be careful which monoid to use,
+because using lists can sometimes turn out to be very slow. That&apos;s
+because lists use <code>++</code> for <code>mappend</code> and using <code>++</code> to add something to the
+end of a list is slow if that list is really long.</p>
+<p>In our <code>gcd&apos;</code> function, the logging is fast because the list appending
+ends up looking like this:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">a</span> ++ (b ++ (c ++ (d ++ (e ++ f))))
+</code></pre>
+<p>Lists are a data structure that&apos;s constructed from left to right, and
+this is efficient because we first fully construct the left part of a
+list and only then add a longer list on the right. But if we&apos;re not
+careful, using the <code>Writer</code> monad can produce list appending that looks
+like this:</p>
+<pre><code class="lang-haskell">((((a ++ b) ++ c) ++ d) ++ e) ++ f
+</code></pre>
+<p>This associates to the left instead of to the right. This is inefficient
+because every time it wants to add the right part to the left part, it
+has to construct the left part all the way from the beginning!</p>
+<p>The following function works like <code>gcd&apos;</code>, only it logs stuff in reverse.
+First it produces the log for the rest of the procedure and then adds
+the current step to the end of the log.</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> Control.Monad.Writer
+
+<span class="hljs-title">gcdReverse</span> :: <span class="hljs-type">Int</span> -&gt; <span class="hljs-type">Int</span> -&gt; <span class="hljs-type">Writer</span> [<span class="hljs-type">String</span>] <span class="hljs-type">Int</span>
+<span class="hljs-title">gcdReverse</span> a b
+    | b == <span class="hljs-number">0</span> = <span class="hljs-keyword">do</span>
+        tell [<span class="hljs-string">&quot;Finished with &quot;</span> ++ show a]
+        return a
+    | otherwise = <span class="hljs-keyword">do</span>
+        result &lt;- gcdReverse b (a `mod` b)
+        tell [show a ++ <span class="hljs-string">&quot; mod &quot;</span> ++ show b ++ <span class="hljs-string">&quot; = &quot;</span> ++ show (a `mod` b)]
+        return result
+</code></pre>
+<p>It does the recursion first, and binds its <code>result</code> value to result. Then
+it adds the current step to the log, but the current step goes at the
+end of the log that was produced by the recursion. Finally, it presents
+the result of the recursion as the final result. Here it is in action:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; mapM_ putStrLn $ snd $ runWriter (gcdReverse <span class="hljs-number">8</span> <span class="hljs-number">3</span>)
+<span class="hljs-type">Finished</span> with <span class="hljs-number">1</span>
+<span class="hljs-number">2</span> mod <span class="hljs-number">1</span> = <span class="hljs-number">0</span>
+<span class="hljs-number">3</span> mod <span class="hljs-number">2</span> = <span class="hljs-number">1</span>
+<span class="hljs-number">8</span> mod <span class="hljs-number">3</span> = <span class="hljs-number">2</span>
+</code></pre>
+<p>It&apos;s inefficient because it ends up associating the use of <code>++</code> to the
+left instead of to the right.</p>
+<h3 id="difference-lists">Difference lists</h3>
+<p><img src="img/cactus.png" alt="cactuses"></p>
+<p>Because lists can sometimes be inefficient when repeatedly appended in
+this manner, it&apos;s best to use a data structure that always supports
+efficient appending. One such data structure is the difference list. A
+difference list is similar to a list, only instead of being a normal
+list, it&apos;s a function that takes a list and prepends another list to it.
+The difference list equivalent of a list like <code>[1,2,3]</code> would be the
+function <code>\xs -&gt; [1,2,3] ++ xs</code>. A normal empty list is <code>[]</code>, whereas an
+empty difference list is the function <code>\xs -&gt; [] ++ xs</code>.</p>
+<p>The cool thing about difference lists is that they support efficient
+appending. When we append two normal lists with <code>++</code>, it has to walk all
+the way to the end of the list on the left of <code>++</code> and then stick the
+other one there. But what if we take the difference list approach and
+represent our lists as functions? Well then, appending two difference
+lists can be done like so:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">f</span> `append` g = \xs -&gt; f (g xs)
+</code></pre>
+<p>Remember, <code>f</code> and <code>g</code> are functions that take lists and prepend something to
+them. So, for instance, if <code>f</code> is the function <code>(&quot;dog&quot;++)</code> (just another way
+of writing <code>\xs -&gt; &quot;dog&quot; ++ xs</code>) and <code>g</code> the function <code>(&quot;meat&quot;++)</code>, then
+<code>f `append` g</code> makes a new function that&apos;s equivalent to the following:</p>
+<pre><code class="lang-haskell">\xs -&gt; <span class="hljs-string">&quot;dog&quot;</span> ++ (<span class="hljs-string">&quot;meat&quot;</span> ++ xs)
+</code></pre>
+<p>We&apos;ve appended two difference lists just by making a new function that
+first applies one difference list some list and then the other.</p>
+<p>Let&apos;s make a <code>newtype</code> wrapper for difference lists so that we can easily
+give them monoid instances:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">newtype</span> <span class="hljs-type">DiffList</span> a = <span class="hljs-type">DiffList</span> { <span class="hljs-title">getDiffList</span> :: [<span class="hljs-title">a</span>] -&gt; [<span class="hljs-title">a</span>] }</span>
+</code></pre>
+<p>The type that we wrap is <code>[a] -&gt; [a]</code> because a difference list is just a
+function that takes a list and returns another. Converting normal lists
+to difference lists and vice versa is easy:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">toDiffList</span> :: [a] -&gt; <span class="hljs-type">DiffList</span> a
+<span class="hljs-title">toDiffList</span> xs = <span class="hljs-type">DiffList</span> (xs++)
+
+<span class="hljs-title">fromDiffList</span> :: <span class="hljs-type">DiffList</span> a -&gt; [a]
+<span class="hljs-title">fromDiffList</span> (<span class="hljs-type">DiffList</span> f) = f []
+</code></pre>
+<p>To make a normal list into a difference list we just do what we did
+before and make it a function that prepends it to another list. Because
+a difference list is a function that prepends something to another list,
+if we just want that something, we apply the function to an empty list!</p>
+<p>Here&apos;s the <code>Monoid</code> instance:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">instance</span> <span class="hljs-type">Monoid</span> (<span class="hljs-type">DiffList</span> <span class="hljs-title">a</span>) <span class="hljs-keyword">where</span></span>
+    mempty = <span class="hljs-type">DiffList</span> (\xs -&gt; [] ++ xs)
+    (<span class="hljs-type">DiffList</span> f) `mappend` (<span class="hljs-type">DiffList</span> g) = <span class="hljs-type">DiffList</span> (\xs -&gt; f (g xs))
+</code></pre>
+<p>Notice how for lists, <code>mempty</code> is just the <code>id</code> function and <code>mappend</code> is
+actually just function composition. Let&apos;s see if this works:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; fromDiffList (toDiffList [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>] `mappend` toDiffList [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>])
+[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>]
+</code></pre>
+<p>Tip top! Now we can increase the efficiency of our <code>gcdReverse</code> function
+by making it use difference lists instead of normal lists:</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> Control.Monad.Writer
+
+<span class="hljs-title">gcd&apos;</span> :: <span class="hljs-type">Int</span> -&gt; <span class="hljs-type">Int</span> -&gt; <span class="hljs-type">Writer</span> (<span class="hljs-type">DiffList</span> <span class="hljs-type">String</span>) <span class="hljs-type">Int</span>
+<span class="hljs-title">gcd&apos;</span> a b
+    | b == <span class="hljs-number">0</span> = <span class="hljs-keyword">do</span>
+        tell (toDiffList [<span class="hljs-string">&quot;Finished with &quot;</span> ++ show a])
+        return a
+    | otherwise = <span class="hljs-keyword">do</span>
+        result &lt;- gcd&apos; b (a `mod` b)
+        tell (toDiffList [show a ++ <span class="hljs-string">&quot; mod &quot;</span> ++ show b ++ <span class="hljs-string">&quot; = &quot;</span> ++ show (a `mod` b)])
+        return result
+</code></pre>
+<p>We only had to change the type of the monoid from <code>[String]</code> to
+<code>DiffList String</code> and then when using <code>tell</code>, convert our normal lists into
+difference lists with <code>toDiffList</code>. Let&apos;s see if the log gets assembled
+properly:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; mapM_ putStrLn . fromDiffList . snd . runWriter $ gcdReverse <span class="hljs-number">110</span> <span class="hljs-number">34</span>
+<span class="hljs-type">Finished</span> with <span class="hljs-number">2</span>
+<span class="hljs-number">8</span> mod <span class="hljs-number">2</span> = <span class="hljs-number">0</span>
+<span class="hljs-number">34</span> mod <span class="hljs-number">8</span> = <span class="hljs-number">2</span>
+<span class="hljs-number">110</span> mod <span class="hljs-number">34</span> = <span class="hljs-number">8</span>
+</code></pre>
+<p>We do <code>gcdReverse 110 34</code>, then use <code>runWriter</code> to unwrap it from the
+<code>newtype</code>, then apply <code>snd</code> to that to just get the log, then apply
+<code>fromDiffList</code> to convert it to a normal list and then finally print its
+entries to the screen.</p>
+<h3 id="comparing-performance">Comparing Performance</h3>
+<p>To get a feel for just how much difference lists may improve your
+performance, consider this function that just counts down from some
+number to zero, but produces its log in reverse, like <code>gcdReverse</code>, so
+that the numbers in the log will actually be counted up:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">finalCountDown</span> :: <span class="hljs-type">Int</span> -&gt; <span class="hljs-type">Writer</span> (<span class="hljs-type">DiffList</span> <span class="hljs-type">String</span>) ()
+<span class="hljs-title">finalCountDown</span> <span class="hljs-number">0</span> = <span class="hljs-keyword">do</span>
+    tell (toDiffList [<span class="hljs-string">&quot;0&quot;</span>])
+<span class="hljs-title">finalCountDown</span> x = <span class="hljs-keyword">do</span>
+    finalCountDown (x<span class="hljs-number">-1</span>)
+    tell (toDiffList [show x])
+</code></pre>
+<p>If we give it <code>0</code>, it just logs it. For any other number, it first counts
+down its predecessor to <code>0</code> and then appends that number to the log. So if
+we apply <code>finalCountDown</code> to <code>100</code>, the string <code>&quot;100&quot;</code> will come last in the
+log.</p>
+<p>Anyway, if you load this function in GHCi and apply it to a big number,
+like <code>500000</code>, you&apos;ll see that it quickly starts counting from <code>0</code> onwards:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; mapM_ putStrLn . fromDiffList . snd . runWriter $ finalCountDown <span class="hljs-number">500000</span>
+<span class="hljs-number">0</span>
+<span class="hljs-number">1</span>
+<span class="hljs-number">2</span>
+...
+</code></pre>
+<p>However, if we change it to use normal lists instead of difference
+lists, like so:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">finalCountDown</span> :: <span class="hljs-type">Int</span> -&gt; <span class="hljs-type">Writer</span> [<span class="hljs-type">String</span>] ()
+<span class="hljs-title">finalCountDown</span> <span class="hljs-number">0</span> = <span class="hljs-keyword">do</span>
+    tell [<span class="hljs-string">&quot;0&quot;</span>]
+<span class="hljs-title">finalCountDown</span> x = <span class="hljs-keyword">do</span>
+    finalCountDown (x<span class="hljs-number">-1</span>)
+    tell [show x]
+</code></pre>
+<p>And then tell GHCi to start counting:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; mapM_ putStrLn . snd . runWriter $ finalCountDown <span class="hljs-number">500000</span>
+</code></pre>
+<p>We&apos;ll see that the counting is really slow.</p>
+<p>Of course, this is not the proper and scientific way to test how fast
+our programs are, but we were able to see that in this case, using
+difference lists starts producing results right away whereas normal
+lists take forever.</p>
+<p>Oh, by the way, the song Final Countdown by Europe is now stuck in your
+head. Enjoy!</p>
+<h2 id="reader-ugh-not-this-joke-again">Reader? Ugh, not this joke again.</h2>
+<p><img src="img/revolver.png" alt="bang youre dead"></p>
+<p>In the <a href="#functors-applicative-functors-and-monoids">chapter about
+applicatives</a>, we saw that
+the function type, <code>(-&gt;) r</code> is an instance of <code>Functor</code>. Mapping a function
+<code>f</code> over a function <code>g</code> will make a function that takes the same thing as <code>g</code>,
+applies <code>g</code> to it and then applies <code>f</code> to that result. So basically, we&apos;re
+making a new function that&apos;s like <code>g</code>, only before returning its result, <code>f</code>
+gets applied to that result as well. For instance:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-keyword">let</span> f = (*<span class="hljs-number">5</span>)
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-keyword">let</span> g = (+<span class="hljs-number">3</span>)
+<span class="hljs-title">ghci</span>&gt; (fmap f g) <span class="hljs-number">8</span>
+<span class="hljs-number">55</span>
+</code></pre>
+<p>We&apos;ve also seen that functions are applicative functors. They allow us
+to operate on the eventual results of functions as if we already had
+their results. Here&apos;s an example:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-keyword">let</span> f = (+) &lt;$&gt; (*<span class="hljs-number">2</span>) &lt;*&gt; (+<span class="hljs-number">10</span>)
+<span class="hljs-title">ghci</span>&gt; f <span class="hljs-number">3</span>
+<span class="hljs-number">19</span>
+</code></pre>
+<p>The expression <code>(+) &lt;$&gt; (*2) &lt;*&gt; (+10)</code> makes a function that takes
+a number, gives that number to <code>(*2)</code> and <code>(+10)</code> and then adds together
+the results. For instance, if we apply this function to <code>3</code>, it applies
+both <code>(*2)</code> and <code>(+10)</code> to <code>3</code>, giving <code>6</code> and <code>13</code>. Then, it calls <code>(+)</code> with <code>6</code>
+and <code>13</code> and the result is <code>19</code>.</p>
+<p>Not only is the function type <code>(-&gt;) r</code> a functor and an applicative
+functor, but it&apos;s also a monad. Just like other monadic values that
+we&apos;ve met so far, a function can also be considered a value with a
+context. The context for functions is that that value is not present yet
+and that we have to apply that function to something in order to get its
+result value.</p>
+<p>Because we&apos;re already acquainted with how functions work as functors and
+applicative functors, let&apos;s dive right in and see what their <code>Monad</code>
+instance looks like. It&apos;s located in <code>Control.Monad.Instances</code> and it goes
+a little something like this:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">instance</span> <span class="hljs-type">Monad</span> ((-&gt;) r) <span class="hljs-keyword">where</span></span>
+    return x = \_ -&gt; x
+    h &gt;&gt;= f = \w -&gt; f (h w) w
+</code></pre>
+<p>We&apos;ve already seen how <code>pure</code> is implemented for functions, and <code>return</code> is
+pretty much the same thing as <code>pure</code>. It takes a value and puts it in a
+minimal context that always has that value as its result. And the only
+way to make a function that always has a certain value as its result is
+to make it completely ignore its parameter.</p>
+<p>The implementation for <code>&gt;&gt;=</code> seems a bit cryptic, but it&apos;s really not
+all that. When we use <code>&gt;&gt;=</code> to feed a monadic value to a function, the
+result is always a monadic value. So in this case, when we feed a
+function to another function, the result is a function as well. That&apos;s
+why the result starts off as a lambda. All of the implementations of
+<code>&gt;&gt;=</code> so far always somehow isolated the result from the monadic value
+and then applied the function <code>f</code> to that result. The same thing happens
+here. To get the result from a function, we have to apply it to
+something, which is why we do <code>(h w)</code> here to get the result from the
+function and then we apply <code>f</code> to that. <code>f</code> returns a monadic value, which
+is a function in our case, so we apply it to <code>w</code> as well.</p>
+<p>If don&apos;t get how <code>&gt;&gt;=</code> works at this point, don&apos;t worry, because with
+examples we&apos;ll see how this is a really simple monad. Here&apos;s a <code>do</code>
+expression that utilizes this monad:</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> Control.Monad.Instances
+
+<span class="hljs-title">addStuff</span> :: <span class="hljs-type">Int</span> -&gt; <span class="hljs-type">Int</span>
+<span class="hljs-title">addStuff</span> = <span class="hljs-keyword">do</span>
+    a &lt;- (*<span class="hljs-number">2</span>)
+    b &lt;- (+<span class="hljs-number">10</span>)
+    return (a+b)
+</code></pre>
+<p>This is the same thing as the applicative expression that we wrote
+earlier, only now it relies on functions being monads. A <code>do</code> expression
+always results in a monadic value and this one is no different. The
+result of this monadic value is a function. What happens here is that it
+takes a number and then <code>(*2)</code> gets applied to that number and the result
+becomes <code>a</code>. <code>(+10)</code> is applied to the same number that <code>(*2)</code> got applied to
+and the result becomes <code>b</code>. <code>return</code>, like in other monads, doesn&apos;t have any
+other effect but to make a monadic value that presents some result. This
+presents <code>a+b</code> as the result of this function. If we test it out, we get
+the same result as before:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; addStuff <span class="hljs-number">3</span>
+<span class="hljs-number">19</span>
+</code></pre>
+<p>Both <code>(*2)</code> and <code>(+10)</code> get applied to the number <code>3</code> in this case.
+<code>return (a+b)</code> does as well, but it ignores it and always presents <code>a+b</code> as the
+result. For this reason, the function monad is also called the reader
+monad. All the functions read from a common source. To illustrate this
+even better, we can rewrite <code>addStuff</code> like so:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">addStuff</span> :: <span class="hljs-type">Int</span> -&gt; <span class="hljs-type">Int</span>
+<span class="hljs-title">addStuff</span> x = <span class="hljs-keyword">let</span>
+    a = (*<span class="hljs-number">2</span>) x
+    b = (+<span class="hljs-number">10</span>) x
+    <span class="hljs-keyword">in</span> a+b
+</code></pre>
+<p>We see that the reader monad allows us to treat functions as values with
+a context. We can act as if we already know what the functions will
+return. It does this by gluing functions together into one function and
+then giving that function&apos;s parameter to all of the functions that it
+was glued from. So if we have a lot of functions that are all just
+missing one parameter and they&apos;d eventually be applied to the same
+thing, we can use the reader monad to sort of extract their future
+results and the <code>&gt;&gt;=</code> implementation will make sure that it all works
+out.</p>
+<h2 id="tasteful-stateful-computations">Tasteful stateful computations</h2>
+<p><img src="img/texas.png" alt="don&apos;t jest with texas"></p>
+<p>Haskell is a pure language and because of that, our programs are made of
+functions that can&apos;t change any global state or variables, they can only
+do some computations and return them results. This restriction actually
+makes it easier to think about our programs, as it frees us from
+worrying what every variable&apos;s value is at some point in time. However,
+some problems are inherently stateful in that they rely on some state
+that changes over time. While such problems aren&apos;t a problem for
+Haskell, they can be a bit tedious to model sometimes. That&apos;s why
+Haskell features a thing called the state monad, which makes dealing
+with stateful problems a breeze while still keeping everything nice and
+pure.</p>
+<p><a href="#randomness">When we were dealing with random numbers</a>,
+we dealt with functions that took a random generator as a parameter and
+returned a random number and a new random generator. If we wanted to
+generate several random numbers, we always had to use the random
+generator that a previous function returned along with its result. When
+making a function that takes a <code>StdGen</code> and tosses a coin three times
+based on that generator, we had to do this:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">threeCoins</span> :: <span class="hljs-type">StdGen</span> -&gt; (<span class="hljs-type">Bool</span>, <span class="hljs-type">Bool</span>, <span class="hljs-type">Bool</span>)
+<span class="hljs-title">threeCoins</span> gen =
+    <span class="hljs-keyword">let</span> (firstCoin, newGen) = random gen
+        (secondCoin, newGen&apos;) = random newGen
+        (thirdCoin, newGen&apos;&apos;) = random newGen&apos;
+    <span class="hljs-keyword">in</span>  (firstCoin, secondCoin, thirdCoin)
+</code></pre>
+<p>It took a generator <code>gen</code> and then <code>random gen</code> returned a <code>Bool</code> value along
+with a new generator. To throw the second coin, we used the new
+generator, and so on. In most other languages, we wouldn&apos;t have to
+return a new generator along with a random number. We could just modify
+the existing one! But since Haskell is pure, we can&apos;t do that, so we had
+to take some state, make a result from it and a new state and then use
+that new state to generate new results.</p>
+<p>You&apos;d think that to avoid manually dealing with stateful computations in
+this way, we&apos;d have to give up the purity of Haskell. Well, we don&apos;t
+have to, since there exist a special little monad called the state monad
+which handles all this state business for us and without giving up any
+of the purity that makes Haskell programming so cool.</p>
+<p>So, to help us understand this concept of stateful computations better,
+let&apos;s go ahead and give them a type. We&apos;ll say that a stateful
+computation is a function that takes some state and returns a value
+along with some new state. That function would have the following type:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">s</span> -&gt; (a,s)
+</code></pre>
+<p><code>s</code> is the type of the state and <code>a</code> the result of the stateful
+computations.</p>
+<blockquote>
+<p>Assignment in most other languages could be thought of as a stateful
+computation. For instance, when we do <code>x = 5</code> in an imperative language,
+it will usually assign the value <code>5</code> to the variable <code>x</code> and it will also
+have the value <code>5</code> as an expression. If you look at that functionally, you
+could look at it as a function that takes a state (that is, all the
+variables that have been assigned previously) and returns a result (in
+this case <code>5</code>) and a new state, which would be all the previous variable
+mappings plus the newly assigned variable.</p>
+</blockquote>
+<p>This stateful computation, a function that takes a state and returns a
+result and a new state, can be thought of as a value with a context as
+well. The actual value is the result, whereas the context is that we
+have to provide some initial state to actually get that result and that
+apart from getting a result we also get a new state.</p>
+<h3 id="stacks-and-stones">Stacks and stones</h3>
+<p>Say we want to model operating a stack. You have a stack of things one
+on top of another and you can either push stuff on top of that stack or
+you can take stuff off the top of the stack. When you&apos;re putting an item
+on top of the stack we say that you&apos;re pushing it to the stack and when
+you&apos;re taking stuff off the top we say that you&apos;re popping it. If you
+want to something that&apos;s at the bottom of the stack, you have to pop
+everything that&apos;s above it.</p>
+<p>We&apos;ll use a list to represent our stack and the head of the list will be
+the top of the stack. To help us with our task, we&apos;ll make two
+functions: <code>pop</code> and <code>push</code>. <code>pop</code> will take a stack, pop one item and return
+that item as the result and also return a new stack, without that item.
+<code>push</code> will take an item and a stack and then push that item onto the
+stack. It will return <code>()</code> as its result, along with a new stack. Here
+goes:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">Stack</span> = [<span class="hljs-type">Int</span>]</span>
+
+<span class="hljs-title">pop</span> :: <span class="hljs-type">Stack</span> -&gt; (<span class="hljs-type">Int</span>,<span class="hljs-type">Stack</span>)
+<span class="hljs-title">pop</span> (x:xs) = (x,xs)
+
+<span class="hljs-title">push</span> :: <span class="hljs-type">Int</span> -&gt; <span class="hljs-type">Stack</span> -&gt; ((),<span class="hljs-type">Stack</span>)
+<span class="hljs-title">push</span> a xs = ((),a:xs)
+</code></pre>
+<p>We used <code>()</code> as the result when pushing to the stack because pushing an
+item onto the stack doesn&apos;t have any important result value, its main
+job is to change the stack. Notice how we just apply the first parameter
+of <code>push</code>, we get a stateful computation. <code>pop</code> is already a stateful
+computation because of its type.</p>
+<p>Let&apos;s write a small piece of code to simulate a stack using these
+functions. We&apos;ll take a stack, push 3 to it and then pop two items, just
+for kicks. Here it is:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">stackManip</span> :: <span class="hljs-type">Stack</span> -&gt; (<span class="hljs-type">Int</span>, <span class="hljs-type">Stack</span>)
+<span class="hljs-title">stackManip</span> stack = <span class="hljs-keyword">let</span>
+    ((),newStack1) = push <span class="hljs-number">3</span> stack
+    (a ,newStack2) = pop newStack1
+    <span class="hljs-keyword">in</span> pop newStack2
+</code></pre>
+<p>We take a <code>stack</code> and then we do <code>push 3 stack</code>, which results in a tuple.
+The first part of the tuple is a <code>()</code> and the second is a new stack and we
+call it <code>newStack1</code>. Then, we pop a number from <code>newStack1</code>, which results
+in a number <code>a</code> (which is the <code>3</code>) that we pushed and a new stack which we
+call <code>newStack2</code>. Then, we pop a number off <code>newStack2</code> and we get a number
+that&apos;s <code>b</code> and a <code>newStack3</code>. We return a tuple with that number and that
+stack. Let&apos;s try it out:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; stackManip [<span class="hljs-number">5</span>,<span class="hljs-number">8</span>,<span class="hljs-number">2</span>,<span class="hljs-number">1</span>]
+(<span class="hljs-number">5</span>,[<span class="hljs-number">8</span>,<span class="hljs-number">2</span>,<span class="hljs-number">1</span>])
+</code></pre>
+<p>Cool, the result is <code>5</code> and the new stack is <code>[8,2,1]</code>. Notice how
+<code>stackManip</code> is itself a stateful computation. We&apos;ve taken a bunch of
+stateful computations and we&apos;ve sort of glued them together. Hmm, sounds
+familiar.</p>
+<p>The above code for <code>stackManip</code> is kind of tedious since we&apos;re manually
+giving the state to every stateful computation and storing it and then
+giving it to the next one. Wouldn&apos;t it be cooler if, instead of giving
+the stack manually to each function, we could write something like this:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">stackManip</span> = <span class="hljs-keyword">do</span>
+    push <span class="hljs-number">3</span>
+    a &lt;- pop
+    pop
+</code></pre>
+<p>Well, using the state monad will allow us to do exactly this. With it,
+we will be able to take stateful computations like these and use them
+without having to manage the state manually.</p>
+<h3 id="the-state-monad">The State monad</h3>
+<p>The <code>Control.Monad.State</code> module provides a <code>newtype</code> that wraps stateful
+computations. Here&apos;s its definition:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">newtype</span> <span class="hljs-type">State</span> s a = <span class="hljs-type">State</span> { <span class="hljs-title">runState</span> :: <span class="hljs-title">s</span> -&gt; (<span class="hljs-title">a</span>,<span class="hljs-title">s</span>) }</span>
+</code></pre>
+<p>A <code>State s a</code> is a stateful computation that manipulates a state of type <code>s</code>
+and has a result of type <code>a</code>.</p>
+<p>Now that we&apos;ve seen what stateful computations are about and how they
+can even be thought of as values with contexts, let&apos;s check out their
+<code>Monad</code> instance:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">instance</span> <span class="hljs-type">Monad</span> (<span class="hljs-type">State</span> <span class="hljs-title">s</span>) <span class="hljs-keyword">where</span></span>
+    return x = <span class="hljs-type">State</span> $ \s -&gt; (x,s)
+    (<span class="hljs-type">State</span> h) &gt;&gt;= f = <span class="hljs-type">State</span> $ \s -&gt; <span class="hljs-keyword">let</span> (a, newState) = h s
+                                        (<span class="hljs-type">State</span> g) = f a
+                                    <span class="hljs-keyword">in</span>  g newState
+</code></pre>
+<p>Let&apos;s take a gander at <code>return</code> first. Our aim with <code>return</code> is to take a
+value and make a stateful computation that always has that value as its
+result. That&apos;s why we just make a lambda <code>\s -&gt; (x,s)</code>. We always
+present <code>x</code> as the result of the stateful computation and the state is
+kept unchanged, because <code>return</code> has to put a value in a minimal context.
+So <code>return</code> will make a stateful computation that presents a certain value
+as the result and keeps the state unchanged.</p>
+<p><img src="img/badge.png" alt="im a cop"></p>
+<p>What about <code>&gt;&gt;=</code>? Well, the result of feeding a stateful computation to
+a function with <code>&gt;&gt;=</code> has to be a stateful computation, right? So we
+start off with the <code>State</code> <code>newtype</code> wrapper and then we type out a lambda.
+This lambda will be our new stateful computation. But what goes on in
+it? Well, we somehow have to extract the result value from the first
+stateful computation. Because we&apos;re in a stateful computation right now,
+we can give the stateful computation <code>h</code> our current state <code>s</code>, which
+results in a pair of result and a new state: <code>(a, newState)</code>. Every time
+so far when we were implementing <code>&gt;&gt;=</code>, once we had the extracted the
+result from the monadic value, we applied the function <code>f</code> to it to get
+the new monadic value. In <code>Writer</code>, after doing that and getting the new
+monadic value, we still had to make sure that the context was taken care
+of by <code>mappend</code>ing the old monoid value with the new one. Here, we do <code>f a</code>
+and we get a new stateful computation <code>g</code>. Now that we have a new stateful
+computation and a new state (goes by the name of <code>newState</code>) we just apply
+that stateful computation <code>g</code> to the <code>newState</code>. The result is a tuple of
+final result and final state!</p>
+<p>So with <code>&gt;&gt;=</code>, we kind of glue two stateful computations together, only
+the second one is hidden inside a function that takes the previous one&apos;s
+result. Because <code>pop</code> and <code>push</code> are already stateful computations, it&apos;s
+easy to wrap them into a <code>State</code> wrapper. Watch:</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> Control.Monad.State
+
+<span class="hljs-title">pop</span> :: <span class="hljs-type">State</span> <span class="hljs-type">Stack</span> <span class="hljs-type">Int</span>
+<span class="hljs-title">pop</span> = <span class="hljs-type">State</span> $ \(x:xs) -&gt; (x,xs)
+
+<span class="hljs-title">push</span> :: <span class="hljs-type">Int</span> -&gt; <span class="hljs-type">State</span> <span class="hljs-type">Stack</span> ()
+<span class="hljs-title">push</span> a = <span class="hljs-type">State</span> $ \xs -&gt; ((),a:xs)
+</code></pre>
+<p><code>pop</code> is already a stateful computation and <code>push</code> takes an <code>Int</code> and returns
+a stateful computation. Now we can rewrite our previous example of
+pushing <code>3</code> onto the stack and then popping two numbers off like this:</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> Control.Monad.State
+
+<span class="hljs-title">stackManip</span> :: <span class="hljs-type">State</span> <span class="hljs-type">Stack</span> <span class="hljs-type">Int</span>
+<span class="hljs-title">stackManip</span> = <span class="hljs-keyword">do</span>
+    push <span class="hljs-number">3</span>
+    a &lt;- pop
+    pop
+</code></pre>
+<p>See how we&apos;ve glued a push and two pops into one stateful computation?
+When we unwrap it from its <code>newtype</code> wrapper we get a function to which we
+can provide some initial state:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; runState stackManip [<span class="hljs-number">5</span>,<span class="hljs-number">8</span>,<span class="hljs-number">2</span>,<span class="hljs-number">1</span>]
+(<span class="hljs-number">5</span>,[<span class="hljs-number">8</span>,<span class="hljs-number">2</span>,<span class="hljs-number">1</span>])
+</code></pre>
+<p>We didn&apos;t have to bind the second <code>pop</code> to <code>a</code> because we didn&apos;t use that <code>a</code>
+at all. So we could have written it like this:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">stackManip</span> :: <span class="hljs-type">State</span> <span class="hljs-type">Stack</span> <span class="hljs-type">Int</span>
+<span class="hljs-title">stackManip</span> = <span class="hljs-keyword">do</span>
+    push <span class="hljs-number">3</span>
+    pop
+    pop
+</code></pre>
+<p>Pretty cool. But what if we want to do this: pop one number off the
+stack and then if that number is <code>5</code> we just put it back onto the stack
+and stop but if it isn&apos;t <code>5</code>, we push <code>3</code> and <code>8</code> back on? Well, here&apos;s the
+code:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">stackStuff</span> :: <span class="hljs-type">State</span> <span class="hljs-type">Stack</span> ()
+<span class="hljs-title">stackStuff</span> = <span class="hljs-keyword">do</span>
+    a &lt;- pop
+    <span class="hljs-keyword">if</span> a == <span class="hljs-number">5</span>
+        <span class="hljs-keyword">then</span> push <span class="hljs-number">5</span>
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">do</span>
+            push <span class="hljs-number">3</span>
+            push <span class="hljs-number">8</span>
+</code></pre>
+<p>This is quite straightforward. Let&apos;s run it with an initial stack.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; runState stackStuff [<span class="hljs-number">9</span>,<span class="hljs-number">0</span>,<span class="hljs-number">2</span>,<span class="hljs-number">1</span>,<span class="hljs-number">0</span>]
+((),[<span class="hljs-number">8</span>,<span class="hljs-number">3</span>,<span class="hljs-number">0</span>,<span class="hljs-number">2</span>,<span class="hljs-number">1</span>,<span class="hljs-number">0</span>])
+</code></pre>
+<p>Remember, <code>do</code> expressions result in monadic values and with the <code>State</code>
+monad, a single <code>do</code> expression is also a stateful function. Because
+<code>stackManip</code> and <code>stackStuff</code> are ordinary stateful computations, we can
+glue them together to produce further stateful computations.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">moreStack</span> :: <span class="hljs-type">State</span> <span class="hljs-type">Stack</span> ()
+<span class="hljs-title">moreStack</span> = <span class="hljs-keyword">do</span>
+    a &lt;- stackManip
+    <span class="hljs-keyword">if</span> a == <span class="hljs-number">100</span>
+        <span class="hljs-keyword">then</span> stackStuff
+        <span class="hljs-keyword">else</span> return ()
+</code></pre>
+<p>If the result of <code>stackManip</code> on the current stack is <code>100</code>, we run
+<code>stackStuff</code>, otherwise we do nothing. <code>return ()</code> just keeps the state as
+it is and does nothing.</p>
+<p>The <code>Control.Monad.State</code> module provides a type class that&apos;s called
+<code>MonadState</code> and it features two pretty useful functions, namely <code>get</code> and
+<code>put</code>. For <code>State</code>, the <code>get</code> function is implemented like this:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">get</span> = <span class="hljs-type">State</span> $ \s -&gt; (s,s)
+</code></pre>
+<p>So it just takes the current state and presents it as the result. The
+<code>put</code> function takes some state and makes a stateful function that
+replaces the current state with it:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">put</span> newState = <span class="hljs-type">State</span> $ \s -&gt; ((),newState)
+</code></pre>
+<p>So with these, we can see what the current stack is or we can replace it
+with a whole other stack. Like so:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">stackyStack</span> :: <span class="hljs-type">State</span> <span class="hljs-type">Stack</span> ()
+<span class="hljs-title">stackyStack</span> = <span class="hljs-keyword">do</span>
+    stackNow &lt;- get
+    <span class="hljs-keyword">if</span> stackNow == [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>]
+        <span class="hljs-keyword">then</span> put [<span class="hljs-number">8</span>,<span class="hljs-number">3</span>,<span class="hljs-number">1</span>]
+        <span class="hljs-keyword">else</span> put [<span class="hljs-number">9</span>,<span class="hljs-number">2</span>,<span class="hljs-number">1</span>]
+</code></pre>
+<p>It&apos;s worth examining what the type of <code>&gt;&gt;=</code> would be if it only worked
+for <code>State</code> values:</p>
+<pre><code class="lang-haskell">(&gt;&gt;=) :: <span class="hljs-type">State</span> s a -&gt; (a -&gt; <span class="hljs-type">State</span> s b) -&gt; <span class="hljs-type">State</span> s b
+</code></pre>
+<p>See how the type of the state <code>s</code> stays the same but the type of the
+result can change from <code>a</code> to <code>b</code>? This means that we can glue together
+several stateful computations whose results are of different types but
+the type of the state has to stay the same. Now why is that? Well, for
+instance, for <code>Maybe</code>, <code>&gt;&gt;=</code> has this type:</p>
+<pre><code class="lang-haskell">(&gt;&gt;=) :: <span class="hljs-type">Maybe</span> a -&gt; (a -&gt; <span class="hljs-type">Maybe</span> b) -&gt; <span class="hljs-type">Maybe</span> b
+</code></pre>
+<p>It makes sense that the monad itself, <code>Maybe</code>, doesn&apos;t change. It wouldn&apos;t
+make sense to use <code>&gt;&gt;=</code> between two different monads. Well, for the
+state monad, the monad is actually <code>State s</code>, so if that <code>s</code> was different,
+we&apos;d be using <code>&gt;&gt;=</code> between two different monads.</p>
+<h3 id="randomness-and-the-state-monad">Randomness and the state monad</h3>
+<p>At the beginning of this section, we saw how generating numbers can
+sometimes be awkward because every random function takes a generator and
+returns a random number along with a new generator, which must then be
+used instead of the old one if we want to generate another random
+number. The state monad makes dealing with this a lot easier.</p>
+<p>The <code>random</code> function from <code>System.Random</code> has the following type:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">random</span> :: (<span class="hljs-type">RandomGen</span> g, <span class="hljs-type">Random</span> a) =&gt; g -&gt; (a, g)
+</code></pre>
+<p>Meaning it takes a random generator and produces a random number along
+with a new generator. We can see that it&apos;s a stateful computation, so we
+can wrap it in the <code>State</code> <code>newtype</code> constructor and then use it as a
+monadic value so that passing of the state gets handled for us:</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> System.Random
+<span class="hljs-keyword">import</span> Control.Monad.State
+
+<span class="hljs-title">randomSt</span> :: (<span class="hljs-type">RandomGen</span> g, <span class="hljs-type">Random</span> a) =&gt; <span class="hljs-type">State</span> g a
+<span class="hljs-title">randomSt</span> = <span class="hljs-type">State</span> random
+</code></pre>
+<p>So now if we want to throw three coins (<code>True</code> is tails, <code>False</code> is heads)
+we just do the following:</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> System.Random
+<span class="hljs-keyword">import</span> Control.Monad.State
+
+<span class="hljs-title">threeCoins</span> :: <span class="hljs-type">State</span> <span class="hljs-type">StdGen</span> (<span class="hljs-type">Bool</span>,<span class="hljs-type">Bool</span>,<span class="hljs-type">Bool</span>)
+<span class="hljs-title">threeCoins</span> = <span class="hljs-keyword">do</span>
+    a &lt;- randomSt
+    b &lt;- randomSt
+    c &lt;- randomSt
+    return (a,b,c)
+</code></pre>
+<p><code>threeCoins</code> is now a stateful computations and after taking an initial
+random generator, it passes it to the first <code>randomSt</code>, which produces a
+number and a new generator, which gets passed to the next one and so on.
+We use <code>return (a,b,c)</code> to present <code>(a,b,c)</code> as the result without changing
+the most recent generator. Let&apos;s give this a go:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; runState threeCoins (mkStdGen <span class="hljs-number">33</span>)
+((<span class="hljs-type">True</span>,<span class="hljs-type">False</span>,<span class="hljs-type">True</span>),<span class="hljs-number">680029187</span> <span class="hljs-number">2103410263</span>)
+</code></pre>
+<p>Nice. Doing these sort of things that require some state to be kept in
+between steps just became much less of a hassle!</p>
+<h2 id="error-error-on-the-wall">Error error on the wall</h2>
+<p>We know by now that <code>Maybe</code> is used to add a context of possible failure
+to values. A value can be a <code>Just something</code> or a <code>Nothing</code>. However useful
+it may be, when we have a <code>Nothing</code>, all we know is that there was some
+sort of failure, but there&apos;s no way to cram some more info in there
+telling us what kind of failure it was or why it failed.</p>
+<p>The <code>Either e a</code> type on the other hand, allows us to incorporate a
+context of possible failure to our values while also being able to
+attach values to the failure, so that they can describe what went wrong
+or provide some other useful info regarding the failure. An <code>Either e a</code>
+value can either be a <code>Right</code> value, signifying the right answer and a
+success, or it can be a <code>Left</code> value, signifying failure. For instance:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; :t <span class="hljs-type">Right</span> <span class="hljs-number">4</span>
+<span class="hljs-type">Right</span> <span class="hljs-number">4</span> :: (<span class="hljs-type">Num</span> t) =&gt; <span class="hljs-type">Either</span> a t
+<span class="hljs-title">ghci</span>&gt; :t <span class="hljs-type">Left</span> <span class="hljs-string">&quot;out of cheese error&quot;</span>
+<span class="hljs-type">Left</span> <span class="hljs-string">&quot;out of cheese error&quot;</span> :: <span class="hljs-type">Either</span> [<span class="hljs-type">Char</span>] b
+</code></pre>
+<p>This is pretty much just an enhanced <code>Maybe</code>, so it makes sense for it to
+be a monad, because it can also be viewed as a value with an added
+context of possible failure, only now there&apos;s a value attached when
+there&apos;s an error as well.</p>
+<p>Its <code>Monad</code> instance is similar to that of <code>Maybe</code> and it can be found in
+<code>Control.Monad.Error</code>:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">instance</span> (<span class="hljs-type">Error</span> <span class="hljs-title">e</span>) =&gt; <span class="hljs-type">Monad</span> (<span class="hljs-type">Either</span> <span class="hljs-title">e</span>) <span class="hljs-keyword">where</span></span>
+    return x = <span class="hljs-type">Right</span> x
+    <span class="hljs-type">Right</span> x &gt;&gt;= f = f x
+    <span class="hljs-type">Left</span> err &gt;&gt;= f = <span class="hljs-type">Left</span> err
+    fail msg = <span class="hljs-type">Left</span> (strMsg msg)
+</code></pre>
+<p><code>return</code>, as always, takes a value and puts it in a default minimal
+context. It wraps our value in the <code>Right</code> constructor because we&apos;re using
+<code>Right</code> to represent a successful computation where a result is present.
+This is a lot like <code>return</code> for <code>Maybe</code>.</p>
+<p>The <code>&gt;&gt;=</code> examines two possible cases: a <code>Left</code> and a <code>Right</code>. In the case
+of a <code>Right</code>, the function <code>f</code> is applied to the value inside it, similar to
+how in the case of a <code>Just</code>, the function is just applied to its contents.
+In the case of an error, the <code>Left</code> value is kept, along with its
+contents, which describe the failure.</p>
+<p>The <code>Monad</code> instance for <code>Either e</code> makes an additional requirement, and
+that is that the type of the value contained in a <code>Left</code>, the one that&apos;s
+indexed by the <code>e</code> type parameter, has to be an instance of the <code>Error</code> type
+class. The <code>Error</code> type class is for types whose values can act like error
+messages. It defines the <code>strMsg</code> function, which takes an error in the
+form of a string and returns such a value. A good example of an <code>Error</code>
+instance is, well, the <code>String</code> type! In the case of <code>String</code>, the <code>strMsg</code>
+function just returns the string that it got:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; :t strMsg
+<span class="hljs-title">strMsg</span> :: (<span class="hljs-type">Error</span> a) =&gt; <span class="hljs-type">String</span> -&gt; a
+<span class="hljs-title">ghci</span>&gt; strMsg <span class="hljs-string">&quot;boom!&quot;</span> :: <span class="hljs-type">String</span>
+<span class="hljs-string">&quot;boom!&quot;</span>
+</code></pre>
+<p>But since we usually use <code>String</code> to describe the error when using <code>Either</code>,
+we don&apos;t have to worry about this too much. When a pattern match fails
+in <code>do</code> notation, a <code>Left</code> value is used to signify this failure.</p>
+<p>Anyway, here are a few examples of usage:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Left</span> <span class="hljs-string">&quot;boom&quot;</span> &gt;&gt;= \x -&gt; return (x+<span class="hljs-number">1</span>)
+<span class="hljs-type">Left</span> <span class="hljs-string">&quot;boom&quot;</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Right</span> <span class="hljs-number">100</span> &gt;&gt;= \x -&gt; <span class="hljs-type">Left</span> <span class="hljs-string">&quot;no way!&quot;</span>
+<span class="hljs-type">Left</span> <span class="hljs-string">&quot;no way!&quot;</span>
+</code></pre>
+<p>When we use <code>&gt;&gt;=</code> to feed a <code>Left</code> value to a function, the function is
+ignored and an identical <code>Left</code> value is returned. When we feed a <code>Right</code>
+value to a function, the function gets applied to what&apos;s on the inside,
+but in this case that function produced a <code>Left</code> value anyway!</p>
+<p>When we try to feed a <code>Right</code> value to a function that also succeeds,
+we&apos;re tripped up by a peculiar type error! Hmmm.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Right</span> <span class="hljs-number">3</span> &gt;&gt;= \x -&gt; return (x + <span class="hljs-number">100</span>)
+
+&lt;interactive&gt;:<span class="hljs-number">1</span>:<span class="hljs-number">0</span>:
+    <span class="hljs-type">Ambiguous</span> <span class="hljs-class"><span class="hljs-keyword">type</span> variable `a&apos; in the constraints:</span>
+      `<span class="hljs-type">Error</span> a&apos; arising from a use <span class="hljs-keyword">of</span> `it&apos; at &lt;interactive&gt;:<span class="hljs-number">1</span>:<span class="hljs-number">0</span><span class="hljs-number">-33</span>
+      `<span class="hljs-type">Show</span> a&apos; arising from a use <span class="hljs-keyword">of</span> `print&apos; at &lt;interactive&gt;:<span class="hljs-number">1</span>:<span class="hljs-number">0</span><span class="hljs-number">-33</span>
+    <span class="hljs-type">Probable</span> fix: add a <span class="hljs-class"><span class="hljs-keyword">type</span> signature that fixes these <span class="hljs-keyword">type</span> variable(<span class="hljs-title">s</span>)</span>
+</code></pre>
+<p>Haskell says that it doesn&apos;t know which type to choose for the <code>e</code> part of
+our <code>Either e a</code> typed value, even though we&apos;re just printing the <code>Right</code>
+part. This is due to the <code>Error e</code> constraint on the <code>Monad</code> instance. So if
+you get type errors like this one when using <code>Either</code> as a monad, just add
+an explicit type signature:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Right</span> <span class="hljs-number">3</span> &gt;&gt;= \x -&gt; return (x + <span class="hljs-number">100</span>) :: <span class="hljs-type">Either</span> <span class="hljs-type">String</span> <span class="hljs-type">Int</span>
+<span class="hljs-type">Right</span> <span class="hljs-number">103</span>
+</code></pre>
+<p>Alright, now it works!</p>
+<p>Other than this little hangup, using this monad is very similar to using
+<code>Maybe</code> as a monad. In the previous chapter, we used the monadic aspects
+of <code>Maybe</code> to simulate birds landing on the balancing pole of a tightrope
+walker. As an exercise, you can rewrite that with the error monad so
+that when the tightrope walker slips and falls, we remember how many
+birds were on each side of the pole when he fell.</p>
+<h2 id="some-useful-monadic-functions">Some useful monadic functions</h2>
+<p>In this section, we&apos;re going to explore a few functions that either
+operate on monadic values or return monadic values as their results (or
+both!). Such functions are usually referred to as monadic functions.
+While some of them will be brand new, others will be monadic
+counterparts of functions that we already know, like <code>filter</code> and <code>foldl</code>.
+Let&apos;s see what they are then!</p>
+<h3 id="liftm-and-friends">liftM and friends</h3>
+<p><img src="img/wolf.png" alt="im a cop too"></p>
+<p>When we started our journey to the top of Monad Mountain, we first
+looked at functors, which are for things that can be mapped over. Then,
+we learned about improved functors called applicative functors, which
+allowed us to apply normal functions between several applicative values
+as well as to take a normal value and put it in some default context.
+Finally, we introduced monads as improved applicative functors, which
+added the ability for these values with context to somehow be fed into
+normal functions.</p>
+<p>So every monad is an applicative functor and every applicative functor
+is a functor. The <code>Applicative</code> type class has a class constraint such
+that our type has to be an instance of <code>Functor</code> before we can make it an
+instance of <code>Applicative</code>. But even though <code>Monad</code> should have the same
+constraint for <code>Applicative</code>, as every monad is an applicative functor, it
+doesn&apos;t, because the <code>Monad</code> type class was introduced to Haskell way
+before <code>Applicative</code>.</p>
+<p>But even though every monad is a functor, we don&apos;t have to rely on it
+having a <code>Functor</code> instance because of the <code>liftM</code> function. <code>liftM</code> takes a
+function and a monadic value and maps it over the monadic value. So it&apos;s
+pretty much the same thing as <code>fmap</code>! This is <code>liftM</code>&apos;s type:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">liftM</span> :: (<span class="hljs-type">Monad</span> m) =&gt; (a -&gt; b) -&gt; m a -&gt; m b
+</code></pre>
+<p>And this is the type of <code>fmap</code>:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">fmap</span> :: (<span class="hljs-type">Functor</span> f) =&gt; (a -&gt; b) -&gt; f a -&gt; f b
+</code></pre>
+<p>If the <code>Functor</code> and <code>Monad</code> instances for a type obey the functor and monad
+laws, these two amount to the same thing (and all the monads that we&apos;ve
+met so far obey both). This is kind of like <code>pure</code> and <code>return</code> do the same
+thing, only one has an <code>Applicative</code> class constraint whereas the other
+has a <code>Monad</code> one. Let&apos;s try <code>liftM</code> out:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; liftM (*<span class="hljs-number">3</span>) (<span class="hljs-type">Just</span> <span class="hljs-number">8</span>)
+<span class="hljs-type">Just</span> <span class="hljs-number">24</span>
+<span class="hljs-title">ghci</span>&gt; fmap (*<span class="hljs-number">3</span>) (<span class="hljs-type">Just</span> <span class="hljs-number">8</span>)
+<span class="hljs-type">Just</span> <span class="hljs-number">24</span>
+<span class="hljs-title">ghci</span>&gt; runWriter $ liftM not $ <span class="hljs-type">Writer</span> (<span class="hljs-type">True</span>, <span class="hljs-string">&quot;chickpeas&quot;</span>)
+(<span class="hljs-type">False</span>,<span class="hljs-string">&quot;chickpeas&quot;</span>)
+<span class="hljs-title">ghci</span>&gt; runWriter $ fmap not $ <span class="hljs-type">Writer</span> (<span class="hljs-type">True</span>, <span class="hljs-string">&quot;chickpeas&quot;</span>)
+(<span class="hljs-type">False</span>,<span class="hljs-string">&quot;chickpeas&quot;</span>)
+<span class="hljs-title">ghci</span>&gt; runState (liftM (+<span class="hljs-number">100</span>) pop) [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>]
+(<span class="hljs-number">101</span>,[<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>])
+<span class="hljs-title">ghci</span>&gt; runState (fmap (+<span class="hljs-number">100</span>) pop) [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>]
+(<span class="hljs-number">101</span>,[<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>])
+</code></pre>
+<p>We already know quite well how <code>fmap</code> works with <code>Maybe</code> values. And <code>liftM</code>
+does the same thing. For <code>Writer</code> values, the function is mapped over the
+first component of the tuple, which is the result. Doing <code>fmap</code> or <code>liftM</code>
+over a stateful computation results in another stateful computation,
+only its eventual result is modified by the supplied function. Had we
+not mapped <code>(+100)</code> over <code>pop</code> in this case before running it, it would have
+returned <code>(1,[2,3,4])</code>.</p>
+<p>This is how <code>liftM</code> is implemented:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">liftM</span> :: (<span class="hljs-type">Monad</span> m) =&gt; (a -&gt; b) -&gt; m a -&gt; m b
+<span class="hljs-title">liftM</span> f m = m &gt;&gt;= (\x -&gt; return (f x))
+</code></pre>
+<p>Or with <code>do</code> notation:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">liftM</span> :: (<span class="hljs-type">Monad</span> m) =&gt; (a -&gt; b) -&gt; m a -&gt; m b
+<span class="hljs-title">liftM</span> f m = <span class="hljs-keyword">do</span>
+    x &lt;- m
+    return (f x)
+</code></pre>
+<p>We feed the monadic value <code>m</code> into the function and then we apply the
+function <code>f</code> to its result before putting it back into a default context.
+Because of the monad laws, this is guaranteed not to change the context,
+only the result that the monadic value presents. We see that <code>liftM</code> is
+implemented without referencing the <code>Functor</code> type class at all. This
+means that we can implement <code>fmap</code> (or <code>liftM</code>, whatever you want to call
+it) just by using the goodies that monads offer us. Because of this, we
+can conclude that monads are stronger than just regular old functors.</p>
+<p>The <code>Applicative</code> type class allows us to apply functions between values
+with contexts as if they were normal values. Like this:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; (+) &lt;$&gt; <span class="hljs-type">Just</span> <span class="hljs-number">3</span> &lt;*&gt; <span class="hljs-type">Just</span> <span class="hljs-number">5</span>
+<span class="hljs-type">Just</span> <span class="hljs-number">8</span>
+<span class="hljs-title">ghci</span>&gt; (+) &lt;$&gt; <span class="hljs-type">Just</span> <span class="hljs-number">3</span> &lt;*&gt; <span class="hljs-type">Nothing</span>
+<span class="hljs-type">Nothing</span>
+</code></pre>
+<p>Using this applicative style makes things pretty easy. <code>&lt;$&gt;</code> is just
+<code>fmap</code> and <code>&lt;*&gt;</code> is a function from the <code>Applicative</code> type class that has
+the following type:</p>
+<pre><code class="lang-haskell">(&lt;*&gt;) :: (<span class="hljs-type">Applicative</span> f) =&gt; f (a -&gt; b) -&gt; f a -&gt; f b
+</code></pre>
+<p>So it&apos;s kind of like <code>fmap</code>, only the function itself is in a context. We
+have to somehow extract it from the context and map it over the <code>f a</code>
+value and then assemble the context back together. Because all functions
+are curried in Haskell by default, we can use the combination of <code>&lt;$&gt;</code>
+and <code>&lt;*&gt;</code> to apply functions that take several parameters between
+applicative values.</p>
+<p>Anyway, it turns out that just like <code>fmap</code>, <code>&lt;*&gt;</code> can also be implemented
+by using only what the <code>Monad</code> type class give us. The <code>ap</code> function is
+basically <code>&lt;*&gt;</code>, only it has a <code>Monad</code> constraint instead of an
+<code>Applicative</code> one. Here&apos;s its definition:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ap</span> :: (<span class="hljs-type">Monad</span> m) =&gt; m (a -&gt; b) -&gt; m a -&gt; m b
+<span class="hljs-title">ap</span> mf m = <span class="hljs-keyword">do</span>
+    f &lt;- mf
+    x &lt;- m
+    return (f x)
+</code></pre>
+<p><code>mf</code> is a monadic value whose result is a function. Because the function
+is in a context as well as the value, we get the function from the
+context and call it <code>f</code>, then get the value and call that <code>x</code> and then
+finally apply the function to the value and present that as a result.
+Here&apos;s a quick demonstration:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Just</span> (+<span class="hljs-number">3</span>) &lt;*&gt; <span class="hljs-type">Just</span> <span class="hljs-number">4</span>
+<span class="hljs-type">Just</span> <span class="hljs-number">7</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Just</span> (+<span class="hljs-number">3</span>) `ap` <span class="hljs-type">Just</span> <span class="hljs-number">4</span>
+<span class="hljs-type">Just</span> <span class="hljs-number">7</span>
+<span class="hljs-title">ghci</span>&gt; [(+<span class="hljs-number">1</span>),(+<span class="hljs-number">2</span>),(+<span class="hljs-number">3</span>)] &lt;*&gt; [<span class="hljs-number">10</span>,<span class="hljs-number">11</span>]
+[<span class="hljs-number">11</span>,<span class="hljs-number">12</span>,<span class="hljs-number">12</span>,<span class="hljs-number">13</span>,<span class="hljs-number">13</span>,<span class="hljs-number">14</span>]
+<span class="hljs-title">ghci</span>&gt; [(+<span class="hljs-number">1</span>),(+<span class="hljs-number">2</span>),(+<span class="hljs-number">3</span>)] `ap` [<span class="hljs-number">10</span>,<span class="hljs-number">11</span>]
+[<span class="hljs-number">11</span>,<span class="hljs-number">12</span>,<span class="hljs-number">12</span>,<span class="hljs-number">13</span>,<span class="hljs-number">13</span>,<span class="hljs-number">14</span>]
+</code></pre>
+<p>Now we see that monads are stronger than applicatives as well, because
+we can use the functions from <code>Monad</code> to implement the ones for
+<code>Applicative</code>. In fact, many times when a type is found to be a monad,
+people first write up a <code>Monad</code> instance and then make an <code>Applicative</code>
+instance by just saying that <code>pure</code> is <code>return</code> and <code>&lt;*&gt;</code> is <code>ap</code>. Similarly,
+if you already have a <code>Monad</code> instance for something, you can give it a
+<code>Functor</code> instance just saying that <code>fmap</code> is <code>liftM</code>.</p>
+<p>The <code>liftA2</code> function is a convenience function for applying a function
+between two applicative values. It&apos;s defined simply like so:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">liftA2</span> :: (<span class="hljs-type">Applicative</span> f) =&gt; (a -&gt; b -&gt; c) -&gt; f a -&gt; f b -&gt; f c
+<span class="hljs-title">liftA2</span> f x y = f &lt;$&gt; x &lt;*&gt; y
+</code></pre>
+<p>The <code>liftM2</code> function does the same thing, only it has a <code>Monad</code> constraint.
+There also exist <code>liftM3</code> and <code>liftM4</code> and <code>liftM5</code>.</p>
+<p>We saw how monads are stronger than applicatives and functors and how
+even though all monads are functors and applicative functors, they don&apos;t
+necessarily have <code>Functor</code> and <code>Applicative</code> instances, so we examined the
+monadic equivalents of the functions that functors and applicative
+functors use.</p>
+<h3 id="the-join-function">The join function</h3>
+<p>Here&apos;s some food for thought: if the result of one monadic value is
+another monadic value i.e. if one monadic value is nested inside the
+other, can you flatten them to just a single normal monadic value? Like,
+if we have <code>Just (Just 9)</code>, can we make that into <code>Just 9</code>? It turns out
+that any nested monadic value can be flattened and that this is actually
+a property unique to monads. For this, the <code>join</code> function exists. Its
+type is this:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">join</span> :: (<span class="hljs-type">Monad</span> m) =&gt; m (m a) -&gt; m a
+</code></pre>
+<p>So it takes a monadic value within a monadic value and gives us just a
+monadic value, so it sort of flattens it. Here it is with some <code>Maybe</code>
+values:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; join (<span class="hljs-type">Just</span> (<span class="hljs-type">Just</span> <span class="hljs-number">9</span>))
+<span class="hljs-type">Just</span> <span class="hljs-number">9</span>
+<span class="hljs-title">ghci</span>&gt; join (<span class="hljs-type">Just</span> <span class="hljs-type">Nothing</span>)
+<span class="hljs-type">Nothing</span>
+<span class="hljs-title">ghci</span>&gt; join <span class="hljs-type">Nothing</span>
+<span class="hljs-type">Nothing</span>
+</code></pre>
+<p>The first line has a successful computation as a result of a successful
+computation, so they&apos;re both just joined into one big successful
+computation. The second line features a <code>Nothing</code> as a result of a <code>Just</code>
+value. Whenever we were dealing with <code>Maybe</code> values before and we wanted
+to combine several of them into one, be it with <code>&lt;*&gt;</code> or <code>&gt;&gt;=</code>, they
+all had to be <code>Just</code> values for the result to be a <code>Just</code> value. If there
+was any failure along the way, the result was a failure and the same
+thing happens here. In the third line, we try to flatten what is from
+the onset a failure, so the result is a failure as well.</p>
+<p>Flattening lists is pretty intuitive:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; join [[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>],[<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>]]
+[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>]
+</code></pre>
+<p>As you can see, for lists, <code>join</code> is just <code>concat</code>. To flatten a <code>Writer</code>
+value whose result is a <code>Writer</code> value itself, we have to <code>mappend</code> the
+monoid value.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; runWriter $ join (<span class="hljs-type">Writer</span> (<span class="hljs-type">Writer</span> (<span class="hljs-number">1</span>,<span class="hljs-string">&quot;aaa&quot;</span>),<span class="hljs-string">&quot;bbb&quot;</span>))
+(<span class="hljs-number">1</span>,<span class="hljs-string">&quot;bbbaaa&quot;</span>)
+</code></pre>
+<p>The outer monoid value <code>&quot;bbb&quot;</code> comes first and then to it <code>&quot;aaa&quot;</code> is
+appended. Intuitively speaking, when you want to examine what the result
+of a <code>Writer</code> value is, you have to write its monoid value to the log
+first and only then can you examine what it has inside.</p>
+<p>Flattening <code>Either</code> values is very similar to flattening <code>Maybe</code> values:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; join (<span class="hljs-type">Right</span> (<span class="hljs-type">Right</span> <span class="hljs-number">9</span>)) :: <span class="hljs-type">Either</span> <span class="hljs-type">String</span> <span class="hljs-type">Int</span>
+<span class="hljs-type">Right</span> <span class="hljs-number">9</span>
+<span class="hljs-title">ghci</span>&gt; join (<span class="hljs-type">Right</span> (<span class="hljs-type">Left</span> <span class="hljs-string">&quot;error&quot;</span>)) :: <span class="hljs-type">Either</span> <span class="hljs-type">String</span> <span class="hljs-type">Int</span>
+<span class="hljs-type">Left</span> <span class="hljs-string">&quot;error&quot;</span>
+<span class="hljs-title">ghci</span>&gt; join (<span class="hljs-type">Left</span> <span class="hljs-string">&quot;error&quot;</span>) :: <span class="hljs-type">Either</span> <span class="hljs-type">String</span> <span class="hljs-type">Int</span>
+<span class="hljs-type">Left</span> <span class="hljs-string">&quot;error&quot;</span>
+</code></pre>
+<p>If we apply <code>join</code> to a stateful computation whose result is a stateful
+computation, the result is a stateful computation that first runs the
+outer stateful computation and then the resulting one. Watch:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; runState (join (<span class="hljs-type">State</span> $ \s -&gt; (push <span class="hljs-number">10</span>,<span class="hljs-number">1</span>:<span class="hljs-number">2</span>:s))) [<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>]
+((),[<span class="hljs-number">10</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>])
+</code></pre>
+<p>The lambda here takes a state and puts <code>2</code> and <code>1</code> onto the stack and
+presents <code>push 10</code> as its result. So when this whole thing is flattened
+with <code>join</code> and then run, it first puts <code>2</code> and <code>1</code> onto the stack and then
+<code>push 10</code> gets carried out, pushing a <code>10</code> on to the top.</p>
+<p>The implementation for <code>join</code> is as follows:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">join</span> :: (<span class="hljs-type">Monad</span> m) =&gt; m (m a) -&gt; m a
+<span class="hljs-title">join</span> mm = <span class="hljs-keyword">do</span>
+    m &lt;- mm
+    m
+</code></pre>
+<p>Because the result of <code>mm</code> is a monadic value, we get that result and then
+just put it on a line of its own because it&apos;s a monadic value. The trick
+here is that when we do <code>m &lt;- mm</code>, the context of the monad in which we
+are in gets taken care of. That&apos;s why, for instance, <code>Maybe</code> values result
+in <code>Just</code> values only if the outer and inner values are both <code>Just</code> values.
+Here&apos;s what this would look like if the <code>mm</code> value was set in advance to
+<code>Just (Just 8)</code>:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">joinedMaybes</span> :: <span class="hljs-type">Maybe</span> <span class="hljs-type">Int</span>
+<span class="hljs-title">joinedMaybes</span> = <span class="hljs-keyword">do</span>
+    m &lt;- <span class="hljs-type">Just</span> (<span class="hljs-type">Just</span> <span class="hljs-number">8</span>)
+    m
+</code></pre>
+<p><img src="img/tipi.png" alt="im a cop too as well also"></p>
+<p>Perhaps the most interesting thing about <code>join</code> is that for every monad,
+feeding a monadic value to a function with <code>&gt;&gt;=</code> is the same thing as
+just mapping that function over the value and then using <code>join</code> to flatten
+the resulting nested monadic value! In other words, <code>m &gt;&gt;= f</code> is always
+the same thing as <code>join (fmap f m)</code>! It makes sense when you think about
+it. With <code>&gt;&gt;=</code>, we&apos;re always thinking about how to feed a monadic value
+to a function that takes a normal value but returns a monadic value. If
+we just map that function over the monadic value, we have a monadic
+value inside a monadic value. For instance, say we have <code>Just 9</code> and the
+function <code>\x -&gt; Just (x+1)</code>. If we map this function over <code>Just 9</code>, we&apos;re
+left with <code>Just (Just 10)</code>.</p>
+<p>The fact that <code>m &gt;&gt;= f</code> always equals <code>join (fmap f m)</code> is very useful if
+we&apos;re making our own <code>Monad</code> instance for some type because it&apos;s often
+easier to figure out how we would flatten a nested monadic value than
+figuring out how to implement <code>&gt;&gt;=</code>.</p>
+<h3 id="filterm">filterM</h3>
+<p>The <code>filter</code> function is pretty much the bread of Haskell programming (<code>map</code>
+being the butter). It takes a predicate and a list to filter out and
+then returns a new list where only the elements that satisfy the
+predicate are kept. Its type is this:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">filter</span> :: (a -&gt; <span class="hljs-type">Bool</span>) -&gt; [a] -&gt; [a]
+</code></pre>
+<p>The predicate takes an element of the list and returns a <code>Bool</code> value.
+Now, what if the <code>Bool</code> value that it returned was actually a monadic
+value? Whoa! That is, what if it came with a context? Could that work?
+For instance, what if every <code>True</code> or a <code>False</code> value that the predicate
+produced also had an accompanying monoid value, like
+<code>[&quot;Accepted the number 5&quot;]</code> or <code>[&quot;3 is too small&quot;]</code>? That sounds like it could work. If
+that were the case, we&apos;d expect the resulting list to also come with a
+log of all the log values that were produced along the way. So if the
+<code>Bool</code> that the predicate returned came with a context, we&apos;d expect the
+final resulting list to have some context attached as well, otherwise
+the context that each <code>Bool</code> came with would be lost.</p>
+<p>The <code>filterM</code> function from <code>Control.Monad</code> does just what we want! Its type
+is this:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">filterM</span> :: (<span class="hljs-type">Monad</span> m) =&gt; (a -&gt; m <span class="hljs-type">Bool</span>) -&gt; [a] -&gt; m [a]
+</code></pre>
+<p>The predicate returns a monadic value whose result is a <code>Bool</code>, but
+because it&apos;s a monadic value, its context can be anything from a
+possible failure to non-determinism and more! To ensure that the context
+is reflected in the final result, the result is also a monadic value.</p>
+<p>Let&apos;s take a list and only keep those values that are smaller than 4. To
+start, we&apos;ll just use the regular <code>filter</code> function:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; filter (\x -&gt; x &lt; <span class="hljs-number">4</span>) [<span class="hljs-number">9</span>,<span class="hljs-number">1</span>,<span class="hljs-number">5</span>,<span class="hljs-number">2</span>,<span class="hljs-number">10</span>,<span class="hljs-number">3</span>]
+[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>]
+</code></pre>
+<p>That&apos;s pretty easy. Now, let&apos;s make a predicate that, aside from
+presenting a <code>True</code> or <code>False</code> result, also provides a log of what it did.
+Of course, we&apos;ll be using the <code>Writer</code> monad for this:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">keepSmall</span> :: <span class="hljs-type">Int</span> -&gt; <span class="hljs-type">Writer</span> [<span class="hljs-type">String</span>] <span class="hljs-type">Bool</span>
+<span class="hljs-title">keepSmall</span> x
+    | x &lt; <span class="hljs-number">4</span> = <span class="hljs-keyword">do</span>
+        tell [<span class="hljs-string">&quot;Keeping &quot;</span> ++ show x]
+        return <span class="hljs-type">True</span>
+    | otherwise = <span class="hljs-keyword">do</span>
+        tell [show x ++ <span class="hljs-string">&quot; is too large, throwing it away&quot;</span>]
+        return <span class="hljs-type">False</span>
+</code></pre>
+<p>Instead of just returning a <code>Bool</code>, this function returns a
+<code>Writer [String] Bool</code>. It&apos;s a monadic predicate. Sounds fancy, doesn&apos;t it? If
+the number is smaller than <code>4</code> we report that we&apos;re keeping it and then
+<code>return True</code>.</p>
+<p>Now, let&apos;s give it to <code>filterM</code> along with a list. Because the predicate
+returns a <code>Writer</code> value, the resulting list will also be a <code>Writer</code> value.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; fst $ runWriter $ filterM keepSmall [<span class="hljs-number">9</span>,<span class="hljs-number">1</span>,<span class="hljs-number">5</span>,<span class="hljs-number">2</span>,<span class="hljs-number">10</span>,<span class="hljs-number">3</span>]
+[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>]
+</code></pre>
+<p>Examining the result of the resulting <code>Writer</code> value, we see that
+everything is in order. Now, let&apos;s print the log and see what we got:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; mapM_ putStrLn $ snd $ runWriter $ filterM keepSmall [<span class="hljs-number">9</span>,<span class="hljs-number">1</span>,<span class="hljs-number">5</span>,<span class="hljs-number">2</span>,<span class="hljs-number">10</span>,<span class="hljs-number">3</span>]
+<span class="hljs-number">9</span> is too large, throwing it away
+<span class="hljs-type">Keeping</span> <span class="hljs-number">1</span>
+<span class="hljs-number">5</span> is too large, throwing it away
+<span class="hljs-type">Keeping</span> <span class="hljs-number">2</span>
+<span class="hljs-number">10</span> is too large, throwing it away
+<span class="hljs-type">Keeping</span> <span class="hljs-number">3</span>
+</code></pre>
+<p>Awesome. So just by providing a monadic predicate to <code>filterM</code>, we were
+able to filter a list while taking advantage of the monadic context that
+we used.</p>
+<p>A very cool Haskell trick is using <code>filterM</code> to get the powerset of a list
+(if we think of them as sets for now). The powerset of some set is a set
+of all subsets of that set. So if we have a set like <code>[1,2,3]</code>, its
+powerset would include the following sets:</p>
+<pre><code class="lang-haskell">[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>]
+[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>]
+[<span class="hljs-number">1</span>,<span class="hljs-number">3</span>]
+[<span class="hljs-number">1</span>]
+[<span class="hljs-number">2</span>,<span class="hljs-number">3</span>]
+[<span class="hljs-number">2</span>]
+[<span class="hljs-number">3</span>]
+[]
+</code></pre>
+<p>In other words, getting a powerset is like getting all the combinations
+of keeping and throwing out elements from a set. <code>[2,3]</code> is like the
+original set, only we excluded the number <code>1</code>.</p>
+<p>To make a function that returns a powerset of some list, we&apos;re going to
+rely on non-determinism. We take the list <code>[1,2,3]</code> and then look at the
+first element, which is <code>1</code> and we ask ourselves: should we keep it or
+drop it? Well, we&apos;d like to do both actually. So we are going to filter
+a list and we&apos;ll use a predicate that non-deterministically both keeps
+and drops every element from the list. Here&apos;s our <code>powerset</code> function:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">powerset</span> :: [a] -&gt; [[a]]
+<span class="hljs-title">powerset</span> xs = filterM (\x -&gt; [<span class="hljs-type">True</span>, <span class="hljs-type">False</span>]) xs
+</code></pre>
+<p>Wait, that&apos;s it? Yup. We choose to drop and keep every element,
+regardless of what that element is. We have a non-deterministic
+predicate, so the resulting list will also be a non-deterministic value
+and will thus be a list of lists. Let&apos;s give this a go:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; powerset [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>]
+[[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>],[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>],[<span class="hljs-number">1</span>,<span class="hljs-number">3</span>],[<span class="hljs-number">1</span>],[<span class="hljs-number">2</span>,<span class="hljs-number">3</span>],[<span class="hljs-number">2</span>],[<span class="hljs-number">3</span>],[]]
+</code></pre>
+<p>This takes a bit of thinking to wrap your head around, but if you just
+consider lists as non-deterministic values that don&apos;t know what to be so
+they just decide to be everything at once, it&apos;s a bit easier.</p>
+<h3 id="foldm">foldM</h3>
+<p>The monadic counterpart to <code>foldl</code> is <code>foldM</code>. If you remember your folds
+from the <a href="#folds">folds section</a>, you know that <code>foldl</code> takes a binary
+function, a starting accumulator and a list to fold up and then folds it
+from the left into a single value by using the binary function. <code>foldM</code>
+does the same thing, except it takes a binary function that produces a
+monadic value and folds the list up with that. Unsurprisingly, the
+resulting value is also monadic. The type of <code>foldl</code> is this:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">foldl</span> :: (a -&gt; b -&gt; a) -&gt; a -&gt; [b] -&gt; a
+</code></pre>
+<p>Whereas <code>foldM</code> has the following type:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">foldM</span> :: (<span class="hljs-type">Monad</span> m) =&gt; (a -&gt; b -&gt; m a) -&gt; a -&gt; [b] -&gt; m a
+</code></pre>
+<p>The value that the binary function returns is monadic and so the result
+of the whole fold is monadic as well. Let&apos;s sum a list of numbers with a
+fold:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; foldl (\acc x -&gt; acc + x) <span class="hljs-number">0</span> [<span class="hljs-number">2</span>,<span class="hljs-number">8</span>,<span class="hljs-number">3</span>,<span class="hljs-number">1</span>]
+<span class="hljs-number">14</span>
+</code></pre>
+<p>The starting accumulator is <code>0</code> and then <code>2</code> gets added to the accumulator,
+resulting in a new accumulator that has a value of <code>2</code>. <code>8</code> gets added to
+this accumulator resulting in an accumulator of <code>10</code> and so on and when we
+reach the end, the final accumulator is the result.</p>
+<p>Now what if we wanted to sum a list of numbers but with the added
+condition that if any number is greater than <code>9</code> in the list, the whole
+thing fails? It would make sense to use a binary function that checks if
+the current number is greater than <code>9</code> and if it is, fails, and if it
+isn&apos;t, continues on its merry way. Because of this added possibility of
+failure, let&apos;s make our binary function return a <code>Maybe</code> accumulator
+instead of a normal one. Here&apos;s the binary function:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">binSmalls</span> :: <span class="hljs-type">Int</span> -&gt; <span class="hljs-type">Int</span> -&gt; <span class="hljs-type">Maybe</span> <span class="hljs-type">Int</span>
+<span class="hljs-title">binSmalls</span> acc x
+    | x &gt; <span class="hljs-number">9</span>     = <span class="hljs-type">Nothing</span>
+    | otherwise = <span class="hljs-type">Just</span> (acc + x)
+</code></pre>
+<p>Because our binary function is now a monadic function, we can&apos;t use it
+with the normal <code>foldl</code>, but we have to use <code>foldM</code>. Here goes:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; foldM binSmalls <span class="hljs-number">0</span> [<span class="hljs-number">2</span>,<span class="hljs-number">8</span>,<span class="hljs-number">3</span>,<span class="hljs-number">1</span>]
+<span class="hljs-type">Just</span> <span class="hljs-number">14</span>
+<span class="hljs-title">ghci</span>&gt; foldM binSmalls <span class="hljs-number">0</span> [<span class="hljs-number">2</span>,<span class="hljs-number">11</span>,<span class="hljs-number">3</span>,<span class="hljs-number">1</span>]
+<span class="hljs-type">Nothing</span>
+</code></pre>
+<p>Excellent! Because one number in the list was greater than <code>9</code>, the whole
+thing resulted in a <code>Nothing</code>. Folding with a binary function that returns
+a <code>Writer</code> value is cool as well because then you log whatever you want as
+your fold goes along its way.</p>
+<h3 id="making-a-safe-rpn-calculator">Making a safe RPN calculator</h3>
+<p><img src="img/miner.png" alt="i&apos;ve found yellow!"></p>
+<p>When we were solving the problem of <a href="#reverse-polish-notation-calculator">implementing a RPN
+calculator</a>, we noted that it worked
+fine as long as the input that it got made sense. But if something went
+wrong, it caused our whole program to crash. Now that we know how to
+take some code that we have and make it monadic, let&apos;s take our RPN
+calculator and add error handling to it by taking advantage of the <code>Maybe</code>
+monad.</p>
+<p>We implemented our RPN calculator by taking a string like <code>&quot;1 3 + 2 *&quot;</code>,
+breaking it up into words to get something like <code>[&quot;1&quot;,&quot;3&quot;,&quot;+&quot;,&quot;2&quot;,&quot;*&quot;]</code>
+and then folding over that list by starting out with an empty stack and
+then using a binary folding function that adds numbers to the stack or
+manipulates numbers on the top of the stack to add them together and
+divide them and such.</p>
+<p>This was the main body of our function:</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> Data.List
+
+<span class="hljs-title">solveRPN</span> :: <span class="hljs-type">String</span> -&gt; <span class="hljs-type">Double</span>
+<span class="hljs-title">solveRPN</span> = head . foldl foldingFunction [] . words
+</code></pre>
+<p>We made the expression into a list of strings, folded over it with our
+folding function and then when we were left with just one item in the
+stack, we returned that item as the answer. This was the folding
+function:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">foldingFunction</span> :: [<span class="hljs-type">Double</span>] -&gt; <span class="hljs-type">String</span> -&gt; [<span class="hljs-type">Double</span>]
+<span class="hljs-title">foldingFunction</span> (x:y:ys) <span class="hljs-string">&quot;*&quot;</span> = (x * y):ys
+<span class="hljs-title">foldingFunction</span> (x:y:ys) <span class="hljs-string">&quot;+&quot;</span> = (x + y):ys
+<span class="hljs-title">foldingFunction</span> (x:y:ys) <span class="hljs-string">&quot;-&quot;</span> = (y - x):ys
+<span class="hljs-title">foldingFunction</span> xs numberString = read numberString:xs
+</code></pre>
+<p>The accumulator of the fold was a stack, which we represented with a
+list of <code>Double</code> values. As the folding function went over the RPN
+expression, if the current item was an operator, it took two items off
+the top of the stack, applied the operator between them and then put the
+result back on the stack. If the current item was a string that
+represented a number, it converted that string into an actual number and
+returned a new stack that was like the old one, except with that number
+pushed to the top.</p>
+<p>Let&apos;s first make our folding function capable of graceful failure. Its
+type is going to change from what it is now to this:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">foldingFunction</span> :: [<span class="hljs-type">Double</span>] -&gt; <span class="hljs-type">String</span> -&gt; <span class="hljs-type">Maybe</span> [<span class="hljs-type">Double</span>]
+</code></pre>
+<p>So it will either return <code>Just</code> a new stack or it will fail with <code>Nothing</code>.</p>
+<p>The <code>reads</code> function is like <code>read</code>, only it returns a list with a single
+element in case of a successful read. If it fails to read something,
+then it returns an empty list. Apart from returning the value that it
+read, it also returns the part of the string that it didn&apos;t consume.
+We&apos;re going to say that it always has to consume the full input to work
+and make it into a <code>readMaybe</code> function for convenience. Here it is:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">readMaybe</span> :: (<span class="hljs-type">Read</span> a) =&gt; <span class="hljs-type">String</span> -&gt; <span class="hljs-type">Maybe</span> a
+<span class="hljs-title">readMaybe</span> st = <span class="hljs-keyword">case</span> reads st <span class="hljs-keyword">of</span> [(x,<span class="hljs-string">&quot;&quot;</span>)] -&gt; <span class="hljs-type">Just</span> x
+                                _ -&gt; <span class="hljs-type">Nothing</span>
+</code></pre>
+<p>Testing it out:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; readMaybe <span class="hljs-string">&quot;1&quot;</span> :: <span class="hljs-type">Maybe</span> <span class="hljs-type">Int</span>
+<span class="hljs-type">Just</span> <span class="hljs-number">1</span>
+<span class="hljs-title">ghci</span>&gt; readMaybe <span class="hljs-string">&quot;GO TO HELL&quot;</span> :: <span class="hljs-type">Maybe</span> <span class="hljs-type">Int</span>
+<span class="hljs-type">Nothing</span>
+</code></pre>
+<p>Okay, it seems to work. So, let&apos;s make our folding function into a
+monadic function that can fail:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">foldingFunction</span> :: [<span class="hljs-type">Double</span>] -&gt; <span class="hljs-type">String</span> -&gt; <span class="hljs-type">Maybe</span> [<span class="hljs-type">Double</span>]
+<span class="hljs-title">foldingFunction</span> (x:y:ys) <span class="hljs-string">&quot;*&quot;</span> = return ((x * y):ys)
+<span class="hljs-title">foldingFunction</span> (x:y:ys) <span class="hljs-string">&quot;+&quot;</span> = return ((x + y):ys)
+<span class="hljs-title">foldingFunction</span> (x:y:ys) <span class="hljs-string">&quot;-&quot;</span> = return ((y - x):ys)
+<span class="hljs-title">foldingFunction</span> xs numberString = liftM (:xs) (readMaybe numberString)
+</code></pre>
+<p>The first three cases are like the old ones, except the new stack gets
+wrapped in a <code>Just</code> (we used <code>return</code> here to do this, but we could have
+written <code>Just</code> just as well). In the last case, we do
+<code>readMaybe numberString</code> and then we map <code>(:xs)</code> over it. So if the stack <code>xs</code> is
+<code>[1.0,2.0]</code> and <code>readMaybe numberString</code> results in a <code>Just 3.0</code>, the result
+is <code>Just [3.0,1.0,2.0]</code>. If <code>readMaybe numberString</code> results in a <code>Nothing</code>
+then the result is <code>Nothing</code>. Let&apos;s try out the folding function by
+itself:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; foldingFunction [<span class="hljs-number">3</span>,<span class="hljs-number">2</span>] <span class="hljs-string">&quot;*&quot;</span>
+<span class="hljs-type">Just</span> [<span class="hljs-number">6.0</span>]
+<span class="hljs-title">ghci</span>&gt; foldingFunction [<span class="hljs-number">3</span>,<span class="hljs-number">2</span>] <span class="hljs-string">&quot;-&quot;</span>
+<span class="hljs-type">Just</span> [<span class="hljs-number">-1.0</span>]
+<span class="hljs-title">ghci</span>&gt; foldingFunction [] <span class="hljs-string">&quot;*&quot;</span>
+<span class="hljs-type">Nothing</span>
+<span class="hljs-title">ghci</span>&gt; foldingFunction [] <span class="hljs-string">&quot;1&quot;</span>
+<span class="hljs-type">Just</span> [<span class="hljs-number">1.0</span>]
+<span class="hljs-title">ghci</span>&gt; foldingFunction [] <span class="hljs-string">&quot;1 wawawawa&quot;</span>
+<span class="hljs-type">Nothing</span>
+</code></pre>
+<p>It looks like it&apos;s working! And now it&apos;s time for the new and improved
+<code>solveRPN</code>. Here it is ladies and gents!</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> Data.List
+
+<span class="hljs-title">solveRPN</span> :: <span class="hljs-type">String</span> -&gt; <span class="hljs-type">Maybe</span> <span class="hljs-type">Double</span>
+<span class="hljs-title">solveRPN</span> st = <span class="hljs-keyword">do</span>
+    [result] &lt;- foldM foldingFunction [] (words st)
+    return result
+</code></pre>
+<p>Just like before, we take the string and make it into a list of words.
+Then, we do a fold, starting with the empty stack, only instead of doing
+a normal <code>foldl</code>, we do a <code>foldM</code>. The result of that <code>foldM</code> should be a
+<code>Maybe</code> value that contains a list (that&apos;s our final stack) and that list
+should have only one value. We use a <code>do</code> expression to get that value and
+we call it <code>result</code>. In case the <code>foldM</code> returns a <code>Nothing</code>, the whole thing
+will be a <code>Nothing</code>, because that&apos;s how <code>Maybe</code> works. Also notice that we
+pattern match in the <code>do</code> expression, so if the list has more than one
+value or none at all, the pattern match fails and a <code>Nothing</code> is produced.
+In the last line we just do <code>return result</code> to present the result of the
+RPN calculation as the result of the final <code>Maybe</code> value.</p>
+<p>Let&apos;s give it a shot:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; solveRPN <span class="hljs-string">&quot;1 2 * 4 +&quot;</span>
+<span class="hljs-type">Just</span> <span class="hljs-number">6.0</span>
+<span class="hljs-title">ghci</span>&gt; solveRPN <span class="hljs-string">&quot;1 2 * 4 + 5 *&quot;</span>
+<span class="hljs-type">Just</span> <span class="hljs-number">30.0</span>
+<span class="hljs-title">ghci</span>&gt; solveRPN <span class="hljs-string">&quot;1 2 * 4&quot;</span>
+<span class="hljs-type">Nothing</span>
+<span class="hljs-title">ghci</span>&gt; solveRPN <span class="hljs-string">&quot;1 8 wharglbllargh&quot;</span>
+<span class="hljs-type">Nothing</span>
+</code></pre>
+<p>The first failure happens because the final stack isn&apos;t a list with one
+element in it and so the pattern matching in the <code>do</code> expression fails.
+The second failure happens because <code>readMaybe</code> returns a <code>Nothing</code>.</p>
+<h3 id="composing-monadic-functions">Composing monadic functions</h3>
+<p>When we were learning about the monad laws, we said that the <code>&lt;=&lt;</code>
+function is just like composition, only instead of working for normal
+functions like <code>a -&gt; b</code>, it works for monadic functions like <code>a -&gt; m b</code>.
+For instance:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-keyword">let</span> f = (+<span class="hljs-number">1</span>) . (*<span class="hljs-number">100</span>)
+<span class="hljs-title">ghci</span>&gt; f <span class="hljs-number">4</span>
+<span class="hljs-number">401</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-keyword">let</span> g = (\x -&gt; return (x+<span class="hljs-number">1</span>)) &lt;=&lt; (\x -&gt; return (x*<span class="hljs-number">100</span>))
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Just</span> <span class="hljs-number">4</span> &gt;&gt;= g
+<span class="hljs-type">Just</span> <span class="hljs-number">401</span>
+</code></pre>
+<p>In this example we first composed two normal functions, applied the
+resulting function to <code>4</code> and then we composed two monadic functions and
+fed <code>Just 4</code> to the resulting function with <code>&gt;&gt;=</code>.</p>
+<p>If we have a bunch of functions in a list, we can compose them one all
+into one big function by just using <code>id</code> as the starting accumulator and
+the <code>.</code> function as the binary function. Here&apos;s an example:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-keyword">let</span> f = foldr (.) id [(+<span class="hljs-number">1</span>),(*<span class="hljs-number">100</span>),(+<span class="hljs-number">1</span>)]
+<span class="hljs-title">ghci</span>&gt; f <span class="hljs-number">1</span>
+<span class="hljs-number">201</span>
+</code></pre>
+<p>The function <code>f</code> takes a number and then adds <code>1</code> to it, multiplies the
+result by <code>100</code> and then adds <code>1</code> to that. Anyway, we can compose monadic
+functions in the same way, only instead of normal composition we use <code>&lt;=&lt;</code>
+and instead of <code>id</code> we use <code>return</code>. We don&apos;t have to use a <code>foldM</code> over a
+<code>foldr</code> or anything because the <code>&lt;=&lt;</code> function makes sure that composition
+happens in a monadic fashion.</p>
+<p>When we were getting to know the list monad in the <a href="#the-list-monad">previous
+chapter</a>, we used it to figure out
+if a knight can go from one position on a chessboard to another in
+exactly three moves. We had a function called <code>moveKnight</code> which took the
+knight&apos;s position on the board and returned all the possible moves that
+he can make next. Then, to generate all the possible positions that he
+can have after taking three moves, we made the following function:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">in3</span> start = return start &gt;&gt;= moveKnight &gt;&gt;= moveKnight &gt;&gt;= moveKnight
+</code></pre>
+<p>And to check if he can go from <code>start</code> to <code>end</code> in three moves, we did the
+following:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">canReachIn3</span> :: <span class="hljs-type">KnightPos</span> -&gt; <span class="hljs-type">KnightPos</span> -&gt; <span class="hljs-type">Bool</span>
+<span class="hljs-title">canReachIn3</span> start end = end `elem` in3 start
+</code></pre>
+<p>Using monadic function composition, we can make a function like <code>in3</code>,
+only instead of generating all the positions that the knight can have
+after making three moves, we can do it for an arbitrary number of moves.
+If you look at in3, we see that we used <code>moveKnight</code> three times and each
+time we used <code>&gt;&gt;=</code> to feed it all the possible previous positions. So
+now, let&apos;s make it more general. Here&apos;s how to do it:</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> Data.List
+
+<span class="hljs-title">inMany</span> :: <span class="hljs-type">Int</span> -&gt; <span class="hljs-type">KnightPos</span> -&gt; [<span class="hljs-type">KnightPos</span>]
+<span class="hljs-title">inMany</span> x start = return start &gt;&gt;= foldr (&lt;=&lt;) return (replicate x moveKnight)
+</code></pre>
+<p>First we use <code>replicate</code> to make a list that contains <code>x</code> copies of the
+function <code>moveKnight</code>. Then, we monadically compose all those functions
+into one, which gives us a function that takes a starting position and
+non-deterministically moves the knight <code>x</code> times. Then, we just make the
+starting position into a singleton list with <code>return</code> and feed it to the
+function.</p>
+<p>Now, we can change our <code>canReachIn3</code> function to be more general as well:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">canReachIn</span> :: <span class="hljs-type">Int</span> -&gt; <span class="hljs-type">KnightPos</span> -&gt; <span class="hljs-type">KnightPos</span> -&gt; <span class="hljs-type">Bool</span>
+<span class="hljs-title">canReachIn</span> x start end = end `elem` inMany x start
+</code></pre>
+<h2 id="making-monads">Making monads</h2>
+<p><img src="img/spearhead.png" alt="kewl"></p>
+<p>In this section, we&apos;re going to look at an example of how a type gets
+made, identified as a monad and then given the appropriate <code>Monad</code>
+instance. We don&apos;t usually set out to make a monad with the sole purpose
+of making a monad. Instead, we usually make a type whose purpose is
+to model an aspect of some problem and then later on if we see that the
+type represents a value with a context and can act like a monad, we give
+it a <code>Monad</code> instance.</p>
+<p>As we&apos;ve seen, lists are used to represent non-deterministic values. A
+list like <code>[3,5,9]</code> can be viewed as a single non-deterministic value that
+just can&apos;t decide what it&apos;s going to be. When we feed a list into a
+function with <code>&gt;&gt;=</code>, it just makes all the possible choices of taking an
+element from the list and applying the function to it and then presents
+those results in a list as well.</p>
+<p>If we look at the list <code>[3,5,9]</code> as the numbers <code>3</code>, <code>5</code> and <code>9</code> occurring at
+once, we might notice that there&apos;s no info regarding the probability
+that each of those numbers occurs. What if we wanted to model a
+non-deterministic value like <code>[3,5,9]</code>, but we wanted to express that <code>3</code>
+has a 50% chance of happening and <code>5</code> and <code>9</code> both have a 25% chance of
+happening? Let&apos;s try and make this happen!</p>
+<p>Let&apos;s say that every item in the list comes with another value, a
+probability of it happening. It might make sense to present this like
+this then:</p>
+<pre><code class="lang-haskell">[(<span class="hljs-number">3</span>,<span class="hljs-number">0.5</span>),(<span class="hljs-number">5</span>,<span class="hljs-number">0.25</span>),(<span class="hljs-number">9</span>,<span class="hljs-number">0.25</span>)]
+</code></pre>
+<p>In mathematics, probabilities aren&apos;t usually expressed in percentages,
+but rather in real numbers between a 0 and 1. A 0 means that there&apos;s no
+chance in hell for something to happen and a 1 means that it&apos;s happening
+for sure. Floating point numbers can get real messy real fast because
+they tend to lose precision, so Haskell offers us a data type for
+rational numbers that doesn&apos;t lose precision. That type is called
+<code>Rational</code> and it lives in <code>Data.Ratio</code>. To make a <code>Rational</code>, we write it as
+if it were a fraction. The numerator and the denominator are separated
+by a <code>%</code>. Here are a few examples:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-number">1</span>%<span class="hljs-number">4</span>
+<span class="hljs-number">1</span> % <span class="hljs-number">4</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-number">1</span>%<span class="hljs-number">2</span> + <span class="hljs-number">1</span>%<span class="hljs-number">2</span>
+<span class="hljs-number">1</span> % <span class="hljs-number">1</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-number">1</span>%<span class="hljs-number">3</span> + <span class="hljs-number">5</span>%<span class="hljs-number">4</span>
+<span class="hljs-number">19</span> % <span class="hljs-number">12</span>
+</code></pre>
+<p>The first line is just one quarter. In the second line we add two halves
+to get a whole and in the third line we add one third with five quarters
+and get nineteen twelfths. So let&apos;use throw out our floating points and
+use <code>Rational</code> for our probabilities:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; [(<span class="hljs-number">3</span>,<span class="hljs-number">1</span>%<span class="hljs-number">2</span>),(<span class="hljs-number">5</span>,<span class="hljs-number">1</span>%<span class="hljs-number">4</span>),(<span class="hljs-number">9</span>,<span class="hljs-number">1</span>%<span class="hljs-number">4</span>)]
+[(<span class="hljs-number">3</span>,<span class="hljs-number">1</span> % <span class="hljs-number">2</span>),(<span class="hljs-number">5</span>,<span class="hljs-number">1</span> % <span class="hljs-number">4</span>),(<span class="hljs-number">9</span>,<span class="hljs-number">1</span> % <span class="hljs-number">4</span>)]
+</code></pre>
+<p>Okay, so <code>3</code> has a one out of two chance of happening while <code>5</code> and <code>9</code> will
+happen one time out of four. Pretty neat.</p>
+<p>We took lists and we added some extra context to them, so this
+represents values with contexts too. Before we go any further, let&apos;s
+wrap this into a <code>newtype</code> because something tells me we&apos;ll be making some
+instances.</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> Data.Ratio
+
+<span class="hljs-class"><span class="hljs-keyword">newtype</span> <span class="hljs-type">Prob</span> a = <span class="hljs-type">Prob</span> { <span class="hljs-title">getProb</span> :: [(<span class="hljs-title">a</span>,<span class="hljs-type">Rational</span>)] } <span class="hljs-keyword">deriving</span> <span class="hljs-type">Show</span></span>
+</code></pre>
+<p>Alright. Is this a functor? Well, the list is a functor, so this should
+probably be a functor as well, because we just added some stuff to the
+list. When we map a function over a list, we apply it to each element.
+Here, we&apos;ll apply it to each element as well, only we&apos;ll leave the
+probabilities as they are. Let&apos;s make an instance:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">instance</span> <span class="hljs-type">Functor</span> <span class="hljs-type">Prob</span> <span class="hljs-keyword">where</span></span>
+    fmap f (<span class="hljs-type">Prob</span> xs) = <span class="hljs-type">Prob</span> $ map (\(x,p) -&gt; (f x,p)) xs
+</code></pre>
+<p>We unwrap it from the <code>newtype</code> with pattern matching, apply the function
+<code>f</code> to the values while keeping the probabilities as they are and then
+wrap it back up. Let&apos;s see if it works:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; fmap negate (<span class="hljs-type">Prob</span> [(<span class="hljs-number">3</span>,<span class="hljs-number">1</span>%<span class="hljs-number">2</span>),(<span class="hljs-number">5</span>,<span class="hljs-number">1</span>%<span class="hljs-number">4</span>),(<span class="hljs-number">9</span>,<span class="hljs-number">1</span>%<span class="hljs-number">4</span>)])
+<span class="hljs-type">Prob</span> {getProb = [(<span class="hljs-number">-3</span>,<span class="hljs-number">1</span> % <span class="hljs-number">2</span>),(<span class="hljs-number">-5</span>,<span class="hljs-number">1</span> % <span class="hljs-number">4</span>),(<span class="hljs-number">-9</span>,<span class="hljs-number">1</span> % <span class="hljs-number">4</span>)]}
+</code></pre>
+<p>Another thing to note is that the probabilities should always add up to
+<code>1</code>. If those are all the things that can happen, it doesn&apos;t make sense
+for the sum of their probabilities to be anything other than <code>1</code>. A coin
+that lands tails 75% of the time and heads 50% of the time seems like it
+could only work in some other strange universe.</p>
+<p>Now the big question, is this a monad? Given how the list is a monad,
+this looks like it should be a monad as well. First, let&apos;s think about
+<code>return</code>. How does it work for lists? It takes a value and puts it in a
+singleton list. What about here? Well, since it&apos;s supposed to be a
+default minimal context, it should also make a singleton list. What
+about the probability? Well, <code>return x</code> is supposed to make a monadic
+value that always presents <code>x</code> as its result, so it doesn&apos;t make sense for
+the probability to be <code>0</code>. If it always has to present it as its result,
+the probability should be <code>1</code>!</p>
+<p>What about <code>&gt;&gt;=</code>? Seems kind of tricky, so let&apos;s make use of the fact
+that <code>m &gt;&gt;= f</code> always equals <code>join (fmap f m)</code> for monads and think about
+how we would flatten a probability list of probability lists. As an
+example, let&apos;s consider this list where there&apos;s a 25% chance that
+exactly one of <code>&apos;a&apos;</code> or <code>&apos;b&apos;</code> will happen. Both <code>&apos;a&apos;</code> and <code>&apos;b&apos;</code> are equally
+likely to occur. Also, there&apos;s a 75% chance that exactly one of <code>&apos;c&apos;</code> or
+<code>&apos;d&apos;</code> will happen. <code>&apos;c&apos;</code> and <code>&apos;d&apos;</code> are also equally likely to happen. Here&apos;s a
+picture of a probability list that models this scenario:</p>
+<p><img src="img/prob.png" alt="probs"></p>
+<p>What are the chances for each of these letters to occur? If we were to
+draw this as just four boxes, each with a probability, what would those
+probabilities be? To find out, all we have to do is multiply each
+probability with all of probabilities that it contains. <code>&apos;a&apos;</code> would occur
+one time out of eight, as would <code>&apos;b&apos;</code>, because if we multiply one half by
+one quarter we get one eighth. <code>&apos;c&apos;</code> would happen three times out of eight
+because three quarters multiplied by one half is three eighths. <code>&apos;d&apos;</code>
+would also happen three times out of eight. If we sum all the
+probabilities, they still add up to one.</p>
+<p>Here&apos;s this situation expressed as a probability list:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">thisSituation</span> :: <span class="hljs-type">Prob</span> (<span class="hljs-type">Prob</span> <span class="hljs-type">Char</span>)
+<span class="hljs-title">thisSituation</span> = <span class="hljs-type">Prob</span>
+    [( <span class="hljs-type">Prob</span> [(&apos;a&apos;,<span class="hljs-number">1</span>%<span class="hljs-number">2</span>),(&apos;b&apos;,<span class="hljs-number">1</span>%<span class="hljs-number">2</span>)] , <span class="hljs-number">1</span>%<span class="hljs-number">4</span> )
+    ,( <span class="hljs-type">Prob</span> [(&apos;c&apos;,<span class="hljs-number">1</span>%<span class="hljs-number">2</span>),(&apos;d&apos;,<span class="hljs-number">1</span>%<span class="hljs-number">2</span>)] , <span class="hljs-number">3</span>%<span class="hljs-number">4</span>)
+    ]
+</code></pre>
+<p>Notice that its type is <code>Prob (Prob Char)</code>. So now that we&apos;ve figured out
+how to flatten a nested probability list, all we have to do is write the
+code for this and then we can write <code>&gt;&gt;=</code> simply as <code>join (fmap f m)</code> and
+we have ourselves a monad! So here&apos;s <code>flatten</code>, which we&apos;ll use because
+the name <code>join</code> is already taken:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">flatten</span> :: <span class="hljs-type">Prob</span> (<span class="hljs-type">Prob</span> a) -&gt; <span class="hljs-type">Prob</span> a
+<span class="hljs-title">flatten</span> (<span class="hljs-type">Prob</span> xs) = <span class="hljs-type">Prob</span> $ concat $ map multAll xs
+    <span class="hljs-keyword">where</span> multAll (<span class="hljs-type">Prob</span> innerxs,p) = map (\(x,r) -&gt; (x,p*r)) innerxs
+</code></pre>
+<p>The function <code>multAll</code> takes a tuple of probability list and a probability
+<code>p</code> that comes with it and then multiplies every inner probability with <code>p</code>,
+returning a list of pairs of items and probabilities. We map <code>multAll</code>
+over each pair in our nested probability list and then we just flatten
+the resulting nested list.</p>
+<p>Now we have all that we need, we can write a <code>Monad</code> instance!</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">instance</span> <span class="hljs-type">Monad</span> <span class="hljs-type">Prob</span> <span class="hljs-keyword">where</span></span>
+    return x = <span class="hljs-type">Prob</span> [(x,<span class="hljs-number">1</span>%<span class="hljs-number">1</span>)]
+    m &gt;&gt;= f = flatten (fmap f m)
+    fail _ = <span class="hljs-type">Prob</span> []
+</code></pre>
+<p><img src="img/ride.png" alt="ride em cowboy"></p>
+<p>Because we already did all the hard work, the instance is very simple.
+We also defined the <code>fail</code> function, which is the same as it is for lists,
+so if there&apos;s a pattern match failure in a <code>do</code> expression, a failure
+occurs within the context of a probability list.</p>
+<p>It&apos;s also important to check if the monad laws hold for the monad that
+we just made. The first one says that <code>return x &gt;&gt;= f</code> should be equal
+to <code>f x</code>. A rigorous proof would be rather tedious, but we can see that if
+we put a value in a default context with <code>return</code> and then <code>fmap</code> a function
+over that and flatten the resulting probability list, every probability
+that results from the function would be multiplied by the <code>1%1</code>
+probability that we made with <code>return</code>, so it wouldn&apos;t affect the context.
+The reasoning for <code>m &gt;&gt;= return</code> being equal to just <code>m</code> is similar. The
+third law states that <code>f &lt;=&lt; (g &lt;=&lt; h)</code> should be the same as
+<code>(f &lt;=&lt; g) &lt;=&lt; h</code>. This one holds as well, because it holds for the list monad
+which forms the basis of the probability monad and because
+multiplication is associative. <code>1%2 * (1%3 * 1%5)</code> is equal to
+<code>(1%2 * 1%3) * 1%5</code>.</p>
+<p>Now that we have a monad, what can we do with it? Well, it can help us
+do calculations with probabilities. We can treat probabilistic events as
+values with contexts and the probability monad will make sure that those
+probabilities get reflected in the probabilities of the final result.</p>
+<p>Say we have two normal coins and one loaded coin that gets tails an
+astounding nine times out of ten and heads only one time out of ten. If
+we throw all the coins at once, what are the odds of all of them landing
+tails? First, let&apos;s make probability values for a normal coin flip and
+for a loaded one:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Coin</span> = <span class="hljs-type">Heads</span> | <span class="hljs-type">Tails</span> <span class="hljs-keyword">deriving</span> (<span class="hljs-type">Show</span>, <span class="hljs-type">Eq</span>)</span>
+
+<span class="hljs-title">coin</span> :: <span class="hljs-type">Prob</span> <span class="hljs-type">Coin</span>
+<span class="hljs-title">coin</span> = <span class="hljs-type">Prob</span> [(<span class="hljs-type">Heads</span>,<span class="hljs-number">1</span>%<span class="hljs-number">2</span>),(<span class="hljs-type">Tails</span>,<span class="hljs-number">1</span>%<span class="hljs-number">2</span>)]
+
+<span class="hljs-title">loadedCoin</span> :: <span class="hljs-type">Prob</span> <span class="hljs-type">Coin</span>
+<span class="hljs-title">loadedCoin</span> = <span class="hljs-type">Prob</span> [(<span class="hljs-type">Heads</span>,<span class="hljs-number">1</span>%<span class="hljs-number">10</span>),(<span class="hljs-type">Tails</span>,<span class="hljs-number">9</span>%<span class="hljs-number">10</span>)]
+</code></pre>
+<p>And finally, the coin throwing action:</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> Data.List (<span class="hljs-title">all</span>)
+
+<span class="hljs-title">flipThree</span> :: <span class="hljs-type">Prob</span> <span class="hljs-type">Bool</span>
+<span class="hljs-title">flipThree</span> = <span class="hljs-keyword">do</span>
+    a &lt;- coin
+    b &lt;- coin
+    c &lt;- loadedCoin
+    return (all (==<span class="hljs-type">Tails</span>) [a,b,c])
+</code></pre>
+<p>Giving it a go, we see that the odds of all three landing tails are not
+that good, despite cheating with our loaded coin:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; getProb flipThree
+[(<span class="hljs-type">False</span>,<span class="hljs-number">1</span> % <span class="hljs-number">40</span>),(<span class="hljs-type">False</span>,<span class="hljs-number">9</span> % <span class="hljs-number">40</span>),(<span class="hljs-type">False</span>,<span class="hljs-number">1</span> % <span class="hljs-number">40</span>),(<span class="hljs-type">False</span>,<span class="hljs-number">9</span> % <span class="hljs-number">40</span>),
+ (<span class="hljs-type">False</span>,<span class="hljs-number">1</span> % <span class="hljs-number">40</span>),(<span class="hljs-type">False</span>,<span class="hljs-number">9</span> % <span class="hljs-number">40</span>),(<span class="hljs-type">False</span>,<span class="hljs-number">1</span> % <span class="hljs-number">40</span>),(<span class="hljs-type">True</span>,<span class="hljs-number">9</span> % <span class="hljs-number">40</span>)]
+</code></pre>
+<p>All three of them will land tails nine times out of forty, which is less
+than 25%. We see that our monad doesn&apos;t know how to join all of the
+<code>False</code> outcomes where all coins don&apos;t land tails into one outcome. That&apos;s
+not a big problem, since writing a function to put all the same outcomes
+into one outcome is pretty easy and is left as an exercise to the reader
+(you!)</p>
+<p>In this section, we went from having a question (what if lists also
+carried information about probability?) to making a type, recognizing a
+monad and finally making an instance and doing something with it. I
+think that&apos;s quite fetching! By now, we should have a pretty good grasp
+on monads and what they&apos;re about.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="12-a-fistful-of-monads.html" class="navigation navigation-prev " aria-label="Previous page: 12. A Fistful of Monads">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="14-zippers.html" class="navigation navigation-next " aria-label="Next page: 14. Zippers">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"13. For a Few Monads More","level":"1.14","depth":1,"next":{"title":"14. Zippers","level":"1.15","depth":1,"path":"14-zippers.md","ref":"14-zippers.md","articles":[]},"previous":{"title":"12. A Fistful of Monads","level":"1.13","depth":1,"path":"12-a-fistful-of-monads.md","ref":"12-a-fistful-of-monads.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"13-for-a-few-monads-more.md","mtime":"2021-12-25T08:01:43.103Z","type":"markdown"},"gitbook":{"version":"3.6.23","time":"2021-12-25T08:06:05.597Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

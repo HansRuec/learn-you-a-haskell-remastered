@@ -1,0 +1,747 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>5. Recursion · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.23">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="06-higher-order-functions.html" />
+    
+    
+    <link rel="prev" href="04-syntax-in-functions.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01-first-things-first.html">
+            
+                <a href="01-first-things-first.html">
+            
+                    
+                    1. First-Things-First
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="02-starting-out.html">
+            
+                <a href="02-starting-out.html">
+            
+                    
+                    2. Starting Out 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="03-types-and-typeclasses.html">
+            
+                <a href="03-types-and-typeclasses.html">
+            
+                    
+                    3. Types and Typeclasses
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="04-syntax-in-functions.html">
+            
+                <a href="04-syntax-in-functions.html">
+            
+                    
+                    4. Syntax in Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="05-recursion.html">
+            
+                <a href="05-recursion.html">
+            
+                    
+                    5. Recursion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="06-higher-order-functions.html">
+            
+                <a href="06-higher-order-functions.html">
+            
+                    
+                    6. Higher Order Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="07-modules.html">
+            
+                <a href="07-modules.html">
+            
+                    
+                    7. Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="08-making-our-own-types-and-typeclasses.html">
+            
+                <a href="08-making-our-own-types-and-typeclasses.html">
+            
+                    
+                    8. Making Our Own Types and Typeclasses
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="09-input-and-output.html">
+            
+                <a href="09-input-and-output.html">
+            
+                    
+                    9. Input and Output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="10-functionally-solving-problems.html">
+            
+                <a href="10-functionally-solving-problems.html">
+            
+                    
+                    10. Functionally Solving Problems
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="11-functors-applicative-functors-and-monoids.html">
+            
+                <a href="11-functors-applicative-functors-and-monoids.html">
+            
+                    
+                    11. Functors, Applicative Functors and Monoids
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="12-a-fistful-of-monads.html">
+            
+                <a href="12-a-fistful-of-monads.html">
+            
+                    
+                    12. A Fistful of Monads
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="13-for-a-few-monads-more.html">
+            
+                <a href="13-for-a-few-monads-more.html">
+            
+                    
+                    13. For a Few Monads More
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="14-zippers.html">
+            
+                <a href="14-zippers.html">
+            
+                    
+                    14. Zippers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >5. Recursion</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="recursion">Recursion</h1>
+<p><a name="recursion"></a></p>
+<h2 id="hello-recursion">Hello recursion!</h2>
+<p><img src="img/recursion.png" alt="SOVIET RUSSIA"></p>
+<p>We mention recursion briefly in the previous chapter. In this chapter,
+we&apos;ll take a closer look at recursion, why it&apos;s important to Haskell and
+how we can work out very concise and elegant solutions to problems by
+thinking recursively.</p>
+<p>If you still don&apos;t know what recursion is, read this sentence. Haha!
+Just kidding! Recursion is actually a way of defining functions in which
+the function is applied inside its own definition. Definitions in
+mathematics are often given recursively. For instance, the Fibonacci
+sequence is defined recursively. First, we define the first two
+Fibonacci numbers non-recursively. We say that $F(0) = 0$ and
+$F(1) = 1$, meaning that the 0th and 1st Fibonacci numbers are 0 and 1,
+respectively. Then we say that for any other natural number, that
+Fibonacci number is the sum of the previous two Fibonacci numbers. So
+$F(n) = F(n-1) + F(n-2)$. That way, $F(3)$ is $F(2) + F(1)$, which is
+$(F(1) + F(0)) + F(1)$. Because we&apos;ve now come down to only
+non-recursively defined Fibonacci numbers, we can safely say that $F(3)$
+is 2. Having an element or two in a recursion definition defined
+non-recursively (like $F(0)$ and $F(1)$ here) is also called the <em>edge
+condition</em> and is important if you want your recursive function to
+terminate. If we hadn&apos;t defined $F(0)$ and $F(1)$ non recursively, you&apos;d
+never get a solution any number because you&apos;d reach 0 and then you&apos;d go
+into negative numbers. All of a sudden, you&apos;d be saying that $F(-2000)$
+is $F(-2001) + F(-2002)$ and there still wouldn&apos;t be an end in sight!</p>
+<p>Recursion is important to Haskell because unlike imperative languages,
+you do computations in Haskell by declaring what something <em>is</em> instead
+of declaring <em>how</em> you get it. That&apos;s why there are no while loops or
+for loops in Haskell and instead we many times have to use recursion to
+declare what something is.</p>
+<h2 id="maximum-awesome">Maximum awesome</h2>
+<p>The <code>maximum</code> function takes a list of things that can be ordered (e.g.
+instances of the <code>Ord</code> typeclass) and returns the biggest of them. Think
+about how you&apos;d implement that in an imperative fashion. You&apos;d probably
+set up a variable to hold the maximum value so far and then you&apos;d loop
+through the elements of a list and if an element is bigger than then the
+current maximum value, you&apos;d replace it with that element. The maximum
+value that remains at the end is the result. Whew! That&apos;s quite a lot of
+words to describe such a simple algorithm!</p>
+<p>Now let&apos;s see how we&apos;d define it recursively. We could first set up an
+edge condition and say that the maximum of a singleton list is equal to
+the only element in it. Then we can say that the maximum of a longer
+list is the head if the head is bigger than the maximum of the tail. If
+the maximum of the tail is bigger, well, then it&apos;s the maximum of the
+tail. That&apos;s it! Now let&apos;s implement that in Haskell.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">maximum&apos;</span> :: (<span class="hljs-type">Ord</span> a) =&gt; [a] -&gt; a
+<span class="hljs-title">maximum&apos;</span> [] = error <span class="hljs-string">&quot;maximum of empty list&quot;</span>
+<span class="hljs-title">maximum&apos;</span> [x] = x
+<span class="hljs-title">maximum&apos;</span> (x:xs)
+    | x &gt; maxTail = x
+    | otherwise = maxTail
+    <span class="hljs-keyword">where</span> maxTail = maximum&apos; xs
+</code></pre>
+<p>As you can see, pattern matching goes great with recursion! Most
+imperative languages don&apos;t have pattern matching so you have to make a
+lot of if else statements to test for edge conditions. Here, we simply
+put them out as patterns. So the first edge condition says that if the
+list is empty, crash! Makes sense because what&apos;s the maximum of an empty
+list? I don&apos;t know. The second pattern also lays out an edge condition.
+It says that if it&apos;s the singleton list, just give back the only
+element.</p>
+<p>Now the third pattern is where the action happens. We use pattern
+matching to split a list into a head and a tail. This is a very common
+idiom when doing recursion with lists, so get used to it. We use a
+<em>where</em> binding to define <code>maxTail</code> as the maximum of the rest of the
+list. Then we check if the head is greater than the maximum of the rest
+of the list. If it is, we return the head. Otherwise, we return the
+maximum of the rest of the list.</p>
+<p>Let&apos;s take an example list of numbers and check out how this would work
+on them: <code>[2,5,1]</code>. If we call <code>maximum&apos;</code> on that, the first two patterns
+won&apos;t match. The third one will and the list is split into <code>2</code> and <code>[5,1]</code>.
+The <em>where</em> clause wants to know the maximum of <code>[5,1]</code>, so we follow that
+route. It matches the third pattern again and <code>[5,1]</code> is split into <code>5</code> and
+<code>[1]</code>. Again, the <code>where</code> clause wants to know the maximum of <code>[1]</code>. Because
+that&apos;s the edge condition, it returns <code>1</code>. Finally! So going up one step,
+comparing <code>5</code> to the maximum of <code>[1]</code> (which is <code>1</code>), we obviously get back <code>5</code>.
+So now we know that the maximum of <code>[5,1]</code> is <code>5</code>. We go up one step again
+where we had <code>2</code> and <code>[5,1]</code>. Comparing <code>2</code> with the maximum of <code>[5,1]</code>, which
+is <code>5</code>, we choose <code>5</code>.</p>
+<p>An even clearer way to write this function is to use <code>max</code>. If you
+remember, <code>max</code> is a function that takes two numbers and returns the
+bigger of them. Here&apos;s how we could rewrite <code>maximum&apos;</code> by using <code>max</code>:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">maximum&apos;</span> :: (<span class="hljs-type">Ord</span> a) =&gt; [a] -&gt; a
+<span class="hljs-title">maximum&apos;</span> [] = error <span class="hljs-string">&quot;maximum of empty list&quot;</span>
+<span class="hljs-title">maximum&apos;</span> [x] = x
+<span class="hljs-title">maximum&apos;</span> (x:xs) = max x (maximum&apos; xs)
+</code></pre>
+<p>How&apos;s that for elegant! In essence, the maximum of a list is the max of
+the first element and the maximum of the tail.</p>
+<p><img src="img/maxs.png" alt="max"></p>
+<h2 id="a-few-more-recursive-functions">A few more recursive functions</h2>
+<p>Now that we know how to generally think recursively, let&apos;s implement a
+few functions using recursion. First off, we&apos;ll implement <code>replicate</code>.
+<code>replicate</code> takes an <code>Int</code> and some element and returns a list that has
+several repetitions of the same element. For instance, <code>replicate 3 5</code>
+returns <code>[5,5,5]</code>. Let&apos;s think about the edge condition. My guess is that
+the edge condition is 0 or less. If we try to replicate something zero
+times, it should return an empty list. Also for negative numbers,
+because it doesn&apos;t really make sense.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">replicate&apos;</span> :: (<span class="hljs-type">Num</span> i, <span class="hljs-type">Ord</span> i) =&gt; i -&gt; a -&gt; [a]
+<span class="hljs-title">replicate&apos;</span> n x
+    | n &lt;= <span class="hljs-number">0</span>    = []
+    | otherwise = x:replicate&apos; (n<span class="hljs-number">-1</span>) x
+</code></pre>
+<p>We used guards here instead of patterns because we&apos;re testing for a
+boolean condition. If <code>n</code> is less than or equal to 0, return an empty
+list. Otherwise return a list that has <code>x</code> as the first element and then <code>x</code>
+replicated n-1 times as the tail. Eventually, the <code>(n-1)</code> part will cause
+our function to reach the edge condition.</p>
+<blockquote>
+<p><em>Note:</em> <code>Num</code> is not a subclass of <code>Ord</code>. That means that what constitutes
+for a number doesn&apos;t really have to adhere to an ordering. So that&apos;s why
+we have to specify both the <code>Num</code> and <code>Ord</code> class constraints when doing
+addition or subtraction and also comparison.</p>
+</blockquote>
+<p>Next up, we&apos;ll implement <code>take</code>. It takes a certain number of elements
+from a list. For instance, <code>take 3 [5,4,3,2,1]</code> will return <code>[5,4,3]</code>. If we
+try to take 0 or less elements from a list, we get an empty list. Also
+if we try to take anything from an empty list, we get an empty list.
+Notice that those are two edge conditions right there. So let&apos;s write
+that out:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">take&apos;</span> :: (<span class="hljs-type">Num</span> i, <span class="hljs-type">Ord</span> i) =&gt; i -&gt; [a] -&gt; [a]
+<span class="hljs-title">take&apos;</span> n _
+    | n &lt;= <span class="hljs-number">0</span>   = []
+<span class="hljs-title">take&apos;</span> _ []     = []
+<span class="hljs-title">take&apos;</span> n (x:xs) = x : take&apos; (n<span class="hljs-number">-1</span>) xs
+</code></pre>
+<p><img src="img/painter.png" alt="painter"></p>
+<p>The first pattern specifies that if we try to take a 0 or negative
+number of elements, we get an empty list. Notice that we&apos;re using <code>_</code> to
+match the list because we don&apos;t really care what it is in this case.
+Also notice that we use a guard, but without an <code>otherwise</code> part. That
+means that if <code>n</code> turns out to be more than 0, the matching will fall
+through to the next pattern. The second pattern indicates that if we try
+to take anything from an empty list, we get an empty list. The third
+pattern breaks the list into a head and a tail. And then we state that
+taking <code>n</code> elements from a list equals a list that has <code>x</code> as the head and
+then a list that takes <code>n-1</code> elements from the tail as a tail. Try using a
+piece of paper to write down how the evaluation would look like if we
+try to take, say, 3 from <code>[4,3,2,1]</code>.</p>
+<p><code>reverse</code> simply reverses a list. Think about the edge condition. What is
+it? Come on ... it&apos;s the empty list! An empty list reversed equals the
+empty list itself. O-kay. What about the rest of it? Well, you could say
+that if we split a list to a head and a tail, the reversed list is equal
+to the reversed tail and then the head at the end.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">reverse&apos;</span> :: [a] -&gt; [a]
+<span class="hljs-title">reverse&apos;</span> [] = []
+<span class="hljs-title">reverse&apos;</span> (x:xs) = reverse&apos; xs ++ [x]
+</code></pre>
+<p>There we go!</p>
+<p>Because Haskell supports infinite lists, our recursion doesn&apos;t really
+have to have an edge condition. But if it doesn&apos;t have it, it will
+either keep churning at something infinitely or produce an infinite data
+structure, like an infinite list. The good thing about infinite lists
+though is that we can cut them where we want. <code>repeat</code> takes an element
+and returns an infinite list that just has that element. A recursive
+implementation of that is really easy, watch.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">repeat&apos;</span> :: a -&gt; [a]
+<span class="hljs-title">repeat&apos;</span> x = x:repeat&apos; x
+</code></pre>
+<p>Calling <code>repeat 3</code> will give us a list that starts with <code>3</code> and then has an
+infinite amount of 3&apos;s as a tail. So calling <code>repeat 3</code> would evaluate
+like <code>3:repeat 3</code>, which is <code>3:(3:repeat 3)</code>, which is <code>3:(3:(3:repeat 3))</code>,
+etc. <code>repeat 3</code> will never finish evaluating, whereas <code>take 5 (repeat 3)</code>
+will give us a list of five 3&apos;s. So essentially it&apos;s like doing
+<code>replicate 5 3</code>.</p>
+<p><code>zip</code> takes two lists and zips them together. <code>zip [1,2,3] [2,3]</code> returns
+<code>[(1,2),(2,3)]</code>, because it truncates the longer list to match the length
+of the shorter one. How about if we zip something with an empty list?
+Well, we get an empty list back then. So there&apos;s our edge condition.
+However, <code>zip</code> takes two lists as parameters, so there are actually two
+edge conditions.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">zip&apos;</span> :: [a] -&gt; [b] -&gt; [(a,b)]
+<span class="hljs-title">zip&apos;</span> _ [] = []
+<span class="hljs-title">zip&apos;</span> [] _ = []
+<span class="hljs-title">zip&apos;</span> (x:xs) (y:ys) = (x,y):zip&apos; xs ys
+</code></pre>
+<p>First two patterns say that if the first list or second list is empty,
+we get an empty list. The third one says that two lists zipped are equal
+to pairing up their heads and then tacking on the zipped tails. Zipping
+<code>[1,2,3]</code> and <code>[&apos;a&apos;,&apos;b&apos;]</code> will eventually try to zip <code>[3]</code> with <code>[]</code>. The edge
+condition patterns kick in and so the result is <code>(1,&apos;a&apos;):(2,&apos;b&apos;):[]</code>,
+which is exactly the same as <code>[(1,&apos;a&apos;),(2,&apos;b&apos;)]</code>.</p>
+<p>Let&apos;s implement one more standard library function — <code>elem</code>. It takes an
+element and a list and sees if that element is in the list. The edge
+condition, as is most of the times with lists, is the empty list. We
+know that an empty list contains no elements, so it certainly doesn&apos;t
+have the droids we&apos;re looking for.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">elem&apos;</span> :: (<span class="hljs-type">Eq</span> a) =&gt; a -&gt; [a] -&gt; <span class="hljs-type">Bool</span>
+<span class="hljs-title">elem&apos;</span> a [] = <span class="hljs-type">False</span>
+<span class="hljs-title">elem&apos;</span> a (x:xs)
+    | a == x    = <span class="hljs-type">True</span>
+    | otherwise = a `elem&apos;` xs
+</code></pre>
+<p>Pretty simple and expected. If the head isn&apos;t the element then we check
+the tail. If we reach an empty list, the result is <code>False</code>.</p>
+<h2 id="quick-sort">Quick, sort!</h2>
+<p>We have a list of items that can be sorted. Their type is an instance of
+the <code>Ord</code> typeclass. And now, we want to sort them! There&apos;s a very cool
+algorithm for sorting called quicksort. It&apos;s a very clever way of sorting
+items. While it takes upwards of 10 lines to implement quicksort in
+imperative languages, the implementation is much shorter and elegant in
+Haskell. Quicksort has become a sort of poster child for Haskell.
+Therefore, let&apos;s implement it here, even though implementing quicksort
+in Haskell is considered really cheesy because everyone does it to
+showcase how elegant Haskell is.</p>
+<p><img src="img/quickman.png" alt="quickman"></p>
+<p>So, the type signature is going to be
+<code>quicksort :: (Ord a) =&gt; [a] -&gt; [a]</code>.
+No surprises there. The edge condition? Empty list, as is expected.
+A sorted empty list is an empty list. Now here comes the main algorithm:
+<em>a sorted list is a list that has all the values smaller than (or equal
+to) the head of the list in front (and those values are sorted), then
+comes the head of the list in the middle and then come all the values
+that are bigger than the head (they&apos;re also sorted).</em> Notice that we
+said <em>sorted</em> two times in this definition, so we&apos;ll probably have to
+make the recursive call twice! Also notice that we defined it using the
+verb <em>is</em> to define the algorithm instead of saying <em>do this, do that,
+then do that ...</em>. That&apos;s the beauty of functional programming! How are
+we going to filter the list so that we get only the elements smaller
+than the head of our list and only elements that are bigger? List
+comprehensions. So, let&apos;s dive in and define this function.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">quicksort</span> :: (<span class="hljs-type">Ord</span> a) =&gt; [a] -&gt; [a]
+<span class="hljs-title">quicksort</span> [] = []
+<span class="hljs-title">quicksort</span> (x:xs) =
+    <span class="hljs-keyword">let</span> smallerSorted = quicksort [a | a &lt;- xs, a &lt;= x]
+        biggerSorted = quicksort [a | a &lt;- xs, a &gt; x]
+    <span class="hljs-keyword">in</span>  smallerSorted ++ [x] ++ biggerSorted
+</code></pre>
+<p>Let&apos;s give it a small test run to see if it appears to behave correctly.</p>
+<p><del>~~ {.haskell:ghci name=&quot;code&quot;}
+ghci&gt; quicksort [10,2,5,3,1,6,7,4,2,3,4,8,9]
+[1,2,2,3,3,4,4,5,6,7,8,9,10]
+ghci&gt; quicksort &quot;the quick brown fox jumps over the lazy dog&quot;
+&quot;        abcdeeefghhijklmnoooopqrrsttuuvwxyz&quot;
+~</del>~</p>
+<p>Booyah! That&apos;s what I&apos;m talking about! So if we have, say
+<code>[5,1,9,4,6,7,3]</code> and we want to sort it, this algorithm will first take
+the head, which is <code>5</code> and then put it in the middle of two lists that are
+smaller and bigger than it. So at one point, you&apos;ll have
+<code>[1,4,3] ++ [5] ++ [9,6,7]</code>. We know that once the list is sorted completely,
+the number <code>5</code> will stay in the fourth place since there are 3 numbers lower
+than it and 3 numbers higher than it. Now, if we sort <code>[1,4,3]</code> and <code>[9,6,7]</code>, we
+have a sorted list! We sort the two lists using the same function.
+Eventually, we&apos;ll break it up so much that we reach empty lists and an
+empty list is already sorted in a way, by virtue of being empty. Here&apos;s
+an illustration:</p>
+<p><img src="img/quicksort.png" alt="quicksort"></p>
+<p>An element that is in place and won&apos;t move anymore is represented in
+orange. If you read them from left to right, you&apos;ll see the sorted list.
+Although we chose to compare all the elements to the heads, we could
+have used any element to compare against. In quicksort, an element that
+you compare against is called a pivot. They&apos;re in green here. We chose
+the head because it&apos;s easy to get by pattern matching. The elements that
+are smaller than the pivot are light green and elements larger than the
+pivot are dark green. The yellowish gradient thing represents an
+application of quicksort.</p>
+<h2 id="thinking-recursively">Thinking recursively</h2>
+<p>We did quite a bit of recursion so far and as you&apos;ve probably noticed,
+there&apos;s a pattern here. Usually you define an edge case and then you
+define a function that does something between some element and the
+function applied to the rest. It doesn&apos;t matter if it&apos;s a list, a tree
+or any other data structure. A sum is the first element of a list plus
+the sum of the rest of the list. A product of a list is the first
+element of the list times the product of the rest of the list. The
+length of a list is one plus the length of the tail of the list.
+Ekcetera, ekcetera ...</p>
+<p><img src="img/brain.png" alt="brain"></p>
+<p>Of course, these also have edge cases. Usually the edge case is some
+scenario where a recursive application doesn&apos;t make sense. When dealing
+with lists, the edge case is most often the empty list. If you&apos;re
+dealing with trees, the edge case is usually a node that doesn&apos;t have
+any children.</p>
+<p>It&apos;s similar when you&apos;re dealing with numbers recursively. Usually it
+has to do with some number and the function applied to that number
+modified. We did the factorial function earlier and it&apos;s the product of
+a number and the factorial of that number minus one. Such a recursive
+application doesn&apos;t make sense with zero, because factorials are defined
+only for positive integers. Often the edge case value turns out to be an
+identity. The identity for multiplication is 1 because if you multiply
+something by 1, you get that something back. Also when doing sums of
+lists, we define the sum of an empty list as 0 and 0 is the identity for
+addition. In quicksort, the edge case is the empty list and the identity
+is also the empty list, because if you add an empty list to a list, you
+just get the original list back.</p>
+<p>So when trying to think of a recursive way to solve a problem, try to
+think of when a recursive solution doesn&apos;t apply and see if you can use
+that as an edge case, think about identities and think about whether
+you&apos;ll break apart the parameters of the function (for instance, lists
+are usually broken into a head and a tail via pattern matching) and on
+which part you&apos;ll use the recursive call.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="04-syntax-in-functions.html" class="navigation navigation-prev " aria-label="Previous page: 4. Syntax in Functions">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="06-higher-order-functions.html" class="navigation navigation-next " aria-label="Next page: 6. Higher Order Functions">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"5. Recursion","level":"1.6","depth":1,"next":{"title":"6. Higher Order Functions","level":"1.7","depth":1,"path":"06-higher-order-functions.md","ref":"06-higher-order-functions.md","articles":[]},"previous":{"title":"4. Syntax in Functions","level":"1.5","depth":1,"path":"04-syntax-in-functions.md","ref":"04-syntax-in-functions.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"05-recursion.md","mtime":"2021-12-25T07:55:12.074Z","type":"markdown"},"gitbook":{"version":"3.6.23","time":"2021-12-25T08:06:05.597Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

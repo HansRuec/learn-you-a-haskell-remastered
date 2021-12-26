@@ -1,0 +1,2228 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>8. Making Our Own Types and Typeclasses · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.23">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="09-input-and-output.html" />
+    
+    
+    <link rel="prev" href="07-modules.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01-first-things-first.html">
+            
+                <a href="01-first-things-first.html">
+            
+                    
+                    1. First-Things-First
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="02-starting-out.html">
+            
+                <a href="02-starting-out.html">
+            
+                    
+                    2. Starting Out 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="03-types-and-typeclasses.html">
+            
+                <a href="03-types-and-typeclasses.html">
+            
+                    
+                    3. Types and Typeclasses
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="04-syntax-in-functions.html">
+            
+                <a href="04-syntax-in-functions.html">
+            
+                    
+                    4. Syntax in Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="05-recursion.html">
+            
+                <a href="05-recursion.html">
+            
+                    
+                    5. Recursion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="06-higher-order-functions.html">
+            
+                <a href="06-higher-order-functions.html">
+            
+                    
+                    6. Higher Order Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="07-modules.html">
+            
+                <a href="07-modules.html">
+            
+                    
+                    7. Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9" data-path="08-making-our-own-types-and-typeclasses.html">
+            
+                <a href="08-making-our-own-types-and-typeclasses.html">
+            
+                    
+                    8. Making Our Own Types and Typeclasses
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="09-input-and-output.html">
+            
+                <a href="09-input-and-output.html">
+            
+                    
+                    9. Input and Output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="10-functionally-solving-problems.html">
+            
+                <a href="10-functionally-solving-problems.html">
+            
+                    
+                    10. Functionally Solving Problems
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="11-functors-applicative-functors-and-monoids.html">
+            
+                <a href="11-functors-applicative-functors-and-monoids.html">
+            
+                    
+                    11. Functors, Applicative Functors and Monoids
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="12-a-fistful-of-monads.html">
+            
+                <a href="12-a-fistful-of-monads.html">
+            
+                    
+                    12. A Fistful of Monads
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="13-for-a-few-monads-more.html">
+            
+                <a href="13-for-a-few-monads-more.html">
+            
+                    
+                    13. For a Few Monads More
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="14-zippers.html">
+            
+                <a href="14-zippers.html">
+            
+                    
+                    14. Zippers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >8. Making Our Own Types and Typeclasses</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="making-our-own-types-and-typeclasses">Making Our Own Types and Typeclasses</h1>
+<p>In the previous chapters, we covered some existing Haskell types and
+typeclasses. In this chapter, we&apos;ll learn how to make our own and how to
+put them to work!</p>
+<h2 id="algebraic-data-types-intro">Algebraic data types intro</h2>
+<p>So far, we&apos;ve run into a lot of data types. <code>Bool</code>, <code>Int</code>, <code>Char</code>, <code>Maybe</code>, etc.
+But how do we make our own? Well, one way is to use the <em>data</em> keyword
+to define a type. Let&apos;s see how the <code>Bool</code> type is defined in the standard
+library.</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Bool</span> = <span class="hljs-type">False</span> | <span class="hljs-type">True</span></span>
+</code></pre>
+<p><code>data</code> means that we&apos;re defining a new data type. The part before the <code>=</code>
+denotes the type, which is <code>Bool</code>. The parts after the <code>=</code> are <em>value
+constructors</em>. They specify the different values that this type can
+have. The <code>|</code> is read as <em>or</em>. So we can read this as: the <code>Bool</code> type can
+have a value of <code>True</code> or <code>False</code>. Both the type name and the value
+constructors have to be capital cased.</p>
+<p>In a similar fashion, we can think of the <code>Int</code> type as being defined like
+this:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Int</span> = -2147483648 | -2147483647 | ... | -1 | 0 | 1 | 2 | ... | 2147483647</span>
+</code></pre>
+<p><img src="img/caveman.png" alt="caveman"></p>
+<p>The first and last value constructors are the minimum and maximum
+possible values of <code>Int</code>. It&apos;s not actually defined like this, the
+ellipses are here because we omitted a heapload of numbers, so this is
+just for illustrative purposes.</p>
+<p>Now, let&apos;s think about how we would represent a shape in Haskell. One
+way would be to use tuples. A circle could be denoted as
+<code>(43.1, 55.0, 10.4)</code>
+where the first and second fields are the coordinates of the
+circle&apos;s center and the third field is the radius. Sounds OK, but those
+could also represent a 3D vector or anything else. A better solution
+would be to make our own type to represent a shape. Let&apos;s say that a
+shape can be a circle or a rectangle. Here it is:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Shape</span> = <span class="hljs-type">Circle</span> <span class="hljs-type">Float</span> <span class="hljs-type">Float</span> <span class="hljs-type">Float</span> | <span class="hljs-type">Rectangle</span> <span class="hljs-type">Float</span> <span class="hljs-type">Float</span> <span class="hljs-type">Float</span> <span class="hljs-type">Float</span></span>
+</code></pre>
+<p>Now what&apos;s this? Think of it like this. The <code>Circle</code> value constructor has
+three fields, which take floats. So when we write a value constructor,
+we can optionally add some types after it and those types define the
+values it will contain. Here, the first two fields are the coordinates
+of its center, the third one its radius. The <code>Rectangle</code> value constructor
+has four fields which accept floats. The first two are the coordinates
+to its upper left corner and the second two are coordinates to its lower
+right one.</p>
+<p>Now when I say fields, I actually mean parameters. Value constructors
+are actually functions that ultimately return a value of a data type.
+Let&apos;s take a look at the type signatures for these two value
+constructors.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; :t <span class="hljs-type">Circle</span>
+<span class="hljs-type">Circle</span> :: <span class="hljs-type">Float</span> -&gt; <span class="hljs-type">Float</span> -&gt; <span class="hljs-type">Float</span> -&gt; <span class="hljs-type">Shape</span>
+<span class="hljs-title">ghci</span>&gt; :t <span class="hljs-type">Rectangle</span>
+<span class="hljs-type">Rectangle</span> :: <span class="hljs-type">Float</span> -&gt; <span class="hljs-type">Float</span> -&gt; <span class="hljs-type">Float</span> -&gt; <span class="hljs-type">Float</span> -&gt; <span class="hljs-type">Shape</span>
+</code></pre>
+<p>Cool, so value constructors are functions like everything else. Who
+would have thought? Let&apos;s make a function that takes a shape and returns
+its surface.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">surface</span> :: <span class="hljs-type">Shape</span> -&gt; <span class="hljs-type">Float</span>
+<span class="hljs-title">surface</span> (<span class="hljs-type">Circle</span> _ _ r) = pi * r ^ <span class="hljs-number">2</span>
+<span class="hljs-title">surface</span> (<span class="hljs-type">Rectangle</span> x1 y1 x2 y2) = (abs $ x2 - x1) * (abs $ y2 - y1)
+</code></pre>
+<p>The first notable thing here is the type declaration. It says that the
+function takes a shape and returns a float. We couldn&apos;t write a type
+declaration of <code>Circle -&gt; Float</code> because <code>Circle</code> is not a type, <code>Shape</code> is.
+Just like we can&apos;t write a function with a type declaration of
+<code>True -&gt; Int</code>.
+The next thing we notice here is that we can pattern match against
+constructors. We pattern matched against constructors before (all the
+time actually) when we pattern matched against values like <code>[]</code> or <code>False</code>
+or <code>5</code>, only those values didn&apos;t have any fields. We just write a
+constructor and then bind its fields to names. Because we&apos;re interested
+in the radius, we don&apos;t actually care about the first two fields, which
+tell us where the circle is.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; surface $ <span class="hljs-type">Circle</span> <span class="hljs-number">10</span> <span class="hljs-number">20</span> <span class="hljs-number">10</span>
+<span class="hljs-number">314.15927</span>
+<span class="hljs-title">ghci</span>&gt; surface $ <span class="hljs-type">Rectangle</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">100</span> <span class="hljs-number">100</span>
+<span class="hljs-number">10000.0</span>
+</code></pre>
+<p>Yay, it works! But if we try to just print out <code>Circle 10 20 5</code> in the
+prompt, we&apos;ll get an error. That&apos;s because Haskell doesn&apos;t know how to
+display our data type as a string (yet). Remember, when we try to print
+a value out in the prompt, Haskell first runs the <code>show</code> function to get
+the string representation of our value and then it prints that out to
+the terminal. To make our <code>Shape</code> type part of the <code>Show</code> typeclass, we
+modify it like this:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Shape</span> = <span class="hljs-type">Circle</span> <span class="hljs-type">Float</span> <span class="hljs-type">Float</span> <span class="hljs-type">Float</span> | <span class="hljs-type">Rectangle</span> <span class="hljs-type">Float</span> <span class="hljs-type">Float</span> <span class="hljs-type">Float</span> <span class="hljs-type">Float</span> <span class="hljs-keyword">deriving</span> (<span class="hljs-type">Show</span>)</span>
+</code></pre>
+<p>We won&apos;t concern ourselves with deriving too much for now. Let&apos;s just
+say that if we add <code>deriving (Show)</code> at the end of a <em>data</em> declaration,
+Haskell automagically makes that type part of the <code>Show</code> typeclass. So
+now, we can do this:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Circle</span> <span class="hljs-number">10</span> <span class="hljs-number">20</span> <span class="hljs-number">5</span>
+<span class="hljs-type">Circle</span> <span class="hljs-number">10.0</span> <span class="hljs-number">20.0</span> <span class="hljs-number">5.0</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Rectangle</span> <span class="hljs-number">50</span> <span class="hljs-number">230</span> <span class="hljs-number">60</span> <span class="hljs-number">90</span>
+<span class="hljs-type">Rectangle</span> <span class="hljs-number">50.0</span> <span class="hljs-number">230.0</span> <span class="hljs-number">60.0</span> <span class="hljs-number">90.0</span>
+</code></pre>
+<p>Value constructors are functions, so we can map them and partially apply
+them and everything. If we want a list of concentric circles with
+different radii, we can do this.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; map (<span class="hljs-type">Circle</span> <span class="hljs-number">10</span> <span class="hljs-number">20</span>) [<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>,<span class="hljs-number">6</span>]
+[<span class="hljs-type">Circle</span> <span class="hljs-number">10.0</span> <span class="hljs-number">20.0</span> <span class="hljs-number">4.0</span>,<span class="hljs-type">Circle</span> <span class="hljs-number">10.0</span> <span class="hljs-number">20.0</span> <span class="hljs-number">5.0</span>,<span class="hljs-type">Circle</span> <span class="hljs-number">10.0</span> <span class="hljs-number">20.0</span> <span class="hljs-number">6.0</span>,<span class="hljs-type">Circle</span> <span class="hljs-number">10.0</span> <span class="hljs-number">20.0</span> <span class="hljs-number">6.0</span>]
+</code></pre>
+<p>Our data type is good, although it could be better. Let&apos;s make an
+intermediate data type that defines a point in two-dimensional space.
+Then we can use that to make our shapes more understandable.</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Point</span> = <span class="hljs-type">Point</span> <span class="hljs-type">Float</span> <span class="hljs-type">Float</span> <span class="hljs-keyword">deriving</span> (<span class="hljs-type">Show</span>)</span>
+<span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Shape</span> = <span class="hljs-type">Circle</span> <span class="hljs-type">Point</span> <span class="hljs-type">Float</span> | <span class="hljs-type">Rectangle</span> <span class="hljs-type">Point</span> <span class="hljs-type">Point</span> <span class="hljs-keyword">deriving</span> (<span class="hljs-type">Show</span>)</span>
+</code></pre>
+<p>Notice that when defining a point, we used the same name for the data
+type and the value constructor. This has no special meaning, although
+it&apos;s common to use the same name as the type if there&apos;s only one value
+constructor. So now the <code>Circle</code> has two fields, one is of type <code>Point</code> and
+the other of type <code>Float</code>. This makes it easier to understand what&apos;s what.
+Same goes for the rectangle. We have to adjust our <code>surface</code> function to
+reflect these changes.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">surface</span> :: <span class="hljs-type">Shape</span> -&gt; <span class="hljs-type">Float</span>
+<span class="hljs-title">surface</span> (<span class="hljs-type">Circle</span> _ r) = pi * r ^ <span class="hljs-number">2</span>
+<span class="hljs-title">surface</span> (<span class="hljs-type">Rectangle</span> (<span class="hljs-type">Point</span> x1 y1) (<span class="hljs-type">Point</span> x2 y2)) = (abs $ x2 - x1) * (abs $ y2 - y1)
+</code></pre>
+<p>The only thing we had to change were the patterns. We disregarded the
+whole point in the circle pattern. In the rectangle pattern, we just
+used a nested pattern matching to get the fields of the points. If we
+wanted to reference the points themselves for some reason, we could have
+used as-patterns.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; surface (<span class="hljs-type">Rectangle</span> (<span class="hljs-type">Point</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>) (<span class="hljs-type">Point</span> <span class="hljs-number">100</span> <span class="hljs-number">100</span>))
+<span class="hljs-number">10000.0</span>
+<span class="hljs-title">ghci</span>&gt; surface (<span class="hljs-type">Circle</span> (<span class="hljs-type">Point</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>) <span class="hljs-number">24</span>)
+<span class="hljs-number">1809.5574</span>
+</code></pre>
+<p>How about a function that nudges a shape? It takes a shape, the amount
+to move it on the x axis and the amount to move it on the y axis and
+then returns a new shape that has the same dimensions, only it&apos;s located
+somewhere else.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">nudge</span> :: <span class="hljs-type">Shape</span> -&gt; <span class="hljs-type">Float</span> -&gt; <span class="hljs-type">Float</span> -&gt; <span class="hljs-type">Shape</span>
+<span class="hljs-title">nudge</span> (<span class="hljs-type">Circle</span> (<span class="hljs-type">Point</span> x y) r) a b = <span class="hljs-type">Circle</span> (<span class="hljs-type">Point</span> (x+a) (y+b)) r
+<span class="hljs-title">nudge</span> (<span class="hljs-type">Rectangle</span> (<span class="hljs-type">Point</span> x1 y1) (<span class="hljs-type">Point</span> x2 y2)) a b = <span class="hljs-type">Rectangle</span> (<span class="hljs-type">Point</span> (x1+a) (y1+b)) (<span class="hljs-type">Point</span> (x2+a) (y2+b))
+</code></pre>
+<p>Pretty straightforward. We add the nudge amounts to the points that
+denote the position of the shape.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; nudge (<span class="hljs-type">Circle</span> (<span class="hljs-type">Point</span> <span class="hljs-number">34</span> <span class="hljs-number">34</span>) <span class="hljs-number">10</span>) <span class="hljs-number">5</span> <span class="hljs-number">10</span>
+<span class="hljs-type">Circle</span> (<span class="hljs-type">Point</span> <span class="hljs-number">39.0</span> <span class="hljs-number">44.0</span>) <span class="hljs-number">10.0</span>
+</code></pre>
+<p>If we don&apos;t want to deal directly with points, we can make some
+auxilliary functions that create shapes of some size at the zero
+coordinates and then nudge those.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">baseCircle</span> :: <span class="hljs-type">Float</span> -&gt; <span class="hljs-type">Shape</span>
+<span class="hljs-title">baseCircle</span> r = <span class="hljs-type">Circle</span> (<span class="hljs-type">Point</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>) r
+
+<span class="hljs-title">baseRect</span> :: <span class="hljs-type">Float</span> -&gt; <span class="hljs-type">Float</span> -&gt; <span class="hljs-type">Shape</span>
+<span class="hljs-title">baseRect</span> width height = <span class="hljs-type">Rectangle</span> (<span class="hljs-type">Point</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>) (<span class="hljs-type">Point</span> width height)
+</code></pre>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; nudge (baseRect <span class="hljs-number">40</span> <span class="hljs-number">100</span>) <span class="hljs-number">60</span> <span class="hljs-number">23</span>
+<span class="hljs-type">Rectangle</span> (<span class="hljs-type">Point</span> <span class="hljs-number">60.0</span> <span class="hljs-number">23.0</span>) (<span class="hljs-type">Point</span> <span class="hljs-number">100.0</span> <span class="hljs-number">123.0</span>)
+</code></pre>
+<p>You can, of course, export your data types in your modules. To do that,
+just write your type along with the functions you are exporting and then
+add some parentheses and in them specify the value constructors that you
+want to export for it, separated by commas. If you want to export all
+the value constructors for a given type, just write <code>..</code>.</p>
+<p>If we wanted to export the functions and types that we defined here in a
+module, we could start it off like this:</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">module</span> Shapes
+( <span class="hljs-type">Point(..)</span>
+, <span class="hljs-type">Shape(..)</span>
+, <span class="hljs-title">surface</span>
+, <span class="hljs-title">nudge</span>
+, <span class="hljs-title">baseCircle</span>
+, <span class="hljs-title">baseRect</span>
+) <span class="hljs-keyword">where</span>
+</code></pre>
+<p>By doing <code>Shape(..)</code>, we exported all the value constructors for <code>Shape</code>, so
+that means that whoever imports our module can make shapes by using the
+<code>Rectangle</code> and <code>Circle</code> value constructors. It&apos;s the same as writing
+<code>Shape (Rectangle, Circle)</code>.</p>
+<p>We could also opt not to export any value constructors for <code>Shape</code> by just
+writing <code>Shape</code> in the export statement. That way, someone importing our
+module could only make shapes by using the auxiliary functions
+<code>baseCircle</code> and <code>baseRect</code>. <code>Data.Map</code> uses that approach. You can&apos;t create a
+map by doing <code>Map.Map [(1,2),(3,4)]</code> because it doesn&apos;t export that value
+constructor. However, you can make a mapping by using one of the
+auxilliary functions like <code>Map.fromList</code>. Remember, value constructors are
+just functions that take the fields as parameters and return a value of
+some type (like <code>Shape</code>) as a result. So when we choose not to export
+them, we just prevent the person importing our module from using those
+functions, but if some other functions that are exported return a type,
+we can use them to make values of our custom data types.</p>
+<p>Not exporting the value constructors of a data types makes them more
+abstract in such a way that we hide their implementation. Also, whoever
+uses our module can&apos;t pattern match against the value constructors.</p>
+<h2 id="record-syntax">Record syntax</h2>
+<p><img src="img/record.png" alt="record"></p>
+<p>OK, we&apos;ve been tasked with creating a data type that describes a person.
+The info that we want to store about that person is: first name, last
+name, age, height, phone number, and favorite ice-cream flavor. I don&apos;t
+know about you, but that&apos;s all I ever want to know about a person. Let&apos;s
+give it a go!</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Person</span> = <span class="hljs-type">Person</span> <span class="hljs-type">String</span> <span class="hljs-type">String</span> <span class="hljs-type">Int</span> <span class="hljs-type">Float</span> <span class="hljs-type">String</span> <span class="hljs-type">String</span> <span class="hljs-keyword">deriving</span> (<span class="hljs-type">Show</span>)</span>
+</code></pre>
+<p>O-kay. The first field is the first name, the second is the last name,
+the third is the age and so on. Let&apos;s make a person.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-keyword">let</span> guy = <span class="hljs-type">Person</span> <span class="hljs-string">&quot;Buddy&quot;</span> <span class="hljs-string">&quot;Finklestein&quot;</span> <span class="hljs-number">43</span> <span class="hljs-number">184.2</span> <span class="hljs-string">&quot;526-2928&quot;</span> <span class="hljs-string">&quot;Chocolate&quot;</span>
+<span class="hljs-title">ghci</span>&gt; guy
+<span class="hljs-type">Person</span> <span class="hljs-string">&quot;Buddy&quot;</span> <span class="hljs-string">&quot;Finklestein&quot;</span> <span class="hljs-number">43</span> <span class="hljs-number">184.2</span> <span class="hljs-string">&quot;526-2928&quot;</span> <span class="hljs-string">&quot;Chocolate&quot;</span>
+</code></pre>
+<p>That&apos;s kind of cool, although slightly unreadable. What if we want to
+create a function to get separate info from a person? A function that
+gets some person&apos;s first name, a function that gets some person&apos;s last
+name, etc. Well, we&apos;d have to define them kind of like this.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">firstName</span> :: <span class="hljs-type">Person</span> -&gt; <span class="hljs-type">String</span>
+<span class="hljs-title">firstName</span> (<span class="hljs-type">Person</span> firstname _ _ _ _ _) = firstname
+
+<span class="hljs-title">lastName</span> :: <span class="hljs-type">Person</span> -&gt; <span class="hljs-type">String</span>
+<span class="hljs-title">lastName</span> (<span class="hljs-type">Person</span> _ lastname _ _ _ _) = lastname
+
+<span class="hljs-title">age</span> :: <span class="hljs-type">Person</span> -&gt; <span class="hljs-type">Int</span>
+<span class="hljs-title">age</span> (<span class="hljs-type">Person</span> _ _ age _ _ _) = age
+
+<span class="hljs-title">height</span> :: <span class="hljs-type">Person</span> -&gt; <span class="hljs-type">Float</span>
+<span class="hljs-title">height</span> (<span class="hljs-type">Person</span> _ _ _ height _ _) = height
+
+<span class="hljs-title">phoneNumber</span> :: <span class="hljs-type">Person</span> -&gt; <span class="hljs-type">String</span>
+<span class="hljs-title">phoneNumber</span> (<span class="hljs-type">Person</span> _ _ _ _ number _) = number
+
+<span class="hljs-title">flavor</span> :: <span class="hljs-type">Person</span> -&gt; <span class="hljs-type">String</span>
+<span class="hljs-title">flavor</span> (<span class="hljs-type">Person</span> _ _ _ _ _ flavor) = flavor
+</code></pre>
+<p>Whew! I certainly did not enjoy writing that! Despite being very
+cumbersome and BORING to write, this method works.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-keyword">let</span> guy = <span class="hljs-type">Person</span> <span class="hljs-string">&quot;Buddy&quot;</span> <span class="hljs-string">&quot;Finklestein&quot;</span> <span class="hljs-number">43</span> <span class="hljs-number">184.2</span> <span class="hljs-string">&quot;526-2928&quot;</span> <span class="hljs-string">&quot;Chocolate&quot;</span>
+<span class="hljs-title">ghci</span>&gt; firstName guy
+<span class="hljs-string">&quot;Buddy&quot;</span>
+<span class="hljs-title">ghci</span>&gt; height guy
+<span class="hljs-number">184.2</span>
+<span class="hljs-title">ghci</span>&gt; flavor guy
+<span class="hljs-string">&quot;Chocolate&quot;</span>
+</code></pre>
+<p>There must be a better way, you say! Well no, there isn&apos;t, sorry.</p>
+<p>Just kidding, there is. Hahaha! The makers of Haskell were very smart
+and anticipated this scenario. They included an alternative way to write
+data types. Here&apos;s how we could achieve the above functionality with
+record syntax.</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Person</span> = <span class="hljs-type">Person</span> { <span class="hljs-title">firstName</span> :: <span class="hljs-type">String</span>
+                     , <span class="hljs-title">lastName</span> :: <span class="hljs-type">String</span>
+                     , <span class="hljs-title">age</span> :: <span class="hljs-type">Int</span>
+                     , <span class="hljs-title">height</span> :: <span class="hljs-type">Float</span>
+                     , <span class="hljs-title">phoneNumber</span> :: <span class="hljs-type">String</span>
+                     , <span class="hljs-title">flavor</span> :: <span class="hljs-type">String</span>
+                     } <span class="hljs-keyword">deriving</span> (<span class="hljs-type">Show</span>)</span>
+</code></pre>
+<p>So instead of just naming the field types one after another and
+separating them with spaces, we use curly brackets. First we write the
+name of the field, for instance, <code>firstName</code> and then we write a double
+colon <code>::</code> (also called Paamayim Nekudotayim, haha) and then we specify
+the type. The resulting data type is exactly the same. The main benefit
+of this is that it creates functions that lookup fields in the data
+type. By using record syntax to create this data type, Haskell
+automatically made these functions: <code>firstName</code>, <code>lastName</code>, <code>age</code>, <code>height</code>,
+<code>phoneNumber</code> and <code>flavor</code>.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; :t flavor
+<span class="hljs-title">flavor</span> :: <span class="hljs-type">Person</span> -&gt; <span class="hljs-type">String</span>
+<span class="hljs-title">ghci</span>&gt; :t firstName
+<span class="hljs-title">firstName</span> :: <span class="hljs-type">Person</span> -&gt; <span class="hljs-type">String</span>
+</code></pre>
+<p>There&apos;s another benefit to using record syntax. When we derive <code>Show</code> for
+the type, it displays it differently if we use record syntax to define
+and instantiate the type. Say we have a type that represents a car. We
+want to keep track of the company that made it, the model name and its
+year of production. Watch.</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Car</span> = <span class="hljs-type">Car</span> <span class="hljs-type">String</span> <span class="hljs-type">String</span> <span class="hljs-type">Int</span> <span class="hljs-keyword">deriving</span> (<span class="hljs-type">Show</span>)</span>
+</code></pre>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Car</span> <span class="hljs-string">&quot;Ford&quot;</span> <span class="hljs-string">&quot;Mustang&quot;</span> <span class="hljs-number">1967</span>
+<span class="hljs-type">Car</span> <span class="hljs-string">&quot;Ford&quot;</span> <span class="hljs-string">&quot;Mustang&quot;</span> <span class="hljs-number">1967</span>
+</code></pre>
+<p>If we define it using record syntax, we can make a new car like this.</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Car</span> = <span class="hljs-type">Car</span> {<span class="hljs-title">company</span> :: <span class="hljs-type">String</span>, <span class="hljs-title">model</span> :: <span class="hljs-type">String</span>, <span class="hljs-title">year</span> :: <span class="hljs-type">Int</span>} <span class="hljs-keyword">deriving</span> (<span class="hljs-type">Show</span>)</span>
+</code></pre>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Car</span> {company=<span class="hljs-string">&quot;Ford&quot;</span>, model=<span class="hljs-string">&quot;Mustang&quot;</span>, year=<span class="hljs-number">1967</span>}
+<span class="hljs-type">Car</span> {company = <span class="hljs-string">&quot;Ford&quot;</span>, model = <span class="hljs-string">&quot;Mustang&quot;</span>, year = <span class="hljs-number">1967</span>}
+</code></pre>
+<p>When making a new car, we don&apos;t have to necessarily put the fields in
+the proper order, as long as we list all of them. But if we don&apos;t use
+record syntax, we have to specify them in order.</p>
+<p>Use record syntax when a constructor has several fields and it&apos;s not
+obvious which field is which. If we make a 3D vector data type by doing
+<code>data Vector = Vector Int Int Int</code>, it&apos;s pretty obvious that the fields
+are the components of a vector. However, in our <code>Person</code> and <code>Car</code> types, it
+wasn&apos;t so obvious and we greatly benefited from using record syntax.</p>
+<h2 id="type-parameters">Type parameters</h2>
+<p>A value constructor can take some values parameters and then produce a
+new value. For instance, the <code>Car</code> constructor takes three values and
+produces a car value. In a similar manner, <em>type constructors</em> can take
+types as parameters to produce new types. This might sound a bit too
+meta at first, but it&apos;s not that complicated. If you&apos;re familiar with
+templates in C++, you&apos;ll see some parallels. To get a clear picture of
+what type parameters work like in action, let&apos;s take a look at how a
+type we&apos;ve already met is implemented.</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Maybe</span> a = <span class="hljs-type">Nothing</span> | <span class="hljs-type">Just</span> a</span>
+</code></pre>
+<p><img src="img/yeti.png" alt="yeti"></p>
+<p>The <code>a</code> here is the type parameter. And because there&apos;s a type parameter
+involved, we call <code>Maybe</code> a type constructor. Depending on what we want
+this data type to hold when it&apos;s not <code>Nothing</code>, this type constructor can
+end up producing a type of <code>Maybe Int</code>, <code>Maybe Car</code>, <code>Maybe String</code>, etc. No
+value can have a type of just <code>Maybe</code>, because that&apos;s not a type per se,
+it&apos;s a type constructor. In order for this to be a real type that a
+value can be part of, it has to have all its type parameters filled up.</p>
+<p>So if we pass <code>Char</code> as the type parameter to <code>Maybe</code>, we get a type of
+<code>Maybe Char</code>. The value <code>Just &apos;a&apos;</code> has a type of <code>Maybe Char</code>, for example.</p>
+<p>You might not know it, but we used a type that has a type parameter
+before we used <code>Maybe</code>. That type is the list type. Although there&apos;s some
+syntactic sugar in play, the list type takes a parameter to produce a
+concrete type. Values can have an <code>[Int]</code> type, a <code>[Char]</code> type, a
+<code>[[String]]</code> type, but you can&apos;t have a value that just has a type of <code>[]</code>.</p>
+<p>Let&apos;s play around with the <code>Maybe</code> type.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Just</span> <span class="hljs-string">&quot;Haha&quot;</span>
+<span class="hljs-type">Just</span> <span class="hljs-string">&quot;Haha&quot;</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Just</span> <span class="hljs-number">84</span>
+<span class="hljs-type">Just</span> <span class="hljs-number">84</span>
+<span class="hljs-title">ghci</span>&gt; :t <span class="hljs-type">Just</span> <span class="hljs-string">&quot;Haha&quot;</span>
+<span class="hljs-type">Just</span> <span class="hljs-string">&quot;Haha&quot;</span> :: <span class="hljs-type">Maybe</span> [<span class="hljs-type">Char</span>]
+<span class="hljs-title">ghci</span>&gt; :t <span class="hljs-type">Just</span> <span class="hljs-number">84</span>
+<span class="hljs-type">Just</span> <span class="hljs-number">84</span> :: (<span class="hljs-type">Num</span> t) =&gt; <span class="hljs-type">Maybe</span> t
+<span class="hljs-title">ghci</span>&gt; :t <span class="hljs-type">Nothing</span>
+<span class="hljs-type">Nothing</span> :: <span class="hljs-type">Maybe</span> a
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Just</span> <span class="hljs-number">10</span> :: <span class="hljs-type">Maybe</span> <span class="hljs-type">Double</span>
+<span class="hljs-type">Just</span> <span class="hljs-number">10.0</span>
+</code></pre>
+<p>Type parameters are useful because we can make different types with them
+depending on what kind of types we want contained in our data type. When
+we do <code>:t Just &quot;Haha&quot;</code>, the type inference engine figures it out to be of
+the type <code>Maybe [Char]</code>, because if the <code>a</code> in the <code>Just a</code> is a string, then
+the <code>a</code> in <code>Maybe a</code> must also be a string.</p>
+<p>Notice that the type of <code>Nothing</code> is <code>Maybe a</code>. Its type is polymorphic. If
+some function requires a <code>Maybe Int</code> as a parameter, we can give it a
+<code>Nothing</code>, because a <code>Nothing</code> doesn&apos;t contain a value anyway and so it
+doesn&apos;t matter. The <code>Maybe a</code> type can act like a <code>Maybe Int</code> if it has to,
+just like <code>5</code> can act like an <code>Int</code> or a <code>Double</code>. Similarly, the type of the
+empty list is <code>[a]</code>. An empty list can act like a list of anything. That&apos;s
+why we can do <code>[1,2,3] ++ []</code> and <code>[&quot;ha&quot;,&quot;ha&quot;,&quot;ha&quot;] ++ []</code>.</p>
+<p>Using type parameters is very beneficial, but only when using them makes
+sense. Usually we use them when our data type would work regardless of
+the type of the value it then holds inside it, like with our <code>Maybe a</code>
+type. If our type acts as some kind of box, it&apos;s good to use them. We
+could change our <code>Car</code> data type from this:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Car</span> = <span class="hljs-type">Car</span> { <span class="hljs-title">company</span> :: <span class="hljs-type">String</span>
+               , <span class="hljs-title">model</span> :: <span class="hljs-type">String</span>
+               , <span class="hljs-title">year</span> :: <span class="hljs-type">Int</span>
+               } <span class="hljs-keyword">deriving</span> (<span class="hljs-type">Show</span>)</span>
+</code></pre>
+<p>To this:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Car</span> a b c = <span class="hljs-type">Car</span> { <span class="hljs-title">company</span> :: <span class="hljs-title">a</span>
+                     , <span class="hljs-title">model</span> :: <span class="hljs-title">b</span>
+                     , <span class="hljs-title">year</span> :: <span class="hljs-title">c</span>
+                     } <span class="hljs-keyword">deriving</span> (<span class="hljs-type">Show</span>)</span>
+</code></pre>
+<p>But would we really benefit? The answer is: probably no, because we&apos;d
+just end up defining functions that only work on the <code>Car String String Int</code> type.
+For instance, given our first definition of <code>Car</code>, we could make
+a function that displays the car&apos;s properties in a nice little text.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">tellCar</span> :: <span class="hljs-type">Car</span> -&gt; <span class="hljs-type">String</span>
+<span class="hljs-title">tellCar</span> (<span class="hljs-type">Car</span> {company = c, model = m, year = y}) = <span class="hljs-string">&quot;This &quot;</span> ++ c ++ <span class="hljs-string">&quot; &quot;</span> ++ m ++ <span class="hljs-string">&quot; was made in &quot;</span> ++ show y
+</code></pre>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-keyword">let</span> stang = <span class="hljs-type">Car</span> {company=<span class="hljs-string">&quot;Ford&quot;</span>, model=<span class="hljs-string">&quot;Mustang&quot;</span>, year=<span class="hljs-number">1967</span>}
+<span class="hljs-title">ghci</span>&gt; tellCar stang
+<span class="hljs-string">&quot;This Ford Mustang was made in 1967&quot;</span>
+</code></pre>
+<p>A cute little function! The type declaration is cute and it works
+nicely. Now what if Car was Car a b c?</p>
+<pre><code class="lang-haskell"><span class="hljs-title">tellCar</span> :: (<span class="hljs-type">Show</span> a) =&gt; <span class="hljs-type">Car</span> <span class="hljs-type">String</span> <span class="hljs-type">String</span> a -&gt; <span class="hljs-type">String</span>
+<span class="hljs-title">tellCar</span> (<span class="hljs-type">Car</span> {company = c, model = m, year = y}) = <span class="hljs-string">&quot;This &quot;</span> ++ c ++ <span class="hljs-string">&quot; &quot;</span> ++ m ++ <span class="hljs-string">&quot; was made in &quot;</span> ++ show y
+</code></pre>
+<p>We&apos;d have to force this function to take a <code>Car</code> type of
+<code>(Show a) =&gt; Car String String a</code>.
+You can see that the type signature is more complicated
+and the only benefit we&apos;d actually get would be that we can use any type
+that&apos;s an instance of the <code>Show</code> typeclass as the type for <code>c</code>.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; tellCar (<span class="hljs-type">Car</span> <span class="hljs-string">&quot;Ford&quot;</span> <span class="hljs-string">&quot;Mustang&quot;</span> <span class="hljs-number">1967</span>)
+<span class="hljs-string">&quot;This Ford Mustang was made in 1967&quot;</span>
+<span class="hljs-title">ghci</span>&gt; tellCar (<span class="hljs-type">Car</span> <span class="hljs-string">&quot;Ford&quot;</span> <span class="hljs-string">&quot;Mustang&quot;</span> <span class="hljs-string">&quot;nineteen sixty seven&quot;</span>)
+<span class="hljs-string">&quot;This Ford Mustang was made in \&quot;nineteen sixty seven\&quot;&quot;</span>
+<span class="hljs-title">ghci</span>&gt; :t <span class="hljs-type">Car</span> <span class="hljs-string">&quot;Ford&quot;</span> <span class="hljs-string">&quot;Mustang&quot;</span> <span class="hljs-number">1967</span>
+<span class="hljs-type">Car</span> <span class="hljs-string">&quot;Ford&quot;</span> <span class="hljs-string">&quot;Mustang&quot;</span> <span class="hljs-number">1967</span> :: (<span class="hljs-type">Num</span> t) =&gt; <span class="hljs-type">Car</span> [<span class="hljs-type">Char</span>] [<span class="hljs-type">Char</span>] t
+<span class="hljs-title">ghci</span>&gt; :t <span class="hljs-type">Car</span> <span class="hljs-string">&quot;Ford&quot;</span> <span class="hljs-string">&quot;Mustang&quot;</span> <span class="hljs-string">&quot;nineteen sixty seven&quot;</span>
+<span class="hljs-type">Car</span> <span class="hljs-string">&quot;Ford&quot;</span> <span class="hljs-string">&quot;Mustang&quot;</span> <span class="hljs-string">&quot;nineteen sixty seven&quot;</span> :: <span class="hljs-type">Car</span> [<span class="hljs-type">Char</span>] [<span class="hljs-type">Char</span>] [<span class="hljs-type">Char</span>]
+</code></pre>
+<p><img src="img/meekrat.png" alt="meekrat"></p>
+<p>In real life though, we&apos;d end up using <code>Car String String Int</code> most of the
+time and so it would seem that parameterizing the <code>Car</code> type isn&apos;t really
+worth it. We usually use type parameters when the type that&apos;s contained
+inside the data type&apos;s various value constructors isn&apos;t really that
+important for the type to work. A list of stuff is a list of stuff and
+it doesn&apos;t matter what the type of that stuff is, it can still work. If
+we want to sum a list of numbers, we can specify later in the summing
+function that we specifically want a list of numbers. Same goes for
+<code>Maybe</code>. <code>Maybe</code> represents an option of either having nothing or having one
+of something. It doesn&apos;t matter what the type of that something is.</p>
+<p>Another example of a parameterized type that we&apos;ve already met is
+<code>Map k v</code> from <code>Data.Map</code>. The <code>k</code> is the type of the keys in a map and the <code>v</code> is the
+type of the values. This is a good example of where type parameters are
+very useful. Having maps parameterized enables us to have mappings from
+any type to any other type, as long as the type of the key is part of
+the <code>Ord</code> typeclass. If we were defining a mapping type, we could add a
+typeclass constraint in the <em>data</em> declaration:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">data</span> (<span class="hljs-type">Ord</span> <span class="hljs-title">k</span>) =&gt; <span class="hljs-type">Map</span> k v = ...</span>
+</code></pre>
+<p>However, it&apos;s a very strong convention in Haskell to <em>never add
+typeclass constraints in data declarations.</em>Why? Well, because we don&apos;t
+benefit a lot, but we end up writing more class constraints, even when
+we don&apos;t need them. If we put or don&apos;t put the <code>Ord k</code> constraint in the
+<em>data</em> declaration for <code>Map k v</code>, we&apos;re going to have to put the
+constraint into functions that assume the keys in a map can be ordered.
+But if we don&apos;t put the constraint in the data declaration, we don&apos;t
+have to put <code>(Ord k) =&gt;</code> in the type declarations of functions that don&apos;t
+care whether the keys can be ordered or not. An example of such a
+function is <code>toList</code>, that just takes a mapping and converts it to an
+associative list. Its type signature is <code>toList :: Map k a -&gt; [(k, a)]</code>.
+If <code>Map k v</code> had a type constraint in its <em>data</em> declaration, the type for
+<code>toList</code> would have to be <code>toList :: (Ord k) =&gt; Map k a -&gt; [(k, a)]</code>, even
+though the function doesn&apos;t do any comparing of keys by order.</p>
+<p>So don&apos;t put type constraints into <em>data</em> declarations even if it seems
+to make sense, because you&apos;ll have to put them into the function type
+declarations either way.</p>
+<p>Let&apos;s implement a 3D vector type and add some operations for it. We&apos;ll
+be using a parameterized type because even though it will usually
+contain numeric types, it will still support several of them.</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Vector</span> a = <span class="hljs-type">Vector</span> a a a <span class="hljs-keyword">deriving</span> (<span class="hljs-type">Show</span>)</span>
+
+<span class="hljs-title">vplus</span> :: (<span class="hljs-type">Num</span> t) =&gt; <span class="hljs-type">Vector</span> t -&gt; <span class="hljs-type">Vector</span> t -&gt; <span class="hljs-type">Vector</span> t
+(<span class="hljs-type">Vector</span> i j k) `vplus` (<span class="hljs-type">Vector</span> l m n) = <span class="hljs-type">Vector</span> (i+l) (j+m) (k+n)
+
+<span class="hljs-title">vectMult</span> :: (<span class="hljs-type">Num</span> t) =&gt; <span class="hljs-type">Vector</span> t -&gt; t -&gt; <span class="hljs-type">Vector</span> t
+(<span class="hljs-type">Vector</span> i j k) `vectMult` m = <span class="hljs-type">Vector</span> (i*m) (j*m) (k*m)
+
+<span class="hljs-title">scalarMult</span> :: (<span class="hljs-type">Num</span> t) =&gt; <span class="hljs-type">Vector</span> t -&gt; <span class="hljs-type">Vector</span> t -&gt; t
+(<span class="hljs-type">Vector</span> i j k) `scalarMult` (<span class="hljs-type">Vector</span> l m n) = i*l + j*m + k*n
+</code></pre>
+<p><code>vplus</code> is for adding two vectors together. Two vectors are added just by
+adding their corresponding components. <code>scalarMult</code> is for the scalar
+product of two vectors and <code>vectMult</code> is for multiplying a vector with a
+scalar. These functions can operate on types of <code>Vector Int</code>,
+<code>Vector Integer</code>, <code>Vector Float</code>,
+whatever, as long as the <code>a</code> from <code>Vector a</code> is from
+the <code>Num</code> typeclass. Also, if you examine the type declaration for these
+functions, you&apos;ll see that they can operate only on vectors of the same
+type and the numbers involved must also be of the type that is contained
+in the vectors. Notice that we didn&apos;t put a <code>Num</code> class constraint in the
+<em>data</em> declaration, because we&apos;d have to repeat it in the functions
+anyway.</p>
+<p>Once again, it&apos;s very important to distinguish between the type
+constructor and the value constructor. When declaring a data type, the
+part before the <code>=</code> is the type constructor and the constructors after it
+(possibly separated by <code>|</code>&apos;s) are value constructors. Giving a function a
+type of <code>Vector t t t -&gt; Vector t t t -&gt; t</code> would be wrong, because we
+have to put types in type declaration and the vector <em>type</em> constructor
+takes only one parameter, whereas the value constructor takes three.
+Let&apos;s play around with our vectors.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Vector</span> <span class="hljs-number">3</span> <span class="hljs-number">5</span> <span class="hljs-number">8</span> `vplus` <span class="hljs-type">Vector</span> <span class="hljs-number">9</span> <span class="hljs-number">2</span> <span class="hljs-number">8</span>
+<span class="hljs-type">Vector</span> <span class="hljs-number">12</span> <span class="hljs-number">7</span> <span class="hljs-number">16</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Vector</span> <span class="hljs-number">3</span> <span class="hljs-number">5</span> <span class="hljs-number">8</span> `vplus` <span class="hljs-type">Vector</span> <span class="hljs-number">9</span> <span class="hljs-number">2</span> <span class="hljs-number">8</span> `vplus` <span class="hljs-type">Vector</span> <span class="hljs-number">0</span> <span class="hljs-number">2</span> <span class="hljs-number">3</span>
+<span class="hljs-type">Vector</span> <span class="hljs-number">12</span> <span class="hljs-number">9</span> <span class="hljs-number">19</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Vector</span> <span class="hljs-number">3</span> <span class="hljs-number">9</span> <span class="hljs-number">7</span> `vectMult` <span class="hljs-number">10</span>
+<span class="hljs-type">Vector</span> <span class="hljs-number">30</span> <span class="hljs-number">90</span> <span class="hljs-number">70</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Vector</span> <span class="hljs-number">4</span> <span class="hljs-number">9</span> <span class="hljs-number">5</span> `scalarMult` <span class="hljs-type">Vector</span> <span class="hljs-number">9.0</span> <span class="hljs-number">2.0</span> <span class="hljs-number">4.0</span>
+<span class="hljs-number">74.0</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Vector</span> <span class="hljs-number">2</span> <span class="hljs-number">9</span> <span class="hljs-number">3</span> `vectMult` (<span class="hljs-type">Vector</span> <span class="hljs-number">4</span> <span class="hljs-number">9</span> <span class="hljs-number">5</span> `scalarMult` <span class="hljs-type">Vector</span> <span class="hljs-number">9</span> <span class="hljs-number">2</span> <span class="hljs-number">4</span>)
+<span class="hljs-type">Vector</span> <span class="hljs-number">148</span> <span class="hljs-number">666</span> <span class="hljs-number">222</span>
+</code></pre>
+<h2 id="derived-instances">Derived instances</h2>
+<p><img src="img/gob.png" alt="gob"></p>
+<p>In the <a href="#typeclasses-101">Typeclasses 101</a> section,
+we explained the basics of typeclasses. We explained that a typeclass is
+a sort of an interface that defines some behavior. A type can be made an
+<em>instance</em> of a typeclass if it supports that behavior. Example: the <code>Int</code>
+type is an instance of the <code>Eq</code> typeclass because the <code>Eq</code> typeclass defines
+behavior for stuff that can be equated. And because integers can be
+equated, <code>Int</code> is a part of the <code>Eq</code> typeclass. The real usefulness comes
+with the functions that act as the interface for <code>Eq</code>, namely <code>==</code> and <code>/=</code>.
+If a type is a part of the <code>Eq</code> typeclass, we can use the <code>==</code> functions
+with values of that type. That&apos;s why expressions like <code>4 == 4</code> and
+<code>&quot;foo&quot; /= &quot;bar&quot;</code> typecheck.</p>
+<p>We also mentioned that they&apos;re often confused with classes in languages
+like Java, Python, C++ and the like, which then baffles a lot of people.
+In those languages, classes are a blueprint from which we then create
+objects that contain state and can do some actions. Typeclasses are more
+like interfaces. We don&apos;t make data from typeclasses. Instead, we first
+make our data type and then we think about what it can act like. If it
+can act like something that can be equated, we make it an instance of
+the <code>Eq</code> typeclass. If it can act like something that can be ordered, we
+make it an instance of the <code>Ord</code> typeclass.</p>
+<p>In the next section, we&apos;ll take a look at how we can manually make our
+types instances of typeclasses by implementing the functions defined by
+the typeclasses. But right now, let&apos;s see how Haskell can automatically
+make our type an instance of any of the following typeclasses: <code>Eq</code>, <code>Ord</code>,
+<code>Enum</code>, <code>Bounded</code>, <code>Show</code>, <code>Read</code>. Haskell can derive the behavior of our types
+in these contexts if we use the <em>deriving</em> keyword when making our data
+type.</p>
+<p>Consider this data type:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Person</span> = <span class="hljs-type">Person</span> { <span class="hljs-title">firstName</span> :: <span class="hljs-type">String</span>
+                     , <span class="hljs-title">lastName</span> :: <span class="hljs-type">String</span>
+                     , <span class="hljs-title">age</span> :: <span class="hljs-type">Int</span>
+                     }</span>
+</code></pre>
+<p>It describes a person. Let&apos;s assume that no two people have the same
+combination of first name, last name and age. Now, if we have records
+for two people, does it make sense to see if they represent the same
+person? Sure it does. We can try to equate them and see if they&apos;re equal
+or not. That&apos;s why it would make sense for this type to be part of the
+<code>Eq</code> typeclass. We&apos;ll derive the instance.</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Person</span> = <span class="hljs-type">Person</span> { <span class="hljs-title">firstName</span> :: <span class="hljs-type">String</span>
+                     , <span class="hljs-title">lastName</span> :: <span class="hljs-type">String</span>
+                     , <span class="hljs-title">age</span> :: <span class="hljs-type">Int</span>
+                     } <span class="hljs-keyword">deriving</span> (<span class="hljs-type">Eq</span>)</span>
+</code></pre>
+<p>When we derive the <code>Eq</code> instance for a type and then try to compare two
+values of that type with <code>==</code> or <code>/=</code>, Haskell will see if the value
+constructors match (there&apos;s only one value constructor here though) and
+then it will check if all the data contained inside matches by testing
+each pair of fields with <code>==</code>. There&apos;s only one catch though, the types of
+all the fields also have to be part of the <code>Eq</code> typeclass. But since both
+<code>String</code> and <code>Int</code> are, we&apos;re OK. Let&apos;s test our <code>Eq</code> instance.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-keyword">let</span> mikeD = <span class="hljs-type">Person</span> {firstName = <span class="hljs-string">&quot;Michael&quot;</span>, lastName = <span class="hljs-string">&quot;Diamond&quot;</span>, age = <span class="hljs-number">43</span>}
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-keyword">let</span> adRock = <span class="hljs-type">Person</span> {firstName = <span class="hljs-string">&quot;Adam&quot;</span>, lastName = <span class="hljs-string">&quot;Horovitz&quot;</span>, age = <span class="hljs-number">41</span>}
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-keyword">let</span> mca = <span class="hljs-type">Person</span> {firstName = <span class="hljs-string">&quot;Adam&quot;</span>, lastName = <span class="hljs-string">&quot;Yauch&quot;</span>, age = <span class="hljs-number">44</span>}
+<span class="hljs-title">ghci</span>&gt; mca == adRock
+<span class="hljs-type">False</span>
+<span class="hljs-title">ghci</span>&gt; mikeD == adRock
+<span class="hljs-type">False</span>
+<span class="hljs-title">ghci</span>&gt; mikeD == mikeD
+<span class="hljs-type">True</span>
+<span class="hljs-title">ghci</span>&gt; mikeD == <span class="hljs-type">Person</span> {firstName = <span class="hljs-string">&quot;Michael&quot;</span>, lastName = <span class="hljs-string">&quot;Diamond&quot;</span>, age = <span class="hljs-number">43</span>}
+<span class="hljs-type">True</span>
+</code></pre>
+<p>Of course, since <code>Person</code> is now in <code>Eq</code>, we can use it as the <code>a</code> for all
+functions that have a class constraint of <code>Eq a</code> in their type signature,
+such as <code>elem</code>.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-keyword">let</span> beastieBoys = [mca, adRock, mikeD]
+<span class="hljs-title">ghci</span>&gt; mikeD `elem` beastieBoys
+<span class="hljs-type">True</span>
+</code></pre>
+<p>The <code>Show</code> and <code>Read</code> typeclasses are for things that can be converted to or
+from strings, respectively. Like with <code>Eq</code>, if a type&apos;s constructors have
+fields, their type has to be a part of <code>Show</code> or <code>Read</code> if we want to make
+our type an instance of them. Let&apos;s make our <code>Person</code> data type a part of
+<code>Show</code> and <code>Read</code> as well.</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Person</span> = <span class="hljs-type">Person</span> { <span class="hljs-title">firstName</span> :: <span class="hljs-type">String</span>
+                     , <span class="hljs-title">lastName</span> :: <span class="hljs-type">String</span>
+                     , <span class="hljs-title">age</span> :: <span class="hljs-type">Int</span>
+                     } <span class="hljs-keyword">deriving</span> (<span class="hljs-type">Eq</span>, <span class="hljs-type">Show</span>, <span class="hljs-type">Read</span>)</span>
+</code></pre>
+<p>Now we can print a person out to the terminal.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-keyword">let</span> mikeD = <span class="hljs-type">Person</span> {firstName = <span class="hljs-string">&quot;Michael&quot;</span>, lastName = <span class="hljs-string">&quot;Diamond&quot;</span>, age = <span class="hljs-number">43</span>}
+<span class="hljs-title">ghci</span>&gt; mikeD
+<span class="hljs-type">Person</span> {firstName = <span class="hljs-string">&quot;Michael&quot;</span>, lastName = <span class="hljs-string">&quot;Diamond&quot;</span>, age = <span class="hljs-number">43</span>}
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-string">&quot;mikeD is: &quot;</span> ++ show mikeD
+<span class="hljs-string">&quot;mikeD is: Person {firstName = \&quot;Michael\&quot;, lastName = \&quot;Diamond\&quot;, age = 43}&quot;</span>
+</code></pre>
+<p>Had we tried to print a person on the terminal before making the <code>Person</code>
+data type part of <code>Show</code>, Haskell would have complained at us, claiming it
+doesn&apos;t know how to represent a person as a string. But now that we&apos;ve
+derived a <code>Show</code> instance for it, it does know.</p>
+<p><code>Read</code> is pretty much the inverse typeclass of <code>Show</code>. <code>Show</code> is for
+converting values of our a type to a string, <code>Read</code> is for converting
+strings to values of our type. Remember though, when we use the <code>read</code>
+function, we have to use an explicit type annotation to tell Haskell
+which type we want to get as a result. If we don&apos;t make the type we want
+as a result explicit, Haskell doesn&apos;t know which type we want.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; read <span class="hljs-string">&quot;Person {firstName =\&quot;Michael\&quot;, lastName =\&quot;Diamond\&quot;, age = 43}&quot;</span> :: <span class="hljs-type">Person</span>
+<span class="hljs-type">Person</span> {firstName = <span class="hljs-string">&quot;Michael&quot;</span>, lastName = <span class="hljs-string">&quot;Diamond&quot;</span>, age = <span class="hljs-number">43</span>}
+</code></pre>
+<p>If we use the result of our <code>read</code> later on in a way that Haskell can
+infer that it should read it as a person, we don&apos;t have to use type
+annotation.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; read <span class="hljs-string">&quot;Person {firstName =\&quot;Michael\&quot;, lastName =\&quot;Diamond\&quot;, age = 43}&quot;</span> == mikeD
+<span class="hljs-type">True</span>
+</code></pre>
+<p>We can also read parameterized types, but we have to fill in the type
+parameters. So we can&apos;t do <code>read &quot;Just &apos;t&apos;&quot; :: Maybe a</code>, but we can do
+<code>read &quot;Just &apos;t&apos;&quot; :: Maybe Char</code>.</p>
+<p>We can derive instances for the <code>Ord</code> type class, which is for types that
+have values that can be ordered. If we compare two values of the same
+type that were made using different constructors, the value which was
+made with a constructor that&apos;s defined first is considered smaller. For
+instance, consider the <code>Bool</code> type, which can have a value of either <code>False</code>
+or <code>True</code>. For the purpose of seeing how it behaves when compared, we can
+think of it as being implemented like this:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Bool</span> = <span class="hljs-type">False</span> | <span class="hljs-type">True</span> <span class="hljs-keyword">deriving</span> (<span class="hljs-type">Ord</span>)</span>
+</code></pre>
+<p>Because the <code>False</code> value constructor is specified first and the <code>True</code>
+value constructor is specified after it, we can consider <code>True</code> as greater
+than <code>False</code>.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-type">True</span> `compare` <span class="hljs-type">False</span>
+<span class="hljs-type">GT</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-type">True</span> &gt; <span class="hljs-type">False</span>
+<span class="hljs-type">True</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-type">True</span> &lt; <span class="hljs-type">False</span>
+<span class="hljs-type">False</span>
+</code></pre>
+<p>In the <code>Maybe a</code> data type, the <code>Nothing</code> value constructor is specified
+before the <code>Just</code> value constructor, so a value of <code>Nothing</code> is always
+smaller than a value of <code>Just something</code>, even if that something is minus
+one billion trillion. But if we compare two <code>Just</code> values, then it goes to
+compare what&apos;s inside them.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Nothing</span> &lt; <span class="hljs-type">Just</span> <span class="hljs-number">100</span>
+<span class="hljs-type">True</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Nothing</span> &gt; <span class="hljs-type">Just</span> (<span class="hljs-number">-49999</span>)
+<span class="hljs-type">False</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Just</span> <span class="hljs-number">3</span> `compare` <span class="hljs-type">Just</span> <span class="hljs-number">2</span>
+<span class="hljs-type">GT</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Just</span> <span class="hljs-number">100</span> &gt; <span class="hljs-type">Just</span> <span class="hljs-number">50</span>
+<span class="hljs-type">True</span>
+</code></pre>
+<p>But we can&apos;t do something like <code>Just (*3) &gt; Just (*2)</code>, because <code>(*3)</code>
+and <code>(*2)</code> are functions, which aren&apos;t instances of Ord.</p>
+<p>We can easily use algebraic data types to make enumerations and the <code>Enum</code>
+and <code>Bounded</code> typeclasses help us with that. Consider the following data
+type:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Day</span> = <span class="hljs-type">Monday</span> | <span class="hljs-type">Tuesday</span> | <span class="hljs-type">Wednesday</span> | <span class="hljs-type">Thursday</span> | <span class="hljs-type">Friday</span> | <span class="hljs-type">Saturday</span> | <span class="hljs-type">Sunday</span></span>
+</code></pre>
+<p>Because all the value constructors are nullary (take no parameters, i.e.
+fields), we can make it part of the <code>Enum</code> typeclass. The <code>Enum</code> typeclass
+is for things that have predecessors and successors. We can also make it
+part of the <code>Bounded</code> typeclass, which is for things that have a lowest
+possible value and highest possible value. And while we&apos;re at it, let&apos;s
+also make it an instance of all the other derivable typeclasses and see
+what we can do with it.</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Day</span> = <span class="hljs-type">Monday</span> | <span class="hljs-type">Tuesday</span> | <span class="hljs-type">Wednesday</span> | <span class="hljs-type">Thursday</span> | <span class="hljs-type">Friday</span> | <span class="hljs-type">Saturday</span> | <span class="hljs-type">Sunday</span></span>
+           <span class="hljs-keyword">deriving</span> (<span class="hljs-type">Eq</span>, <span class="hljs-type">Ord</span>, <span class="hljs-type">Show</span>, <span class="hljs-type">Read</span>, <span class="hljs-type">Bounded</span>, <span class="hljs-type">Enum</span>)
+</code></pre>
+<p>Because it&apos;s part of the <code>Show</code> and <code>Read</code> typeclasses, we can convert
+values of this type to and from strings.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Wednesday</span>
+<span class="hljs-type">Wednesday</span>
+<span class="hljs-title">ghci</span>&gt; show <span class="hljs-type">Wednesday</span>
+<span class="hljs-string">&quot;Wednesday&quot;</span>
+<span class="hljs-title">ghci</span>&gt; read <span class="hljs-string">&quot;Saturday&quot;</span> :: <span class="hljs-type">Day</span>
+<span class="hljs-type">Saturday</span>
+</code></pre>
+<p>Because it&apos;s part of the <code>Eq</code> and <code>Ord</code> typeclasses, we can compare or
+equate days.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Saturday</span> == <span class="hljs-type">Sunday</span>
+<span class="hljs-type">False</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Saturday</span> == <span class="hljs-type">Saturday</span>
+<span class="hljs-type">True</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Saturday</span> &gt; <span class="hljs-type">Friday</span>
+<span class="hljs-type">True</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Monday</span> `compare` <span class="hljs-type">Wednesday</span>
+<span class="hljs-type">LT</span>
+</code></pre>
+<p>It&apos;s also part of <code>Bounded</code>, so we can get the lowest and highest day.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; minBound :: <span class="hljs-type">Day</span>
+<span class="hljs-type">Monday</span>
+<span class="hljs-title">ghci</span>&gt; maxBound :: <span class="hljs-type">Day</span>
+<span class="hljs-type">Sunday</span>
+</code></pre>
+<p>It&apos;s also an instance of <code>Enum</code>. We can get predecessors and successors of
+days and we can make list ranges from them!</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; succ <span class="hljs-type">Monday</span>
+<span class="hljs-type">Tuesday</span>
+<span class="hljs-title">ghci</span>&gt; pred <span class="hljs-type">Saturday</span>
+<span class="hljs-type">Friday</span>
+<span class="hljs-title">ghci</span>&gt; [<span class="hljs-type">Thursday</span> .. <span class="hljs-type">Sunday</span>]
+[<span class="hljs-type">Thursday</span>,<span class="hljs-type">Friday</span>,<span class="hljs-type">Saturday</span>,<span class="hljs-type">Sunday</span>]
+<span class="hljs-title">ghci</span>&gt; [minBound .. maxBound] :: [<span class="hljs-type">Day</span>]
+[<span class="hljs-type">Monday</span>,<span class="hljs-type">Tuesday</span>,<span class="hljs-type">Wednesday</span>,<span class="hljs-type">Thursday</span>,<span class="hljs-type">Friday</span>,<span class="hljs-type">Saturday</span>,<span class="hljs-type">Sunday</span>]
+</code></pre>
+<p>That&apos;s pretty awesome.</p>
+<p><a name="type-synonyms"></a></p>
+<h2 id="type-synonyms">Type synonyms</h2>
+<p>Previously, we mentioned that when writing types, the <code>[Char]</code> and <code>String</code>
+types are equivalent and interchangeable. That&apos;s implemented with <em>type
+synonyms</em>. Type synonyms don&apos;t really do anything per se, they&apos;re just
+about giving some types different names so that they make more sense to
+someone reading our code and documentation. Here&apos;s how the standard
+library defines <code>String</code> as a synonym for <code>[Char]</code>.</p>
+<pre><code class="lang-haskell"> <span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">String</span> = [<span class="hljs-type">Char</span>]</span>
+</code></pre>
+<p><img src="img/chicken.png" alt="chicken"></p>
+<p>We&apos;ve introduced the <em>type</em> keyword. The keyword might be misleading to
+some, because we&apos;re not actually making anything new (we did that with
+the <em>data</em> keyword), but we&apos;re just making a synonym for an already
+existing type.</p>
+<p>If we make a function that converts a string to uppercase and call it
+<code>toUpperString</code> or something, we can give it a type declaration of
+<code>toUpperString :: [Char] -&gt; [Char]</code> or
+<code>toUpperString :: String -&gt; String</code>.
+Both of these are essentially the same, only the latter is nicer
+to read.</p>
+<p>When we were dealing with the <code>Data.Map</code> module, we first represented a
+phonebook with an association list before converting it into a map. As
+we&apos;ve already found out, an association list is a list of key-value
+pairs. Let&apos;s look at a phonebook that we had.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">phoneBook</span> :: [(<span class="hljs-type">String</span>,<span class="hljs-type">String</span>)]
+<span class="hljs-title">phoneBook</span> =
+    [(<span class="hljs-string">&quot;betty&quot;</span>,<span class="hljs-string">&quot;555-2938&quot;</span>)
+    ,(<span class="hljs-string">&quot;bonnie&quot;</span>,<span class="hljs-string">&quot;452-2928&quot;</span>)
+    ,(<span class="hljs-string">&quot;patsy&quot;</span>,<span class="hljs-string">&quot;493-2928&quot;</span>)
+    ,(<span class="hljs-string">&quot;lucille&quot;</span>,<span class="hljs-string">&quot;205-2928&quot;</span>)
+    ,(<span class="hljs-string">&quot;wendy&quot;</span>,<span class="hljs-string">&quot;939-8282&quot;</span>)
+    ,(<span class="hljs-string">&quot;penny&quot;</span>,<span class="hljs-string">&quot;853-2492&quot;</span>)
+    ]
+</code></pre>
+<p>We see that the type of <code>phoneBook</code> is <code>[(String,String)]</code>. That tells us
+that it&apos;s an association list that maps from strings to strings, but not
+much else. Let&apos;s make a type synonym to convey some more information in
+the type declaration.</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">PhoneBook</span> = [(<span class="hljs-type">String</span>,<span class="hljs-type">String</span>)]</span>
+</code></pre>
+<p>Now the type declaration for our phonebook can be
+<code>phoneBook :: PhoneBook</code>. Let&apos;s make a type synonym for <code>String</code> as well.</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">PhoneNumber</span> = <span class="hljs-type">String</span></span>
+<span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">Name</span> = <span class="hljs-type">String</span></span>
+<span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">PhoneBook</span> = [(<span class="hljs-type">Name</span>,<span class="hljs-type">PhoneNumber</span>)]</span>
+</code></pre>
+<p>Giving the <code>String</code> type synonyms is something that Haskell programmers do
+when they want to convey more information about what strings in their
+functions should be used as and what they represent.</p>
+<p>So now, when we implement a function that takes a name and a number and
+sees if that name and number combination is in our phonebook, we can
+give it a very pretty and descriptive type declaration.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">inPhoneBook</span> :: <span class="hljs-type">Name</span> -&gt; <span class="hljs-type">PhoneNumber</span> -&gt; <span class="hljs-type">PhoneBook</span> -&gt; <span class="hljs-type">Bool</span>
+<span class="hljs-title">inPhoneBook</span> name pnumber pbook = (name,pnumber) `elem` pbook
+</code></pre>
+<p>If we decided not to use type synonyms, our function would have a type
+of <code>String -&gt; String -&gt; [(String,String)] -&gt; Bool</code>. In this case, the
+type declaration that took advantage of type synonyms is easier to
+understand. However, you shouldn&apos;t go overboard with them. We introduce
+type synonyms either to describe what some existing type represents in
+our functions (and thus our type declarations become better
+documentation) or when something has a long-ish type that&apos;s repeated a
+lot (like <code>[(String,String)]</code>) but represents something more specific in
+the context of our functions.</p>
+<p>Type synonyms can also be parameterized. If we want a type that
+represents an association list type but still want it to be general so
+it can use any type as the keys and values, we can do this:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">AssocList</span> k v = [(<span class="hljs-title">k</span>,<span class="hljs-title">v</span>)]</span>
+</code></pre>
+<p>Now, a function that gets the value by a key in an association list can
+have a type of <code>(Eq k) =&gt; k -&gt; AssocList k v -&gt; Maybe v</code>. <code>AssocList</code> is
+a type constructor that takes two types and produces a concrete type,
+like <code>AssocList Int String</code>, for instance.</p>
+<blockquote>
+<p><em>Fonzie says:</em> Aaay! When I talk about <em>concrete types</em> I mean like
+fully applied types like <code>Map Int String</code> or if we&apos;re dealin&apos; with one of
+them polymorphic functions, <code>[a]</code> or <code>(Ord a) =&gt; Maybe a</code> and stuff. And
+like, sometimes me and the boys say that <code>Maybe</code> is a type, but we don&apos;t
+mean that, cause every idiot knows <code>Maybe</code> is a type constructor. When I
+apply an extra type to <code>Maybe</code>, like <code>Maybe String</code>, then I have a concrete
+type. You know, values can only have types that are concrete types! So
+in conclusion, live fast, love hard and don&apos;t let anybody else use your
+comb!</p>
+</blockquote>
+<p>Just like we can partially apply functions to get new functions, we can
+partially apply type parameters and get new type constructors from them.
+Just like we call a function with too few parameters to get back a new
+function, we can specify a type constructor with too few type parameters
+and get back a partially applied type constructor. If we wanted a type
+that represents a map (from <code>Data.Map</code>) from integers to something, we
+could either do this:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">IntMap</span> v = <span class="hljs-type">Map</span> <span class="hljs-type">Int</span> v</span>
+</code></pre>
+<p>Or we could do it like this:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">IntMap</span> = <span class="hljs-type">Map</span> <span class="hljs-type">Int</span></span>
+</code></pre>
+<p>Either way, the <code>IntMap</code> type constructor takes one parameter and that is
+the type of what the integers will point to.</p>
+<blockquote>
+<p><em>Oh yeah</em>. If you&apos;re going to try and implement this, you&apos;ll probably
+going to do a qualified import of <code>Data.Map</code>. When you do a qualified
+import, type constructors also have to be preceeded with a module name.
+So you&apos;d write <code>type IntMap = Map.Map Int</code>.</p>
+</blockquote>
+<p>Make sure that you really understand the distinction between type
+constructors and value constructors. Just because we made a type synonym
+called <code>IntMap</code> or <code>AssocList</code> doesn&apos;t mean that we can do stuff like
+<code>AssocList [(1,2),(4,5),(7,9)]</code>. All it means is that we can refer to its
+type by using different names. We can do
+<code>[(1,2),(3,5),(8,9)] :: AssocList Int Int</code>,
+which will make the numbers inside assume a type of
+<code>Int</code>, but we can still use that list as we would any normal list that has
+pairs of integers inside. Type synonyms (and types generally) can only
+be used in the type portion of Haskell. We&apos;re in Haskell&apos;s type portion
+whenever we&apos;re defining new types (so in <em>data</em> and <em>type</em> declarations)
+or when we&apos;re located after a <code>::</code>. The <code>::</code> is in type declarations or in
+type annotations.</p>
+<p>Another cool data type that takes two types as its parameters is the
+<code>Either a b</code> type. This is roughly how it&apos;s defined:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Either</span> a b = <span class="hljs-type">Left</span> a | <span class="hljs-type">Right</span> b <span class="hljs-keyword">deriving</span> (<span class="hljs-type">Eq</span>, <span class="hljs-type">Ord</span>, <span class="hljs-type">Read</span>, <span class="hljs-type">Show</span>)</span>
+</code></pre>
+<p>It has two value constructors. If the <code>Left</code> is used, then its contents
+are of type <code>a</code> and if <code>Right</code> is used, then its contents are of type b. So
+we can use this type to encapsulate a value of one type or another and
+then when we get a value of type <code>Either a b</code>, we usually pattern match on
+both <code>Left</code> and <code>Right</code> and we different stuff based on which one of them it
+was.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Right</span> <span class="hljs-number">20</span>
+<span class="hljs-type">Right</span> <span class="hljs-number">20</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Left</span> <span class="hljs-string">&quot;w00t&quot;</span>
+<span class="hljs-type">Left</span> <span class="hljs-string">&quot;w00t&quot;</span>
+<span class="hljs-title">ghci</span>&gt; :t <span class="hljs-type">Right</span> &apos;a&apos;
+<span class="hljs-type">Right</span> &apos;a&apos; :: <span class="hljs-type">Either</span> a <span class="hljs-type">Char</span>
+<span class="hljs-title">ghci</span>&gt; :t <span class="hljs-type">Left</span> <span class="hljs-type">True</span>
+<span class="hljs-type">Left</span> <span class="hljs-type">True</span> :: <span class="hljs-type">Either</span> <span class="hljs-type">Bool</span> b
+</code></pre>
+<p>So far, we&apos;ve seen that <code>Maybe a</code> was mostly used to represent the results
+of computations that could have either failed or not. But sometimes,
+<code>Maybe a</code> isn&apos;t good enough because <code>Nothing</code> doesn&apos;t really convey much
+information other than that something has failed. That&apos;s cool for
+functions that can fail in only one way or if we&apos;re just not interested
+in how and why they failed. A <code>Data.Map</code> lookup fails only if the key we
+were looking for wasn&apos;t in the map, so we know exactly what happened.
+However, when we&apos;re interested in how some function failed or why, we
+usually use the result type of <code>Either a b</code>, where <code>a</code> is some sort of type
+that can tell us something about the possible failure and <code>b</code> is the type
+of a successful computation. Hence, errors use the <code>Left</code> value
+constructor while results use <code>Right</code>.</p>
+<p>An example: a high-school has lockers so that students have some place
+to put their Guns&apos;n&apos;Roses posters. Each locker has a code combination.
+When a student wants a new locker, they tell the locker supervisor which
+locker number they want and he gives them the code. However, if someone
+is already using that locker, he can&apos;t tell them the code for the locker
+and they have to pick a different one. We&apos;ll use a map from <code>Data.Map</code> to
+represent the lockers. It&apos;ll map from locker numbers to a pair of
+whether the locker is in use or not and the locker code.</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> <span class="hljs-keyword">qualified</span> Data.Map <span class="hljs-keyword">as</span> Map
+
+<span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">LockerState</span> = <span class="hljs-type">Taken</span> | <span class="hljs-type">Free</span> <span class="hljs-keyword">deriving</span> (<span class="hljs-type">Show</span>, <span class="hljs-type">Eq</span>)</span>
+
+<span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">Code</span> = <span class="hljs-type">String</span></span>
+
+<span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-type">LockerMap</span> = <span class="hljs-type">Map</span>.<span class="hljs-type">Map</span> <span class="hljs-type">Int</span> (<span class="hljs-type">LockerState</span>, <span class="hljs-type">Code</span>)</span>
+</code></pre>
+<p>Simple stuff. We introduce a new data type to represent whether a locker
+is taken or free and we make a type synonym for the locker code. We also
+make a type synonym for the type that maps from integers to pairs of
+locker state and code. And now, we&apos;re going to make a function that
+searches for the code in a locker map. We&apos;re going to use an
+<code>Either String Code</code> type to represent our result, because our lookup can fail in
+two ways — the locker can be taken, in which case we can&apos;t tell the code
+or the locker number might not exist at all. If the lookup fails, we&apos;re
+just going to use a <code>String</code> to tell what&apos;s happened.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">lockerLookup</span> :: <span class="hljs-type">Int</span> -&gt; <span class="hljs-type">LockerMap</span> -&gt; <span class="hljs-type">Either</span> <span class="hljs-type">String</span> <span class="hljs-type">Code</span>
+<span class="hljs-title">lockerLookup</span> lockerNumber map =
+    <span class="hljs-keyword">case</span> <span class="hljs-type">Map</span>.lookup lockerNumber map <span class="hljs-keyword">of</span>
+        <span class="hljs-type">Nothing</span> -&gt; <span class="hljs-type">Left</span> $ <span class="hljs-string">&quot;Locker number &quot;</span> ++ show lockerNumber ++ <span class="hljs-string">&quot; doesn&apos;t exist!&quot;</span>
+        <span class="hljs-type">Just</span> (state, code) -&gt; <span class="hljs-keyword">if</span> state /= <span class="hljs-type">Taken</span>
+                                <span class="hljs-keyword">then</span> <span class="hljs-type">Right</span> code
+                                <span class="hljs-keyword">else</span> <span class="hljs-type">Left</span> $ <span class="hljs-string">&quot;Locker &quot;</span> ++ show lockerNumber ++ <span class="hljs-string">&quot; is already taken!&quot;</span>
+</code></pre>
+<p>We do a normal lookup in the map. If we get a <code>Nothing</code>, we return a value
+of type <code>Left String</code>, saying that the locker doesn&apos;t exist at all. If we
+do find it, then we do an additional check to see if the locker is
+taken. If it is, return a <code>Left</code> saying that it&apos;s already taken. If it
+isn&apos;t, then return a value of type <code>Right Code</code>, in which we give the
+student the correct code for the locker. It&apos;s actually a <code>Right String</code>,
+but we introduced that type synonym to introduce some additional
+documentation into the type declaration. Here&apos;s an example map:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">lockers</span> :: <span class="hljs-type">LockerMap</span>
+<span class="hljs-title">lockers</span> = <span class="hljs-type">Map</span>.fromList
+    [(<span class="hljs-number">100</span>,(<span class="hljs-type">Taken</span>,<span class="hljs-string">&quot;ZD39I&quot;</span>))
+    ,(<span class="hljs-number">101</span>,(<span class="hljs-type">Free</span>,<span class="hljs-string">&quot;JAH3I&quot;</span>))
+    ,(<span class="hljs-number">103</span>,(<span class="hljs-type">Free</span>,<span class="hljs-string">&quot;IQSA9&quot;</span>))
+    ,(<span class="hljs-number">105</span>,(<span class="hljs-type">Free</span>,<span class="hljs-string">&quot;QOTSA&quot;</span>))
+    ,(<span class="hljs-number">109</span>,(<span class="hljs-type">Taken</span>,<span class="hljs-string">&quot;893JJ&quot;</span>))
+    ,(<span class="hljs-number">110</span>,(<span class="hljs-type">Taken</span>,<span class="hljs-string">&quot;99292&quot;</span>))
+    ]
+</code></pre>
+<p>Now let&apos;s try looking up some locker codes.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; lockerLookup <span class="hljs-number">101</span> lockers
+<span class="hljs-type">Right</span> <span class="hljs-string">&quot;JAH3I&quot;</span>
+<span class="hljs-title">ghci</span>&gt; lockerLookup <span class="hljs-number">100</span> lockers
+<span class="hljs-type">Left</span> <span class="hljs-string">&quot;Locker 100 is already taken!&quot;</span>
+<span class="hljs-title">ghci</span>&gt; lockerLookup <span class="hljs-number">102</span> lockers
+<span class="hljs-type">Left</span> <span class="hljs-string">&quot;Locker number 102 doesn&apos;t exist!&quot;</span>
+<span class="hljs-title">ghci</span>&gt; lockerLookup <span class="hljs-number">110</span> lockers
+<span class="hljs-type">Left</span> <span class="hljs-string">&quot;Locker 110 is already taken!&quot;</span>
+<span class="hljs-title">ghci</span>&gt; lockerLookup <span class="hljs-number">105</span> lockers
+<span class="hljs-type">Right</span> <span class="hljs-string">&quot;QOTSA&quot;</span>
+</code></pre>
+<p>We could have used a <code>Maybe a</code> to represent the result but then we
+wouldn&apos;t know why we couldn&apos;t get the code. But now, we have information
+about the failure in our result type.</p>
+<p><a name="recursive-data-structures"></a></p>
+<h2 id="recursive-data-structures">Recursive data structures</h2>
+<p><img src="img/thefonz.png" alt="the fonz"></p>
+<p>As we&apos;ve seen, a constructor in an algebraic data type can have several
+(or none at all) fields and each field must be of some concrete type.
+With that in mind, we can make types whose constructors have fields that
+are of the same type! Using that, we can create recursive data types,
+where one value of some type contains values of that type, which in turn
+contain more values of the same type and so on.</p>
+<p>Think about this list: <code>[5]</code>. That&apos;s just syntactic sugar for <code>5:[]</code>. On the
+left side of the <code>:</code>, there&apos;s a value and on the right side, there&apos;s a
+list. And in this case, it&apos;s an empty list. Now how about the list
+<code>[4,5]</code>? Well, that desugars to <code>4:(5:[])</code>. Looking at the first <code>:</code>, we see
+that it also has an element on its left side and a list <code>(5:[])</code> on its
+right side. Same goes for a list like <code>3:(4:(5:6:[]))</code>, which could be
+written either like that or like <code>3:4:5:6:[]</code> (because <code>:</code> is
+right-associative) or <code>[3,4,5,6]</code>.</p>
+<p>We could say that a list can be an empty list or it can be an element
+joined together with a <code>:</code> with another list (that can be either the empty
+list or not).</p>
+<p>Let&apos;s use algebraic data types to implement our own list then!</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">List</span> a = <span class="hljs-type">Empty</span> | <span class="hljs-type">Cons</span> a (<span class="hljs-type">List</span> <span class="hljs-title">a</span>) <span class="hljs-keyword">deriving</span> (<span class="hljs-type">Show</span>, <span class="hljs-type">Read</span>, <span class="hljs-type">Eq</span>, <span class="hljs-type">Ord</span>)</span>
+</code></pre>
+<p>This reads just like our definition of lists from one of the previous
+paragraphs. It&apos;s either an empty list or a combination of a head with
+some value and a list. If you&apos;re confused about this, you might find it
+easier to understand in record syntax.</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">List</span> a = <span class="hljs-type">Empty</span> | <span class="hljs-type">Cons</span> { <span class="hljs-title">listHead</span> :: <span class="hljs-title">a</span>, <span class="hljs-title">listTail</span> :: <span class="hljs-type">List</span> <span class="hljs-title">a</span>} <span class="hljs-keyword">deriving</span> (<span class="hljs-type">Show</span>, <span class="hljs-type">Read</span>, <span class="hljs-type">Eq</span>, <span class="hljs-type">Ord</span>)</span>
+</code></pre>
+<p>You might also be confused about the <code>Cons</code> constructor here. <em>cons</em> is
+another word for <code>:</code>. You see, in lists, <code>:</code> is actually a constructor that
+takes a value and another list and returns a list. We can already use
+our new list type! In other words, it has two fields. One field is of
+the type of <code>a</code> and the other is of the type <code>[a]</code>.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Empty</span>
+<span class="hljs-type">Empty</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-number">5</span> `<span class="hljs-type">Cons</span>` <span class="hljs-type">Empty</span>
+<span class="hljs-type">Cons</span> <span class="hljs-number">5</span> <span class="hljs-type">Empty</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-number">4</span> `<span class="hljs-type">Cons</span>` (<span class="hljs-number">5</span> `<span class="hljs-type">Cons</span>` <span class="hljs-type">Empty</span>)
+<span class="hljs-type">Cons</span> <span class="hljs-number">4</span> (<span class="hljs-type">Cons</span> <span class="hljs-number">5</span> <span class="hljs-type">Empty</span>)
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-number">3</span> `<span class="hljs-type">Cons</span>` (<span class="hljs-number">4</span> `<span class="hljs-type">Cons</span>` (<span class="hljs-number">5</span> `<span class="hljs-type">Cons</span>` <span class="hljs-type">Empty</span>))
+<span class="hljs-type">Cons</span> <span class="hljs-number">3</span> (<span class="hljs-type">Cons</span> <span class="hljs-number">4</span> (<span class="hljs-type">Cons</span> <span class="hljs-number">5</span> <span class="hljs-type">Empty</span>))
+</code></pre>
+<p>We called our <code>Cons</code> constructor in an infix manner so you can see how
+it&apos;s just like <code>:</code>. <code>Empty</code> is like <code>[]</code> and <code>4 `Cons` (5 `Cons` Empty)</code> is
+like <code>4:(5:[])</code>.</p>
+<p>We can define functions to be automatically infix by making them
+comprised of only special characters. We can also do the same with
+constructors, since they&apos;re just functions that return a data type. So
+check this out.</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">infixr</span> <span class="hljs-number">5</span> :-:
+<span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">List</span> a = <span class="hljs-type">Empty</span> | a :-: (<span class="hljs-type">List</span> <span class="hljs-title">a</span>) <span class="hljs-keyword">deriving</span> (<span class="hljs-type">Show</span>, <span class="hljs-type">Read</span>, <span class="hljs-type">Eq</span>, <span class="hljs-type">Ord</span>)</span>
+</code></pre>
+<p>First off, we notice a new syntactic construct, the fixity declarations.
+When we define functions as operators, we can use that to give them a
+fixity (but we don&apos;t have to). A fixity states how tightly the operator
+binds and whether it&apos;s left-associative or right-associative. For
+instance, <code>*</code>&apos;s fixity is <code>infixl 7 *</code> and <code>+</code>&apos;s fixity is <code>infixl 6</code>. That
+means that they&apos;re both left-associative (<code>4 * 3 * 2</code> is <code>(4 * 3) * 2</code>)
+but <code>*</code> binds tighter than <code>+</code>, because it has a greater fixity, so
+<code>5 * 4 + 3</code> is <code>(5 * 4) + 3</code>.</p>
+<p>Otherwise, we just wrote <code>a :-: (List a)</code> instead of <code>Cons a (List a)</code>. Now,
+we can write out lists in our list type like so:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-number">3</span> :-: <span class="hljs-number">4</span> :-: <span class="hljs-number">5</span> :-: <span class="hljs-type">Empty</span>
+(:-:) <span class="hljs-number">3</span> ((:-:) <span class="hljs-number">4</span> ((:-:) <span class="hljs-number">5</span> <span class="hljs-type">Empty</span>))
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-keyword">let</span> a = <span class="hljs-number">3</span> :-: <span class="hljs-number">4</span> :-: <span class="hljs-number">5</span> :-: <span class="hljs-type">Empty</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-number">100</span> :-: a
+(:-:) <span class="hljs-number">100</span> ((:-:) <span class="hljs-number">3</span> ((:-:) <span class="hljs-number">4</span> ((:-:) <span class="hljs-number">5</span> <span class="hljs-type">Empty</span>)))
+</code></pre>
+<p>When deriving <code>Show</code> for our type, Haskell will still display it as if the
+constructor was a prefix function, hence the parentheses around the
+operator (remember, <code>4 + 3</code> is <code>(+) 4 3</code>).</p>
+<p>Let&apos;s make a function that adds two of our lists together. This is how
+<code>++</code> is defined for normal lists:</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">infixr</span> <span class="hljs-number">5</span>  ++
+(++) :: [a] -&gt; [a] -&gt; [a]
+[]     ++ ys = ys
+(x:xs) ++ ys = x : (xs ++ ys)
+</code></pre>
+<p>So we&apos;ll just steal that for our own list. We&apos;ll name the function <code>.++</code>.</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">infixr</span> <span class="hljs-number">5</span>  .++
+(.++) :: <span class="hljs-type">List</span> a -&gt; <span class="hljs-type">List</span> a -&gt; <span class="hljs-type">List</span> a
+<span class="hljs-type">Empty</span> .++ ys = ys
+(x :-: xs) .++ ys = x :-: (xs .++ ys)
+</code></pre>
+<p>And let&apos;s see if it works ...</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-keyword">let</span> a = <span class="hljs-number">3</span> :-: <span class="hljs-number">4</span> :-: <span class="hljs-number">5</span> :-: <span class="hljs-type">Empty</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-keyword">let</span> b = <span class="hljs-number">6</span> :-: <span class="hljs-number">7</span> :-: <span class="hljs-type">Empty</span>
+<span class="hljs-title">ghci</span>&gt; a .++ b
+(:-:) <span class="hljs-number">3</span> ((:-:) <span class="hljs-number">4</span> ((:-:) <span class="hljs-number">5</span> ((:-:) <span class="hljs-number">6</span> ((:-:) <span class="hljs-number">7</span> <span class="hljs-type">Empty</span>))))
+</code></pre>
+<p>Nice. Is nice. If we wanted, we could implement all of the functions
+that operate on lists on our own list type.</p>
+<p>Notice how we pattern matched on <code>(x :-: xs)</code>. That works because pattern
+matching is actually about matching constructors. We can match on <code>:-:</code>
+because it is a constructor for our own list type and we can also match
+on <code>:</code> because it is a constructor for the built-in list type. Same goes
+for <code>[]</code>. Because pattern matching works (only) on constructors, we can
+match for stuff like that, normal prefix constructors or stuff like <code>8</code> or
+<code>&apos;a&apos;</code>, which are basically constructors for the numeric and character
+types, respectively.</p>
+<p><img src="img/binarytree.png" alt="binary search tree"></p>
+<p>Now, we&apos;re going to implement a <em>binary search tree</em>. If you&apos;re not
+familiar with binary search trees from languages like C, here&apos;s what
+they are: an element points to two elements, one on its left and one on
+its right. The element to the left is smaller, the element to the right
+is bigger. Each of those elements can also point to two elements (or
+one, or none). In effect, each element has up to two sub-trees. And a
+cool thing about binary search trees is that we know that all the
+elements at the left sub-tree of, say, 5 are going to be smaller than 5.
+Elements in its right sub-tree are going to be bigger. So if we need to
+find if 8 is in our tree, we&apos;d start at 5 and then because 8 is greater
+than 5, we&apos;d go right. We&apos;re now at 7 and because 8 is greater than 7,
+we go right again. And we&apos;ve found our element in three hops! Now if
+this were a normal list (or a tree, but really unbalanced), it would
+take us seven hops instead of three to see if 8 is in there.</p>
+<p>Sets and maps from <code>Data.Set</code> and <code>Data.Map</code> are implemented using trees,
+only instead of normal binary search trees, they use balanced binary
+search trees, which are always balanced. But right now, we&apos;ll just be
+implementing normal binary search trees.</p>
+<p>Here&apos;s what we&apos;re going to say: a tree is either an empty tree or it&apos;s
+an element that contains some value and two trees. Sounds like a perfect
+fit for an algebraic data type!</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Tree</span> a = <span class="hljs-type">EmptyTree</span> | <span class="hljs-type">Node</span> a (<span class="hljs-type">Tree</span> <span class="hljs-title">a</span>) (<span class="hljs-type">Tree</span> <span class="hljs-title">a</span>) <span class="hljs-keyword">deriving</span> (<span class="hljs-type">Show</span>, <span class="hljs-type">Read</span>, <span class="hljs-type">Eq</span>)</span>
+</code></pre>
+<p>Okay, good, this is good. Instead of manually building a tree, we&apos;re
+going to make a function that takes a tree and an element and inserts an
+element. We do this by comparing the value we want to insert to the root
+node and then if it&apos;s smaller, we go left, if it&apos;s larger, we go right.
+We do the same for every subsequent node until we reach an empty tree.
+Once we&apos;ve reached an empty tree, we just insert a node with that value
+instead of the empty tree.</p>
+<p>In languages like C, we&apos;d do this by modifying the pointers and values
+inside the tree. In Haskell, we can&apos;t really modify our tree, so we have
+to make a new sub-tree each time we decide to go left or right and in
+the end the insertion function returns a completely new tree, because
+Haskell doesn&apos;t really have a concept of pointer, just values. Hence,
+the type for our insertion function is going to be something like
+<code>a -&gt; Tree a -&gt; Tree a</code>. It takes an element and a tree and returns a new
+tree that has that element inside. This might seem like it&apos;s inefficient
+but laziness takes care of that problem.</p>
+<p>So, here are two functions. One is a utility function for making a
+<code>singleton</code> tree (a tree with just one node) and a function to insert an
+element into a tree.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">singleton</span> :: a -&gt; <span class="hljs-type">Tree</span> a
+<span class="hljs-title">singleton</span> x = <span class="hljs-type">Node</span> x <span class="hljs-type">EmptyTree</span> <span class="hljs-type">EmptyTree</span>
+
+<span class="hljs-title">treeInsert</span> :: (<span class="hljs-type">Ord</span> a) =&gt; a -&gt; <span class="hljs-type">Tree</span> a -&gt; <span class="hljs-type">Tree</span> a
+<span class="hljs-title">treeInsert</span> x <span class="hljs-type">EmptyTree</span> = singleton x
+<span class="hljs-title">treeInsert</span> x (<span class="hljs-type">Node</span> a left right)
+    | x == a = <span class="hljs-type">Node</span> x left right
+    | x &lt; a  = <span class="hljs-type">Node</span> a (treeInsert x left) right
+    | x &gt; a  = <span class="hljs-type">Node</span> a left (treeInsert x right)
+</code></pre>
+<p>The singleton function is just a shortcut for making a node that has
+something and then two empty sub-trees. In the insertion function, we
+first have the edge condition as a pattern. If we&apos;ve reached an empty
+sub-tree, that means we&apos;re where we want and instead of the empty tree,
+we put a singleton tree with our element. If we&apos;re not inserting into an
+empty tree, then we have to check some things. First off, if the element
+we&apos;re inserting is equal to the root element, just return a tree that&apos;s
+the same. If it&apos;s smaller, return a tree that has the same root value,
+the same right sub-tree but instead of its left sub-tree, put a tree
+that has our value inserted into it. Same (but the other way around)
+goes if our value is bigger than the root element.</p>
+<p>Next up, we&apos;re going to make a function that checks if some element is
+in the tree. First, let&apos;s define the edge condition. If we&apos;re looking
+for an element in an empty tree, then it&apos;s certainly not there. Okay.
+Notice how this is the same as the edge condition when searching for
+elements in lists. If we&apos;re looking for an element in an empty list,
+it&apos;s not there. Anyway, if we&apos;re not looking for an element in an empty
+tree, then we check some things. If the element in the root node is what
+we&apos;re looking for, great! If it&apos;s not, what then? Well, we can take
+advantage of knowing that all the left elements are smaller than the
+root node. So if the element we&apos;re looking for is smaller than the root
+node, check to see if it&apos;s in the left sub-tree. If it&apos;s bigger, check
+to see if it&apos;s in the right sub-tree.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">treeElem</span> :: (<span class="hljs-type">Ord</span> a) =&gt; a -&gt; <span class="hljs-type">Tree</span> a -&gt; <span class="hljs-type">Bool</span>
+<span class="hljs-title">treeElem</span> x <span class="hljs-type">EmptyTree</span> = <span class="hljs-type">False</span>
+<span class="hljs-title">treeElem</span> x (<span class="hljs-type">Node</span> a left right)
+    | x == a = <span class="hljs-type">True</span>
+    | x &lt; a  = treeElem x left
+    | x &gt; a  = treeElem x right
+</code></pre>
+<p>All we had to do was write up the previous paragraph in code. Let&apos;s have
+some fun with our trees! Instead of manually building one (although we
+could), we&apos;ll use a fold to build up a tree from a list. Remember,
+pretty much everything that traverses a list one by one and then returns
+some sort of value can be implemented with a fold! We&apos;re going to start
+with the empty tree and then approach a list from the right and just
+insert element after element into our accumulator tree.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-keyword">let</span> nums = [<span class="hljs-number">8</span>,<span class="hljs-number">6</span>,<span class="hljs-number">4</span>,<span class="hljs-number">1</span>,<span class="hljs-number">7</span>,<span class="hljs-number">3</span>,<span class="hljs-number">5</span>]
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-keyword">let</span> numsTree = foldr treeInsert <span class="hljs-type">EmptyTree</span> nums
+<span class="hljs-title">ghci</span>&gt; numsTree
+<span class="hljs-type">Node</span> <span class="hljs-number">5</span> (<span class="hljs-type">Node</span> <span class="hljs-number">3</span> (<span class="hljs-type">Node</span> <span class="hljs-number">1</span> <span class="hljs-type">EmptyTree</span> <span class="hljs-type">EmptyTree</span>) (<span class="hljs-type">Node</span> <span class="hljs-number">4</span> <span class="hljs-type">EmptyTree</span> <span class="hljs-type">EmptyTree</span>)) (<span class="hljs-type">Node</span> <span class="hljs-number">7</span> (<span class="hljs-type">Node</span> <span class="hljs-number">6</span> <span class="hljs-type">EmptyTree</span> <span class="hljs-type">EmptyTree</span>) (<span class="hljs-type">Node</span> <span class="hljs-number">8</span> <span class="hljs-type">EmptyTree</span> <span class="hljs-type">EmptyTree</span>))
+</code></pre>
+<p>In that <code>foldr</code>, <code>treeInsert</code> was the folding function (it takes a tree and
+a list element and produces a new tree) and <code>EmptyTree</code> was the starting
+accumulator. <code>nums</code>, of course, was the list we were folding over.</p>
+<p>When we print our tree to the console, it&apos;s not very readable, but if we
+try, we can make out its structure. We see that the root node is 5 and
+then it has two sub-trees, one of which has the root node of 3 and the
+other a 7, etc.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-number">8</span> `treeElem` numsTree
+<span class="hljs-type">True</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-number">100</span> `treeElem` numsTree
+<span class="hljs-type">False</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-number">1</span> `treeElem` numsTree
+<span class="hljs-type">True</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-number">10</span> `treeElem` numsTree
+<span class="hljs-type">False</span>
+</code></pre>
+<p>Checking for membership also works nicely. Cool.</p>
+<p>So as you can see, algebraic data structures are a really cool and
+powerful concept in Haskell. We can use them to make anything from
+boolean values and weekday enumerations to binary search trees and more!</p>
+<h2 id="typeclasses-102">Typeclasses 102</h2>
+<p><img src="img/trafficlight.png" alt="tweet"></p>
+<p>So far, we&apos;ve learned about some of the standard Haskell typeclasses and
+we&apos;ve seen which types are in them. We&apos;ve also learned how to
+automatically make our own types instances of the standard typeclasses
+by asking Haskell to derive the instances for us. In this section, we&apos;re
+going to learn how to make our own typeclasses and how to make types
+instances of them by hand.</p>
+<p>A quick recap on typeclasses: typeclasses are like interfaces. A
+typeclass defines some behavior (like comparing for equality, comparing
+for ordering, enumeration) and then types that can behave in that way
+are made instances of that typeclass. The behavior of typeclasses is
+achieved by defining functions or just type declarations that we then
+implement. So when we say that a type is an instance of a typeclass, we
+mean that we can use the functions that the typeclass defines with that
+type.</p>
+<p>Typeclasses have pretty much nothing to do with classes in languages
+like Java or Python. This confuses many people, so I want you to forget
+everything you know about classes in imperative languages right now.</p>
+<p>For example, the <code>Eq</code> typeclass is for stuff that can be equated. It
+defines the functions <code>==</code> and <code>/=</code>. If we have a type (say, <code>Car</code>) and
+comparing two cars with the equality function <code>==</code> makes sense, then it
+makes sense for <code>Car</code> to be an instance of <code>Eq</code>.</p>
+<p>This is how the <code>Eq</code> class is defined in the standard prelude:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-type">Eq</span> a <span class="hljs-keyword">where</span></span>
+    (==) :: a -&gt; a -&gt; <span class="hljs-type">Bool</span>
+    (/=) :: a -&gt; a -&gt; <span class="hljs-type">Bool</span>
+    x == y = not (x /= y)
+    x /= y = not (x == y)
+</code></pre>
+<p>Woah, woah, woah! Some new strange syntax and keywords there! Don&apos;t
+worry, this will all be clear in a second. First off, when we write
+<code>class Eq a where</code>, this means that we&apos;re defining a new typeclass and
+that&apos;s called <code>Eq</code>. The <code>a</code> is the type variable and it means that a will
+play the role of the type that we will soon be making an instance of <code>Eq</code>.
+It doesn&apos;t have to be called <code>a</code>, it doesn&apos;t even have to be one letter,
+it just has to be a lowercase word. Then, we define several functions.
+It&apos;s not mandatory to implement the function bodies themselves, we just
+have to specify the type declarations for the functions.</p>
+<blockquote>
+<p>Some people might understand this better if we wrote
+<code>class Eq equatable where</code>
+and then specified the type declarations like
+<code>(==) :: equatable -&gt; equatable -&gt; Bool</code>.</p>
+</blockquote>
+<p>Anyway, we <em>did</em> implement the function bodies for the functions that <code>Eq</code>
+defines, only we defined them in terms of mutual recursion. We said that
+two instances of <code>Eq</code> are equal if they are not different and they are
+different if they are not equal. We didn&apos;t have to do this, really, but
+we did and we&apos;ll see how this helps us soon.</p>
+<blockquote>
+<p>If we have say <code>class Eq a where</code> and then define a type declaration
+within that class like <code>(==) :: a -&gt; -a -&gt; Bool</code>, then when we examine
+the type of that function later on, it will have the type of
+<code>(Eq a) =&gt; a -&gt; a -&gt; Bool</code>.</p>
+</blockquote>
+<p>So once we have a class, what can we do with it? Well, not much, really.
+But once we start making types instances of that class, we start getting
+some nice functionality. So check out this type:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">TrafficLight</span> = <span class="hljs-type">Red</span> | <span class="hljs-type">Yellow</span> | <span class="hljs-type">Green</span></span>
+</code></pre>
+<p>It defines the states of a traffic light. Notice how we didn&apos;t derive
+any class instances for it. That&apos;s because we&apos;re going to write up some
+instances by hand, even though we could derive them for types like <code>Eq</code>
+and <code>Show</code>. Here&apos;s how we make it an instance of <code>Eq</code>.</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">instance</span> <span class="hljs-type">Eq</span> <span class="hljs-type">TrafficLight</span> <span class="hljs-keyword">where</span></span>
+    <span class="hljs-type">Red</span> == <span class="hljs-type">Red</span> = <span class="hljs-type">True</span>
+    <span class="hljs-type">Green</span> == <span class="hljs-type">Green</span> = <span class="hljs-type">True</span>
+    <span class="hljs-type">Yellow</span> == <span class="hljs-type">Yellow</span> = <span class="hljs-type">True</span>
+    _ == _ = <span class="hljs-type">False</span>
+</code></pre>
+<p>We did it by using the <em>instance</em> keyword. So <em>class</em> is for defining
+new typeclasses and <em>instance</em> is for making our types instances of
+typeclasses. When we were defining <code>Eq</code>, we wrote <code>class Eq a where</code> and we
+said that <code>a</code> plays the role of whichever type will be made an instance
+later on. We can see that clearly here, because when we&apos;re making an
+instance, we write <code>instance Eq TrafficLight where</code>. We replace the <code>a</code> with
+the actual type.</p>
+<p>Because <code>==</code> was defined in terms of <code>/=</code> and vice versa in the <em>class</em>
+declaration, we only had to overwrite one of them in the instance
+declaration. That&apos;s called the minimal complete definition for the
+typeclass — the minimum of functions that we have to implement so that
+our type can behave like the class advertises. To fulfill the minimal
+complete definition for <code>Eq</code>, we have to overwrite either one of <code>==</code> or <code>/=</code>.
+If <code>Eq</code> was defined simply like this:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-type">Eq</span> a <span class="hljs-keyword">where</span></span>
+    (==) :: a -&gt; a -&gt; <span class="hljs-type">Bool</span>
+    (/=) :: a -&gt; a -&gt; <span class="hljs-type">Bool</span>
+</code></pre>
+<p>we&apos;d have to implement both of these functions when making a type an
+instance of it, because Haskell wouldn&apos;t know how these two functions
+are related. The minimal complete definition would then be: both <code>==</code> and
+<code>/=</code>.</p>
+<p>You can see that we implemented <code>==</code> simply by doing pattern matching.
+Since there are many more cases where two lights aren&apos;t equal, we
+specified the ones that are equal and then just did a catch-all pattern
+saying that if it&apos;s none of the previous combinations, then two lights
+aren&apos;t equal.</p>
+<p>Let&apos;s make this an instance of <code>Show</code> by hand, too. To satisfy the minimal
+complete definition for <code>Show</code>, we just have to implement its <code>show</code>
+function, which takes a value and turns it into a string.</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">instance</span> <span class="hljs-type">Show</span> <span class="hljs-type">TrafficLight</span> <span class="hljs-keyword">where</span></span>
+    show <span class="hljs-type">Red</span> = <span class="hljs-string">&quot;Red light&quot;</span>
+    show <span class="hljs-type">Yellow</span> = <span class="hljs-string">&quot;Yellow light&quot;</span>
+    show <span class="hljs-type">Green</span> = <span class="hljs-string">&quot;Green light&quot;</span>
+</code></pre>
+<p>Once again, we used pattern matching to achieve our goals. Let&apos;s see how
+it works in action:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Red</span> == <span class="hljs-type">Red</span>
+<span class="hljs-type">True</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Red</span> == <span class="hljs-type">Yellow</span>
+<span class="hljs-type">False</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-type">Red</span> `elem` [<span class="hljs-type">Red</span>, <span class="hljs-type">Yellow</span>, <span class="hljs-type">Green</span>]
+<span class="hljs-type">True</span>
+<span class="hljs-title">ghci</span>&gt; [<span class="hljs-type">Red</span>, <span class="hljs-type">Yellow</span>, <span class="hljs-type">Green</span>]
+[<span class="hljs-type">Red</span> light,<span class="hljs-type">Yellow</span> light,<span class="hljs-type">Green</span> light]
+</code></pre>
+<p>Nice. We could have just derived <code>Eq</code> and it would have had the same
+effect (but we didn&apos;t for educational purposes). However, deriving <code>Show</code>
+would have just directly translated the value constructors to strings.
+But if we want lights to appear like <code>&quot;Red light&quot;</code>, then we have to make
+the instance declaration by hand.</p>
+<p>You can also make typeclasses that are subclasses of other typeclasses.
+The <em>class</em> declaration for <code>Num</code> is a bit long, but here&apos;s the first
+part:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">class</span> (<span class="hljs-type">Eq</span> <span class="hljs-title">a</span>) =&gt; <span class="hljs-type">Num</span> a <span class="hljs-keyword">where</span></span>
+   ...
+</code></pre>
+<p>As we mentioned previously, there are a lot of places where we can cram
+in class constraints. So this is just like writing <code>class Num a where</code>,
+only we state that our type <code>a</code> must be an instance of <code>Eq</code>. We&apos;re
+essentially saying that we have to make a type an instance of <code>Eq</code> before
+we can make it an instance of <code>Num</code>. Before some type can be considered a
+number, it makes sense that we can determine whether values of that type
+can be equated or not. That&apos;s all there is to subclassing really, it&apos;s
+just a class constraint on a <em>class</em> declaration! When defining function
+bodies in the <em>class</em> declaration or when defining them in <em>instance</em>
+declarations, we can assume that a is <code>a</code> part of <code>Eq</code> and so we can use <code>==</code>
+on values of that type.</p>
+<p>But how are the <code>Maybe</code> or list types made as instances of typeclasses?
+What makes <code>Maybe</code> different from, say, <code>TrafficLight</code> is that <code>Maybe</code> in
+itself isn&apos;t a concrete type, it&apos;s a type constructor that takes one
+type parameter (like <code>Char</code> or something) to produce a concrete type (like
+<code>Maybe Char</code>). Let&apos;s take a look at the <code>Eq</code> typeclass again:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-type">Eq</span> a <span class="hljs-keyword">where</span></span>
+    (==) :: a -&gt; a -&gt; <span class="hljs-type">Bool</span>
+    (/=) :: a -&gt; a -&gt; <span class="hljs-type">Bool</span>
+    x == y = not (x /= y)
+    x /= y = not (x == y)
+</code></pre>
+<p>From the type declarations, we see that the <code>a</code> is used as a concrete type
+because all the types in functions have to be concrete (remember, you
+can&apos;t have a function of the type <code>a -&gt; Maybe</code> but you can have a
+function of <code>a -&gt; Maybe a</code> or <code>Maybe Int -&gt; Maybe String</code>). That&apos;s why we
+can&apos;t do something like</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">instance</span> <span class="hljs-type">Eq</span> <span class="hljs-type">Maybe</span> <span class="hljs-keyword">where</span></span>
+    ...
+</code></pre>
+<p>Because like we&apos;ve seen, the <code>a</code> has to be a concrete type but <code>Maybe</code> isn&apos;t
+a concrete type. It&apos;s a type constructor that takes one parameter and
+then produces a concrete type. It would also be tedious to write
+<code>instance Eq (Maybe Int) where</code>, <code>instance Eq (Maybe Char) where</code>, etc. for
+every type ever. So we could write it out like so:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">instance</span> <span class="hljs-type">Eq</span> (<span class="hljs-type">Maybe</span> <span class="hljs-title">m</span>) <span class="hljs-keyword">where</span></span>
+    <span class="hljs-type">Just</span> x == <span class="hljs-type">Just</span> y = x == y
+    <span class="hljs-type">Nothing</span> == <span class="hljs-type">Nothing</span> = <span class="hljs-type">True</span>
+    _ == _ = <span class="hljs-type">False</span>
+</code></pre>
+<p>This is like saying that we want to make all types of the form
+<code>Maybe something</code> an instance of <code>Eq</code>. We actually could have written
+<code>(Maybe something)</code>, but we usually opt for single letters to be true to the
+Haskell style. The <code>(Maybe m)</code> here plays the role of the <code>a</code> from
+<code>class Eq a where</code>. While <code>Maybe</code> isn&apos;t a concrete type, <code>Maybe m</code> is.
+By specifying a
+type parameter (<code>m</code>, which is in lowercase), we said that we want all
+types that are in the form of <code>Maybe m</code>, where <code>m</code> is any type, to be an
+instance of <code>Eq</code>.</p>
+<p>There&apos;s one problem with this though. Can you spot it? We use <code>==</code> on the
+contents of the <code>Maybe</code> but we have no assurance that what the <code>Maybe</code>
+contains can be used with <code>Eq</code>! That&apos;s why we have to modify our
+<em>instance</em> declaration like this:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">instance</span> (<span class="hljs-type">Eq</span> <span class="hljs-title">m</span>) =&gt; <span class="hljs-type">Eq</span> (<span class="hljs-type">Maybe</span> <span class="hljs-title">m</span>) <span class="hljs-keyword">where</span></span>
+    <span class="hljs-type">Just</span> x == <span class="hljs-type">Just</span> y = x == y
+    <span class="hljs-type">Nothing</span> == <span class="hljs-type">Nothing</span> = <span class="hljs-type">True</span>
+    _ == _ = <span class="hljs-type">False</span>
+</code></pre>
+<p>We had to add a class constraint! With this <em>instance</em> declaration, we
+say this: we want all types of the form <code>Maybe m</code> to be part of the <code>Eq</code>
+typeclass, but only those types where the <code>m</code> (so what&apos;s contained inside
+the <code>Maybe</code>) is also a part of <code>Eq</code>. This is actually how Haskell would
+derive the instance too.</p>
+<p>Most of the times, class constraints in <em>class</em> declarations are used
+for making a typeclass a subclass of another typeclass and class
+constraints in <em>instance</em> declarations are used to express requirements
+about the contents of some type. For instance, here we required the
+contents of the <code>Maybe</code> to also be part of the <code>Eq</code> typeclass.</p>
+<p>When making instances, if you see that a type is used as a concrete type
+in the type declarations (like the <code>a</code> in <code>a -&gt; a -&gt; Bool</code>), you have to
+supply type parameters and add parentheses so that you end up with a
+concrete type.</p>
+<blockquote>
+<p>Take into account that the type you&apos;re trying to make an instance of
+will replace the parameter in the <em>class</em> declaration. The <code>a</code> from
+<code>class Eq a where</code>
+will be replaced with a real type when you make an instance,
+so try mentally putting your type into the function type declarations as
+well. <code>(==) :: Maybe -&gt; Maybe -&gt; Bool</code> doesn&apos;t make much sense but
+<code>(==) :: (Eq m) =&gt; Maybe m -&gt; Maybe m -&gt; Bool</code> does. But this is just
+something to think about, because <code>==</code> will always have a type of
+<code>(==) :: (Eq a) =&gt; a -&gt; a -&gt; Bool</code>, no matter what instances we make.</p>
+</blockquote>
+<p>Ooh, one more thing, check this out! If you want to see what the
+instances of a typeclass are, just do <code>:info YourTypeClass</code> in GHCI. So
+typing <code>:info Num</code> will show which functions the typeclass defines and it
+will give you a list of the types in the typeclass. <code>:info</code> works for
+types and type constructors too. If you do <code>:info Maybe</code>, it will show you
+all the typeclasses that <code>Maybe</code> is an instance of. Also <code>:info</code> can show
+you the type declaration of a function. I think that&apos;s pretty cool.</p>
+<h2 id="a-yes-no-typeclass">A yes-no typeclass</h2>
+<p><img src="img/yesno.png" alt="yesno"></p>
+<p>In JavaScript and some other weakly typed languages, you can put almost
+anything inside an if expression. For example, you can do all of the
+following:
+<code>if (0) alert(&quot;YEAH!&quot;) else alert(&quot;NO!&quot;)</code>,
+<code>if (&quot;&quot;) alert (&quot;YEAH!&quot;) else alert(&quot;NO!&quot;)</code>,
+<code>if (false) alert(&quot;YEAH&quot;) else alert(&quot;NO!)</code>,
+etc. and all of these will throw an alert of <code>NO!</code>. If you do
+<code>if (&quot;WHAT&quot;) alert (&quot;YEAH&quot;) else alert(&quot;NO!&quot;)</code>,
+it will alert a <code>&quot;YEAH!&quot;</code> because
+JavaScript considers non-empty strings to be a sort of true-ish value.</p>
+<p>Even though strictly using <code>Bool</code> for boolean semantics works better in
+Haskell, let&apos;s try and implement that JavaScript-ish behavior anyway.
+For fun! Let&apos;s start out with a <em>class</em> declaration.</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-type">YesNo</span> a <span class="hljs-keyword">where</span></span>
+    yesno :: a -&gt; <span class="hljs-type">Bool</span>
+</code></pre>
+<p>Pretty simple. The <code>YesNo</code> typeclass defines one function. That function
+takes one value of a type that can be considered to hold some concept of
+true-ness and tells us for sure if it&apos;s true or not. Notice that from
+the way we use the <code>a</code> in the function, <code>a</code> has to be a concrete type.</p>
+<p>Next up, let&apos;s define some instances. For numbers, we&apos;ll assume that
+(like in JavaScript) any number that isn&apos;t 0 is true-ish and 0 is
+false-ish.</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">instance</span> <span class="hljs-type">YesNo</span> <span class="hljs-type">Int</span> <span class="hljs-keyword">where</span></span>
+    yesno <span class="hljs-number">0</span> = <span class="hljs-type">False</span>
+    yesno _ = <span class="hljs-type">True</span>
+</code></pre>
+<p>Empty lists (and by extensions, strings) are a no-ish value, while
+non-empty lists are a yes-ish value.</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">instance</span> <span class="hljs-type">YesNo</span> [a] <span class="hljs-keyword">where</span></span>
+    yesno [] = <span class="hljs-type">False</span>
+    yesno _ = <span class="hljs-type">True</span>
+</code></pre>
+<p>Notice how we just put in a type parameter <code>a</code> in there to make the list a
+concrete type, even though we don&apos;t make any assumptions about the type
+that&apos;s contained in the list. What else, hmm ... I know, <code>Bool</code> itself
+also holds true-ness and false-ness and it&apos;s pretty obvious which is
+which.</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">instance</span> <span class="hljs-type">YesNo</span> <span class="hljs-type">Bool</span> <span class="hljs-keyword">where</span></span>
+    yesno = id
+</code></pre>
+<p>Huh? What&apos;s <code>id</code>? It&apos;s just a standard library function that takes a
+parameter and returns the same thing, which is what we would be writing
+here anyway.</p>
+<p>Let&apos;s make <code>Maybe a</code> an instance too.</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">instance</span> <span class="hljs-type">YesNo</span> (<span class="hljs-type">Maybe</span> <span class="hljs-title">a</span>) <span class="hljs-keyword">where</span></span>
+    yesno (<span class="hljs-type">Just</span> _) = <span class="hljs-type">True</span>
+    yesno <span class="hljs-type">Nothing</span> = <span class="hljs-type">False</span>
+</code></pre>
+<p>We didn&apos;t need a class constraint because we made no assumptions about
+the contents of the <code>Maybe</code>. We just said that it&apos;s true-ish if it&apos;s a
+<code>Just</code> value and false-ish if it&apos;s a <code>Nothing</code>. We still had to write out
+<code>(Maybe a)</code> instead of just <code>Maybe</code> because if you think about it, a
+<code>Maybe -&gt; Bool</code> function can&apos;t exist (because <code>Maybe</code> isn&apos;t a concrete type),
+whereas a <code>Maybe a -&gt; Bool</code> is fine and dandy. Still, this is really cool
+because now, any type of the form <code>Maybe something</code> is part of <code>YesNo</code> and
+it doesn&apos;t matter what that <code>something</code> is.</p>
+<p>Previously, we defined a <code>Tree a</code> type, that represented a binary search
+tree. We can say an empty tree is false-ish and anything that&apos;s not an
+empty tree is true-ish.</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">instance</span> <span class="hljs-type">YesNo</span> (<span class="hljs-type">Tree</span> <span class="hljs-title">a</span>) <span class="hljs-keyword">where</span></span>
+    yesno <span class="hljs-type">EmptyTree</span> = <span class="hljs-type">False</span>
+    yesno _ = <span class="hljs-type">True</span>
+</code></pre>
+<p>Can a traffic light be a yes or no value? Sure. If it&apos;s red, you stop.
+If it&apos;s green, you go. If it&apos;s yellow? Eh, I usually run the yellows
+because I live for adrenaline.</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">instance</span> <span class="hljs-type">YesNo</span> <span class="hljs-type">TrafficLight</span> <span class="hljs-keyword">where</span></span>
+    yesno <span class="hljs-type">Red</span> = <span class="hljs-type">False</span>
+    yesno _ = <span class="hljs-type">True</span>
+</code></pre>
+<p>Cool, now that we have some instances, let&apos;s go play!</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; yesno $ length []
+<span class="hljs-type">False</span>
+<span class="hljs-title">ghci</span>&gt; yesno <span class="hljs-string">&quot;haha&quot;</span>
+<span class="hljs-type">True</span>
+<span class="hljs-title">ghci</span>&gt; yesno <span class="hljs-string">&quot;&quot;</span>
+<span class="hljs-type">False</span>
+<span class="hljs-title">ghci</span>&gt; yesno $ <span class="hljs-type">Just</span> <span class="hljs-number">0</span>
+<span class="hljs-type">True</span>
+<span class="hljs-title">ghci</span>&gt; yesno <span class="hljs-type">True</span>
+<span class="hljs-type">True</span>
+<span class="hljs-title">ghci</span>&gt; yesno <span class="hljs-type">EmptyTree</span>
+<span class="hljs-type">False</span>
+<span class="hljs-title">ghci</span>&gt; yesno []
+<span class="hljs-type">False</span>
+<span class="hljs-title">ghci</span>&gt; yesno [<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>]
+<span class="hljs-type">True</span>
+<span class="hljs-title">ghci</span>&gt; :t yesno
+<span class="hljs-title">yesno</span> :: (<span class="hljs-type">YesNo</span> a) =&gt; a -&gt; <span class="hljs-type">Bool</span>
+</code></pre>
+<p>Right, it works! Let&apos;s make a function that mimics the if statement, but
+it works with <code>YesNo</code> values.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">yesnoIf</span> :: (<span class="hljs-type">YesNo</span> y) =&gt; y -&gt; a -&gt; a -&gt; a
+<span class="hljs-title">yesnoIf</span> yesnoVal yesResult noResult = <span class="hljs-keyword">if</span> yesno yesnoVal <span class="hljs-keyword">then</span> yesResult <span class="hljs-keyword">else</span> noResult
+</code></pre>
+<p>Pretty straightforward. It takes a yes-no-ish value and two things. If
+the yes-no-ish value is more of a yes, it returns the first of the two
+things, otherwise it returns the second of them.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; yesnoIf [] <span class="hljs-string">&quot;YEAH!&quot;</span> <span class="hljs-string">&quot;NO!&quot;</span>
+<span class="hljs-string">&quot;NO!&quot;</span>
+<span class="hljs-title">ghci</span>&gt; yesnoIf [<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>] <span class="hljs-string">&quot;YEAH!&quot;</span> <span class="hljs-string">&quot;NO!&quot;</span>
+<span class="hljs-string">&quot;YEAH!&quot;</span>
+<span class="hljs-title">ghci</span>&gt; yesnoIf <span class="hljs-type">True</span> <span class="hljs-string">&quot;YEAH!&quot;</span> <span class="hljs-string">&quot;NO!&quot;</span>
+<span class="hljs-string">&quot;YEAH!&quot;</span>
+<span class="hljs-title">ghci</span>&gt; yesnoIf (<span class="hljs-type">Just</span> <span class="hljs-number">500</span>) <span class="hljs-string">&quot;YEAH!&quot;</span> <span class="hljs-string">&quot;NO!&quot;</span>
+<span class="hljs-string">&quot;YEAH!&quot;</span>
+<span class="hljs-title">ghci</span>&gt; yesnoIf <span class="hljs-type">Nothing</span> <span class="hljs-string">&quot;YEAH!&quot;</span> <span class="hljs-string">&quot;NO!&quot;</span>
+<span class="hljs-string">&quot;NO!&quot;</span>
+</code></pre>
+<p><a name="the-functor-typeclass"></a></p>
+<h2 id="the-functor-typeclass">The Functor typeclass</h2>
+<p>So far, we&apos;ve encountered a lot of the typeclasses in the standard
+library. We&apos;ve played with <code>Ord</code>, which is for stuff that can be ordered.
+We&apos;ve palled around with <code>Eq</code>, which is for things that can be equated.
+We&apos;ve seen <code>Show</code>, which presents an interface for types whose values can
+be displayed as strings. Our good friend <code>Read</code> is there whenever we need
+to convert a string to a value of some type. And now, we&apos;re going to
+take a look at the <code>Functor</code> typeclass, which is basically for things that
+can be mapped over. You&apos;re probably thinking about lists now, since
+mapping over lists is such a dominant idiom in Haskell. And you&apos;re
+right, the list type is part of the <code>Functor</code> typeclass.</p>
+<p>What better way to get to know the <code>Functor</code> typeclass than to see how
+it&apos;s implemented? Let&apos;s take a peek.</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-type">Functor</span> f <span class="hljs-keyword">where</span></span>
+    fmap :: (a -&gt; b) -&gt; f a -&gt; f b
+</code></pre>
+<p><img src="img/functor.png" alt="I AM FUNCTOOOOR!!!"></p>
+<p>Alright. We see that it defines one function, <code>fmap</code>, and doesn&apos;t provide
+any default implementation for it. The type of <code>fmap</code> is interesting. In
+the definitions of typeclasses so far, the type variable that played the
+role of the type in the typeclass was a concrete type, like the <code>a</code> in
+<code>(==) :: (Eq a) =&gt; a -&gt; a -&gt; Bool</code>. But now, the <code>f</code> is not a concrete
+type (a type that a value can hold, like <code>Int</code>, <code>Bool</code> or <code>Maybe String</code>), but
+a type constructor that takes one type parameter. A quick refresher
+example: <code>Maybe Int</code> is a concrete type, but <code>Maybe</code> is a type constructor
+that takes one type as the parameter. Anyway, we see that <code>fmap</code> takes a
+function from one type to another and a functor applied with one type
+and returns a functor applied with another type.</p>
+<p>If this sounds a bit confusing, don&apos;t worry. All will be revealed soon
+when we check out a few examples. Hmm, this type declaration for <code>fmap</code>
+reminds me of something. If you don&apos;t know what the type signature of
+<code>map</code> is, it&apos;s: <code>map :: (a -&gt; b) -&gt; [a] -&gt; [b]</code>.</p>
+<p>Ah, interesting! It takes a function from one type to another and a list
+of one type and returns a list of another type. My friends, I think we
+have ourselves a functor! In fact, <code>map</code> is just a <code>fmap</code> that works only on
+lists. Here&apos;s how the list is an instance of the <code>Functor</code> typeclass.</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">instance</span> <span class="hljs-type">Functor</span> [] <span class="hljs-keyword">where</span></span>
+    fmap = map
+</code></pre>
+<p>That&apos;s it! Notice how we didn&apos;t write <code>instance Functor [a] where</code>,
+because from <code>fmap :: (a -&gt; b) -&gt; f a -&gt; f b</code>, we see that the <code>f</code> has to
+be a type constructor that takes one type. <code>[a]</code> is already a concrete
+type (of a list with any type inside it), while <code>[]</code> is a type constructor
+that takes one type and can produce types such as <code>[Int]</code>, <code>[String]</code> or
+even <code>[[String]]</code>.</p>
+<p>Since for lists, <code>fmap</code> is just <code>map</code>, we get the same results when using
+them on lists.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">map</span> :: (a -&gt; b) -&gt; [a] -&gt; [b]
+<span class="hljs-title">ghci</span>&gt; fmap (*<span class="hljs-number">2</span>) [<span class="hljs-number">1.</span><span class="hljs-number">.3</span>]
+[<span class="hljs-number">2</span>,<span class="hljs-number">4</span>,<span class="hljs-number">6</span>]
+<span class="hljs-title">ghci</span>&gt; map (*<span class="hljs-number">2</span>) [<span class="hljs-number">1.</span><span class="hljs-number">.3</span>]
+[<span class="hljs-number">2</span>,<span class="hljs-number">4</span>,<span class="hljs-number">6</span>]
+</code></pre>
+<p>What happens when we <code>map</code> or <code>fmap</code> over an empty list? Well, of course, we
+get an empty list. It just turns an empty list of type <code>[a]</code> into an empty
+list of type <code>[b]</code>.</p>
+<p>Types that can act like a box can be functors. You can think of a list
+as a box that has an infinite amount of little compartments and they can
+all be empty, one can be full and the others empty or a number of them
+can be full. So, what else has the properties of being like a box? For
+one, the <code>Maybe a</code> type. In a way, it&apos;s like a box that can either hold
+nothing, in which case it has the value of <code>Nothing</code>, or it can hold one
+item, like <code>&quot;HAHA&quot;</code>, in which case it has a value of <code>Just &quot;HAHA&quot;</code>. Here&apos;s
+how <code>Maybe</code> is a functor.</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">instance</span> <span class="hljs-type">Functor</span> <span class="hljs-type">Maybe</span> <span class="hljs-keyword">where</span></span>
+    fmap f (<span class="hljs-type">Just</span> x) = <span class="hljs-type">Just</span> (f x)
+    fmap f <span class="hljs-type">Nothing</span> = <span class="hljs-type">Nothing</span>
+</code></pre>
+<p>Again, notice how we wrote <code>instance Functor Maybe where</code> instead of
+<code>instance Functor (Maybe m)</code> where, like we did when we were dealing with
+<code>Maybe</code> and <code>YesNo</code>. <code>Functor</code> wants a type constructor that takes one type
+and not a concrete type. If you mentally replace the <code>fs</code> with <code>Maybe</code>s,
+<code>fmap</code> acts like a <code>(a -&gt; b) -&gt; Maybe a -&gt; Maybe b</code> for this particular
+type, which looks OK. But if you replace <code>f</code> with <code>(Maybe m)</code>, then it would
+seem to act like a <code>(a -&gt; b) -&gt; Maybe m a -&gt; Maybe m b</code>, which doesn&apos;t
+make any damn sense because <code>Maybe</code> takes just one type parameter.</p>
+<p>Anyway, the <code>fmap</code> implementation is pretty simple. If it&apos;s an empty value
+of <code>Nothing</code>, then just return a <code>Nothing</code>. If we map over an empty box, we
+get an empty box. It makes sense. Just like if we map over an empty
+list, we get back an empty list. If it&apos;s not an empty value, but rather
+a single value packed up in a <code>Just</code>, then we apply the function on the
+contents of the <code>Just</code>.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; fmap (++ <span class="hljs-string">&quot; HEY GUYS IM INSIDE THE JUST&quot;</span>) (<span class="hljs-type">Just</span> <span class="hljs-string">&quot;Something serious.&quot;</span>)
+<span class="hljs-type">Just</span> <span class="hljs-string">&quot;Something serious. HEY GUYS IM INSIDE THE JUST&quot;</span>
+<span class="hljs-title">ghci</span>&gt; fmap (++ <span class="hljs-string">&quot; HEY GUYS IM INSIDE THE JUST&quot;</span>) <span class="hljs-type">Nothing</span>
+<span class="hljs-type">Nothing</span>
+<span class="hljs-title">ghci</span>&gt; fmap (*<span class="hljs-number">2</span>) (<span class="hljs-type">Just</span> <span class="hljs-number">200</span>)
+<span class="hljs-type">Just</span> <span class="hljs-number">400</span>
+<span class="hljs-title">ghci</span>&gt; fmap (*<span class="hljs-number">2</span>) <span class="hljs-type">Nothing</span>
+<span class="hljs-type">Nothing</span>
+</code></pre>
+<p>Another thing that can be mapped over and made an instance of <code>Functor</code> is
+our <code>Tree a</code> type. It can be thought of as a box in a way (holds several
+or no values) and the <code>Tree</code> type constructor takes exactly one type
+parameter. If you look at <code>fmap</code> as if it were a function made only for
+<code>Tree</code>, its type signature would look like <code>(a -&gt; b) -&gt; Tree a -&gt; Tree b</code>.
+We&apos;re going to use recursion on this one. Mapping over an empty tree
+will produce an empty tree. Mapping over a non-empty tree will be a tree
+consisting of our function applied to the root value and its left and
+right sub-trees will be the previous sub-trees, only our function will
+be mapped over them.</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">instance</span> <span class="hljs-type">Functor</span> <span class="hljs-type">Tree</span> <span class="hljs-keyword">where</span></span>
+    fmap f <span class="hljs-type">EmptyTree</span> = <span class="hljs-type">EmptyTree</span>
+    fmap f (<span class="hljs-type">Node</span> x leftsub rightsub) = <span class="hljs-type">Node</span> (f x) (fmap f leftsub) (fmap f rightsub)
+</code></pre>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; fmap (*<span class="hljs-number">2</span>) <span class="hljs-type">EmptyTree</span>
+<span class="hljs-type">EmptyTree</span>
+<span class="hljs-title">ghci</span>&gt; fmap (*<span class="hljs-number">4</span>) (foldr treeInsert <span class="hljs-type">EmptyTree</span> [<span class="hljs-number">5</span>,<span class="hljs-number">7</span>,<span class="hljs-number">3</span>,<span class="hljs-number">2</span>,<span class="hljs-number">1</span>,<span class="hljs-number">7</span>])
+<span class="hljs-type">Node</span> <span class="hljs-number">28</span> (<span class="hljs-type">Node</span> <span class="hljs-number">4</span> <span class="hljs-type">EmptyTree</span> (<span class="hljs-type">Node</span> <span class="hljs-number">8</span> <span class="hljs-type">EmptyTree</span> (<span class="hljs-type">Node</span> <span class="hljs-number">12</span> <span class="hljs-type">EmptyTree</span> (<span class="hljs-type">Node</span> <span class="hljs-number">20</span> <span class="hljs-type">EmptyTree</span> <span class="hljs-type">EmptyTree</span>)))) <span class="hljs-type">EmptyTree</span>
+</code></pre>
+<p>Nice! Now how about <code>Either a b</code>? Can this be made a functor? The <code>Functor</code>
+typeclass wants a type constructor that takes only one type parameter
+but <code>Either</code> takes two. Hmmm! I know, we&apos;ll partially apply <code>Either</code> by
+feeding it only one parameter so that it has one free parameter. Here&apos;s
+how <code>Either a</code> is a functor in the standard libraries:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">instance</span> <span class="hljs-type">Functor</span> (<span class="hljs-type">Either</span> <span class="hljs-title">a</span>) <span class="hljs-keyword">where</span></span>
+    fmap f (<span class="hljs-type">Right</span> x) = <span class="hljs-type">Right</span> (f x)
+    fmap f (<span class="hljs-type">Left</span> x) = <span class="hljs-type">Left</span> x
+</code></pre>
+<p>Well well, what did we do here? You can see how we made <code>Either a</code> an
+instance instead of just <code>Either</code>. That&apos;s because <code>Either a</code> is a type
+constructor that takes one parameter, whereas <code>Either</code> takes two. If <code>fmap</code>
+was specifically for Either a, the type signature would then be
+<code>(b -&gt; c) -&gt; Either a b -&gt; Either a c</code>
+because that&apos;s the same as
+<code>(b -&gt; c) -&gt; (Either a) b -&gt; (Either a) c</code>.
+In the implementation, we mapped in
+the case of a <code>Right</code> value constructor, but we didn&apos;t in the case of a
+<code>Left</code>. Why is that? Well, if we look back at how the <code>Either a b</code> type is
+defined, it&apos;s kind of like:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Either</span> a b = <span class="hljs-type">Left</span> a | <span class="hljs-type">Right</span> b</span>
+</code></pre>
+<p>Well, if we wanted to map one function over both of them, <code>a</code> and <code>b</code> would
+have to be the same type. I mean, if we tried to map a function that
+takes a string and returns a string and the <code>b</code> was a string but the <code>a</code> was
+a number, that wouldn&apos;t really work out. Also, from seeing what <code>fmap</code>&apos;s
+type would be if it operated only on <code>Either</code> values, we see that the
+first parameter has to remain the same while the second one can change
+and the first parameter is actualized by the <code>Left</code> value constructor.</p>
+<p>This also goes nicely with our box analogy if we think of the <code>Left</code> part
+as sort of an empty box with an error message written on the side
+telling us why it&apos;s empty.</p>
+<p>Maps from <code>Data.Map</code> can also be made a functor because they hold values
+(or not!). In the case of <code>Map k v</code>, <code>fmap</code> will map a function <code>v -&gt; v&apos;</code>
+over a map of type <code>Map k v</code> and return a map of type <code>Map k v&apos;</code>.</p>
+<blockquote>
+<p>Note, the <code>&apos;</code> has no special meaning in types just like it doesn&apos;t have
+special meaning when naming values. It&apos;s used to denote things that are
+similar, only slightly changed.</p>
+</blockquote>
+<p>Try figuring out how <code>Map k</code> is made an instance of <code>Functor</code> by yourself!</p>
+<p>With the <code>Functor</code> typeclass, we&apos;ve seen how typeclasses can represent
+pretty cool higher-order concepts. We&apos;ve also had some more practice
+with partially applying types and making instances. In one of the next
+chapters, we&apos;ll also take a look at some laws that apply for functors.</p>
+<blockquote>
+<p><em>Just one more thing!</em> Functors should obey some laws so that they may
+have some properties that we can depend on and not think about too much.
+If we use <code>fmap (+1)</code> over the list <code>[1,2,3,4]</code>, we expect the result to be
+<code>[2,3,4,5]</code> and not its reverse, <code>[5,4,3,2]</code>. If we use <code>fmap (\a -&gt; a)</code>
+(the identity function, which just returns its parameter) over some
+list, we expect to get back the same list as a result. For example, if
+we gave the wrong functor instance to our <code>Tree</code> type, using <code>fmap</code> over a
+tree where the left sub-tree of a node only has elements that are
+smaller than the node and the right sub-tree only has nodes that are
+larger than the node might produce a tree where that&apos;s not the case.
+We&apos;ll go over the functor laws in more detail in one of the next
+chapters.</p>
+</blockquote>
+<h2 id="kinds-and-some-type-foo">Kinds and some type-foo</h2>
+<p><img src="img/typefoo.png" alt="TYPE FOO MASTER"></p>
+<p>Type constructors take other types as parameters to eventually produce
+concrete types. That kind of reminds me of functions, which take values
+as parameters to produce values. We&apos;ve seen that type constructors can
+be partially applied (<code>Either String</code> is a type that takes one type and
+produces a concrete type, like <code>Either String Int</code>), just like functions
+can. This is all very interesting indeed. In this section, we&apos;ll take a
+look at formally defining how types are applied to type constructors,
+just like we took a look at formally defining how values are applied to
+functions by using type declarations. <em>You don&apos;t really have to read
+this section to continue on your magical Haskell quest</em> and if you don&apos;t
+understand it, don&apos;t worry about it. However, getting this will give you
+a very thorough understanding of the type system.</p>
+<p>So, values like <code>3</code>, <code>&quot;YEAH&quot;</code> or <code>takeWhile</code> (functions are also values,
+because we can pass them around and such) each have their own type.
+Types are little labels that values carry so that we can reason about
+the values. But types have their own little labels, called <em>kinds</em>. A
+kind is more or less the type of a type. This may sound a bit weird and
+confusing, but it&apos;s actually a really cool concept.</p>
+<p>What are kinds and what are they good for? Well, let&apos;s examine the kind
+of a type by using the <code>:k</code> command in GHCI.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; :k <span class="hljs-type">Int</span>
+<span class="hljs-type">Int</span> :: *
+</code></pre>
+<p>A star? How quaint. What does that mean? A <code>*</code> means that the type is a
+concrete type. A concrete type is a type that doesn&apos;t take any type
+parameters and values can only have types that are concrete types. If I
+had to read <code>*</code> out loud (I haven&apos;t had to do that so far), I&apos;d say
+<em>star</em> or just <em>type</em>.</p>
+<p>Okay, now let&apos;s see what the kind of Maybe is.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; :k <span class="hljs-type">Maybe</span>
+<span class="hljs-type">Maybe</span> :: * -&gt; *
+</code></pre>
+<p>The <code>Maybe</code> type constructor takes one concrete type (like <code>Int</code>) and then
+returns a concrete type like <code>Maybe Int</code>. And that&apos;s what this kind tells
+us. Just like <code>Int -&gt; Int</code> means that a function takes an <code>Int</code> and returns
+an <code>Int</code>, <code>* -&gt; *</code> means that the type constructor takes one concrete
+type and returns a concrete type. Let&apos;s apply the type parameter to
+<code>Maybe</code> and see what the kind of that type is.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; :k <span class="hljs-type">Maybe</span> <span class="hljs-type">Int</span>
+<span class="hljs-type">Maybe</span> <span class="hljs-type">Int</span> :: *
+</code></pre>
+<p>Just like I expected! We applied the type parameter to <code>Maybe</code> and got
+back a concrete type (that&apos;s what <code>* -&gt; *</code> means. A parallel (although
+not equivalent, types and kinds are two different things) to this is if
+we do <code>:t isUpper</code> and <code>:t isUpper &apos;A&apos;</code>. <code>isUpper</code> has a type of <code>Char -&gt; Bool</code>
+and <code>isUpper &apos;A&apos;</code> has a type of <code>Bool</code>, because its value is basically <code>True</code>.
+Both those types, however, have a kind of <code>*</code>.</p>
+<p>We used <code>:k</code> on a type to get its kind, just like we can use <code>:t</code> on a value
+to get its type. Like we said, types are the labels of values and kinds
+are the labels of types and there are parallels between the two.</p>
+<p>Let&apos;s look at another kind.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; :k <span class="hljs-type">Either</span>
+<span class="hljs-type">Either</span> :: * -&gt; * -&gt; *
+</code></pre>
+<p>Aha, this tells us that <code>Either</code> takes two concrete types as type
+parameters to produce a concrete type. It also looks kind of like a type
+declaration of a function that takes two values and returns something.
+Type constructors are curried (just like functions), so we can partially
+apply them.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; :k <span class="hljs-type">Either</span> <span class="hljs-type">String</span>
+<span class="hljs-type">Either</span> <span class="hljs-type">String</span> :: * -&gt; *
+<span class="hljs-title">ghci</span>&gt; :k <span class="hljs-type">Either</span> <span class="hljs-type">String</span> <span class="hljs-type">Int</span>
+<span class="hljs-type">Either</span> <span class="hljs-type">String</span> <span class="hljs-type">Int</span> :: *
+</code></pre>
+<p>When we wanted to make <code>Either</code> a part of the <code>Functor</code> typeclass, we had to
+partially apply it because <code>Functor</code> wants types that take only one
+parameter while <code>Either</code> takes two. In other words, <code>Functor</code> wants types of
+kind <code>* -&gt; *</code> and so we had to partially apply <code>Either</code> to get a type of
+kind <code>* -&gt; *</code> instead of its original kind <code>* -&gt; * -&gt; *</code>. If we look
+at the definition of <code>Functor</code> again</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-type">Functor</span> f <span class="hljs-keyword">where</span></span>
+    fmap :: (a -&gt; b) -&gt; f a -&gt; f b
+</code></pre>
+<p>we see that the <code>f</code> type variable is used as a type that takes one
+concrete type to produce a concrete type. We know it has to produce a
+concrete type because it&apos;s used as the type of a value in a function.
+And from that, we can deduce that types that want to be friends with
+<code>Functor</code> have to be of kind <code>* -&gt; *</code>.</p>
+<p>Now, let&apos;s do some type-foo. Take a look at this typeclass that I&apos;m just
+going to make up right now:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-type">Tofu</span> t <span class="hljs-keyword">where</span></span>
+    tofu :: j a -&gt; t a j
+</code></pre>
+<p>Man, that looks weird. How would we make a type that could be an
+instance of that strange typeclass? Well, let&apos;s look at what its kind
+would have to be. Because <code>j a</code> is used as the type of a value that the
+<code>tofu</code> function takes as its parameter, <code>j a</code> has to have a kind of <code>*</code>. We
+assume <code>*</code> for <code>a</code> and so we can infer that <code>j</code> has to have a kind of
+<code>* -&gt; *</code>. We see that t has to produce a concrete value too and that it takes
+two types. And knowing that a has a kind of <code>*</code> and <code>j</code> has a kind of
+<code>* -&gt; *</code>, we infer that t has to have a kind of
+<code>* -&gt; (* -&gt; *) -&gt; *</code>.
+So it takes a concrete type (<code>a</code>), a type constructor that takes one
+concrete type (<code>j</code>) and produces a concrete type. Wow.</p>
+<p>OK, so let&apos;s make a type with a kind of <code>* -&gt; (* -&gt; *) -&gt; *</code>.
+Here&apos;s one way of going about it.</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Frank</span> a b  = <span class="hljs-type">Frank</span> {<span class="hljs-title">frankField</span> :: <span class="hljs-title">b</span> <span class="hljs-title">a</span>} <span class="hljs-keyword">deriving</span> (<span class="hljs-type">Show</span>)</span>
+</code></pre>
+<p>How do we know this type has a kind of <code>* -&gt; (* -&gt; *) -&gt; *</code>? Well,
+fields in ADTs are made to hold values, so they must be of kind <code>*</code>,
+obviously. We assume <code>*</code> for <code>a</code>, which means that <code>b</code> takes one type
+parameter and so its kind is <code>* -&gt; *</code>. Now we know the kinds of both
+<code>a</code> and <code>b</code> and because they&apos;re parameters for <code>Frank</code>, we see that <code>Frank</code> has a
+kind of <code>* -&gt; (* -&gt; *) -&gt; *</code> The first <code>*</code> represents <code>a</code> and the
+<code>(* -&gt; *)</code> represents <code>b</code>. Let&apos;s make some <code>Frank</code> values and check out their
+types.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; :t <span class="hljs-type">Frank</span> {frankField = <span class="hljs-type">Just</span> <span class="hljs-string">&quot;HAHA&quot;</span>}
+<span class="hljs-type">Frank</span> {frankField = <span class="hljs-type">Just</span> <span class="hljs-string">&quot;HAHA&quot;</span>} :: <span class="hljs-type">Frank</span> [<span class="hljs-type">Char</span>] <span class="hljs-type">Maybe</span>
+<span class="hljs-title">ghci</span>&gt; :t <span class="hljs-type">Frank</span> {frankField = <span class="hljs-type">Node</span> &apos;a&apos; <span class="hljs-type">EmptyTree</span> <span class="hljs-type">EmptyTree</span>}
+<span class="hljs-type">Frank</span> {frankField = <span class="hljs-type">Node</span> &apos;a&apos; <span class="hljs-type">EmptyTree</span> <span class="hljs-type">EmptyTree</span>} :: <span class="hljs-type">Frank</span> <span class="hljs-type">Char</span> <span class="hljs-type">Tree</span>
+<span class="hljs-title">ghci</span>&gt; :t <span class="hljs-type">Frank</span> {frankField = <span class="hljs-string">&quot;YES&quot;</span>}
+<span class="hljs-type">Frank</span> {frankField = <span class="hljs-string">&quot;YES&quot;</span>} :: <span class="hljs-type">Frank</span> <span class="hljs-type">Char</span> []
+</code></pre>
+<p>Hmm. Because <code>frankField</code> has a type of form <code>a b</code>, its values must have
+types that are of a similar form as well. So they can be <code>Just &quot;HAHA&quot;</code>,
+which has a type of <code>Maybe [Char]</code> or it can have a value of
+<code>[&apos;Y&apos;,&apos;E&apos;,&apos;S&apos;]</code>, which has a type of <code>[Char]</code> (if we used our own list type
+for this, it would have a type of <code>List Char</code>). And we see that the types
+of the <code>Frank</code> values correspond with the kind for <code>Frank</code>. <code>[Char]</code> has a
+kind of <code>*</code> and <code>Maybe</code> has a kind of <code>* -&gt; *</code>. Because in order to have a
+value, it has to be a concrete type and thus has to be fully applied,
+every value of <code>Frank blah blaah</code> has a kind of <code>*</code>.</p>
+<p>Making <code>Frank</code> an instance of <code>Tofu</code> is pretty simple. We see that <code>tofu</code>
+takes a <code>j a</code> (so an example type of that form would be <code>Maybe Int</code>) and
+returns a <code>t a j</code>. So if we replace <code>Frank</code> with <code>j</code>, the result type would be
+<code>Frank Int Maybe</code>.</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">instance</span> <span class="hljs-type">Tofu</span> <span class="hljs-type">Frank</span> <span class="hljs-keyword">where</span></span>
+    tofu x = <span class="hljs-type">Frank</span> x
+</code></pre>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; tofu (<span class="hljs-type">Just</span> &apos;a&apos;) :: <span class="hljs-type">Frank</span> <span class="hljs-type">Char</span> <span class="hljs-type">Maybe</span>
+<span class="hljs-type">Frank</span> {frankField = <span class="hljs-type">Just</span> &apos;a&apos;}
+<span class="hljs-title">ghci</span>&gt; tofu [<span class="hljs-string">&quot;HELLO&quot;</span>] :: <span class="hljs-type">Frank</span> [<span class="hljs-type">Char</span>] []
+<span class="hljs-type">Frank</span> {frankField = [<span class="hljs-string">&quot;HELLO&quot;</span>]}
+</code></pre>
+<p>Not very useful, but we did flex our type muscles. Let&apos;s do some more
+type-foo. We have this data type:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">Barry</span> t k p = <span class="hljs-type">Barry</span> { <span class="hljs-title">yabba</span> :: <span class="hljs-title">p</span>, <span class="hljs-title">dabba</span> :: <span class="hljs-title">t</span> <span class="hljs-title">k</span> }</span>
+</code></pre>
+<p>And now we want to make it an instance of <code>Functor</code>. <code>Functor</code> wants types
+of kind <code>* -&gt; *</code> but <code>Barry</code> doesn&apos;t look like it has that kind. What is
+the kind of <code>Barry</code>? Well, we see it takes three type parameters, so it&apos;s
+going to be <code>something -&gt; something -&gt; something -&gt; *</code>. It&apos;s safe to
+say that <code>p</code> is a concrete type and thus has a kind of <code>*</code>. For <code>k</code>, we
+assume <code>*</code> and so by extension, <code>t</code> has a kind of <code>* -&gt; *</code>. Now let&apos;s just
+replace those kinds with the <em>somethings</em> that we used as placeholders
+and we see it has a kind of <code>(* -&gt; *) -&gt; * -&gt; * -&gt; *</code>. Let&apos;s
+check that with GHCI.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; :k <span class="hljs-type">Barry</span>
+<span class="hljs-type">Barry</span> :: (* -&gt; *) -&gt; * -&gt; * -&gt; *
+</code></pre>
+<p>Ah, we were right. How satisfying. Now, to make this type a part of
+<code>Functor</code> we have to partially apply the first two type parameters so that
+we&apos;re left with <code>* -&gt; *</code>. That means that the start of the instance
+declaration will be: <code>instance Functor (Barry a b) where</code>. If we look at
+<code>fmap</code> as if it was made specifically for <code>Barry</code>, it would have a type of
+<code>fmap :: (a -&gt; b) -&gt; Barry c d a -&gt; Barry c d b</code>, because we just
+replace the <code>Functor</code>&apos;s <code>f</code> with <code>Barry c d</code>. The third type parameter from
+<code>Barry</code> will have to change and we see that it&apos;s conveniently in its own
+field.</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">instance</span> <span class="hljs-type">Functor</span> (<span class="hljs-type">Barry</span> <span class="hljs-title">a</span> <span class="hljs-title">b</span>) <span class="hljs-keyword">where</span></span>
+    fmap f (<span class="hljs-type">Barry</span> {yabba = x, dabba = y}) = <span class="hljs-type">Barry</span> {yabba = f x, dabba = y}
+</code></pre>
+<p>There we go! We just mapped the <code>f</code> over the first field.</p>
+<p>In this section, we took a good look at how type parameters work and
+kind of formalized them with kinds, just like we formalized function
+parameters with type declarations. We saw that there are interesting
+parallels between functions and type constructors. They are, however,
+two completely different things. When working on real Haskell, you
+usually won&apos;t have to mess with kinds and do kind inference by hand like
+we did now. Usually, you just have to partially apply your own type to
+<code>* -&gt; *</code> or <code>*</code> when making it an instance of one of the standard
+typeclasses, but it&apos;s good to know how and why that actually works. It&apos;s
+also interesting to see that types have little types of their own.
+Again, you don&apos;t really have to understand everything we did here to
+read on, but if you understand how kinds work, chances are that you have
+a very solid grasp of Haskell&apos;s type system.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="07-modules.html" class="navigation navigation-prev " aria-label="Previous page: 7. Modules">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="09-input-and-output.html" class="navigation navigation-next " aria-label="Next page: 9. Input and Output">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"8. Making Our Own Types and Typeclasses","level":"1.9","depth":1,"next":{"title":"9. Input and Output","level":"1.10","depth":1,"path":"09-input-and-output.md","ref":"09-input-and-output.md","articles":[]},"previous":{"title":"7. Modules","level":"1.8","depth":1,"path":"07-modules.md","ref":"07-modules.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"08-making-our-own-types-and-typeclasses.md","mtime":"2021-12-25T07:57:49.653Z","type":"markdown"},"gitbook":{"version":"3.6.23","time":"2021-12-25T08:06:05.597Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

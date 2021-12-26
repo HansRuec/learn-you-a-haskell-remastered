@@ -1,0 +1,1416 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>6. Higher Order Functions · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.23">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="07-modules.html" />
+    
+    
+    <link rel="prev" href="05-recursion.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01-first-things-first.html">
+            
+                <a href="01-first-things-first.html">
+            
+                    
+                    1. First-Things-First
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="02-starting-out.html">
+            
+                <a href="02-starting-out.html">
+            
+                    
+                    2. Starting Out 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="03-types-and-typeclasses.html">
+            
+                <a href="03-types-and-typeclasses.html">
+            
+                    
+                    3. Types and Typeclasses
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="04-syntax-in-functions.html">
+            
+                <a href="04-syntax-in-functions.html">
+            
+                    
+                    4. Syntax in Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="05-recursion.html">
+            
+                <a href="05-recursion.html">
+            
+                    
+                    5. Recursion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="06-higher-order-functions.html">
+            
+                <a href="06-higher-order-functions.html">
+            
+                    
+                    6. Higher Order Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="07-modules.html">
+            
+                <a href="07-modules.html">
+            
+                    
+                    7. Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="08-making-our-own-types-and-typeclasses.html">
+            
+                <a href="08-making-our-own-types-and-typeclasses.html">
+            
+                    
+                    8. Making Our Own Types and Typeclasses
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="09-input-and-output.html">
+            
+                <a href="09-input-and-output.html">
+            
+                    
+                    9. Input and Output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="10-functionally-solving-problems.html">
+            
+                <a href="10-functionally-solving-problems.html">
+            
+                    
+                    10. Functionally Solving Problems
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="11-functors-applicative-functors-and-monoids.html">
+            
+                <a href="11-functors-applicative-functors-and-monoids.html">
+            
+                    
+                    11. Functors, Applicative Functors and Monoids
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="12-a-fistful-of-monads.html">
+            
+                <a href="12-a-fistful-of-monads.html">
+            
+                    
+                    12. A Fistful of Monads
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="13-for-a-few-monads-more.html">
+            
+                <a href="13-for-a-few-monads-more.html">
+            
+                    
+                    13. For a Few Monads More
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="14-zippers.html">
+            
+                <a href="14-zippers.html">
+            
+                    
+                    14. Zippers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >6. Higher Order Functions</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="higher-order-functions">Higher order functions</h1>
+<p><img src="img/sun.png" alt="sun"></p>
+<p>Haskell functions can take functions as parameters and return functions
+as return values. A function that does either of those is called a
+higher order function. Higher order functions aren&apos;t just a part of the
+Haskell experience, they pretty much are the Haskell experience. It
+turns out that if you want to define computations by defining what stuff
+<em>is</em> instead of defining steps that change some state and maybe looping
+them, higher order functions are indispensable. They&apos;re a really
+powerful way of solving problems and thinking about programs.</p>
+<p><a name="curried-functions"></a></p>
+<h2 id="curried-functions">Curried functions</h2>
+<p>Every function in Haskell officially only takes one parameter. So how is
+it possible that we defined and used several functions that take more
+than one parameter so far? Well, it&apos;s a clever trick! All the functions
+that accepted <em>several parameters</em> so far have been <em>curried functions</em>.
+What does that mean? You&apos;ll understand it best on an example. Let&apos;s take
+our good friend, the <code>max</code> function. It looks like it takes two parameters
+and returns the one that&apos;s bigger. Doing <code>max 4 5</code> first creates a
+function that takes a parameter and returns either <code>4</code> or that parameter,
+depending on which is bigger. Then, <code>5</code> is applied to that function and
+that function produces our desired result. That sounds like a mouthful
+but it&apos;s actually a really cool concept. The following two calls are
+equivalent:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; max <span class="hljs-number">4</span> <span class="hljs-number">5</span>
+<span class="hljs-number">5</span>
+<span class="hljs-title">ghci</span>&gt; (max <span class="hljs-number">4</span>) <span class="hljs-number">5</span>
+<span class="hljs-number">5</span>
+</code></pre>
+<p><img src="img/curry.png" alt="haskell curry"></p>
+<p>Putting a space between two things is simply <strong>function application</strong>.
+The space is sort of like an operator and it has the highest precedence.
+Let&apos;s examine the type of <code>max</code>. It&apos;s <code>max :: (Ord a) =&gt; a -&gt; a -&gt; a</code>.
+That can also be written as <code>max :: (Ord a) =&gt; a -&gt; (a -&gt; a)</code>. That
+could be read as: <code>max</code> takes an <code>a</code> and returns (that&apos;s the <code>-&gt;</code>)
+a function that takes an <code>a</code> and returns an <code>a</code>.
+That&apos;s why the return type and the
+parameters of functions are all simply separated with arrows.</p>
+<p>So how is that beneficial to us? Simply speaking, if we call a function
+with too few parameters, we get back a <em>partially applied</em> function,
+meaning a function that takes as many parameters as we left out. Using
+partial application (calling functions with too few parameters, if you
+will) is a neat way to create functions on the fly so we can pass them
+to another function or to seed them with some data.</p>
+<p>Take a look at this offensively simple function:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">multThree</span> :: (<span class="hljs-type">Num</span> a) =&gt; a -&gt; a -&gt; a -&gt; a
+<span class="hljs-title">multThree</span> x y z = x * y * z
+</code></pre>
+<p>What really happens when we do <code>multThree 3 5 9</code> or <code>((multThree 3) 5) 9</code>?
+First, <code>3</code> is applied to <code>multThree</code>, because they&apos;re separated by a space.
+That creates a function that takes one parameter and returns a function.
+So then <code>5</code> is applied to that, which creates a function that will take a
+parameter and multiply it by 15. <code>9</code> is applied to that function and the
+result is 135 or something. Remember that this function&apos;s type could
+also be written as <code>multThree :: (Num a) =&gt; a -&gt; (a -&gt; (a -&gt; a))</code>. The
+thing before the <code>-&gt;</code> is the parameter that a function takes and the
+thing after it is what it returns. So our function takes an <code>a</code> and
+returns a function of type <code>(Num a) =&gt; a -&gt; (a -&gt; a)</code>. Similarly, this
+function takes an <code>a</code> and returns a function of type <code>(Num a) =&gt; a -&gt; a</code>.
+And this function, finally, just takes an <code>a</code> and returns an <code>a</code>. Take a
+look at this:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-keyword">let</span> multTwoWithNine = multThree <span class="hljs-number">9</span>
+<span class="hljs-title">ghci</span>&gt; multTwoWithNine <span class="hljs-number">2</span> <span class="hljs-number">3</span>
+<span class="hljs-number">54</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-keyword">let</span> multWithEighteen = multTwoWithNine <span class="hljs-number">2</span>
+<span class="hljs-title">ghci</span>&gt; multWithEighteen <span class="hljs-number">10</span>
+<span class="hljs-number">180</span>
+</code></pre>
+<p>By calling functions with too few parameters, so to speak, we&apos;re
+creating new functions on the fly. What if we wanted to create a
+function that takes a number and compares it to <code>100</code>? We could do
+something like this:</p>
+<p>~~~~ {.haskell:hs name=&quot;code&quot;}
+compareWithHundred :: (Num a, Ord a) =&gt; a -&gt; Ordering
+compareWithHundred x = compare 100 x</p>
+<pre><code>
+If we call it with `99`, it returns a `GT`. Simple stuff. Notice that the `x`
+is on the right hand side on both sides of the equation. Now let&apos;s think
+about what `compare 100` returns. It returns a function that takes a
+number and compares it with `100`. Wow! Isn&apos;t that the function we wanted?
+We can rewrite this as:
+
+~~~~ {.haskell:hs name=&quot;code&quot;}
+compareWithHundred :: (Num a, Ord a) =&gt; a -&gt; Ordering
+compareWithHundred = compare 100
+</code></pre><p>The type declaration stays the same, because <code>compare 100</code> returns a
+function. Compare has a type of <code>(Ord a) =&gt; a -&gt; (a -&gt; Ordering)</code> and
+calling it with <code>100</code> returns a <code>(Num a, Ord a) =&gt; a -&gt; Ordering</code>. The
+additional class constraint sneaks up there because <code>100</code> is also part of
+the <code>Num</code> typeclass.</p>
+<blockquote>
+<p><em>Yo!</em> Make sure you really understand how curried functions and partial
+application work because they&apos;re really important!</p>
+</blockquote>
+<p>Infix functions can also be partially applied by using sections. To
+section an infix function, simply surround it with parentheses and only
+supply a parameter on one side. That creates a function that takes one
+parameter and then applies it to the side that&apos;s missing an operand. An
+insultingly trivial function:</p>
+<p>~~~~ {.haskell:hs name=&quot;code&quot;}
+divideByTen :: (Floating a) =&gt; a -&gt; a
+divideByTen = (/10)</p>
+<pre><code>
+Calling, say, `divideByTen 200` is equivalent to doing `200 / 10`, as is
+doing `(/10) 200`. A function that checks if a character supplied to it is
+an uppercase letter:
+
+~~~~ {.haskell:hs name=&quot;code&quot;}
+isUpperAlphanum :: Char -&gt; Bool
+isUpperAlphanum = (`elem` [&apos;A&apos;..&apos;Z&apos;])
+</code></pre><p>The only special thing about sections is using <code>-</code>. From the definition of
+sections, <code>(-4)</code> would result in a function that takes a number and
+subtracts 4 from it. However, for convenience, <code>(-4)</code> means minus four. So
+if you want to make a function that subtracts 4 from the number it gets
+as a parameter, partially apply the <code>subtract</code> function like so:
+<code>(subtract 4)</code>.</p>
+<p>What happens if we try to just do <code>multThree 3 4</code> in GHCI instead of
+binding it to a name with a <em>let</em> or passing it to another function?</p>
+<p>~~~~ {.haskell:hs name=&quot;code&quot;}
+ghci&gt; multThree 3 4</p>
+<p><interactive>:1:0:
+    No instance for (Show (t -&gt; t))
+      arising from a use of `print&apos; at <interactive>:1:0-12
+    Possible fix: add an instance declaration for (Show (t -&gt; t))
+    In the expression: print it
+    In a &apos;do&apos; expression: print it</interactive></interactive></p>
+<pre><code>
+GHCI is telling us that the expression produced a function of type
+`a -&gt; a`
+but it doesn&apos;t know how to print it to the screen. Functions aren&apos;t
+instances of the `Show` typeclass, so we can&apos;t get a neat string
+representation of a function. When we do, say, `1 + 1` at the GHCI prompt,
+it first calculates that to `2` and then calls `show` on `2` to get a textual
+representation of that number. And the textual representation of `2` is
+just the string `&quot;2&quot;`, which then gets printed to our screen.
+
+Some higher-orderism is in order
+--------------------------------
+
+Functions can take functions as parameters and also return functions. To
+illustrate this, we&apos;re going to make a function that takes a function
+and then applies it twice to something!
+
+~~~~ {.haskell:hs name=&quot;code&quot;}
+applyTwice :: (a -&gt; a) -&gt; a -&gt; a
+applyTwice f x = f (f x)
+</code></pre><p><img src="img/bonus.png" alt="rocktopus"></p>
+<p>First of all, notice the type declaration. Before, we didn&apos;t need
+parentheses because <code>-&gt;</code> is naturally right-associative. However, here,
+they&apos;re mandatory. They indicate that the first parameter is a function
+that takes something and returns that same thing. The second parameter
+is something of that type also and the return value is also of the same
+type. We could read this type declaration in the curried way, but to
+save ourselves a headache, we&apos;ll just say that this function takes two
+parameters and returns one thing. The first parameter is a function (of
+type <code>a -&gt; a</code>) and the second is that same <code>a</code>. The function can also be
+<code>Int -&gt; Int</code> or <code>String -&gt; String</code> or whatever. But then, the second
+parameter to also has to be of that type.</p>
+<blockquote>
+<p><em>Note:</em> From now on, we&apos;ll say that functions take several parameters
+despite each function actually taking only one parameter and returning
+partially applied functions until we reach a function that returns a
+solid value. So for simplicity&apos;s sake, we&apos;ll say that <code>a -&gt; a -&gt; a</code>
+takes two parameters, even though we know what&apos;s really going on under
+the hood.</p>
+</blockquote>
+<p>The body of the function is pretty simple. We just use the parameter <code>f</code>
+as a function, applying <code>x</code> to it by separating them with a space and then
+applying the result to <code>f</code> again. Anyway, playing around with the
+function:</p>
+<p>~~~~ {.haskell:hs name=&quot;code&quot;}
+ghci&gt; applyTwice (+3) 10
+16
+ghci&gt; applyTwice (++ &quot; HAHA&quot;) &quot;HEY&quot;
+&quot;HEY HAHA HAHA&quot;
+ghci&gt; applyTwice (&quot;HAHA &quot; ++) &quot;HEY&quot;
+&quot;HAHA HAHA HEY&quot;
+ghci&gt; applyTwice (multThree 2 2) 9
+144
+ghci&gt; applyTwice (3:) [1]
+[3,3,1]</p>
+<pre><code>
+The awesomeness and usefulness of partial application is evident. If our
+function requires us to pass it a function that takes only one
+parameter, we can just partially apply a function to the point where it
+takes only one parameter and then pass it.
+
+Now we&apos;re going to use higher order programming to implement a really
+useful function that&apos;s in the standard library. It&apos;s called `zipWith`. It
+takes a function and two lists as parameters and then joins the two
+lists by applying the function between corresponding elements. Here&apos;s
+how we&apos;ll implement it:
+
+~~~~ {.haskell:hs name=&quot;code&quot;}
+zipWith&apos; :: (a -&gt; b -&gt; c) -&gt; [a] -&gt; [b] -&gt; [c]
+zipWith&apos; _ [] _ = []
+zipWith&apos; _ _ [] = []
+zipWith&apos; f (x:xs) (y:ys) = f x y : zipWith&apos; f xs ys
+</code></pre><p>Look at the type declaration. The first parameter is a function that
+takes two things and produces a third thing. They don&apos;t have to be of
+the same type, but they can. The second and third parameter are lists.
+The result is also a list. The first has to be a list of <code>a</code>&apos;s, because
+the joining function takes <code>a</code>&apos;s as its first argument. The second has to
+be a list of <code>b</code>&apos;s, because the second parameter of the joining function
+is of type <code>b</code>. The result is a list of <code>c</code>&apos;s. If the type declaration of a
+function says it accepts an <code>a -&gt; b -&gt; c</code> function as a parameter, it
+will also accept an <code>a -&gt; a -&gt; a</code> function, but not the other way
+around! Remember that when you&apos;re making functions, especially higher
+order ones, and you&apos;re unsure of the type, you can just try omitting the
+type declaration and then checking what Haskell infers it to be by using
+<code>:t</code>.</p>
+<p>The action in the function is pretty similar to the normal <code>zip</code>. The edge
+conditions are the same, only there&apos;s an extra argument, the joining
+function, but that argument doesn&apos;t matter in the edge conditions, so we
+just use a <code>_</code> for it. And function body at the last pattern is also
+similar to <code>zip</code>, only it doesn&apos;t do <code>(x,y)</code>, but <code>f x y</code>. A single higher
+order function can be used for a multitude of different tasks if it&apos;s
+general enough. Here&apos;s a little demonstration of all the different
+things our <code>zipWith&apos;</code> function can do:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; zipWith&apos; (+) [<span class="hljs-number">4</span>,<span class="hljs-number">2</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>] [<span class="hljs-number">2</span>,<span class="hljs-number">6</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>]
+[<span class="hljs-number">6</span>,<span class="hljs-number">8</span>,<span class="hljs-number">7</span>,<span class="hljs-number">9</span>]
+<span class="hljs-title">ghci</span>&gt; zipWith&apos; max [<span class="hljs-number">6</span>,<span class="hljs-number">3</span>,<span class="hljs-number">2</span>,<span class="hljs-number">1</span>] [<span class="hljs-number">7</span>,<span class="hljs-number">3</span>,<span class="hljs-number">1</span>,<span class="hljs-number">5</span>]
+[<span class="hljs-number">7</span>,<span class="hljs-number">3</span>,<span class="hljs-number">2</span>,<span class="hljs-number">5</span>]
+<span class="hljs-title">ghci</span>&gt; zipWith&apos; (++) [<span class="hljs-string">&quot;foo &quot;</span>, <span class="hljs-string">&quot;bar &quot;</span>, <span class="hljs-string">&quot;baz &quot;</span>] [<span class="hljs-string">&quot;fighters&quot;</span>, <span class="hljs-string">&quot;hoppers&quot;</span>, <span class="hljs-string">&quot;aldrin&quot;</span>]
+[<span class="hljs-string">&quot;foo fighters&quot;</span>,<span class="hljs-string">&quot;bar hoppers&quot;</span>,<span class="hljs-string">&quot;baz aldrin&quot;</span>]
+<span class="hljs-title">ghci</span>&gt; zipWith&apos; (*) (replicate <span class="hljs-number">5</span> <span class="hljs-number">2</span>) [<span class="hljs-number">1.</span>.]
+[<span class="hljs-number">2</span>,<span class="hljs-number">4</span>,<span class="hljs-number">6</span>,<span class="hljs-number">8</span>,<span class="hljs-number">10</span>]
+<span class="hljs-title">ghci</span>&gt; zipWith&apos; (zipWith&apos; (*)) [[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>],[<span class="hljs-number">3</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>],[<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>]] [[<span class="hljs-number">3</span>,<span class="hljs-number">2</span>,<span class="hljs-number">2</span>],[<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>],[<span class="hljs-number">5</span>,<span class="hljs-number">4</span>,<span class="hljs-number">3</span>]]
+[[<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">6</span>],[<span class="hljs-number">9</span>,<span class="hljs-number">20</span>,<span class="hljs-number">30</span>],[<span class="hljs-number">10</span>,<span class="hljs-number">12</span>,<span class="hljs-number">12</span>]]
+</code></pre>
+<p>As you can see, a single higher order function can be used in very
+versatile ways. Imperative programming usually uses stuff like for
+loops, while loops, setting something to a variable, checking its state,
+etc. to achieve some behavior and then wrap it around an interface, like
+a function. Functional programming uses higher order functions to
+abstract away common patterns, like examining two lists in pairs and
+doing something with those pairs or getting a set of solutions and
+eliminating the ones you don&apos;t need.</p>
+<p>We&apos;ll implement another function that&apos;s already in the standard library,
+called <code>flip</code>. Flip simply takes a function and returns a function that is
+like our original function, only the first two arguments are flipped. We
+can implement it like so:</p>
+<p>~~~~ {.haskell:hs name=&quot;code&quot;}
+flip&apos; :: (a -&gt; b -&gt; c) -&gt; (b -&gt; a -&gt; c)
+flip&apos; f = g
+    where g x y = f y x</p>
+<pre><code>
+Reading the type declaration, we say that it takes a function that takes
+an `a` and a `b` and returns a function that takes a `b` and an `a`. But because
+functions are curried by default, the second pair of parentheses is
+really unnecessary, because `-&gt;` is right associative by default.
+`(a -&gt; b -&gt; c) -&gt; (b -&gt; a -&gt; c)` is the same as
+`(a -&gt; b -&gt; c) -&gt; (b -&gt; (a -&gt; c))`,
+which is the same as `(a -&gt; b -&gt; c) -&gt; b -&gt; a -&gt; c`. We
+wrote that `g x y = f y x`. If that&apos;s true, then `f y x = g x y` must also
+hold, right? Keeping that in mind, we can define this function in an
+even simpler manner.
+
+~~~~ {.haskell:hs name=&quot;code&quot;}
+flip&apos; :: (a -&gt; b -&gt; c) -&gt; b -&gt; a -&gt; c
+flip&apos; f y x = f x y
+</code></pre><p>Here, we take advantage of the fact that functions are curried. When we
+call <code>flip&apos; f</code> without the parameters <code>y</code> and <code>x</code>, it will return an <code>f</code> that
+takes those two parameters but calls them flipped. Even though flipped
+functions are usually passed to other functions, we can take advantage
+of currying when making higher-order functions by thinking ahead and
+writing what their end result would be if they were called fully
+applied.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; flip&apos; zip [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>] <span class="hljs-string">&quot;hello&quot;</span>
+[(&apos;h&apos;,<span class="hljs-number">1</span>),(&apos;e&apos;,<span class="hljs-number">2</span>),(&apos;l&apos;,<span class="hljs-number">3</span>),(&apos;l&apos;,<span class="hljs-number">4</span>),(&apos;o&apos;,<span class="hljs-number">5</span>)]
+<span class="hljs-title">ghci</span>&gt; zipWith (flip&apos; div) [<span class="hljs-number">2</span>,<span class="hljs-number">2.</span>.] [<span class="hljs-number">10</span>,<span class="hljs-number">8</span>,<span class="hljs-number">6</span>,<span class="hljs-number">4</span>,<span class="hljs-number">2</span>]
+[<span class="hljs-number">5</span>,<span class="hljs-number">4</span>,<span class="hljs-number">3</span>,<span class="hljs-number">2</span>,<span class="hljs-number">1</span>]
+</code></pre>
+<h2 id="maps-and-filters">Maps and filters</h2>
+<p><code>map</code> takes a function and a list and applies that function to every
+element in the list, producing a new list. Let&apos;s see what its type
+signature is and how it&apos;s defined.</p>
+<p>~~~~ {.haskell:hs name=&quot;code&quot;}
+map :: (a -&gt; b) -&gt; [a] -&gt; [b]
+map _ [] = []
+map f (x:xs) = f x : map f xs</p>
+<pre><code>
+The type signature says that it takes a function that takes an `a` and
+returns a `b`, a list of `a`&apos;s and returns a list of `b`&apos;s. It&apos;s interesting
+that just by looking at a function&apos;s type signature, you can sometimes
+tell what it does. `map` is one of those really versatile higher-order
+functions that can be used in millions of different ways. Here it is in
+action:
+
+~~~~haskell
+ghci&gt; map (+3) [1,5,3,1,6]
+[4,8,6,4,9]
+ghci&gt; map (++ &quot;!&quot;) [&quot;BIFF&quot;, &quot;BANG&quot;, &quot;POW&quot;]
+[&quot;BIFF!&quot;,&quot;BANG!&quot;,&quot;POW!&quot;]
+ghci&gt; map (replicate 3) [3..6]
+[[3,3,3],[4,4,4],[5,5,5],[6,6,6]]
+ghci&gt; map (map (^2)) [[1,2],[3,4,5,6],[7,8]]
+[[1,4],[9,16,25,36],[49,64]]
+ghci&gt; map fst [(1,2),(3,5),(6,3),(2,6),(2,5)]
+[1,3,6,2,2]
+</code></pre><p>You&apos;ve probably noticed that each of these could be achieved with a list
+comprehension. <code>map (+3) [1,5,3,1,6]</code> is the same as writing
+<code>[x+3 | x &lt;- [1,5,3,1,6]]</code>.
+However, using <code>map</code> is much more readable for cases where
+you only apply some function to the elements of a list, especially once
+you&apos;re dealing with maps of maps and then the whole thing with a lot of
+brackets can get a bit messy.</p>
+<p><code>filter</code> is a function that takes a predicate (a predicate is a function
+that tells whether something is true or not, so in our case, a function
+that returns a boolean value) and a list and then returns the list of
+elements that satisfy the predicate. The type signature and
+implementation go like this:</p>
+<p>~~~~ {.haskell:hs name=&quot;code&quot;}
+filter :: (a -&gt; Bool) -&gt; [a] -&gt; [a]
+filter _ [] = []
+filter p (x:xs)
+    | p x       = x : filter p xs
+    | otherwise = filter p xs</p>
+<pre><code>
+Pretty simple stuff. If `p x` evaluates to `True`, the element gets included
+in the new list. If it doesn&apos;t, it stays out. Some usage examples:
+
+~~~~ {.haskell:hs name=&quot;code&quot;}
+ghci&gt; filter (&gt;3) [1,5,3,2,1,6,4,3,2,1]
+[5,6,4]
+ghci&gt; filter (==3) [1,2,3,4,5]
+[3]
+ghci&gt; filter even [1..10]
+[2,4,6,8,10]
+ghci&gt; let notNull x = not (null x) in filter notNull [[1,2,3],[],[3,4,5],[2,2],[],[],[]]
+[[1,2,3],[3,4,5],[2,2]]
+ghci&gt; filter (`elem` [&apos;a&apos;..&apos;z&apos;]) &quot;u LaUgH aT mE BeCaUsE I aM diFfeRent&quot;
+&quot;uagameasadifeent&quot;
+ghci&gt; filter (`elem` [&apos;A&apos;..&apos;Z&apos;]) &quot;i lauGh At You BecAuse u r aLL the Same&quot;
+&quot;GAYBALLS&quot;
+</code></pre><p>All of this could also be achieved with list comprehensions by the use of
+predicates. There&apos;s no set rule for when to use <code>map</code> and <code>filter</code> versus
+using list comprehension, you just have to decide what&apos;s more readable
+depending on the code and the context. The <code>filter</code> equivalent of applying
+several predicates in a list comprehension is either filtering something
+several times or joining the predicates with the logical <code>&amp;&amp;</code> function.</p>
+<p>Remember our quicksort function from the <a href="#recursion">previous chapter</a>?
+We used list comprehensions to filter out the list elements that are
+smaller than (or equal to) and larger than the pivot. We can achieve the
+same functionality in a more readable way by using <code>filter</code>:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">quicksort</span> :: (<span class="hljs-type">Ord</span> a) =&gt; [a] -&gt; [a]
+<span class="hljs-title">quicksort</span> [] = []
+<span class="hljs-title">quicksort</span> (x:xs) =
+    <span class="hljs-keyword">let</span> smallerSorted = quicksort (filter (&lt;=x) xs)
+        biggerSorted = quicksort (filter (&gt;x) xs)
+    <span class="hljs-keyword">in</span>  smallerSorted ++ [x] ++ biggerSorted
+</code></pre>
+<p><img src="img/map.png" alt="map"></p>
+<p>Mapping and filtering is the bread and butter of every functional
+programmer&apos;s toolbox. Uh. It doesn&apos;t matter if you do it with the <code>map</code>
+and <code>filter</code> functions or list comprehensions. Recall how we solved the
+problem of finding right triangles with a certain circumference. With
+imperative programming, we would have solved it by nesting three loops
+and then testing if the current combination satisfies a right triangle
+and if it has the right perimeter. If that&apos;s the case, we would have
+printed it out to the screen or something. In functional programming,
+that pattern is achieved with mapping and filtering. You make a function
+that takes a value and produces some result. We map that function over a
+list of values and then we filter the resulting list out for the results
+that satisfy our search. Thanks to Haskell&apos;s laziness, even if you map
+something over a list several times and filter it several times, it will
+only pass over the list once.</p>
+<p>Let&apos;s <em>find the largest number under 100,000 that&apos;s divisible by 3829</em>.
+To do that, we&apos;ll just filter a set of possibilities in which we know
+the solution lies.</p>
+<p>~~~~ {.haskell:hs name=&quot;code&quot;}
+largestDivisible :: (Integral a) =&gt; a
+largestDivisible = head (filter p [100000,99999..])
+    where p x = x <code>mod</code> 3829 == 0</p>
+<pre><code>
+We first make a list of all numbers lower than 100,000, descending. Then
+we filter it by our predicate and because the numbers are sorted in a
+descending manner, the largest number that satisfies our predicate is
+the first element of the filtered list. We didn&apos;t even need to use a
+finite list for our starting set. That&apos;s laziness in action again.
+Because we only end up using the head of the filtered list, it doesn&apos;t
+matter if the filtered list is finite or infinite. The evaluation stops
+when the first adequate solution is found.
+
+Next up, we&apos;re going to *find the sum of all odd squares that are
+smaller than 10,000*. But first, because we&apos;ll be using it in our
+solution, we&apos;re going to introduce the takeWhile function. It takes a
+predicate and a list and then goes from the beginning of the list and
+returns its elements while the predicate holds true. Once an element is
+found for which the predicate doesn&apos;t hold, it stops. If we wanted to
+get the first word of the string `&quot;elephants know how to party&quot;`, we could
+do `takeWhile (/=&apos; &apos;) &quot;elephants know how to party&quot;` and it would return
+`&quot;elephants&quot;`. Okay. The sum of all odd squares that are smaller than
+10,000. First, we&apos;ll begin by mapping the `(^2)` function to the infinite
+list `[1..]`. Then we filter them so we only get the odd ones. And then,
+we&apos;ll take elements from that list while they are smaller than 10,000.
+Finally, we&apos;ll get the sum of that list. We don&apos;t even have to define a
+function for that, we can do it in one line in GHCI:
+
+~~~~haskell
+ghci&gt; sum (takeWhile (&lt;10000) (filter odd (map (^2) [1..])))
+166650
+</code></pre><p>Awesome! We start with some initial data (the infinite list of all
+natural numbers) and then we map over it, filter it and cut it until it
+suits our needs and then we just sum it up. We could have also written
+this using list comprehensions:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; sum (takeWhile (&lt;<span class="hljs-number">10000</span>) [n^<span class="hljs-number">2</span> | n &lt;- [<span class="hljs-number">1.</span>.], odd (n^<span class="hljs-number">2</span>)])
+<span class="hljs-number">166650</span>
+</code></pre>
+<p>It&apos;s a matter of taste as to which one you find prettier. Again,
+Haskell&apos;s property of laziness is what makes this possible. We can map
+over and filter an infinite list, because it won&apos;t actually map and
+filter it right away, it&apos;ll delay those actions. Only when we force
+Haskell to show us the <code>sum</code> does the sum function say to the <code>takeWhile</code>
+that it needs those numbers. <code>takeWhile</code> forces the filtering and mapping
+to occur, but only until a number greater than or equal to 10,000 is
+encountered.</p>
+<p>For our next problem, we&apos;ll be dealing with Collatz sequences. We take a
+natural number. If that number is even, we divide it by two. If it&apos;s
+odd, we multiply it by 3 and then add 1 to that. We take the resulting
+number and apply the same thing to it, which produces a new number and
+so on. In essence, we get a chain of numbers. It is thought that for all
+starting numbers, the chains finish at the number 1. So if we take the
+starting number 13, we get this sequence: <em>13, 40, 20, 10, 5, 16, 8, 4,
+2, 1</em>. 13*3 + 1 equals 40. 40 divided by 2 is 20, etc. We see that the
+chain has 10 terms.</p>
+<p>Now what we want to know is this: <em>for all starting numbers between 1
+and 100, how many chains have a length greater than 15?</em> First off,
+we&apos;ll write a function that produces a chain:</p>
+<p>~~~~ {.haskell:hs name=&quot;code&quot;}
+chain :: (Integral a) =&gt; a -&gt; [a]
+chain 1 = [1]
+chain n
+    | even n =  n:chain (n <code>div</code> 2)
+    | odd n  =  n:chain (n*3 + 1)</p>
+<pre><code>
+Because the chains end at 1, that&apos;s the edge case. This is a pretty
+standard recursive function.
+
+~~~~haskell
+ghci&gt; chain 10
+[10,5,16,8,4,2,1]
+ghci&gt; chain 1
+[1]
+ghci&gt; chain 30
+[30,15,46,23,70,35,106,53,160,80,40,20,10,5,16,8,4,2,1]
+</code></pre><p>Yay! It seems to be working correctly. And now, the function that tells
+us the answer to our question:</p>
+<p>~~~~ {.haskell:hs name=&quot;code&quot;}
+numLongChains :: Int
+numLongChains = length (filter isLong (map chain [1..100]))
+    where isLong xs = length xs &gt; 15</p>
+<pre><code>
+We map the `chain` function to `[1..100]` to get a list of chains, which are
+themselves represented as lists. Then, we filter them by a predicate
+that just checks whether a list&apos;s length is longer than 15. Once we&apos;ve
+done the filtering, we see how many chains are left in the resulting
+list.
+
+&gt; *Note:* This function has a type of `numLongChains :: Int` because `length`
+&gt; returns an `Int` instead of a `Num a` for historical reasons. If we wanted
+&gt; to return a more general `Num a`, we could have used `fromIntegral` on the
+&gt; resulting length.
+
+Using `map`, we can also do stuff like `map (*) [0..]`, if not for any
+other reason than to illustrate how currying works and how (partially
+applied) functions are real values that you can pass around to other
+functions or put into lists (you just can&apos;t turn them to strings). So
+far, we&apos;ve only mapped functions that take one parameter over lists,
+like `map (*2) [0..]` to get a list of type `(Num a) =&gt; [a]`, but we can
+also do `map (*) [0..]` without a problem. What happens here is that the
+number in the list is applied to the function `*`, which has a type of
+`(Num a) =&gt; a -&gt; a -&gt; a`. Applying only one parameter to a function
+that takes two parameters returns a function that takes one parameter.
+If we map `*` over the list `[0..]`, we get back a list of functions that
+only take one parameter, so `(Num a) =&gt; [a -&gt; a]`. `map (*) [0..]`
+produces a list like the one we&apos;d get by writing
+`[(0*),(1*),(2*),(3*),(4*),(5*)...`
+
+~~~~ {.haskell:hs name=&quot;code&quot;}
+ghci&gt; let listOfFuns = map (*) [0..]
+ghci&gt; (listOfFuns !! 4) 5
+20
+</code></pre><p>Getting the element with the index <code>4</code> from our list returns a function
+that&apos;s equivalent to <code>(4*)</code>. And then, we just apply <code>5</code> to that function.
+So that&apos;s like writing <code>(4*) 5</code> or just <code>4 * 5</code>.</p>
+<h2 id="lambdas">Lambdas</h2>
+<p><img src="img/lambda.png" alt="lambda"></p>
+<p>Lambdas are basically anonymous functions that are used because we need
+some functions only once. Normally, we make a lambda with the sole
+purpose of passing it to a higher-order function. To make a lambda, we
+write a <code>\</code> (because it kind of looks like the Greek letter lambda if you
+squint hard enough) and then we write the parameters, separated by
+spaces. After that comes a <code>-&gt;</code> and then the function body. We usually
+surround them by parentheses, because otherwise they extend all the way
+to the right.</p>
+<p>If you look about 5 inches up, you&apos;ll see that we used a <em>where</em> binding
+in our <code>numLongChains</code> function to make the <code>isLong</code> function for the sole
+purpose of passing it to <code>filter</code>. Well, instead of doing that, we can use
+a lambda:</p>
+<p>~~~~ {.haskell:hs name=&quot;code&quot;}
+numLongChains :: Int
+numLongChains = length (filter (\xs -&gt; length xs &gt; 15) (map chain [1..100]))</p>
+<pre><code>
+Lambdas are expressions, that&apos;s why we can just pass them like that. The
+expression `(\xs -&gt; length xs &gt; 15)` returns a function that tells us
+whether the length of the list passed to it is greater than 15.
+
+![lamb](img/lamb.png)
+
+People who are not well acquainted with how currying and partial
+application works often use lambdas where they don&apos;t need to. For
+instance, the expressions `map (+3) [1,6,3,2]` and
+`map (\x -&gt; x + 3) [1,6,3,2]`
+are equivalent since both `(+3)` and `(\x -&gt; x + 3)` are
+functions that take a number and add 3 to it. Needless to say, making a
+lambda in this case is stupid since using partial application is much
+more readable.
+
+Like normal functions, lambdas can take any number of parameters:
+
+~~~~haskell
+ghci&gt; zipWith (\a b -&gt; (a * 30 + 3) / b) [5,4,3,2,1] [1,2,3,4,5]
+[153.0,61.5,31.0,15.75,6.6]
+</code></pre><p>And like normal functions, you can pattern match in lambdas. The only
+difference is that you can&apos;t define several patterns for one parameter,
+like making a <code>[]</code> and a <code>(x:xs)</code> pattern for the same parameter and then
+having values fall through. If a pattern matching fails in a lambda, a
+runtime error occurs, so be careful when pattern matching in lambdas!</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; map (\(a,b) -&gt; a + b) [(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>),(<span class="hljs-number">3</span>,<span class="hljs-number">5</span>),(<span class="hljs-number">6</span>,<span class="hljs-number">3</span>),(<span class="hljs-number">2</span>,<span class="hljs-number">6</span>),(<span class="hljs-number">2</span>,<span class="hljs-number">5</span>)]
+[<span class="hljs-number">3</span>,<span class="hljs-number">8</span>,<span class="hljs-number">9</span>,<span class="hljs-number">8</span>,<span class="hljs-number">7</span>]
+</code></pre>
+<p>Lambdas are normally surrounded by parentheses unless we mean for them
+to extend all the way to the right. Here&apos;s something interesting: due to
+the way functions are curried by default, these two are equivalent:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">addThree</span> :: (<span class="hljs-type">Num</span> a) =&gt; a -&gt; a -&gt; a -&gt; a
+<span class="hljs-title">addThree</span> x y z = x + y + z
+</code></pre>
+<pre><code class="lang-haskell"><span class="hljs-title">addThree</span> :: (<span class="hljs-type">Num</span> a) =&gt; a -&gt; a -&gt; a -&gt; a
+<span class="hljs-title">addThree</span> = \x -&gt; \y -&gt; \z -&gt; x + y + z
+</code></pre>
+<p>If we define a function like this, it&apos;s obvious why the type declaration
+is what it is. There are three <code>-&gt;</code>&apos;s in both the type declaration and
+the equation. But of course, the first way to write functions is far
+more readable, the second one is pretty much a gimmick to illustrate
+currying.</p>
+<p>However, there are times when using this notation is cool. I think that
+the <code>flip</code> function is the most readable when defined like so:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">flip&apos;</span> :: (a -&gt; b -&gt; c) -&gt; b -&gt; a -&gt; c
+<span class="hljs-title">flip&apos;</span> f = \x y -&gt; f y x
+</code></pre>
+<p>Even though that&apos;s the same as writing <code>flip&apos; f x y = f y x</code>, we make it
+obvious that this will be used for producing a new function most of the
+time. The most common use case with <code>flip</code> is calling it with just the
+function parameter and then passing the resulting function on to a map
+or a filter. So use lambdas in this way when you want to make it
+explicit that your function is mainly meant to be partially applied and
+passed on to a function as a parameter.</p>
+<p><a name="folds"></a></p>
+<h2 id="only-folds-and-horses">Only folds and horses</h2>
+<p><img src="img/origami.png" alt="folded bird"></p>
+<p>Back when we were dealing with recursion, we noticed a theme throughout
+many of the recursive functions that operated on lists. Usually, we&apos;d
+have an edge case for the empty list. We&apos;d introduce the <code>x:xs</code> pattern
+and then we&apos;d do some action that involves a single element and the rest
+of the list. It turns out this is a very common pattern, so a couple of
+very useful functions were introduced to encapsulate it. These functions
+are called folds. They&apos;re sort of like the <code>map</code> function, only they
+reduce the list to some single value.</p>
+<p>A fold takes a binary function, a starting value (I like to call it the
+accumulator) and a list to fold up. The binary function itself takes two
+parameters. The binary function is called with the accumulator and the
+first (or last) element and produces a new accumulator. Then, the binary
+function is called again with the new accumulator and the now new first
+(or last) element, and so on. Once we&apos;ve walked over the whole list,
+only the accumulator remains, which is what we&apos;ve reduced the list to.</p>
+<p>First let&apos;s take a look at the <code>foldl</code> function, also called the left
+fold. It folds the list up from the left side. The binary function is
+applied between the starting value and the head of the list. That
+produces a new accumulator value and the binary function is called with
+that value and the next element, etc.</p>
+<p>Let&apos;s implement <code>sum</code> again, only this time, we&apos;ll use a fold instead of
+explicit recursion.</p>
+<p>~~~~ {.haskell:hs name=&quot;code&quot;}
+sum&apos; :: (Num a) =&gt; [a] -&gt; a
+sum&apos; xs = foldl (\acc x -&gt; acc + x) 0 xs</p>
+<pre><code>
+Testing, one two three:
+
+~~~~haskell
+ghci&gt; sum&apos; [3,5,2,1]
+11
+</code></pre><p><img src="img/foldl.png" alt="foldl"></p>
+<p>Let&apos;s take an in-depth look into how this fold happens.
+<code>\acc x -&gt; acc + x</code> is the binary function.
+<code>0</code> is the starting value and <code>xs</code> is the list
+to be folded up. Now first, <code>0</code> is used as the <code>acc</code> parameter to the binary
+function and <code>3</code> is used as the <code>x</code> (or the current element) parameter.
+<code>0 + 3</code> produces a <code>3</code> and it becomes the new accumulator value, so to speak.
+Next up, <code>3</code> is used as the accumulator value and <code>5</code> as the current element
+and <code>8</code> becomes the new accumulator value. Moving forward, <code>8</code> is the
+accumulator value, <code>2</code> is the current element, the new accumulator value
+is <code>10</code>. Finally, that <code>10</code> is used as the accumulator value and <code>1</code> as the
+current element, producing an <code>11</code>. Congratulations, you&apos;ve done a fold!</p>
+<p>This professional diagram on the left illustrates how a fold happens,
+step by step (day by day!). The greenish brown number is the accumulator
+value. You can see how the list is sort of consumed up from the left
+side by the accumulator. Om nom nom nom! If we take into account that
+functions are curried, we can write this implementation ever more
+succinctly, like so:</p>
+<p>~~~~ {.haskell:hs name=&quot;code&quot;}
+sum&apos; :: (Num a) =&gt; [a] -&gt; a
+sum&apos; = foldl (+) 0</p>
+<pre><code>
+The lambda function `(\acc x -&gt; acc + x)` is the same as `(+)`. We can
+omit the `xs` as the parameter because calling `foldl (+) 0` will return a
+function that takes a list. Generally, if you have a function like
+`foo a = bar b a`, you can rewrite it as `foo = bar b`, because of currying.
+
+Anyhoo, let&apos;s implement another function with a left fold before moving
+on to right folds. I&apos;m sure you all know that `elem` checks whether a
+value is part of a list so I won&apos;t go into that again (whoops, just
+did!). Let&apos;s implement it with a left fold.
+
+~~~~ {.haskell:hs name=&quot;code&quot;}
+elem&apos; :: (Eq a) =&gt; a -&gt; [a] -&gt; Bool
+elem&apos; y ys = foldl (\acc x -&gt; if x == y then True else acc) False ys
+</code></pre><p>Well, well, well, what do we have here? The starting value and
+accumulator here is a boolean value. The type of the accumulator value
+and the end result is always the same when dealing with folds. Remember
+that if you ever don&apos;t know what to use as a starting value, it&apos;ll give
+you some idea. We start off with <code>False</code>. It makes sense to use <code>False</code> as a
+starting value. We assume it isn&apos;t there. Also, if we call a fold on an
+empty list, the result will just be the starting value. Then we check
+the current element is the element we&apos;re looking for. If it is, we set
+the accumulator to <code>True</code>. If it&apos;s not, we just leave the accumulator
+unchanged. If it was <code>False</code> before, it stays that way because this
+current element is not it. If it was <code>True</code>, we leave it at that.</p>
+<p>The right fold, <code>foldr</code> works in a similar way to the left fold, only the
+accumulator eats up the values from the right. Also, the left fold&apos;s
+binary function has the accumulator as the first parameter and the
+current value as the second one (so <code>\acc x -&gt; ...</code>), the right fold&apos;s
+binary function has the current value as the first parameter and the
+accumulator as the second one (so <code>\x acc -&gt; ...</code>). It kind of makes
+sense that the right fold has the accumulator on the right, because it
+folds from the right side.</p>
+<p>The accumulator value (and hence, the result) of a fold can be of any
+type. It can be a number, a boolean or even a new list. We&apos;ll be
+implementing the map function with a right fold. The accumulator will be
+a list, we&apos;ll be accumulating the mapped list element by element. From
+that, it&apos;s obvious that the starting element will be an empty list.</p>
+<p>~~~~ {.haskell:hs name=&quot;code&quot;}
+map&apos; :: (a -&gt; b) -&gt; [a] -&gt; [b]
+map&apos; f xs = foldr (\x acc -&gt; f x : acc) [] xs</p>
+<pre><code>
+If we&apos;re mapping `(+3)` to `[1,2,3]`, we approach the list from the right
+side. We take the last element, which is `3` and apply the function to it,
+which ends up being `6`. Then, we prepend it to the accumulator, which is
+was `[]`. `6:[]` is `[6]` and that&apos;s now the accumulator. We apply `(+3)` to `2`,
+that&apos;s `5` and we prepend (`:`) it to the accumulator, so the accumulator is
+now `[5,6]`. We apply `(+3)` to `1` and prepend that to the accumulator and so
+the end value is `[4,5,6]`.
+
+Of course, we could have implemented this function with a left fold too.
+It would be `map&apos; f xs = foldl (\acc x -&gt; acc ++ [f x]) [] xs`, but the
+thing is that the `++` function is much more expensive than `:`, so we
+usually use right folds when we&apos;re building up new lists from a list.
+
+![fold this up!](img/washmachine.png)
+
+If you reverse a list, you can do a right fold on it just like you would
+have done a left fold and vice versa. Sometimes you don&apos;t even have to
+do that. The `sum` function can be implemented pretty much the same with a
+left and right fold. One big difference is that right folds work on
+infinite lists, whereas left ones don&apos;t! To put it plainly, if you take
+an infinite list at some point and you fold it up from the right, you&apos;ll
+eventually reach the beginning of the list. However, if you take an
+infinite list at a point and you try to fold it up from the left, you&apos;ll
+never reach an end!
+
+*Folds can be used to implement any function where you traverse a list
+once, element by element, and then return something based on that.
+Whenever you want to traverse a list to return something, chances are
+you want a fold.* That&apos;s why folds are, along with maps and filters, one
+of the most useful types of functions in functional programming.
+
+The `foldl1` and `foldr1` functions work much like `foldl` and `foldr`, only you
+don&apos;t need to provide them with an explicit starting value. They assume
+the first (or last) element of the list to be the starting value and
+then start the fold with the element next to it. With that in mind, the
+`sum` function can be implemented like so: `sum = foldl1 (+)`. Because they
+depend on the lists they fold up having at least one element, they cause
+runtime errors if called with empty lists. `foldl` and `foldr`, on the other
+hand, work fine with empty lists. When making a fold, think about how it
+acts on an empty list. If the function doesn&apos;t make sense when given an
+empty list, you can probably use a `foldl1` or `foldr1` to implement it.
+
+Just to show you how powerful folds are, we&apos;re going to implement a
+bunch of standard library functions by using folds:
+
+~~~~ {.haskell:hs name=&quot;code&quot;}
+maximum&apos; :: (Ord a) =&gt; [a] -&gt; a
+maximum&apos; = foldr1 (\x acc -&gt; if x &gt; acc then x else acc)
+
+reverse&apos; :: [a] -&gt; [a]
+reverse&apos; = foldl (\acc x -&gt; x : acc) []
+
+product&apos; :: (Num a) =&gt; [a] -&gt; a
+product&apos; = foldr1 (*)
+
+filter&apos; :: (a -&gt; Bool) -&gt; [a] -&gt; [a]
+filter&apos; p = foldr (\x acc -&gt; if p x then x : acc else acc) []
+
+head&apos; :: [a] -&gt; a
+head&apos; = foldr1 (\x _ -&gt; x)
+
+last&apos; :: [a] -&gt; a
+last&apos; = foldl1 (\_ x -&gt; x)
+</code></pre><p><code>head</code> is better implemented by pattern matching, but this just goes to
+show, you can still achieve it by using folds. Our <code>reverse&apos;</code> definition
+is pretty clever, I think. We take a starting value of an empty list and
+then approach our list from the left and just prepend to our
+accumulator. In the end, we build up a reversed list.
+<code>\acc x -&gt; x : acc</code>
+kind of looks like the : function, only the parameters are flipped.
+That&apos;s why we could have also written our reverse as
+<code>foldl (flip (:)) []</code>.</p>
+<p>Another way to picture right and left folds is like this: say we have a
+right fold and the binary function is <code>f</code> and the starting value is <code>z</code>.
+If we&apos;re right folding over the list <code>[3,4,5,6]</code>,
+we&apos;re essentially doing this:
+<code>f 3 (f 4 (f 5 (f 6 z)))</code>.
+<code>f</code> is called with the last element in the
+list and the accumulator, that value is given as the accumulator to the
+next to last value and so on. If we take <code>f</code> to be <code>+</code> and the starting
+accumulator value to be <code>0</code>, that&apos;s <code>3 + (4 + (5 + (6 + 0)))</code>. Or if we
+write <code>+</code> as a prefix function, that&apos;s <code>(+) 3 ((+) 4 ((+) 5 ((+) 6 0)))</code>.
+Similarly, doing a left fold over that list with <code>g</code> as the binary
+function and <code>z</code> as the accumulator is the equivalent of
+<code>g (g (g (g z 3) 4) 5) 6</code>.
+If we use <code>flip (:)</code> as the binary function and <code>[]</code> as the
+accumulator (so we&apos;re reversing the list), then that&apos;s the equivalent of
+<code>flip (:) (flip (:) (flip (:) (flip (:) [] 3) 4) 5) 6</code>. And sure enough,
+if you evaluate that expression, you get <code>[6,5,4,3]</code>.</p>
+<p><code>scanl</code> and <code>scanr</code> are like <code>foldl</code> and <code>foldr</code>, only they report all the
+intermediate accumulator states in the form of a list. There are also
+<code>scanl1</code> and <code>scanr1</code>, which are analogous to <code>foldl1</code> and <code>foldr1</code>.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; scanl (+) <span class="hljs-number">0</span> [<span class="hljs-number">3</span>,<span class="hljs-number">5</span>,<span class="hljs-number">2</span>,<span class="hljs-number">1</span>]
+[<span class="hljs-number">0</span>,<span class="hljs-number">3</span>,<span class="hljs-number">8</span>,<span class="hljs-number">10</span>,<span class="hljs-number">11</span>]
+<span class="hljs-title">ghci</span>&gt; scanr (+) <span class="hljs-number">0</span> [<span class="hljs-number">3</span>,<span class="hljs-number">5</span>,<span class="hljs-number">2</span>,<span class="hljs-number">1</span>]
+[<span class="hljs-number">11</span>,<span class="hljs-number">8</span>,<span class="hljs-number">3</span>,<span class="hljs-number">1</span>,<span class="hljs-number">0</span>]
+<span class="hljs-title">ghci</span>&gt; scanl1 (\acc x -&gt; <span class="hljs-keyword">if</span> x &gt; acc <span class="hljs-keyword">then</span> x <span class="hljs-keyword">else</span> acc) [<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">3</span>,<span class="hljs-number">7</span>,<span class="hljs-number">9</span>,<span class="hljs-number">2</span>,<span class="hljs-number">1</span>]
+[<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">5</span>,<span class="hljs-number">7</span>,<span class="hljs-number">9</span>,<span class="hljs-number">9</span>,<span class="hljs-number">9</span>]
+<span class="hljs-title">ghci</span>&gt; scanl (flip (:)) [] [<span class="hljs-number">3</span>,<span class="hljs-number">2</span>,<span class="hljs-number">1</span>]
+[[],[<span class="hljs-number">3</span>],[<span class="hljs-number">2</span>,<span class="hljs-number">3</span>],[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>]]
+</code></pre>
+<p>When using a <code>scanl</code>, the final result will be in the last element of the
+resulting list while a <code>scanr</code> will place the result in the head.</p>
+<p>Scans are used to monitor the progression of a function that can be
+implemented as a fold. Let&apos;s answer us this question: <em>How many elements
+does it take for the sum of the roots of all natural numbers to exceed
+1000?</em> To get the squares of all natural numbers, we just do
+<code>map sqrt [1..]</code>.
+Now, to get the sum, we could do a fold, but because we&apos;re
+interested in how the sum progresses, we&apos;re going to do a scan. Once
+we&apos;ve done the scan, we just see how many sums are under 1000. The first
+sum in the scanlist will be 1, normally. The second will be 1 plus the
+square root of 2. The third will be that plus the square root of 3. If
+there are X sums under 1000, then it takes X+1 elements for the sum to
+exceed 1000.</p>
+<p>~~~~ {.haskell:hs name=&quot;code&quot;}
+sqrtSums :: Int
+sqrtSums = length (takeWhile (&lt;1000) (scanl1 (+) (map sqrt [1..]))) + 1</p>
+<pre><code>
+~~~~haskell
+ghci&gt; sqrtSums
+131
+ghci&gt; sum (map sqrt [1..131])
+1005.0942035344083
+ghci&gt; sum (map sqrt [1..130])
+993.6486803921487
+</code></pre><p>We use <code>takeWhile</code> here instead of <code>filter</code> because <code>filter</code> doesn&apos;t work on
+infinite lists. Even though we know the list is ascending, <code>filter</code>
+doesn&apos;t, so we use <code>takeWhile</code> to cut the scanlist off at the first
+occurence of a sum greater than 1000.</p>
+<h2 id="function-application-with-">Function application with $</h2>
+<p>Alright, next up, we&apos;ll take a look at the <code>$</code> function, also called
+<em>function application</em>. First of all, let&apos;s check out how it&apos;s defined:</p>
+<p>~~~~ {.haskell:hs name=&quot;code&quot;}
+($) :: (a -&gt; b) -&gt; a -&gt; b
+f $ x = f x</p>
+<pre><code>
+![dollar](img/dollar.png)
+
+What the heck? What is this useless operator? It&apos;s just function
+application! Well, almost, but not quite! Whereas normal function
+application (putting a space between two things) has a really high
+precedence, the `$` function has the lowest precedence. Function
+application with a space is left-associative (so `f a b c` is the same as
+`((f a) b) c))`, function application with `$` is right-associative.
+
+That&apos;s all very well, but how does this help us? Most of the time, it&apos;s
+a convenience function so that we don&apos;t have to write so many
+parentheses. Consider the expression `sum (map sqrt [1..130])`. Because `$`
+has such a low precedence, we can rewrite that expression as
+`sum $ map sqrt [1..130]`,
+saving ourselves precious keystrokes! When a `$` is
+encountered, the expression on its right is applied as the parameter to
+the function on its left. How about `sqrt 3 + 4 + 9`? This adds together
+9, 4 and the square root of 3. If we want get the square root of *3 + 4
++ 9*, we&apos;d have to write `sqrt (3 + 4 + 9)` or if we use `$` we can write
+it as `sqrt $ 3 + 4 + 9` because `$` has the lowest precedence of any
+operator. That&apos;s why you can imagine a `$` being sort of the equivalent
+of writing an opening parentheses and then writing a closing one on the
+far right side of the expression.
+
+How about
+`sum (filter (&gt; 10) (map (*2) [2..10]))`?
+Well, because `$` is right-associative,
+`f (g (z x))` is equal to `f $ g $ z x`.
+And so, we can rewrite
+`sum (filter (&gt; 10) (map (*2) [2..10]))`
+as
+`sum $ filter (&gt; 10) $ map (*2) [2..10]`.
+
+But apart from getting rid of parentheses, `$` means that function
+application can be treated just like another function. That way, we can,
+for instance, map function application over a list of functions.
+
+~~~~haskell
+ghci&gt; map ($ 3) [(4+), (10*), (^2), sqrt]
+[7.0,30.0,9.0,1.7320508075688772]
+</code></pre><p><a name="composition"></a></p>
+<h2 id="function-composition">Function composition</h2>
+<p>In mathematics, function composition is defined like this:
+<img src="img/composition.png" alt=" (f . g)(x) = f(g(x))">, meaning that
+composing two functions produces a new function that, when called with a
+parameter, say, <em>x</em> is the equivalent of calling <em>g</em> with the parameter
+<em>x</em> and then calling the <em>f</em> with that result.</p>
+<p>In Haskell, function composition is pretty much the same thing. We do
+function composition with the <code>.</code> function, which is defined like so:</p>
+<p>~~~~ {.haskell:hs name=&quot;code&quot;}
+(.) :: (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
+f . g = \x -&gt; f (g x)</p>
+<pre><code>
+![notes](img/notes.png)
+
+Mind the type declaration. `f` must take as its parameter a value that has
+the same type as `g`&apos;s return value. So the resulting function takes a
+parameter of the same type that g takes and returns a value of the same
+type that `f` returns. The expression `negate . (* 3)` returns a function
+that takes a number, multiplies it by 3 and then negates it.
+
+One of the uses for function composition is making functions on the fly
+to pass to other functions. Sure, can use lambdas for that, but many
+times, function composition is clearer and more concise. Say we have a
+list of numbers and we want to turn them all into negative numbers. One
+way to do that would be to get each number&apos;s absolute value and then
+negate it, like so:
+
+~~~~ {.haskell:hs name=&quot;code&quot;}
+ghci&gt; map (\x -&gt; negate (abs x)) [5,-3,-6,7,-3,2,-19,24]
+[-5,-3,-6,-7,-3,-2,-19,-24]
+</code></pre><p>Notice the lambda and how it looks like the result function composition.
+Using function composition, we can rewrite that as:</p>
+<p>~~~~ {.haskell:hs name=&quot;code&quot;}
+ghci&gt; map (negate . abs) [5,-3,-6,7,-3,2,-19,24]
+[-5,-3,-6,-7,-3,-2,-19,-24]</p>
+<pre><code>
+Fabulous! Function composition is right-associative, so we can compose
+many functions at a time. The expression `f (g (z x))` is equivalent to
+`(f . g . z) x`. With that in mind, we can turn
+
+~~~~haskell
+ghci&gt; map (\xs -&gt; negate (sum (tail xs))) [[1..5],[3..6],[1..7]]
+[-14,-15,-27]
+</code></pre><p>into</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; map (negate . sum . tail) [[<span class="hljs-number">1.</span><span class="hljs-number">.5</span>],[<span class="hljs-number">3.</span><span class="hljs-number">.6</span>],[<span class="hljs-number">1.</span><span class="hljs-number">.7</span>]]
+[<span class="hljs-number">-14</span>,<span class="hljs-number">-15</span>,<span class="hljs-number">-27</span>]
+</code></pre>
+<p>But what about functions that take several parameters? Well, if we want
+to use them in function composition, we usually have to partially apply
+them just so much that each function takes just one parameter.
+<code>sum (replicate 5 (max 6.7 8.9))</code> can be rewritten as
+<code>(sum . replicate 5 . max 6.7) 8.9</code> or as
+<code>sum . replicate 5 . max 6.7 $ 8.9</code>. What goes on in here
+is this: a function that takes what <code>max 6.7</code> takes and applies
+<code>replicate 5</code> to it is created.
+Then, a function that takes the result of that and
+does a sum of it is created. Finally, that function is called with <code>8.9</code>.
+But normally, you just read that as: apply <code>8.9</code> to <code>max 6.7</code>, then apply
+<code>replicate 5</code> to that and then apply <code>sum</code> to that. If you want to rewrite
+an expression with a lot of parentheses by using function composition,
+you can start by putting the last parameter of the innermost function
+after a <code>$</code> and then just composing all the other function calls, writing
+them without their last parameter and putting dots between them. If you
+have
+<code>replicate 100 (product (map (*3) (zipWith max [1,2,3,4,5] [4,5,6,7,8])))</code>,
+you can write it as
+<code>replicate 100 . product . map (*3) . zipWith max [1,2,3,4,5] $ [4,5,6,7,8]</code>.
+If the expression ends with
+three parentheses, chances are that if you translate it into function
+composition, it&apos;ll have three composition operators.</p>
+<p>Another common use of function composition is defining functions in the
+so-called point free style (also called the point<em>less</em> style). Take for
+example this function that we wrote earlier:</p>
+<p>~~~~ {.haskell:hs name=&quot;code&quot;}
+sum&apos; :: (Num a) =&gt; [a] -&gt; a
+sum&apos; xs = foldl (+) 0 xs</p>
+<pre><code>
+The `xs` is exposed on both right sides. Because of currying, we can omit
+the `xs` on both sides, because calling `foldl (+) 0` creates a function
+that takes a list. Writing the function as `sum&apos; = foldl (+) 0` is called
+writing it in point free style. How would we write this in point free
+style?
+
+~~~~ {.haskell:hs name=&quot;code&quot;}
+fn x = ceiling (negate (tan (cos (max 50 x))))
+</code></pre><p>We can&apos;t just get rid of the <code>x</code> on both right sides. The <code>x</code> in the
+function body has parentheses after it. <code>cos (max 50)</code> wouldn&apos;t make
+sense. You can&apos;t get the cosine of a function. What we can do is express
+<code>fn</code> as a composition of functions.</p>
+<p>~~~~ {.haskell:hs name=&quot;code&quot;}
+fn = ceiling . negate . tan . cos . max 50</p>
+<pre><code>
+Excellent! Many times, a point free style is more readable and concise,
+because it makes you think about functions and what kind of functions
+composing them results in instead of thinking about data and how it&apos;s
+shuffled around. You can take simple functions and use composition as
+glue to form more complex functions. However, many times, writing a
+function in point free style can be less readable if a function is too
+complex. That&apos;s why making long chains of function composition is
+discouraged, although I plead guilty of sometimes being too
+composition-happy. The preferred style is to use *let* bindings to give
+labels to intermediary results or split the problem into sub-problems
+and then put it together so that the function makes sense to someone
+reading it instead of just making a huge composition chain.
+
+In the section about maps and filters, we solved a problem of finding
+the sum of all odd squares that are smaller than 10,000. Here&apos;s what the
+solution looks like when put into a function.
+
+~~~~ {.haskell:hs name=&quot;code&quot;}
+oddSquareSum :: Integer
+oddSquareSum = sum (takeWhile (&lt;10000) (filter odd (map (^2) [1..])))
+</code></pre><p>Being such a fan of function composition, I would have probably written
+that like this:</p>
+<p>~~~~ {.haskell:hs name=&quot;code&quot;}
+oddSquareSum :: Integer
+oddSquareSum = sum . takeWhile (&lt;10000) . filter odd . map (^2) $ [1..]</p>
+<pre><code>
+However, if there was a chance of someone else reading that code, I
+would have written it like this:
+
+~~~~ {.haskell:hs name=&quot;code&quot;}
+oddSquareSum :: Integer
+oddSquareSum =
+    let oddSquares = filter odd $ map (^2) [1..]
+        belowLimit = takeWhile (&lt;10000) oddSquares
+    in  sum belowLimit
+</code></pre><p>It wouldn&apos;t win any code golf competition, but someone reading the
+function will probably find it easier to read than a composition chain.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="05-recursion.html" class="navigation navigation-prev " aria-label="Previous page: 5. Recursion">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="07-modules.html" class="navigation navigation-next " aria-label="Next page: 7. Modules">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"6. Higher Order Functions","level":"1.7","depth":1,"next":{"title":"7. Modules","level":"1.8","depth":1,"path":"07-modules.md","ref":"07-modules.md","articles":[]},"previous":{"title":"5. Recursion","level":"1.6","depth":1,"path":"05-recursion.md","ref":"05-recursion.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"06-higher-order-functions.md","mtime":"2021-12-25T07:56:44.713Z","type":"markdown"},"gitbook":{"version":"3.6.23","time":"2021-12-25T08:06:05.597Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

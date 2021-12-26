@@ -1,0 +1,809 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>3. Types and Typeclasses · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.23">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="04-syntax-in-functions.html" />
+    
+    
+    <link rel="prev" href="02-starting-out.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01-first-things-first.html">
+            
+                <a href="01-first-things-first.html">
+            
+                    
+                    1. First-Things-First
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="02-starting-out.html">
+            
+                <a href="02-starting-out.html">
+            
+                    
+                    2. Starting Out 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="03-types-and-typeclasses.html">
+            
+                <a href="03-types-and-typeclasses.html">
+            
+                    
+                    3. Types and Typeclasses
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="04-syntax-in-functions.html">
+            
+                <a href="04-syntax-in-functions.html">
+            
+                    
+                    4. Syntax in Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="05-recursion.html">
+            
+                <a href="05-recursion.html">
+            
+                    
+                    5. Recursion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="06-higher-order-functions.html">
+            
+                <a href="06-higher-order-functions.html">
+            
+                    
+                    6. Higher Order Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="07-modules.html">
+            
+                <a href="07-modules.html">
+            
+                    
+                    7. Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="08-making-our-own-types-and-typeclasses.html">
+            
+                <a href="08-making-our-own-types-and-typeclasses.html">
+            
+                    
+                    8. Making Our Own Types and Typeclasses
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="09-input-and-output.html">
+            
+                <a href="09-input-and-output.html">
+            
+                    
+                    9. Input and Output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="10-functionally-solving-problems.html">
+            
+                <a href="10-functionally-solving-problems.html">
+            
+                    
+                    10. Functionally Solving Problems
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="11-functors-applicative-functors-and-monoids.html">
+            
+                <a href="11-functors-applicative-functors-and-monoids.html">
+            
+                    
+                    11. Functors, Applicative Functors and Monoids
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="12-a-fistful-of-monads.html">
+            
+                <a href="12-a-fistful-of-monads.html">
+            
+                    
+                    12. A Fistful of Monads
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="13-for-a-few-monads-more.html">
+            
+                <a href="13-for-a-few-monads-more.html">
+            
+                    
+                    13. For a Few Monads More
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="14-zippers.html">
+            
+                <a href="14-zippers.html">
+            
+                    
+                    14. Zippers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >3. Types and Typeclasses</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="types-and-typeclasses">Types and Typeclasses</h1>
+<h2 id="believe-the-type">Believe the type</h2>
+<p><img src="img/cow.png" alt="moo"></p>
+<p>Previously we mentioned that Haskell has a static type system. The type
+of every expression is known at compile time, which leads to safer code.
+If you write a program where you try to divide a boolean type with some
+number, it won&apos;t even compile. That&apos;s good because it&apos;s better to catch
+such errors at compile time instead of having your program crash.
+Everything in Haskell has a type, so the compiler can reason quite a lot
+about your program before compiling it.</p>
+<p>Unlike Java or Pascal, Haskell has type inference. If we write a number,
+we don&apos;t have to tell Haskell it&apos;s a number. It can <em>infer</em> that on its
+own, so we don&apos;t have to explicitly write out the types of our functions
+and expressions to get things done. We covered some of the basics of
+Haskell with only a very superficial glance at types. However,
+understanding the type system is a very important part of learning
+Haskell.</p>
+<p>A type is a kind of label that every expression has. It tells us in
+which category of things that expression fits. The expression <code>True</code> is a
+boolean, <code>&quot;hello&quot;</code> is a string, etc.</p>
+<p>Now we&apos;ll use GHCI to examine the types of some expressions. We&apos;ll do
+that by using the <code>:t</code> command which, followed by any valid expression,
+tells us its type. Let&apos;s give it a whirl.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; :t &apos;a&apos;
+&apos;a&apos; :: <span class="hljs-type">Char</span>
+<span class="hljs-title">ghci</span>&gt; :t <span class="hljs-type">True</span>
+<span class="hljs-type">True</span> :: <span class="hljs-type">Bool</span>
+<span class="hljs-title">ghci</span>&gt; :t <span class="hljs-string">&quot;HELLO!&quot;</span>
+<span class="hljs-string">&quot;HELLO!&quot;</span> :: [<span class="hljs-type">Char</span>]
+<span class="hljs-title">ghci</span>&gt; :t (<span class="hljs-type">True</span>, &apos;a&apos;)
+(<span class="hljs-type">True</span>, &apos;a&apos;) :: (<span class="hljs-type">Bool</span>, <span class="hljs-type">Char</span>)
+<span class="hljs-title">ghci</span>&gt; :t <span class="hljs-number">4</span> == <span class="hljs-number">5</span>
+<span class="hljs-number">4</span> == <span class="hljs-number">5</span> :: <span class="hljs-type">Bool</span>
+</code></pre>
+<p><img src="img/bomb.png" alt="bomb"> Here we see that doing <code>:t</code>
+on an expression prints out the expression followed by <code>::</code> and its type.
+<code>::</code> is read as &quot;has type of&quot;. Explicit types are always denoted with the
+first letter in capital case. <code>&apos;a&apos;</code>, as it would seem, has a type of <code>Char</code>.
+It&apos;s not hard to conclude that it stands for <em>character</em>. <code>True</code> is of a
+<code>Bool</code> type. That makes sense. But what&apos;s this? Examining the type of
+<code>&quot;HELLO!&quot;</code> yields a <code>[Char]</code>. The square brackets denote a list. So we read
+that as it being <em>a list of characters</em>. Unlike lists, each tuple length
+has its own type. So the expression of <code>(True, &apos;a&apos;)</code> has a type of
+<code>(Bool, Char)</code>, whereas an expression such as <code>(&apos;a&apos;,&apos;b&apos;,&apos;c&apos;)</code> would have the
+type of <code>(Char, Char, Char)</code>. <code>4 == 5</code> will always return <code>False</code>, so its type
+is <code>Bool</code>.</p>
+<p>Functions also have types. When writing our own functions, we can choose
+to give them an explicit type declaration. This is generally considered
+to be good practice except when writing very short functions. From here
+on, we&apos;ll give all the functions that we make type declarations.
+Remember the list comprehension we made previously that filters a string
+so that only caps remain? Here&apos;s how it looks like with a type
+declaration.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">removeNonUppercase</span> :: [<span class="hljs-type">Char</span>] -&gt; [<span class="hljs-type">Char</span>]
+<span class="hljs-title">removeNonUppercase</span> st = [ c | c &lt;- st, c `elem` [&apos;<span class="hljs-type">A&apos;</span>..&apos;<span class="hljs-type">Z&apos;</span>]]
+</code></pre>
+<p><code>removeNonUppercase</code> has a type of <code>[Char] -&gt; [Char]</code>, meaning that it maps
+from a string to a string. That&apos;s because it takes one string as a
+parameter and returns another as a result. The <code>[Char]</code> type is synonymous
+with <code>String</code> so it&apos;s clearer if we write
+<code>removeNonUppercase :: String -&gt; String</code>.
+We didn&apos;t have to give this function a type declaration because
+the compiler can infer by itself that it&apos;s a function from a string to a
+string but we did anyway. But how do we write out the type of a function
+that takes several parameters? Here&apos;s a simple function that takes three
+integers and adds them together:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">addThree</span> :: <span class="hljs-type">Int</span> -&gt; <span class="hljs-type">Int</span> -&gt; <span class="hljs-type">Int</span> -&gt; <span class="hljs-type">Int</span>
+<span class="hljs-title">addThree</span> x y z = x + y + z
+</code></pre>
+<p>The parameters are separated with <code>-&gt;</code> and there&apos;s no special distinction
+between the parameters and the return type. The return type is the last
+item in the declaration and the parameters are the first three. Later on
+we&apos;ll see why they&apos;re all just separated with <code>-&gt;</code> instead of having some
+more explicit distinction between the return types and the parameters
+like <code>Int, Int, Int -&gt; Int</code> or something.</p>
+<p>If you want to give your function a type declaration but are unsure as
+to what it should be, you can always just write the function without it
+and then check it with <code>:t</code>. Functions are expressions too, so <code>:t</code> works
+on them without a problem.</p>
+<p>Here&apos;s an overview of some common types.</p>
+<p><code>Int</code> stands for integer. It&apos;s used for whole numbers. <code>7</code> can be an <code>Int</code> but
+<code>7.2</code> cannot. <code>Int</code> is bounded, which means that it has a minimum and a
+maximum value. Usually on 32-bit machines the maximum possible <code>Int</code> is
+2147483647 and the minimum is -2147483648.</p>
+<p><code>Integer</code> stands for, er … also integer. The main difference is that it&apos;s
+not bounded so it can be used to represent really really big numbers. I
+mean like really big. <code>Int</code>, however, is more efficient.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">factorial</span> :: <span class="hljs-type">Integer</span> -&gt; <span class="hljs-type">Integer</span>
+<span class="hljs-title">factorial</span> n = product [<span class="hljs-number">1.</span>.n]
+</code></pre>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; factorial <span class="hljs-number">50</span>
+<span class="hljs-number">30414093201713378043612608166064768844377641568960512000000000000</span>
+</code></pre>
+<p><code>Float</code> is a real floating point with single precision.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">circumference</span> :: <span class="hljs-type">Float</span> -&gt; <span class="hljs-type">Float</span>
+<span class="hljs-title">circumference</span> r = <span class="hljs-number">2</span> * pi * r
+</code></pre>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; circumference <span class="hljs-number">4.0</span>
+<span class="hljs-number">25.132742</span>
+</code></pre>
+<p><code>Double</code> is a real floating point with double the precision!</p>
+<pre><code class="lang-haskell"><span class="hljs-title">circumference&apos;</span> :: <span class="hljs-type">Double</span> -&gt; <span class="hljs-type">Double</span>
+<span class="hljs-title">circumference&apos;</span> r = <span class="hljs-number">2</span> * pi * r
+</code></pre>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; circumference&apos; <span class="hljs-number">4.0</span>
+<span class="hljs-number">25.132741228718345</span>
+</code></pre>
+<p><code>Bool</code> is a boolean type. It can have only two values: <code>True</code> and <code>False</code>.</p>
+<p><code>Char</code> represents a character. It&apos;s denoted by single quotes. A list of
+characters is a string.</p>
+<p>Tuples are types but they are dependent on their length as well as the
+types of their components, so there is theoretically an infinite number
+of tuple types, which is too many to cover in this tutorial. Note that
+the empty tuple <code>()</code> is also a type which can only have a single value: <code>()</code></p>
+<h2 id="type-variables">Type variables</h2>
+<p>What do you think is the type of the <code>head</code> function? Because <code>head</code> takes a
+list of any type and returns the first element, so what could it be?
+Let&apos;s check!</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; :t head
+<span class="hljs-title">head</span> :: [a] -&gt; a
+</code></pre>
+<p><img src="img/box.png" alt="box"> Hmmm! What is this <code>a</code>? Is it
+a type? Remember that we previously stated that types are written in
+capital case, so it can&apos;t exactly be a type. Because it&apos;s not in capital
+case it&apos;s actually a <em>type variable</em>. That means that <code>a</code> can be of any
+type. This is much like generics in other languages, only in Haskell
+it&apos;s much more powerful because it allows us to easily write very
+general functions if they don&apos;t use any specific behavior of the types
+in them. Functions that have type variables are called <em>polymorphic
+functions</em>. The type declaration of <code>head</code> states that it takes a list of
+any type and returns one element of that type.</p>
+<p>Although type variables can have names longer than one character, we
+usually give them names of a, b, c, d …</p>
+<p>Remember <code>fst</code>? It returns the first component of a pair. Let&apos;s examine
+its type.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; :t fst
+<span class="hljs-title">fst</span> :: (a, b) -&gt; a
+</code></pre>
+<p>We see that <code>fst</code> takes a tuple which contains two types and returns an
+element which is of the same type as the pair&apos;s first component. That&apos;s
+why we can use <code>fst</code> on a pair that contains any two types. Note that just
+because <code>a</code> and <code>b</code> are different type variables, they don&apos;t have to be
+different types. It just states that the first component&apos;s type and the
+return value&apos;s type are the same.</p>
+<p><a name="typeclasses-101"></a></p>
+<h2 id="typeclasses-101">Typeclasses 101</h2>
+<p><img src="img/classes.png" alt="class"></p>
+<p>A typeclass is a sort of interface that defines some behavior. If a type
+is a part of a typeclass, that means that it supports and implements the
+behavior the typeclass describes. A lot of people coming from OOP get
+confused by typeclasses because they think they are like classes in
+object oriented languages. Well, they&apos;re not. You can think of them kind
+of as Java interfaces, only better.</p>
+<p>What&apos;s the type signature of the <code>==</code> function?</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; :t (==)
+(==) :: (<span class="hljs-type">Eq</span> a) =&gt; a -&gt; a -&gt; <span class="hljs-type">Bool</span>
+</code></pre>
+<blockquote>
+<p><em>Note</em>: the equality operator, <code>==</code> is a function. So are <code>+</code>, <code>*</code>, <code>-</code>, <code>/</code> and
+pretty much all operators. If a function is comprised only of special
+characters, it&apos;s considered an infix function by default. If we want to
+examine its type, pass it to another function or call it as a prefix
+function, we have to surround it in parentheses.</p>
+</blockquote>
+<p>Interesting. We see a new thing here, the <code>=&gt;</code> symbol. Everything before
+the <code>=&gt;</code> symbol is called a <em>class constraint</em>. We can read the previous
+type declaration like this: the equality function takes any two values
+that are of the same type and returns a <code>Bool</code>. The type of those two
+values must be a member of the <code>Eq</code> class (this was the class constraint).</p>
+<p>The <code>Eq</code> typeclass provides an interface for testing for equality. Any
+type where it makes sense to test for equality between two values of
+that type should be a member of the <code>Eq</code> class. All standard Haskell types
+except for <code>IO</code> (the type for dealing with input and output) and functions
+are a part of the <code>Eq</code> typeclass.</p>
+<p>The <code>elem</code> function has a type of <code>(Eq a) =&gt; a -&gt; [a] -&gt; Bool</code> because it
+uses <code>==</code> over a list to check whether some value we&apos;re looking for is in
+it.</p>
+<p>Some basic typeclasses:</p>
+<p><code>Eq</code> is used for types that support equality testing. The functions its
+members implement are <code>==</code> and <code>/=</code>. So if there&apos;s an <code>Eq</code> class constraint
+for a type variable in a function, it uses <code>==</code> or <code>/=</code> somewhere inside its
+definition. All the types we mentioned previously except for functions
+are part of <code>Eq</code>, so they can be tested for equality.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-number">5</span> == <span class="hljs-number">5</span>
+<span class="hljs-type">True</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-number">5</span> /= <span class="hljs-number">5</span>
+<span class="hljs-type">False</span>
+<span class="hljs-title">ghci</span>&gt; &apos;a&apos; == &apos;a&apos;
+<span class="hljs-type">True</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-string">&quot;Ho Ho&quot;</span> == <span class="hljs-string">&quot;Ho Ho&quot;</span>
+<span class="hljs-type">True</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-number">3.432</span> == <span class="hljs-number">3.432</span>
+<span class="hljs-type">True</span>
+</code></pre>
+<p><code>Ord</code> is for types that have an ordering.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; :t (&gt;)
+(&gt;) :: (<span class="hljs-type">Ord</span> a) =&gt; a -&gt; a -&gt; <span class="hljs-type">Bool</span>
+</code></pre>
+<p>All the types we covered so far except for functions are part of <code>Ord</code>.
+<code>Ord</code> covers all the standard comparing functions such as <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code> and
+<code>&lt;=</code>. The <code>compare</code> function takes two <code>Ord</code> members of the same type and
+returns an ordering. <code>Ordering</code> is a type that can be <code>GT</code>, <code>LT</code> or <code>EQ</code>,
+meaning <em>greater than</em>, <em>lesser than</em> and <em>equal</em>, respectively.</p>
+<p>To be a member of <code>Ord</code>, a type must first have membership in the
+prestigious and exclusive <code>Eq</code> club.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-string">&quot;Abrakadabra&quot;</span> &lt; <span class="hljs-string">&quot;Zebra&quot;</span>
+<span class="hljs-type">True</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-string">&quot;Abrakadabra&quot;</span> `compare` <span class="hljs-string">&quot;Zebra&quot;</span>
+<span class="hljs-type">LT</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-number">5</span> &gt;= <span class="hljs-number">2</span>
+<span class="hljs-type">True</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-number">5</span> `compare` <span class="hljs-number">3</span>
+<span class="hljs-type">GT</span>
+</code></pre>
+<p>Members of <code>Show</code> can be presented as strings. All types covered so far
+except for functions are a part of <code>Show</code>. The most used function that
+deals with the <code>Show</code> typeclass is show. It takes a value whose type is a
+member of <code>Show</code> and presents it to us as a string.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; show <span class="hljs-number">3</span>
+<span class="hljs-string">&quot;3&quot;</span>
+<span class="hljs-title">ghci</span>&gt; show <span class="hljs-number">5.334</span>
+<span class="hljs-string">&quot;5.334&quot;</span>
+<span class="hljs-title">ghci</span>&gt; show <span class="hljs-type">True</span>
+<span class="hljs-string">&quot;True&quot;</span>
+</code></pre>
+<p><code>Read</code> is sort of the opposite typeclass of <code>Show</code>. The <code>read</code> function takes
+a string and returns a type which is a member of <code>Read</code>.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; read <span class="hljs-string">&quot;True&quot;</span> || <span class="hljs-type">False</span>
+<span class="hljs-type">True</span>
+<span class="hljs-title">ghci</span>&gt; read <span class="hljs-string">&quot;8.2&quot;</span> + <span class="hljs-number">3.8</span>
+<span class="hljs-number">12.0</span>
+<span class="hljs-title">ghci</span>&gt; read <span class="hljs-string">&quot;5&quot;</span> - <span class="hljs-number">2</span>
+<span class="hljs-number">3</span>
+<span class="hljs-title">ghci</span>&gt; read <span class="hljs-string">&quot;[1,2,3,4]&quot;</span> ++ [<span class="hljs-number">3</span>]
+[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">3</span>]
+</code></pre>
+<p>So far so good. Again, all types covered so far are in this typeclass.
+But what happens if we try to do just <code>read &quot;4&quot;</code>?</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; read <span class="hljs-string">&quot;4&quot;</span>
+&lt;interactive&gt;:<span class="hljs-number">1</span>:<span class="hljs-number">0</span>:
+    <span class="hljs-type">Ambiguous</span> <span class="hljs-class"><span class="hljs-keyword">type</span> variable `a&apos; in the constraint:</span>
+      `<span class="hljs-type">Read</span> a&apos; arising from a use <span class="hljs-keyword">of</span> `read&apos; at &lt;interactive&gt;:<span class="hljs-number">1</span>:<span class="hljs-number">0</span><span class="hljs-number">-7</span>
+    <span class="hljs-type">Probable</span> fix: add a <span class="hljs-class"><span class="hljs-keyword">type</span> signature that fixes these <span class="hljs-keyword">type</span> variable(<span class="hljs-title">s</span>)</span>
+</code></pre>
+<p>What GHCI is telling us here is that it doesn&apos;t know what we want in
+return. Notice that in the previous uses of <code>read</code> we did something with
+the result afterwards. That way, GHCI could infer what kind of result we
+wanted out of our <code>read</code>. If we used it as a boolean, it knew it had to
+return a <code>Bool</code>. But now, it knows we want some type that is part of the
+<code>Read</code> class, it just doesn&apos;t know which one. Let&apos;s take a look at the
+type signature of <code>read</code>.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; :t read
+<span class="hljs-title">read</span> :: (<span class="hljs-type">Read</span> a) =&gt; <span class="hljs-type">String</span> -&gt; a
+</code></pre>
+<p>See? It returns a type that&apos;s part of <code>Read</code> but if we don&apos;t try to use it
+in some way later, it has no way of knowing which type. That&apos;s why we
+can use explicit <em>type annotations</em>. Type annotations are a way of
+explicitly saying what the type of an expression should be. We do that
+by adding <code>::</code> at the end of the expression and then specifying a type.
+Observe:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; read <span class="hljs-string">&quot;5&quot;</span> :: <span class="hljs-type">Int</span>
+<span class="hljs-number">5</span>
+<span class="hljs-title">ghci</span>&gt; read <span class="hljs-string">&quot;5&quot;</span> :: <span class="hljs-type">Float</span>
+<span class="hljs-number">5.0</span>
+<span class="hljs-title">ghci</span>&gt; (read <span class="hljs-string">&quot;5&quot;</span> :: <span class="hljs-type">Float</span>) * <span class="hljs-number">4</span>
+<span class="hljs-number">20.0</span>
+<span class="hljs-title">ghci</span>&gt; read <span class="hljs-string">&quot;[1,2,3,4]&quot;</span> :: [<span class="hljs-type">Int</span>]
+[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>]
+<span class="hljs-title">ghci</span>&gt; read <span class="hljs-string">&quot;(3, &apos;a&apos;)&quot;</span> :: (<span class="hljs-type">Int</span>, <span class="hljs-type">Char</span>)
+(<span class="hljs-number">3</span>, &apos;a&apos;)
+</code></pre>
+<p>Most expressions are such that the compiler can infer what their type is
+by itself. But sometimes, the compiler doesn&apos;t know whether to return a
+value of type <code>Int</code> or <code>Float</code> for an expression like <code>read &quot;5&quot;</code>. To see what
+the type is, Haskell would have to actually evaluate <code>read &quot;5&quot;</code>. But since
+Haskell is a statically typed language, it has to know all the types
+before the code is compiled (or in the case of GHCI, evaluated). So we
+have to tell Haskell: &quot;Hey, this expression should have this type, in
+case you don&apos;t know!&quot;.</p>
+<p><code>Enum</code> members are sequentially ordered types — they can be enumerated.
+The main advantage of the <code>Enum</code> typeclass is that we can use its types in
+list ranges. They also have defined successors and predecessors, which
+you can get with the <code>succ</code> and <code>pred</code> functions. Types in this class: <code>()</code>,
+<code>Bool</code>, <code>Char</code>, <code>Ordering</code>, <code>Int</code>, <code>Integer</code>, <code>Float</code> and <code>Double</code>.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; [&apos;a&apos;..&apos;e&apos;]
+<span class="hljs-string">&quot;abcde&quot;</span>
+<span class="hljs-title">ghci</span>&gt; [<span class="hljs-type">LT</span> .. <span class="hljs-type">GT</span>]
+[<span class="hljs-type">LT</span>,<span class="hljs-type">EQ</span>,<span class="hljs-type">GT</span>]
+<span class="hljs-title">ghci</span>&gt; [<span class="hljs-number">3</span> .. <span class="hljs-number">5</span>]
+[<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>]
+<span class="hljs-title">ghci</span>&gt; succ &apos;<span class="hljs-type">B&apos;</span>
+&apos;<span class="hljs-type">C&apos;</span>
+</code></pre>
+<p><code>Bounded</code> members have an upper and a lower bound.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; minBound :: <span class="hljs-type">Int</span>
+<span class="hljs-number">-2147483648</span>
+<span class="hljs-title">ghci</span>&gt; maxBound :: <span class="hljs-type">Char</span>
+&apos;\<span class="hljs-number">1114111</span>&apos;
+<span class="hljs-title">ghci</span>&gt; maxBound :: <span class="hljs-type">Bool</span>
+<span class="hljs-type">True</span>
+<span class="hljs-title">ghci</span>&gt; minBound :: <span class="hljs-type">Bool</span>
+<span class="hljs-type">False</span>
+</code></pre>
+<p><code>minBound</code> and <code>maxBound</code> are interesting because they have a type of
+<code>(Bounded a) =&gt; a</code>. In a sense they are polymorphic constants.</p>
+<p>All tuples are also part of <code>Bounded</code> if the components are also in it.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; maxBound :: (<span class="hljs-type">Bool</span>, <span class="hljs-type">Int</span>, <span class="hljs-type">Char</span>)
+(<span class="hljs-type">True</span>,<span class="hljs-number">2147483647</span>,&apos;\<span class="hljs-number">1114111</span>&apos;)
+</code></pre>
+<p><code>Num</code> is a numeric typeclass. Its members have the property of being able
+to act like numbers. Let&apos;s examine the type of a number.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; :t <span class="hljs-number">20</span>
+<span class="hljs-number">20</span> :: (<span class="hljs-type">Num</span> t) =&gt; t
+</code></pre>
+<p>It appears that whole numbers are also polymorphic constants. They can
+act like any type that&apos;s a member of the <code>Num</code> typeclass.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-number">20</span> :: <span class="hljs-type">Int</span>
+<span class="hljs-number">20</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-number">20</span> :: <span class="hljs-type">Integer</span>
+<span class="hljs-number">20</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-number">20</span> :: <span class="hljs-type">Float</span>
+<span class="hljs-number">20.0</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-number">20</span> :: <span class="hljs-type">Double</span>
+<span class="hljs-number">20.0</span>
+</code></pre>
+<p>Those are types that are in the <code>Num</code> typeclass. If we examine the type of
+<code>*</code>, we&apos;ll see that it accepts all numbers.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; :t (*)
+(*) :: (<span class="hljs-type">Num</span> a) =&gt; a -&gt; a -&gt; a
+</code></pre>
+<p>It takes two numbers of the same type and returns a number of that type.
+That&apos;s why <code>(5 :: Int) * (6 :: Integer)</code> will result in a type error
+whereas <code>5 * (6 :: Integer)</code> will work just fine and produce an <code>Integer</code>
+because <code>5</code> can act like an <code>Integer</code> or an <code>Int</code>.</p>
+<p>To join <code>Num</code>, a type must already be friends with <code>Show</code> and <code>Eq</code>.</p>
+<p><code>Integral</code> is also a numeric typeclass. <code>Num</code> includes all numbers,
+including real numbers and integral numbers, <code>Integral</code> includes only
+integral (whole) numbers. In this typeclass are <code>Int</code> and <code>Integer</code>.</p>
+<p><code>Floating</code> includes only floating point numbers, so <code>Float</code> and <code>Double</code>.</p>
+<p>A very useful function for dealing with numbers is <code>fromIntegral</code>. It has
+a type declaration of <code>fromIntegral :: (Integral a, Num b) =&gt; a -&gt; b</code>.
+From its type signature we see that it takes an integral number and
+turns it into a more general number. That&apos;s useful when you want
+integral and floating point types to work together nicely. For instance,
+the <code>length</code> function has a type declaration of <code>length :: [a] -&gt; Int</code>
+instead of having a more general type of
+<code>(Num b) =&gt; length :: [a] -&gt; b</code>.
+I think that&apos;s there for historical reasons or something, although in
+my opinion, it&apos;s pretty stupid. Anyway, if we try to get a length of a
+list and then add it to <code>3.2</code>, we&apos;ll get an error because we tried to add
+together an <code>Int</code> and a floating point number. So to get around this, we
+do <code>fromIntegral (length [1,2,3,4]) + 3.2</code> and it all works out.</p>
+<p>Notice that <code>fromIntegral</code> has several class constraints in its type
+signature. That&apos;s completely valid and as you can see, the class
+constraints are separated by commas inside the parentheses.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="02-starting-out.html" class="navigation navigation-prev " aria-label="Previous page: 2. Starting Out ">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="04-syntax-in-functions.html" class="navigation navigation-next " aria-label="Next page: 4. Syntax in Functions">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3. Types and Typeclasses","level":"1.4","depth":1,"next":{"title":"4. Syntax in Functions","level":"1.5","depth":1,"path":"04-syntax-in-functions.md","ref":"04-syntax-in-functions.md","articles":[]},"previous":{"title":"2. Starting Out ","level":"1.3","depth":1,"path":"02-starting-out.md","ref":"02-starting-out.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"03-types-and-typeclasses.md","mtime":"2021-12-25T07:53:24.091Z","type":"markdown"},"gitbook":{"version":"3.6.23","time":"2021-12-25T08:06:05.597Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

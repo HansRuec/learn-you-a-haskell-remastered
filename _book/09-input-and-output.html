@@ -1,0 +1,2839 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>9. Input and Output · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.23">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="10-functionally-solving-problems.html" />
+    
+    
+    <link rel="prev" href="08-making-our-own-types-and-typeclasses.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01-first-things-first.html">
+            
+                <a href="01-first-things-first.html">
+            
+                    
+                    1. First-Things-First
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="02-starting-out.html">
+            
+                <a href="02-starting-out.html">
+            
+                    
+                    2. Starting Out 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="03-types-and-typeclasses.html">
+            
+                <a href="03-types-and-typeclasses.html">
+            
+                    
+                    3. Types and Typeclasses
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="04-syntax-in-functions.html">
+            
+                <a href="04-syntax-in-functions.html">
+            
+                    
+                    4. Syntax in Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="05-recursion.html">
+            
+                <a href="05-recursion.html">
+            
+                    
+                    5. Recursion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="06-higher-order-functions.html">
+            
+                <a href="06-higher-order-functions.html">
+            
+                    
+                    6. Higher Order Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="07-modules.html">
+            
+                <a href="07-modules.html">
+            
+                    
+                    7. Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="08-making-our-own-types-and-typeclasses.html">
+            
+                <a href="08-making-our-own-types-and-typeclasses.html">
+            
+                    
+                    8. Making Our Own Types and Typeclasses
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10" data-path="09-input-and-output.html">
+            
+                <a href="09-input-and-output.html">
+            
+                    
+                    9. Input and Output
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="10-functionally-solving-problems.html">
+            
+                <a href="10-functionally-solving-problems.html">
+            
+                    
+                    10. Functionally Solving Problems
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="11-functors-applicative-functors-and-monoids.html">
+            
+                <a href="11-functors-applicative-functors-and-monoids.html">
+            
+                    
+                    11. Functors, Applicative Functors and Monoids
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="12-a-fistful-of-monads.html">
+            
+                <a href="12-a-fistful-of-monads.html">
+            
+                    
+                    12. A Fistful of Monads
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="13-for-a-few-monads-more.html">
+            
+                <a href="13-for-a-few-monads-more.html">
+            
+                    
+                    13. For a Few Monads More
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="14-zippers.html">
+            
+                <a href="14-zippers.html">
+            
+                    
+                    14. Zippers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >9. Input and Output</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="input-and-output">Input and Output</h1>
+<p><img src="img/dognap.png" alt="poor dog"></p>
+<p>We&apos;ve mentioned that Haskell is a purely functional language. Whereas in
+imperative languages you usually get things done by giving the computer
+a series of steps to execute, functional programming is more of defining
+what stuff is. In Haskell, a function can&apos;t change some state, like
+changing the contents of a variable (when a function changes state, we
+say that the function has <em>side-effects</em>). The only thing a function can
+do in Haskell is give us back some result based on the parameters we
+gave it. If a function is called two times with the same parameters, it
+has to return the same result. While this may seem a bit limiting when
+you&apos;re coming from an imperative world, we&apos;ve seen that it&apos;s actually
+really cool. In an imperative language, you have no guarantee that a
+simple function that should just crunch some numbers won&apos;t burn down
+your house, kidnap your dog and scratch your car with a potato while
+crunching those numbers. For instance, when we were making a binary
+search tree, we didn&apos;t insert an element into a tree by modifying some
+tree in place. Our function for inserting into a binary search tree
+actually returned a new tree, because it can&apos;t change the old one.</p>
+<p>While functions being unable to change state is good because it helps us
+reason about our programs, there&apos;s one problem with that. If a function
+can&apos;t change anything in the world, how is it supposed to tell us what
+it calculated? In order to tell us what it calculated, it has to change
+the state of an output device (usually the state of the screen), which
+then emits photons that travel to our brain and change the state of our
+mind, man.</p>
+<p>Do not despair, all is not lost. It turns out that Haskell actually has
+a really clever system for dealing with functions that have side-effects
+that neatly separates the part of our program that is pure and the part
+of our program that is impure, which does all the dirty work like
+talking to the keyboard and the screen. With those two parts separated,
+we can still reason about our pure program and take advantage of all the
+things that purity offers, like laziness, robustness and modularity
+while efficiently communicating with the outside world.</p>
+<h2 id="hello-world">Hello, world!</h2>
+<p><img src="img/helloworld.png" alt="HELLO!"></p>
+<p>Up until now, we&apos;ve always loaded our functions into GHCI to test them
+out and play with them. We&apos;ve also explored the standard library
+functions that way. But now, after eight or so chapters, we&apos;re finally
+going to write our first <em>real</em> Haskell program! Yay! And sure enough,
+we&apos;re going to do the good old <code>&quot;hello, world&quot;</code> schtick.</p>
+<blockquote>
+<p><em>Hey!</em> For the purposes of this chapter, I&apos;m going to assume you&apos;re
+using a unix-y environment for learning Haskell. If you&apos;re in Windows,
+I&apos;d suggest you download <a href="http://www.cygwin.com/" target="_blank">Cygwin</a>, which is a
+Linux-like environment for Windows, A.K.A. just what you need.</p>
+</blockquote>
+<p>So, for starters, punch in the following in your favorite text editor:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">main</span> = putStrLn <span class="hljs-string">&quot;hello, world&quot;</span>
+</code></pre>
+<p>We just defined a name called <code>main</code> and in it we call a function called
+<code>putStrLn</code> with the parameter <code>&quot;hello, world&quot;</code>. Looks pretty much run of the
+mill, but it isn&apos;t, as we&apos;ll see in just a few moments. Save that file
+as <code>helloworld.hs</code>.</p>
+<p>And now, we&apos;re going to do something we&apos;ve never done before. We&apos;re
+actually going to compile our program! I&apos;m so excited! Open up your
+terminal and navigate to the directory where <code>helloworld.hs</code> is located
+and do the following:</p>
+<pre><code>$ ghc --make helloworld
+[1 of 1] Compiling Main             ( helloworld.hs, helloworld.o )
+Linking helloworld ...
+</code></pre><p>Okay! With any luck, you got something like this and now you can run
+your program by doing <code>./helloworld</code>.</p>
+<pre><code class="lang-haskell">$ ./helloworld
+<span class="hljs-title">hello</span>, world
+</code></pre>
+<p>And there we go, our first compiled program that printed out something
+to the terminal. How extraordinarily boring!</p>
+<p>Let&apos;s examine what we wrote. First, let&apos;s look at the type of the
+function <code>putStrLn</code>.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; :t putStrLn
+<span class="hljs-title">putStrLn</span> :: <span class="hljs-type">String</span> -&gt; <span class="hljs-type">IO</span> ()
+<span class="hljs-title">ghci</span>&gt; :t putStrLn <span class="hljs-string">&quot;hello, world&quot;</span>
+<span class="hljs-title">putStrLn</span> <span class="hljs-string">&quot;hello, world&quot;</span> :: <span class="hljs-type">IO</span> ()
+</code></pre>
+<p>We can read the type of <code>putStrLn</code> like this: <code>putStrLn</code> takes a string and
+returns an <em>I/O action</em> that has a result type of <code>()</code> (i.e. the empty
+tuple, also know as unit). An I/O action is something that, when
+performed, will carry out an action with a side-effect (that&apos;s usually
+either reading from the input or printing stuff to the screen) and will
+also contain some kind of return value inside it. Printing a string to
+the terminal doesn&apos;t really have any kind of meaningful return value, so
+a dummy value of <code>()</code> is used.</p>
+<blockquote>
+<p>The empty tuple is a value of <code>()</code> and it also has a type of <code>()</code>.</p>
+</blockquote>
+<p>So, when will an I/O action be performed? Well, this is where <code>main</code> comes
+in. An I/O action will be performed when we give it a name of <code>main</code> and
+then run our program.</p>
+<p>Having your whole program be just one I/O action seems kind of limiting.
+That&apos;s why we can use <em>do</em> syntax to glue together several I/O actions
+into one. Take a look at the following example:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">main</span> = <span class="hljs-keyword">do</span>
+    putStrLn <span class="hljs-string">&quot;Hello, what&apos;s your name?&quot;</span>
+    name &lt;- getLine
+    putStrLn (<span class="hljs-string">&quot;Hey &quot;</span> ++ name ++ <span class="hljs-string">&quot;, you rock!&quot;</span>)
+</code></pre>
+<p>Ah, interesting, new syntax! And this reads pretty much like an
+imperative program. If you compile it and try it out, it will probably
+behave just like you expect it to. Notice that we said <em>do</em> and then we
+laid out a series of steps, like we would in an imperative program. Each
+of these steps is an I/O action. By putting them together with <em>do</em>
+syntax, we glued them into one I/O action. The action that we got has a
+type of <code>IO ()</code>, because that&apos;s the type of the last I/O action inside.</p>
+<p>Because of that, <code>main</code> always has a type signature of
+<code>main :: IO &lt;something&gt;</code>,
+where <code>&lt;something&gt;</code> is some concrete type. By convention, we
+don&apos;t usually specify a type declaration for <code>main</code>.</p>
+<p>An interesting thing that we haven&apos;t met before is the third line, which
+states <code>name &lt;- getLine</code>. It looks like it reads a line from the input
+and stores it into a variable called <code>name</code>. Does it really? Well, let&apos;s
+examine the type of <code>getLine</code>.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; :t getLine
+<span class="hljs-title">getLine</span> :: <span class="hljs-type">IO</span> <span class="hljs-type">String</span>
+</code></pre>
+<p><img src="img/luggage.png" alt="luggage"></p>
+<p>Aha, o-kay. <code>getLine</code> is an I/O action that contains a result type of
+<code>String</code>. That makes sense, because it will wait for the user to input
+something at the terminal and then that something will be represented as
+a string. So what&apos;s up with <code>name &lt;- getLine</code> then? You can read that
+piece of code like this: <em>perform the I/O action <code>getLine</code> and then bind
+its result value to <code>name</code></em>. <code>getLine</code> has a type of <code>IO String</code>, so <code>name</code> will
+have a type of <code>String</code>. You can think of an I/O action as a box with
+little feet that will go out into the real world and do something there
+(like write some graffiti on a wall) and maybe bring back some data.
+Once it&apos;s fetched that data for you, the only way to open the box and
+get the data inside it is to use the <code>&lt;-</code> construct. And if we&apos;re taking
+data out of an I/O action, we can only take it out when we&apos;re inside
+another I/O action. This is how Haskell manages to neatly separate the
+pure and impure parts of our code. <code>getLine</code> is in a sense impure because
+its result value is not guaranteed to be the same when performed twice.
+That&apos;s why it&apos;s sort of <em>tainted</em> with the <code>IO</code> type constructor and we
+can only get that data out in I/O code. And because I/O code is tainted
+too, any computation that depends on tainted I/O data will have a
+tainted result.</p>
+<p>When I say <em>tainted</em>, I don&apos;t mean tainted in such a way that we can
+never use the result contained in an I/O action ever again in pure code.
+No, we temporarily <em>un-taint</em> the data inside an I/O action when we bind
+it to a name. When we do <code>name &lt;- getLine</code>, <code>name</code> is just a normal string,
+because it represents what&apos;s inside the box. We can have a really
+complicated function that, say, takes your name (a normal string) as a
+parameter and tells you your fortune and your whole life&apos;s future based
+on your name. We can do this:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">main</span> = <span class="hljs-keyword">do</span>
+    putStrLn <span class="hljs-string">&quot;Hello, what&apos;s your name?&quot;</span>
+    name &lt;- getLine
+    putStrLn $ <span class="hljs-string">&quot;Read this carefully, because this is your future: &quot;</span> ++ tellFortune name
+</code></pre>
+<p>and <code>tellFortune</code> (or any of the functions it passes <code>name</code> to) doesn&apos;t have
+to know anything about I/O, it&apos;s just a normal <code>String -&gt; String</code>
+function!</p>
+<p>Take a look at this piece of code. Is it valid?</p>
+<pre><code class="lang-haskell"><span class="hljs-title">nameTag</span> = <span class="hljs-string">&quot;Hello, my name is &quot;</span> ++ getLine
+</code></pre>
+<p>If you said no, go eat a cookie. If you said yes, drink a bowl of molten
+lava. Just kidding, don&apos;t! The reason that this doesn&apos;t work is that <code>++</code>
+requires both its parameters to be lists over the same type. The left
+parameter has a type of <code>String</code> (or <code>[Char]</code> if you will), whilst <code>getLine</code>
+has a type of <code>IO String</code>. You can&apos;t concatenate a string and an I/O
+action. We first have to get the result out of the I/O action to get a
+value of type <code>String</code> and the only way to do that is to say something
+like <code>name &lt;- getLine</code> inside some other I/O action. If we want to deal
+with impure data, we have to do it in an impure environment. So the
+taint of impurity spreads around much like the undead scourge and it&apos;s
+in our best interest to keep the I/O parts of our code as small as
+possible.</p>
+<p>Every I/O action that gets performed has a result encapsulated within
+it. That&apos;s why our previous example program could also have been written
+like this:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">main</span> = <span class="hljs-keyword">do</span>
+    foo &lt;- putStrLn <span class="hljs-string">&quot;Hello, what&apos;s your name?&quot;</span>
+    name &lt;- getLine
+    putStrLn (<span class="hljs-string">&quot;Hey &quot;</span> ++ name ++ <span class="hljs-string">&quot;, you rock!&quot;</span>)
+</code></pre>
+<p>However, <code>foo</code> would just have a value of <code>()</code>, so doing that would be kind
+of moot. Notice that we didn&apos;t bind the last <code>putStrLn</code> to anything.
+That&apos;s because in a <em>do</em> block, <em>the last action cannot be bound to a
+name</em> like the first two were. We&apos;ll see exactly why that is so a bit
+later when we venture off into the world of monads. For now, you can
+think of it in the way that the <em>do</em> block automatically extracts the
+value from the last action and binds it to its own result.</p>
+<p>Except for the last line, every line in a <em>do</em> block that doesn&apos;t bind
+can also be written with a bind. So <code>putStrLn &quot;BLAH&quot;</code> can be written as
+<code>_ &lt;- putStrLn &quot;BLAH&quot;</code>. But that&apos;s useless, so we leave out the <code>&lt;-</code> for I/O
+actions that don&apos;t contain an important result, like <code>putStrLn &lt;something&gt;</code>.</p>
+<p>Beginners sometimes think that doing</p>
+<pre><code class="lang-haskell"><span class="hljs-title">name</span> = getLine
+</code></pre>
+<p>will read from the input and then bind the value of that to <code>name</code>. Well,
+it won&apos;t, all this does is give the <code>getLine</code> I/O action a different name
+called, well, <code>name</code>. Remember, to get the value out of an I/O action, you
+have to perform it inside another I/O action by binding it to a name
+with <code>&lt;-</code>.</p>
+<p>I/O actions will only be performed when they are given a name of <code>main</code> or
+when they&apos;re inside a bigger I/O action that we composed with a <em>do</em>
+block. We can also use a <em>do</em> block to glue together a few I/O actions
+and then we can use that I/O action in another <em>do</em> block and so on.
+Either way, they&apos;ll be performed only if they eventually fall into <code>main</code>.</p>
+<p>Oh, right, there&apos;s also one more case when I/O actions will be
+performed. When we type out an I/O action in GHCI and press return, it
+will be performed.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; putStrLn <span class="hljs-string">&quot;HEEY&quot;</span>
+<span class="hljs-type">HEEY</span>
+</code></pre>
+<p>Even when we just punch out a number or call a function in GHCI and
+press return, it will evaluate it (as much as it needs) and then call
+<code>show</code> on it and then it will print that string to the terminal using
+<code>putStrLn</code> implicitly.</p>
+<p>Remember <em>let</em> bindings? If you don&apos;t, refresh your memory on them by
+reading <a href="syntax-in-functions#let-it-be">this section</a>. They have to be
+in the form of <code>let &lt;bindings&gt; in &lt;expression&gt;</code>, where <code>&lt;bindings&gt;</code> are
+names to be given to expressions and <code>&lt;expression&gt;</code> is the expression that
+is to be evaluated that sees them. We also said that in list
+comprehensions, the <em>in</em> part isn&apos;t needed. Well, you can use them in
+<em>do</em> blocks pretty much like you use them in list comprehensions. Check
+this out:</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> Data.Char
+
+<span class="hljs-title">main</span> = <span class="hljs-keyword">do</span>
+    putStrLn <span class="hljs-string">&quot;What&apos;s your first name?&quot;</span>
+    firstName &lt;- getLine
+    putStrLn <span class="hljs-string">&quot;What&apos;s your last name?&quot;</span>
+    lastName &lt;- getLine
+    <span class="hljs-keyword">let</span> bigFirstName = map toUpper firstName
+        bigLastName = map toUpper lastName
+    putStrLn $ <span class="hljs-string">&quot;hey &quot;</span> ++ bigFirstName ++ <span class="hljs-string">&quot; &quot;</span> ++ bigLastName ++ <span class="hljs-string">&quot;, how are you?&quot;</span>
+</code></pre>
+<p>See how the I/O actions in the <em>do</em> block are lined up? Also notice how
+the <em>let</em> is lined up with the I/O actions and the names of the <em>let</em>
+are lined up with each other? That&apos;s good practice, because indentation
+is important in Haskell. Now, we did <code>map toUpper firstName</code>, which turns
+something like <code>&quot;John&quot;</code> into a much cooler string like <code>&quot;JOHN&quot;</code>. We bound
+that uppercased string to a name and then used it in a string later on
+that we printed to the terminal.</p>
+<p>You may be wondering when to use <code>&lt;-</code> and when to use <em>let</em> bindings?
+Well, remember, <code>&lt;-</code> is (for now) for performing I/O actions and binding
+their results to names. map toUpper firstName, however, isn&apos;t an I/O
+action. It&apos;s a pure expression in Haskell. So use <code>&lt;-</code> when you want to
+bind results of I/O actions to names and you can use <em>let</em> bindings to
+bind pure expressions to names. Had we done something like
+<code>let firstName = getLine</code>, we would have just called the <code>getLine</code> I/O action a different
+name and we&apos;d still have to run it through a <code>&lt;-</code> to perform it.</p>
+<p>Now we&apos;re going to make a program that continuously reads a line and
+prints out the same line with the words reversed. The program&apos;s
+execution will stop when we input a blank line. This is the program:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">main</span> = <span class="hljs-keyword">do</span>
+    line &lt;- getLine
+    <span class="hljs-keyword">if</span> null line
+        <span class="hljs-keyword">then</span> return ()
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">do</span>
+            putStrLn $ reverseWords line
+            main
+
+<span class="hljs-title">reverseWords</span> :: <span class="hljs-type">String</span> -&gt; <span class="hljs-type">String</span>
+<span class="hljs-title">reverseWords</span> = unwords . map reverse . words
+</code></pre>
+<p>To get a feel of what it does, you can run it before we go over the
+code.</p>
+<blockquote>
+<p><em>Protip</em>: To run a program you can either compile it and then run the
+produced executable file by doing <code>ghc --make helloworld</code> and then
+<code>./helloworld</code> or you can use the <code>runhaskell</code> command like so:
+<code>runhaskell helloworld.hs</code> and your program will be executed on the fly.</p>
+</blockquote>
+<p>First, let&apos;s take a look at the <code>reverseWords</code> function. It&apos;s just a
+normal function that takes a string like &quot;hey there man&quot; and then calls
+<code>words</code> with it to produce a list of words like <code>[&quot;hey&quot;,&quot;there&quot;,&quot;man&quot;]</code>.
+Then we map <code>reverse</code> on the list, getting <code>[&quot;yeh&quot;,&quot;ereht&quot;,&quot;nam&quot;]</code> and then
+we put that back into one string by using <code>unwords</code> and the final result
+is <code>&quot;yeh ereht nam&quot;</code>. See how we used function composition here. Without
+function composition, we&apos;d have to write something like
+<code>reverseWords st = unwords (map reverse (words st))</code>.</p>
+<p>What about <code>main</code>? First, we get a line from the terminal by performing
+<code>getLine</code> call that line <code>line</code>. And now, we have a conditional expression.
+Remember that in Haskell, every <em>if</em> must have a corresponding <em>else</em>
+because every expression has to have some sort of value. We make the
+<em>if</em> so that when a condition is true (in our case, the line that we
+entered is blank), we perform one I/O action and when it isn&apos;t, the I/O
+action under the <em>else</em> is performed. That&apos;s why in an I/O <em>do</em> block,
+<em>if</em>s have to have a form of
+<code>if &lt;condition&gt; then &lt;I/O action&gt; else &lt;I/O action&gt;</code>.</p>
+<p>Let&apos;s first take a look at what happens under the <em>else</em> clause.
+Because, we have to have exactly one I/O action after the <em>else</em>, we use
+a <em>do</em> block to glue together two I/O actions into one. You could also
+write that part out as:</p>
+<pre><code class="lang-haskell">        <span class="hljs-keyword">else</span> (<span class="hljs-keyword">do</span>
+            putStrLn $ reverseWords line
+            main)
+</code></pre>
+<p>This makes it more explicit that the <em>do</em> block can be viewed as one I/O
+action, but it&apos;s uglier. Anyway, inside the <em>do</em> block, we call
+<code>reverseWords</code> on the line that we got from <code>getLine</code> and then print that
+out to the terminal. After that, we just perform <code>main</code>. It&apos;s called
+recursively and that&apos;s okay, because <code>main</code> is itself an I/O action. So in
+a sense, we go back to the start of the program.</p>
+<p>Now what happens when <code>null line</code> holds true? What&apos;s after the <em>then</em> is
+performed in that case. If we look up, we&apos;ll see that it says
+<code>then return ()</code>. If you&apos;ve done imperative languages like C, Java or Python,
+you&apos;re probably thinking that you know what this <code>return</code> does and chances
+are you&apos;ve already skipped this really long paragraph. Well, here&apos;s the
+thing: <em>the <code>return</code> in Haskell is really nothing like the <code>return</code> in most
+other languages!</em> It has the same name, which confuses a lot of people,
+but in reality it&apos;s quite different. In imperative languages, <code>return</code>
+usually ends the execution of a method or subroutine and makes it report
+some sort of value to whoever called it. In Haskell (in I/O actions
+specifically), it makes an I/O action out of a pure value. If you think
+about the box analogy from before, it takes a value and wraps it up in a
+box. The resulting I/O action doesn&apos;t actually do anything, it just has
+that value encapsulated as its result. So in an I/O context,
+<code>return &quot;haha&quot;</code> will have a type of <code>IO String</code>. What&apos;s the point of just
+transforming a pure value into an I/O action that doesn&apos;t do anything?
+Why taint our program with <code>IO</code> more than it has to be? Well, we needed
+some I/O action to carry out in the case of an empty input line. That&apos;s
+why we just made a bogus I/O action that doesn&apos;t do anything by writing
+<code>return ()</code>.</p>
+<p>Using <code>return</code> doesn&apos;t cause the I/O <em>do</em> block to end in execution or
+anything like that. For instance, this program will quite happily carry
+out all the way to the last line:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">main</span> = <span class="hljs-keyword">do</span>
+    return ()
+    return <span class="hljs-string">&quot;HAHAHA&quot;</span>
+    line &lt;- getLine
+    return <span class="hljs-string">&quot;BLAH BLAH BLAH&quot;</span>
+    return <span class="hljs-number">4</span>
+    putStrLn line
+</code></pre>
+<p>All these <code>return</code>s do is that they make I/O actions that don&apos;t really do
+anything except have an encapsulated result and that result is thrown
+away because it isn&apos;t bound to a name. We can use <code>return</code> in combination
+with <code>&lt;-</code> to bind stuff to names.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">main</span> = <span class="hljs-keyword">do</span>
+    a &lt;- return <span class="hljs-string">&quot;hell&quot;</span>
+    b &lt;- return <span class="hljs-string">&quot;yeah!&quot;</span>
+    putStrLn $ a ++ <span class="hljs-string">&quot; &quot;</span> ++ b
+</code></pre>
+<p>So you see, <code>return</code> is sort of the opposite to <code>&lt;-</code>. While <code>return</code> takes a
+value and wraps it up in a box, <code>&lt;-</code> takes a box (and performs it) and
+takes the value out of it, binding it to a name. But doing this is kind
+of redundant, especially since you can use <em>let</em> bindings in <em>do</em> blocks
+to bind to names, like so:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">main</span> = <span class="hljs-keyword">do</span>
+    <span class="hljs-keyword">let</span> a = <span class="hljs-string">&quot;hell&quot;</span>
+        b = <span class="hljs-string">&quot;yeah&quot;</span>
+    putStrLn $ a ++ <span class="hljs-string">&quot; &quot;</span> ++ b
+</code></pre>
+<p>When dealing with I/O <em>do</em> blocks, we mostly use <code>return</code> either because
+we need to create an I/O action that doesn&apos;t do anything or because we
+don&apos;t want the I/O action that&apos;s made up from a <em>do</em> block to have the
+result value of its last action, but we want it to have a different
+result value, so we use <code>return</code> to make an I/O action that always has our
+desired result contained and we put it at the end.</p>
+<blockquote>
+<p>A <em>do</em> block can also have just one I/O action. In that case, it&apos;s the
+same as just writing the I/O action. Some people would prefer writing
+<code>then do return ()</code> in this case because the <em>else</em> also has a <em>do</em>.</p>
+</blockquote>
+<p>Before we move on to files, let&apos;s take a look at some functions that are
+useful when dealing with I/O.</p>
+<p><code>putStr</code> is much like <code>putStrLn</code> in that it takes a string as a parameter
+and returns an I/O action that will print that string to the terminal,
+only <code>putStr</code> doesn&apos;t jump into a new line after printing out the string
+while <code>putStrLn</code> does.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">main</span> = <span class="hljs-keyword">do</span>   putStr <span class="hljs-string">&quot;Hey, &quot;</span>
+            putStr <span class="hljs-string">&quot;I&apos;m &quot;</span>
+            putStrLn <span class="hljs-string">&quot;Andy!&quot;</span>
+</code></pre>
+<p>~~~~ {.plain name=&quot;code&quot;}
+$ runhaskell putstr_test.hs
+Hey, I&apos;m Andy!</p>
+<pre><code>
+Its type signature is `putStr :: String -&gt; IO ()`, so the result
+encapsulated within the resulting I/O action is the unit. A dud value,
+so it doesn&apos;t make sense to bind it.
+
+`putChar` takes a character and returns an I/O action that will print it
+out to the terminal.
+
+~~~~haskell
+main = do   putChar &apos;t&apos;
+            putChar &apos;e&apos;
+            putChar &apos;h&apos;
+</code></pre><p>~~~~ {.plain name=&quot;code&quot;}
+$ runhaskell putchar_test.hs
+teh</p>
+<pre><code>
+`putStr` is actually defined recursively with the help of `putChar`. The
+edge condition of `putStr` is the empty string, so if we&apos;re printing an
+empty string, just return an I/O action that does nothing by using
+`return ()`. If it&apos;s not empty, then print the first character of the
+string by doing `putChar` and then print of them using `putStr`.
+
+~~~~haskell
+putStr :: String -&gt; IO ()
+putStr [] = return ()
+putStr (x:xs) = do
+    putChar x
+    putStr xs
+</code></pre><p>See how we can use recursion in I/O, just like we can use it in pure
+code. Just like in pure code, we define the edge case and then think
+what the result actually is. It&apos;s an action that first outputs the first
+character and then outputs the rest of the string.</p>
+<p><code>print</code> takes a value of any type that&apos;s an instance of <code>Show</code> (meaning that
+we know how to represent it as a string), calls <code>show</code> with that value to
+stringify it and then outputs that string to the terminal. Basically,
+it&apos;s just <code>putStrLn . show</code>. It first runs <code>show</code> on a value and then feeds
+that to <code>putStrLn</code>, which returns an I/O action that will print out our
+value.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">main</span> = <span class="hljs-keyword">do</span>   print <span class="hljs-type">True</span>
+            print <span class="hljs-number">2</span>
+            print <span class="hljs-string">&quot;haha&quot;</span>
+            print <span class="hljs-number">3.2</span>
+            print [<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">3</span>]
+</code></pre>
+<pre><code class="lang-haskell">$ runhaskell print_test.hs
+<span class="hljs-type">True</span>
+<span class="hljs-number">2</span>
+<span class="hljs-string">&quot;haha&quot;</span>
+<span class="hljs-number">3.2</span>
+[<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">3</span>]
+</code></pre>
+<p>As you can see, it&apos;s a very handy function. Remember how we talked about
+how I/O actions are performed only when they fall into <code>main</code> or when we
+try to evaluate them in the GHCI prompt? When we type out a value (like
+<code>3</code> or <code>[1,2,3]</code>) and press the return key, GHCI actually uses <code>print</code> on that
+value to display it on our terminal!</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-number">3</span>
+<span class="hljs-number">3</span>
+<span class="hljs-title">ghci</span>&gt; print <span class="hljs-number">3</span>
+<span class="hljs-number">3</span>
+<span class="hljs-title">ghci</span>&gt; map (++<span class="hljs-string">&quot;!&quot;</span>) [<span class="hljs-string">&quot;hey&quot;</span>,<span class="hljs-string">&quot;ho&quot;</span>,<span class="hljs-string">&quot;woo&quot;</span>]
+[<span class="hljs-string">&quot;hey!&quot;</span>,<span class="hljs-string">&quot;ho!&quot;</span>,<span class="hljs-string">&quot;woo!&quot;</span>]
+<span class="hljs-title">ghci</span>&gt; print (map (++<span class="hljs-string">&quot;!&quot;</span>) [<span class="hljs-string">&quot;hey&quot;</span>,<span class="hljs-string">&quot;ho&quot;</span>,<span class="hljs-string">&quot;woo&quot;</span>])
+[<span class="hljs-string">&quot;hey!&quot;</span>,<span class="hljs-string">&quot;ho!&quot;</span>,<span class="hljs-string">&quot;woo!&quot;</span>]
+</code></pre>
+<p>When we want to print out strings, we usually use <code>putStrLn</code> because we
+don&apos;t want the quotes around them, but for printing out values of other
+types to the terminal, <code>print</code> is used the most.</p>
+<p><code>getChar</code> is an I/O action that reads a character from the input. Thus,
+its type signature is <code>getChar :: IO Char</code>, because the result contained
+within the I/O action is a <code>Char</code>. Note that due to buffering, reading of
+the characters won&apos;t actually happen until the user mashes the return
+key.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">main</span> = <span class="hljs-keyword">do</span>
+    c &lt;- getChar
+    <span class="hljs-keyword">if</span> c /= &apos; &apos;
+        <span class="hljs-keyword">then</span> <span class="hljs-keyword">do</span>
+            putChar c
+            main
+        <span class="hljs-keyword">else</span> return ()
+</code></pre>
+<p>This program looks like it should read a character and then check if
+it&apos;s a space. If it is, halt execution and if it isn&apos;t, print it to the
+terminal and then do the same thing all over again. Well, it kind of
+does, only not in the way you might expect. Check this out:</p>
+<p>~~~~ {.plain name=&quot;code&quot;}
+$ runhaskell getchar_test.hs
+hello sir
+hello</p>
+<pre><code>
+The second line is the input. We input `hello sir` and then press return.
+Due to buffering, the execution of the program will begin only when
+after we&apos;ve hit return and not after every inputted character. But once
+we press return, it acts on what we&apos;ve been putting in so far. Try
+playing with this program to get a feel for it!
+
+The `when` function is found in `Control.Monad` (to get access to it, do
+`import Control.Monad`). It&apos;s interesting because in a *do* block it looks
+like a control flow statement, but it&apos;s actually a normal function. It
+takes a boolean value and an I/O action if that boolean value is `True`,
+it returns the same I/O action that we supplied to it. However, if it&apos;s
+`False`, it returns the `return ()`, action, so an I/O action that doesn&apos;t
+do anything. Here&apos;s how we could rewrite the previous piece of code with
+which we demonstrated `getChar` by using `when`:
+
+~~~~haskell
+import Control.Monad
+
+main = do
+    c &lt;- getChar
+    when (c /= &apos; &apos;) $ do
+        putChar c
+        main
+</code></pre><p>So as you can see, it&apos;s useful for encapsulating the
+<code>if &lt;something&gt; then do &lt;some I/O action&gt; else return ()</code> pattern.</p>
+<p><code>sequence</code> takes a list of I/O actions and returns an I/O action that
+will perform those actions one after the other. The result contained in
+that I/O action will be a list of the results of all the I/O actions
+that were performed. Its type signature is
+<code>sequence :: [IO a] -&gt; IO [a]</code>. Doing this:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">main</span> = <span class="hljs-keyword">do</span>
+    a &lt;- getLine
+    b &lt;- getLine
+    c &lt;- getLine
+    print [a,b,c]
+</code></pre>
+<p>Is exactly the same as doing this:.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">main</span> = <span class="hljs-keyword">do</span>
+    rs &lt;- sequence [getLine, getLine, getLine]
+    print rs
+</code></pre>
+<p>So <code>sequence [getLine, getLine, getLine]</code> makes an I/O action that will
+perform <code>getLine</code> three times. If we bind that action to a name, the
+result is a list of all the results, so in our case, a list of three
+things that the user entered at the prompt.</p>
+<p>A common pattern with <code>sequence</code> is when we map functions like <code>print</code> or
+<code>putStrLn</code> over lists. Doing <code>map print [1,2,3,4]</code> won&apos;t create an I/O
+action. It will create a list of I/O actions, because that&apos;s like
+writing <code>[print 1, print 2, print 3, print 4]</code>. If we want to transform
+that list of I/O actions into an I/O action, we have to sequence it.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; sequence (map print [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>])
+<span class="hljs-number">1</span>
+<span class="hljs-number">2</span>
+<span class="hljs-number">3</span>
+<span class="hljs-number">4</span>
+<span class="hljs-number">5</span>
+[(),(),(),(),()]
+</code></pre>
+<p>What&apos;s with the <code>[(),(),(),(),()]</code> at the end? Well, when we evaluate an
+I/O action in GHCI, it&apos;s performed and then its result is printed out,
+unless that result is <code>()</code>, in which case it&apos;s not printed out. That&apos;s why
+evaluating <code>putStrLn &quot;hehe&quot;</code> in GHCI just prints out <code>hehe</code> (because the
+contained result in <code>putStrLn &quot;hehe&quot;</code> is <code>()</code>). But when we do <code>getLine</code> in
+GHCI, the result of that I/O action is printed out, because <code>getLine</code> has
+a type of <code>IO String</code>.</p>
+<p>Because mapping a function that returns an I/O action over a list and
+then sequencing it is so common, the utility functions <code>mapM</code> and <code>mapM_</code>
+were introduced. <code>mapM</code> takes a function and a list, maps the function
+over the list and then sequences it. <code>mapM_</code> does the same, only it
+throws away the result later. We usually use <code>mapM_</code> when we don&apos;t care
+what result our sequenced I/O actions have.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; mapM print [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>]
+<span class="hljs-number">1</span>
+<span class="hljs-number">2</span>
+<span class="hljs-number">3</span>
+[(),(),()]
+<span class="hljs-title">ghci</span>&gt; mapM_ print [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>]
+<span class="hljs-number">1</span>
+<span class="hljs-number">2</span>
+<span class="hljs-number">3</span>
+</code></pre>
+<p><code>forever</code> takes an I/O action and returns an I/O action that just repeats
+the I/O action it got forever. It&apos;s located in <code>Control.Monad</code>. This
+little program will indefinitely ask the user for some input and spit it
+back to him, CAPSLOCKED:</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> Control.Monad
+<span class="hljs-keyword">import</span> Data.Char
+
+<span class="hljs-title">main</span> = forever $ <span class="hljs-keyword">do</span>
+    putStr <span class="hljs-string">&quot;Give me some input: &quot;</span>
+    l &lt;- getLine
+    putStrLn $ map toUpper l
+</code></pre>
+<p><code>forM</code> (located in <code>Control.Monad</code>) is like <code>mapM</code>, only that it has its
+parameters switched around. The first parameter is the list and the
+second one is the function to map over that list, which is then
+sequenced. Why is that useful? Well, with some creative use of lambdas
+and <em>do</em> notation, we can do stuff like this:</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> Control.Monad
+
+<span class="hljs-title">main</span> = <span class="hljs-keyword">do</span>
+    colors &lt;- forM [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>] (\a -&gt; <span class="hljs-keyword">do</span>
+        putStrLn $ <span class="hljs-string">&quot;Which color do you associate with the number &quot;</span> ++ show a ++ <span class="hljs-string">&quot;?&quot;</span>
+        color &lt;- getLine
+        return color)
+    putStrLn <span class="hljs-string">&quot;The colors that you associate with 1, 2, 3 and 4 are: &quot;</span>
+    mapM putStrLn colors
+</code></pre>
+<p>The <code>(\a -&gt; do ... )</code> is a function that takes a number and returns an
+I/O action. We have to surround it with parentheses, otherwise the
+lambda thinks the last two I/O actions belong to it. Notice that we do
+<code>return color</code> in the inside <em>do</em> block. We do that so that the I/O action
+which the <em>do</em> block defines has the result of our color contained
+within it. We actually didn&apos;t have to do that, because <code>getLine</code> already
+has that contained within it. Doing <code>color &lt;- getLine</code> and then
+<code>return color</code> is just unpacking the result from <code>getLine</code> and then repackaging it
+again, so it&apos;s the same as just doing <code>getLine</code>. The <code>forM</code> (called with its
+two parameters) produces an I/O action, whose result we bind to <code>colors</code>.
+<code>colors</code> is just a normal list that holds strings. At the end, we print
+out all those colors by doing <code>mapM putStrLn colors</code>.</p>
+<p>You can think of <code>forM</code> as meaning: make an I/O action for every element
+in this list. What each I/O action will do can depend on the element
+that was used to make the action. Finally, perform those actions and
+bind their results to something. We don&apos;t have to bind it, we can also
+just throw it away.</p>
+<p>~~~~ {.plain name=&quot;code&quot;}
+$ runhaskell form_test.hs
+Which color do you associate with the number 1?
+white
+Which color do you associate with the number 2?
+blue
+Which color do you associate with the number 3?
+red
+Which color do you associate with the number 4?
+orange
+The colors that you associate with 1, 2, 3 and 4 are:
+white
+blue
+red
+orange</p>
+<pre><code>
+We could have actually done that without `forM`, only with `forM` it&apos;s more
+readable. Normally we write `forM` when we want to map and sequence some
+actions that we define there on the spot using *do* notation. In the
+same vein, we could have replaced the last line with
+`forM colors putStrLn`.
+
+In this section, we learned the basics of input and output. We also
+found out what I/O actions are, how they enable us to do input and
+output and when they are actually performed. To reiterate, I/O actions
+are values much like any other value in Haskell. We can pass them as
+parameters to functions and functions can return I/O actions as results.
+What&apos;s special about them is that if they fall into the `main` function
+(or are the result in a GHCI line), they are performed. And that&apos;s when
+they get to write stuff on your screen or play Yakety Sax through your
+speakers. Each I/O action can also encapsulate a result with which it
+tells you what it got from the real world.
+
+Don&apos;t think of a function like `putStrLn` as a function that takes a
+string and prints it to the screen. Think of it as a function that takes
+a string and returns an I/O action. That I/O action will, when
+performed, print beautiful poetry to your terminal.
+
+Files and streams
+-----------------
+
+![streams](img/streams.png)
+
+`getChar` is an I/O action that reads a single character from the
+terminal. `getLine` is an I/O action that reads a line from the terminal.
+These two are pretty straightforward and most programming languages have
+some functions or statements that are parallel to them. But now, let&apos;s
+meet `getContents`. `getContents` is an I/O action that reads everything
+from the standard input until it encounters an end-of-file character.
+Its type is `getContents :: IO String`. What&apos;s cool about `getContents` is
+that it does lazy I/O. When we do `foo &lt;- getContents`, it doesn&apos;t read
+all of the input at once, store it in memory and then bind it to `foo`.
+No, it&apos;s lazy! It&apos;ll say: *&quot;Yeah yeah, I&apos;ll read the input from the
+terminal later as we go along, when you really need it!&quot;*.
+
+`getContents` is really useful when we&apos;re piping the output from one
+program into the input of our program. In case you don&apos;t know how piping
+works in unix-y systems, here&apos;s a quick primer. Let&apos;s make a text file
+that contains the following little haiku:
+
+~~~~ {.plain name=&quot;code&quot;}
+I&apos;m a lil&apos; teapot
+What&apos;s with that airplane food, huh?
+It&apos;s so small, tasteless
+</code></pre><p>Yeah, the haiku sucks, what of it? If anyone knows of any good haiku
+tutorials, let me know.</p>
+<p>Now, recall the little program we wrote when we were introducing the
+<code>forever</code> function. It prompted the user for a line, returned it to him in
+CAPSLOCK and then did that all over again, indefinitely. Just so you
+don&apos;t have to scroll all the way back, here it is again:</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> Control.Monad
+<span class="hljs-keyword">import</span> Data.Char
+
+<span class="hljs-title">main</span> = forever $ <span class="hljs-keyword">do</span>
+    putStr <span class="hljs-string">&quot;Give me some input: &quot;</span>
+    l &lt;- getLine
+    putStrLn $ map toUpper l
+</code></pre>
+<p>We&apos;ll save that program as <code>capslocker.hs</code> or something and compile it.
+And then, we&apos;re going to use a unix pipe to feed our text file directly
+to our little program. We&apos;re going to use the help of the GNU <em>cat</em>
+program, which prints out a file that&apos;s given to it as an argument.
+Check it out, booyaka!</p>
+<p>~~~~ {.plain name=&quot;code&quot;}
+$ ghc --make capslocker
+[1 of 1] Compiling Main             ( capslocker.hs, capslocker.o )
+Linking capslocker ...
+$ cat haiku.txt
+I&apos;m a lil&apos; teapot
+What&apos;s with that airplane food, huh?
+It&apos;s so small, tasteless
+$ cat haiku.txt | ./capslocker
+I&apos;M A LIL&apos; TEAPOT
+WHAT&apos;S WITH THAT AIRPLANE FOOD, HUH?
+IT&apos;S SO SMALL, TASTELESS
+capslocker <stdin>: hGetLine: end of file</stdin></p>
+<pre><code>
+As you can see, piping the output of one program (in our case that was
+`cat`) to the input of another (`capslocker`) is done with the `|`
+character. What we&apos;ve done is pretty much equivalent to just running
+`capslocker`, typing our haiku at the terminal and then issuing an
+end-of-file character (that&apos;s usually done by pressing Ctrl-D). It&apos;s
+like running `cat haiku.txt` and saying: “Wait, don&apos;t print this out to
+the terminal, tell it to `capslocker` instead!”.
+
+So what we&apos;re essentially doing with that use of `forever` is taking the
+input and transforming it into some output. That&apos;s why we can use
+`getContents` to make our program even shorter and better:
+
+~~~~haskell
+import Data.Char
+
+main = do
+    contents &lt;- getContents
+    putStr (map toUpper contents)
+</code></pre><p>We run the <code>getContents</code> I/O action and name the string it produces
+<code>contents</code>. Then, we map <code>toUpper</code> over that string and print that to the
+terminal. Keep in mind that because strings are basically lists, which
+are lazy, and <code>getContents</code> is I/O lazy, it won&apos;t try to read the whole
+content at once and store it into memory before printing out the
+capslocked version. Rather, it will print out the capslocked version as
+it reads it, because it will only read a line from the input when it
+really needs to.</p>
+<p>~~~~ {.plain name=&quot;code&quot;}
+$ cat haiku.txt | ./capslocker
+I&apos;M A LIL&apos; TEAPOT
+WHAT&apos;S WITH THAT AIRPLANE FOOD, HUH?
+IT&apos;S SO SMALL, TASTELESS</p>
+<pre><code>
+Cool, it works. What if we just run `capslocker` and try to type in the
+lines ourselves?
+
+~~~~ {.plain name=&quot;code&quot;}
+$ ./capslocker
+hey ho
+HEY HO
+lets go
+LETS GO
+</code></pre><p>We got out of that by pressing Ctrl-D. Pretty nice! As you can see, it
+prints out our capslocked input back to us line by line. When the result
+of <code>getContents</code> is bound to <code>contents</code>, it&apos;s not represented in memory as a
+real string, but more like a promise that it will produce the string
+eventually. When we map <code>toUpper</code> over <code>contents</code>, that&apos;s also a promise to
+map that function over the eventual contents. And finally when <code>putStr</code>
+happens, it says to the previous promise: <em>&quot;Hey, I need a capslocked
+line!&quot;</em>. It doesn&apos;t have any lines yet, so it says to <code>contents</code>: <em>&quot;Hey,
+how about actually getting a line from the terminal?&quot;</em>. So that&apos;s when
+<code>getContents</code> actually reads from the terminal and gives a line to the
+code that asked it to produce something tangible. That code then maps
+<code>toUpper</code> over that line and gives it to <code>putStr</code>, which prints it. And
+then, <code>putStr</code> says: <em>&quot;Hey, I need the next line, come on!&quot;</em> and this
+repeats until there&apos;s no more input, which is signified by an
+end-of-file character.</p>
+<p>Let&apos;s make program that takes some input and prints out only those lines
+that are shorter than 10 characters. Observe:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">main</span> = <span class="hljs-keyword">do</span>
+    contents &lt;- getContents
+    putStr (shortLinesOnly contents)
+
+<span class="hljs-title">shortLinesOnly</span> :: <span class="hljs-type">String</span> -&gt; <span class="hljs-type">String</span>
+<span class="hljs-title">shortLinesOnly</span> input =
+    <span class="hljs-keyword">let</span> allLines = lines input
+        shortLines = filter (\line -&gt; length line &lt; <span class="hljs-number">10</span>) allLines
+        result = unlines shortLines
+    <span class="hljs-keyword">in</span>  result
+</code></pre>
+<p>We&apos;ve made our I/O part of the program as short as possible. Because our
+program is supposed to take some input and print out some output based
+on the input, we can implement it by reading the input contents, running
+a function on them and then printing out what the function gave back.</p>
+<p>The <code>shortLinesOnly</code> function works like this: it takes a string, like
+<code>&quot;short\nlooooooooooooooong\nshort again&quot;</code>. That string has three lines,
+two of them are short and the middle one is long. It runs the lines
+function on that string, which converts it to
+<code>[&quot;short&quot;, &quot;looooooooooooooong&quot;, &quot;short again&quot;]</code>, which we then bind to the name
+<code>allLines</code>. That list of string is then filtered so that only those lines
+that are shorter than 10 characters remain in the list, producing
+<code>[&quot;short&quot;, &quot;short again&quot;]</code>. And finally, <code>unlines</code> joins that list into a
+single newline delimited string, giving <code>&quot;short\nshort again&quot;</code>. Let&apos;s
+give it a go.</p>
+<p>~~~~ {.plain:hs name=&quot;code&quot;}
+i&apos;m short
+so am i
+i am a loooooooooong line!!!
+yeah i&apos;m long so what hahahaha!!!!!!
+short line
+loooooooooooooooooooooooooooong
+short</p>
+<pre><code>
+~~~~ {.plain:hs name=&quot;code&quot;}
+$ ghc --make shortlinesonly
+[1 of 1] Compiling Main             ( shortlinesonly.hs, shortlinesonly.o )
+Linking shortlinesonly ...
+$ cat shortlines.txt | ./shortlinesonly
+i&apos;m short
+so am i
+short
+</code></pre><p>We pipe the contents of <code>shortlines.txt</code> into the output of
+<code>shortlinesonly</code> and as the output, we only get the short lines.</p>
+<p>This pattern of getting some string from the input, transforming it with
+a function and then outputting that is so common that there exists a
+function which makes that even easier, called <code>interact</code>. <code>interact</code> takes a
+function of type <code>String -&gt; String</code> as a parameter and returns an I/O
+action that will take some input, run that function on it and then print
+out the function&apos;s result. Let&apos;s modify our program to use that.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">main</span> = interact shortLinesOnly
+
+<span class="hljs-title">shortLinesOnly</span> :: <span class="hljs-type">String</span> -&gt; <span class="hljs-type">String</span>
+<span class="hljs-title">shortLinesOnly</span> input =
+    <span class="hljs-keyword">let</span> allLines = lines input
+        shortLines = filter (\line -&gt; length line &lt; <span class="hljs-number">10</span>) allLines
+        result = unlines shortLines
+    <span class="hljs-keyword">in</span>  result
+</code></pre>
+<p>Just to show that this can be achieved in much less code (even though it
+will be less readable) and to demonstrate our function composition
+skill, we&apos;re going to rework that a bit further.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">main</span> = interact $ unlines . filter ((&lt;<span class="hljs-number">10</span>) . length) . lines
+</code></pre>
+<p>Wow, we actually reduced that to just one line, which is pretty cool!</p>
+<p><code>interact</code> can be used to make programs that are piped some contents into
+them and then dump some result out or it can be used to make programs
+that appear to take a line of input from the user, give back some result
+based on that line and then take another line and so on. There isn&apos;t
+actually a real distinction between the two, it just depends on how the
+user is supposed to use them.</p>
+<p>Let&apos;s make a program that continuously reads a line and then tells us if
+the line is a palindrome or not. We could just use <code>getLine</code> to read a
+line, tell the user if it&apos;s a palindrome and then run <code>main</code> all over
+again. But it&apos;s simpler if we use <code>interact</code>. When using <code>interact</code>, think
+about what you need to do to transform some input into the desired
+output. In our case, we have to replace each line of the input with
+either <code>&quot;palindrome&quot;</code> or <code>&quot;not a palindrome&quot;</code>. So we have to write a
+function that transforms something like <code>&quot;elephant\nABCBA\nwhatever&quot;</code>
+into <code>&quot;not a palindrome\npalindrome\nnot a palindrome&quot;</code>. Let&apos;s do this!</p>
+<pre><code class="lang-haskell"><span class="hljs-title">respondPalindromes</span> contents = unlines (map (\xs -&gt; <span class="hljs-keyword">if</span> isPalindrome xs <span class="hljs-keyword">then</span> <span class="hljs-string">&quot;palindrome&quot;</span> <span class="hljs-keyword">else</span> <span class="hljs-string">&quot;not a palindrome&quot;</span>) (lines contents))
+    <span class="hljs-keyword">where</span>   isPalindrome xs = xs == reverse xs
+</code></pre>
+<p>Let&apos;s write this in point-free.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">respondPalindromes</span> = unlines . map (\xs -&gt; <span class="hljs-keyword">if</span> isPalindrome xs <span class="hljs-keyword">then</span> <span class="hljs-string">&quot;palindrome&quot;</span> <span class="hljs-keyword">else</span> <span class="hljs-string">&quot;not a palindrome&quot;</span>) . lines
+    <span class="hljs-keyword">where</span>   isPalindrome xs = xs == reverse xs
+</code></pre>
+<p>Pretty straightforward. First it turns something like
+<code>&quot;elephant\nABCBA\nwhatever&quot;</code> into <code>[&quot;elephant&quot;, &quot;ABCBA&quot;, &quot;whatever&quot;]</code> and
+then it maps that lambda over it, giving
+<code>[&quot;not a palindrome&quot;, &quot;palindrome&quot;, &quot;not a palindrome&quot;]</code>
+and then <code>unlines</code> joins that list into
+a single, newline delimited string. Now we can do</p>
+<pre><code class="lang-haskell"><span class="hljs-title">main</span> = interact respondPalindromes
+</code></pre>
+<p>Let&apos;s test this out:</p>
+<p>~~~~ {.plain name=&quot;code&quot;}
+$ runhaskell palindromes.hs
+hehe
+not a palindrome
+ABCBA
+palindrome
+cookie
+not a palindrome</p>
+<pre><code>
+Even though we made a program that transforms one big string of input
+into another, it acts like we made a program that does it line by line.
+That&apos;s because Haskell is lazy and it wants to print the first line of
+the result string, but it can&apos;t because it doesn&apos;t have the first line
+of the input yet. So as soon as we give it the first line of input, it
+prints the first line of the output. We get out of the program by
+issuing an end-of-line character.
+
+We can also use this program by just piping a file into it. Let&apos;s say we
+have this file:
+
+~~~~ {.plain name=&quot;code&quot;}
+dogaroo
+radar
+rotor
+madam
+</code></pre><p>and we save it as <code>words.txt</code>. This is what we get by piping it into our
+program:</p>
+<p>~~~~ {.plain name=&quot;code&quot;}
+$ cat words.txt | runhaskell palindromes.hs
+not a palindrome
+palindrome
+palindrome
+palindrome</p>
+<pre><code>
+Again, we get the same output as if we had run our program and put in
+the words ourselves at the standard input. We just don&apos;t see the input
+that `palindromes.hs` because the input came from the file and not from us
+typing the words in.
+
+So now you probably see how lazy I/O works and how we can use it to our
+advantage. You can just think in terms of what the output is supposed to
+be for some given input and write a function to do that transformation.
+In lazy I/O, nothing is eaten from the input until it absolutely has to
+be because what we want to print right now depends on that input.
+
+So far, we&apos;ve worked with I/O by printing out stuff to the terminal and
+reading from it. But what about reading and writing files? Well, in a
+way, we&apos;ve already been doing that. One way to think about reading from
+the terminal is to imagine that it&apos;s like reading from a (somewhat
+special) file. Same goes for writing to the terminal, it&apos;s kind of like
+writing to a file. We can call these two files `stdout` and `stdin`, meaning
+*standard output* and *standard input*, respectively. Keeping that in
+mind, we&apos;ll see that writing to and reading from files is very much like
+writing to the standard output and reading from the standard input.
+
+We&apos;ll start off with a really simple program that opens a file called
+`girlfriend.txt`, which contains a verse from Avril Lavigne&apos;s \#1 hit
+*Girlfriend*, and just prints out out to the terminal. Here&apos;s
+`girlfriend.txt`:
+
+~~~~ {.plain name=&quot;code&quot;}
+Hey! Hey! You! You!
+I don&apos;t like your girlfriend!
+No way! No way!
+I think you need a new one!
+</code></pre><p>And here&apos;s our program:</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> System.IO
+
+<span class="hljs-title">main</span> = <span class="hljs-keyword">do</span>
+    handle &lt;- openFile <span class="hljs-string">&quot;girlfriend.txt&quot;</span> <span class="hljs-type">ReadMode</span>
+    contents &lt;- hGetContents handle
+    putStr contents
+    hClose handle
+</code></pre>
+<p>Running it, we get the expected result:</p>
+<p>~~~~ {.plain name=&quot;code&quot;}
+$ runhaskell girlfriend.hs
+Hey! Hey! You! You!
+I don&apos;t like your girlfriend!
+No way! No way!
+I think you need a new one!</p>
+<pre><code>
+Let&apos;s go over this line by line. The first line is just four
+exclamations, to get our attention. In the second line, Avril tells us
+that she doesn&apos;t like our current romantic partner. The third line
+serves to emphasize that disapproval, whereas the fourth line suggests
+we should seek out a new girlfriend.
+
+Let&apos;s also go over the program line by line! Our program is several I/O
+actions glued together with a *do* block. In the first line of the *do*
+block, we notice a new function called `openFile`. This is its type
+signature: `openFile :: FilePath -&gt; IOMode -&gt; IO Handle`. If you read
+that out loud, it states: `openFile` takes a file path and an `IOMode` and
+returns an I/O action that will open a file and have the file&apos;s
+associated handle encapsulated as its result.
+
+`FilePath` is just a [type synonym](making-our-own-types-and-typeclasses#type-synonyms) for `String`,
+simply defined as:
+
+~~~~haskell
+type FilePath = String
+</code></pre><p><code>IOMode</code> is a type that&apos;s defined like this:</p>
+<pre><code class="lang-haskell"><span class="hljs-class"><span class="hljs-keyword">data</span> <span class="hljs-type">IOMode</span> = <span class="hljs-type">ReadMode</span> | <span class="hljs-type">WriteMode</span> | <span class="hljs-type">AppendMode</span> | <span class="hljs-type">ReadWriteMode</span></span>
+</code></pre>
+<p><img src="img/file.png" alt="A FILE IN A CAKE!!!"></p>
+<p>Just like our type that represents the seven possible values for the
+days of the week, this type is an enumeration that represents what we
+want to do with our opened file. Very simple. Just note that this type
+is <code>IOMode</code> and not <code>IO Mode</code>. <code>IO Mode</code> would be the type of an I/O action
+that has a value of some type <code>Mode</code> as its result, but <code>IOMode</code> is just a
+simple enumeration.</p>
+<p>Finally, it returns an I/O action that will open the specified file in
+the specified mode. If we bind that action to something we get a <code>Handle</code>.
+A value of type <code>Handle</code> represents where our file is. We&apos;ll use that
+handle so we know which file to read from. It would be stupid to read a
+file but not bind that read to a handle because we wouldn&apos;t be able to
+do anything with the file. So in our case, we bound the handle to
+<code>handle</code>.</p>
+<p>In the next line, we see a function called <code>hGetContents</code>. It takes a
+<code>Handle</code>, so it knows which file to get the contents from and returns an
+<code>IO String</code> — an I/O action that holds as its result the contents of the
+file. This function is pretty much like <code>getContents</code>. The only difference
+is that <code>getContents</code> will automatically read from the standard input
+(that is from the terminal), whereas <code>hGetContents</code> takes a file handle
+which tells it which file to read from. In all other respects, they work
+the same. And just like <code>getContents</code>, <code>hGetContents</code> won&apos;t attempt to read
+the file at once and store it in memory, but it will read it as needed.
+That&apos;s really cool because we can treat <code>contents</code> as the whole contents
+of the file, but it&apos;s not really loaded in memory. So if this were a
+really huge file, doing <code>hGetContents</code> wouldn&apos;t choke up our memory, but
+it would read only what it needed to from the file, when it needed to.</p>
+<p>Note the difference between the handle used to identify a file and the
+contents of the file, bound in our program to <code>handle</code> and <code>contents</code>. The
+handle is just something by which we know what our file is. If you
+imagine your whole file system to be a really big book and each file is
+a chapter in the book, the handle is a bookmark that shows where you&apos;re
+currently reading (or writing) a chapter, whereas the contents are the
+actual chapter.</p>
+<p>With <code>putStr contents</code> we just print the contents out to the standard
+output and then we do <code>hClose</code>, which takes a handle and returns an I/O
+action that closes the file. You have to close the file yourself after
+opening it with openFile!</p>
+<p>Another way of doing what we just did is to use the <code>withFile</code> function,
+which has a type signature of
+<code>withFile :: FilePath -&gt; IOMode -&gt; (Handle -&gt; IO a) -&gt; IO a</code>.
+It takes a path to a file, an <code>IOMode</code> and
+then it takes a function that takes a handle and returns some I/O
+action. What it returns is an I/O action that will open that file, do
+something we want with the file and then close it. The result
+encapsulated in the final I/O action that&apos;s returned is the same as the
+result of the I/O action that the function we give it returns. This
+might sound a bit complicated, but it&apos;s really simple, especially with
+lambdas, here&apos;s our previous example rewritten to use <code>withFile</code>:</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> System.IO
+
+<span class="hljs-title">main</span> = <span class="hljs-keyword">do</span>
+    withFile <span class="hljs-string">&quot;girlfriend.txt&quot;</span> <span class="hljs-type">ReadMode</span> (\handle -&gt; <span class="hljs-keyword">do</span>
+        contents &lt;- hGetContents handle
+        putStr contents)
+</code></pre>
+<p>As you can see, it&apos;s very similar to the previous piece of code.
+<code>(\handle -&gt; ... )</code> is the function that takes a handle and returns an
+I/O action and it&apos;s usually done like this, with a lambda. The reason it
+has to take a function that returns an I/O action instead of just taking
+an I/O action to do and then close the file is because the I/O action
+that we&apos;d pass to it wouldn&apos;t know on which file to operate. This way,
+<code>withFile</code> opens the file and then passes the handle to the function we
+gave it. It gets an I/O action back from that function and then makes an
+I/O action that&apos;s just like it, only it closes the file afterwards.
+Here&apos;s how we can make our own <code>withFile</code> function:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">withFile&apos;</span> :: <span class="hljs-type">FilePath</span> -&gt; <span class="hljs-type">IOMode</span> -&gt; (<span class="hljs-type">Handle</span> -&gt; <span class="hljs-type">IO</span> a) -&gt; <span class="hljs-type">IO</span> a
+<span class="hljs-title">withFile&apos;</span> path mode f = <span class="hljs-keyword">do</span>
+    handle &lt;- openFile path mode
+    result &lt;- f handle
+    hClose handle
+    return result
+</code></pre>
+<p><img src="img/edd.png" alt="butter toast"></p>
+<p>We know the result will be an I/O action so we can just start off with a
+<em>do</em>. First we open the file and get a <code>handle</code> from it. Then, we apply
+handle to our function to get back the I/O action that does all the
+work. We bind that action to <code>result</code>, close the handle and then do
+<code>return result</code>. By <code>return</code>ing the result encapsulated in the I/O action that we
+got from <code>f</code>, we make it so that our I/O action encapsulates the same
+result as the one we got from <code>f handle</code>. So if <code>f handle</code> returns an action
+that will read a number of lines from the standard input and write them
+to a file and have as its result encapsulated the number of lines it
+read, if we used that with <code>withFile&apos;</code>, the resulting I/O action would
+also have as its result the number of lines read.</p>
+<p>Just like we have <code>hGetContents</code> that works like <code>getContents</code> but for a
+specific file, there&apos;s also <code>hGetLine</code>, <code>hPutStr</code>, <code>hPutStrLn</code>, <code>hGetChar</code>, etc.
+They work just like their counterparts without the <em>h</em>, only they take a
+handle as a parameter and operate on that specific file instead of
+operating on standard input or standard output. Example: <code>putStrLn</code> is a
+function that takes a string and returns an I/O action that will print
+out that string to the terminal and a newline after it. <code>hPutStrLn</code> takes
+a handle and a string and returns an I/O action that will write that
+string to the file associated with the handle and then put a newline
+after it. In the same vein, <code>hGetLine</code> takes a handle and returns an I/O
+action that reads a line from its file.</p>
+<p>Loading files and then treating their contents as strings is so common
+that we have these three nice little functions to make our work even
+easier:</p>
+<p><code>readFile</code> has a type signature of <code>readFile :: FilePath -&gt; IO String</code>.
+Remember, <code>FilePath</code> is just a fancy name for <code>String</code>. <code>readFile</code> takes a
+path to a file and returns an I/O action that will read that file
+(lazily, of course) and bind its contents to something as a string. It&apos;s
+usually more handy than doing <code>openFile</code> and binding it to a handle and
+then doing <code>hGetContents</code>. Here&apos;s how we could have written our previous
+example with <code>readFile</code>:</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> System.IO
+
+<span class="hljs-title">main</span> = <span class="hljs-keyword">do</span>
+    contents &lt;- readFile <span class="hljs-string">&quot;girlfriend.txt&quot;</span>
+    putStr contents
+</code></pre>
+<p>Because we don&apos;t get a handle with which to identify our file, we can&apos;t
+close it manually, so Haskell does that for us when we use <code>readFile</code>.</p>
+<p><code>writeFile</code> has a type of <code>writeFile :: FilePath -&gt; String -&gt; IO ()</code>. It
+takes a path to a file and a string to write to that file and returns an
+I/O action that will do the writing. If such a file already exists, it
+will be stomped down to zero length before being written on. Here&apos;s how
+to turn <code>girlfriend.txt</code> into a CAPSLOCKED version and write it to
+<code>girlfriendcaps.txt</code>:</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> System.IO
+<span class="hljs-keyword">import</span> Data.Char
+
+<span class="hljs-title">main</span> = <span class="hljs-keyword">do</span>
+    contents &lt;- readFile <span class="hljs-string">&quot;girlfriend.txt&quot;</span>
+    writeFile <span class="hljs-string">&quot;girlfriendcaps.txt&quot;</span> (map toUpper contents)
+</code></pre>
+<p>~~~~ {.plain name=&quot;code&quot;}
+$ runhaskell girlfriendtocaps.hs
+$ cat girlfriendcaps.txt
+HEY! HEY! YOU! YOU!
+I DON&apos;T LIKE YOUR GIRLFRIEND!
+NO WAY! NO WAY!
+I THINK YOU NEED A NEW ONE!</p>
+<pre><code>
+`appendFile` has a type signature that&apos;s just like `writeFile`, only
+`appendFile` doesn&apos;t truncate the file to zero length if it already exists
+but it appends stuff to it.
+
+Let&apos;s say we have a file `todo.txt` that has one task per line that we
+have to do. Now let&apos;s make a program that takes a line from the standard
+input and adds that to our to-do list.
+
+~~~~haskell
+import System.IO
+
+main = do
+    todoItem &lt;- getLine
+    appendFile &quot;todo.txt&quot; (todoItem ++ &quot;\n&quot;)
+</code></pre><p>~~~~ {.plain name=&quot;code&quot;}
+$ runhaskell appendtodo.hs
+Iron the dishes
+$ runhaskell appendtodo.hs
+Dust the dog
+$ runhaskell appendtodo.hs
+Take salad out of the oven
+$ cat todo.txt
+Iron the dishes
+Dust the dog
+Take salad out of the oven</p>
+<pre><code>
+We needed to add the `&quot;\n&quot;` to the end of each line because `getLine`
+doesn&apos;t give us a newline character at the end.
+
+Ooh, one more thing. We talked about how doing
+`contents &lt;- hGetContents handle`
+doesn&apos;t cause the whole file to be read at once and stored
+in-memory. It&apos;s I/O lazy, so doing this:
+
+~~~~haskell
+main = do
+    withFile &quot;something.txt&quot; ReadMode (\handle -&gt; do
+        contents &lt;- hGetContents handle
+        putStr contents)
+</code></pre><p>is actually like connecting a pipe from the file to the output. Just
+like you can think of lists as streams, you can also think of files as
+streams. This will read one line at a time and print it out to the
+terminal as it goes along. So you may be asking, how wide is this pipe
+then? How often will the disk be accessed? Well, for text files, the
+default buffering is line-buffering usually. That means that the
+smallest part of the file to be read at once is one line. That&apos;s why in
+this case it actually reads a line, prints it to the output, reads the
+next line, prints it, etc. For binary files, the default buffering is
+usually block-buffering. That means that it will read the file chunk by
+chunk. The chunk size is some size that your operating system thinks is
+cool.</p>
+<p>You can control how exactly buffering is done by using the <code>hSetBuffering</code>
+function. It takes a handle and a <code>BufferMode</code> and returns an I/O action
+that sets the buffering. <code>BufferMode</code> is a simple enumeration data type
+and the possible values it can hold are: <code>NoBuffering</code>, <code>LineBuffering</code> or
+<code>BlockBuffering (Maybe Int)</code>. The <code>Maybe Int</code> is for how big the chunk
+should be, in bytes. If it&apos;s <code>Nothing</code>, then the operating system
+determines the chunk size. <code>NoBuffering</code> means that it will be read one
+character at a time. <code>NoBuffering</code> usually sucks as a buffering mode
+because it has to access the disk so much.</p>
+<p>Here&apos;s our previous piece of code, only it doesn&apos;t read it line by line
+but reads the whole file in chunks of 2048 bytes.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">main</span> = <span class="hljs-keyword">do</span>
+    withFile <span class="hljs-string">&quot;something.txt&quot;</span> <span class="hljs-type">ReadMode</span> (\handle -&gt; <span class="hljs-keyword">do</span>
+        hSetBuffering handle $ <span class="hljs-type">BlockBuffering</span> (<span class="hljs-type">Just</span> <span class="hljs-number">2048</span>)
+        contents &lt;- hGetContents handle
+        putStr contents)
+</code></pre>
+<p>Reading files in bigger chunks can help if we want to minimize disk
+access or when our file is actually a slow network resource.</p>
+<p>We can also use <code>hFlush</code>, which is a function that takes a handle and
+returns an I/O action that will flush the buffer of the file associated
+with the handle. When we&apos;re doing line-buffering, the buffer is flushed
+after every line. When we&apos;re doing block-buffering, it&apos;s after we&apos;ve
+read a chunk. It&apos;s also flushed after closing a handle. That means that
+when we&apos;ve reached a newline character, the reading (or writing)
+mechanism reports all the data so far. But we can use <code>hFlush</code> to force
+that reporting of data that has been read so far. After flushing, the
+data is available to other programs that are running at the same time.</p>
+<p>Think of reading a block-buffered file like this: your toilet bowl is
+set to flush itself after it has one gallon of water inside it. So you
+start pouring in water and once the gallon mark is reached, that water
+is automatically flushed and the data in the water that you&apos;ve poured in
+so far is read. But you can flush the toilet manually too by pressing
+the button on the toilet. This makes the toilet flush and all the water
+(data) inside the toilet is read. In case you haven&apos;t noticed, flushing
+the toilet manually is a metaphor for <code>hFlush</code>. This is not a very great
+analogy by programming analogy standards, but I wanted a real world
+object that can be flushed for the punchline.</p>
+<p>We already made a program to add a new item to our to-do list in
+<code>todo.txt</code>, now let&apos;s make a program to remove an item. I&apos;ll just paste
+the code and then we&apos;ll go over the program together so you see that
+it&apos;s really easy. We&apos;ll be using a few new functions from
+<code>System.Directory</code> and one new function from <code>System.IO</code>, but they&apos;ll all be
+explained.</p>
+<p>Anyway, here&apos;s the program for removing an item from <code>todo.txt</code>:</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> System.IO
+<span class="hljs-keyword">import</span> System.Directory
+<span class="hljs-keyword">import</span> Data.List
+
+<span class="hljs-title">main</span> = <span class="hljs-keyword">do</span>
+    handle &lt;- openFile <span class="hljs-string">&quot;todo.txt&quot;</span> <span class="hljs-type">ReadMode</span>
+    (tempName, tempHandle) &lt;- openTempFile <span class="hljs-string">&quot;.&quot;</span> <span class="hljs-string">&quot;temp&quot;</span>
+    contents &lt;- hGetContents handle
+    <span class="hljs-keyword">let</span> todoTasks = lines contents
+        numberedTasks = zipWith (\n line -&gt; show n ++ <span class="hljs-string">&quot; - &quot;</span> ++ line) [<span class="hljs-number">0.</span>.] todoTasks
+    putStrLn <span class="hljs-string">&quot;These are your TO-DO items:&quot;</span>
+    putStr $ unlines numberedTasks
+    putStrLn <span class="hljs-string">&quot;Which one do you want to delete?&quot;</span>
+    numberString &lt;- getLine
+    <span class="hljs-keyword">let</span> number = read numberString
+        newTodoItems = delete (todoTasks !! number) todoTasks
+    hPutStr tempHandle $ unlines newTodoItems
+    hClose handle
+    hClose tempHandle
+    removeFile <span class="hljs-string">&quot;todo.txt&quot;</span>
+    renameFile tempName <span class="hljs-string">&quot;todo.txt&quot;</span>
+</code></pre>
+<p>At first, we just open <code>todo.txt</code> in read mode and bind its handle to
+<code>handle</code>.</p>
+<p>Next up, we use a function that we haven&apos;t met before which is from
+<code>System.IO</code> — <code>openTempFile</code>. Its name is pretty self-explanatory. It takes
+a path to a temporary directory and a template name for a file and opens
+a temporary file. We used <code>&quot;.&quot;</code> for the temporary directory, because .
+denotes the current directory on just about any OS. We used <code>&quot;temp&quot;</code> as
+the template name for the temporary file, which means that the temporary
+file will be named <em>temp</em> plus some random characters. It returns an I/O
+action that makes the temporary file and the result in that I/O action
+is a pair of values: the name of the temporary file and a handle. We
+could just open a normal file called <code>todo2.txt</code> or something like that
+but it&apos;s better practice to use <code>openTempFile</code> so you know you&apos;re probably
+not overwriting anything.</p>
+<p>The reason we didn&apos;t use <code>getCurrentDirectory</code> to get the current
+directory and then pass it to <code>openTempFile</code> but instead just passed <code>&quot;.&quot;</code>
+to <code>openTempFile</code> is because <code>.</code> refers to the current directory on
+unix-like system and Windows</p>
+<p>Next up, we bind the contents of <code>todo.txt</code> to <code>contents</code>. Then, split
+that string into a list of strings, each string one line. So <code>todoTasks</code>
+is now something like
+<code>[&quot;Iron the dishes&quot;, &quot;Dust the dog&quot;, &quot;Take salad out of the oven&quot;]</code>.
+We zip the numbers from 0 onwards and that list with
+a function that takes a number, like 3, and a string, like <code>&quot;hey&quot;</code> and
+returns <code>&quot;3 - hey&quot;</code>, so <code>numberedTasks</code> is
+<code>[&quot;0 - Iron the dishes&quot;, &quot;1 - Dust the dog&quot; ...</code>.
+We join that list of strings into a single newline
+delimited string with <code>unlines</code> and print that string out to the terminal.
+Note that instead of doing that, we could have also done
+<code>mapM putStrLn numberedTasks</code>.</p>
+<p>We ask the user which one they want to delete and wait for them to enter
+a number. Let&apos;s say they want to delete number 1, which is <code>Dust the dog</code>,
+so they punch in <code>1</code>. <code>numberString</code> is now <code>&quot;1&quot;</code> and because we want a
+number, not a string, we run <code>read</code> on that to get <code>1</code> and bind that to
+<code>number</code>.</p>
+<p>Remember the <code>delete</code> and <code>!!</code> functions from <code>Data.List</code>. <code>!!</code> returns an
+element from a list with some index and <code>delete</code> deletes the first
+occurence of an element in a list and returns a new list without that
+occurence. <code>(todoTasks !! number)</code> (number is now <code>1</code>) returns
+<code>&quot;Dust the dog&quot;</code>. We bind <code>todoTasks</code> without the first occurence of <code>&quot;Dust the dog&quot;</code> to
+<code>newTodoItems</code> and then join that into a single string with <code>unlines</code> before
+writing it to the temporary file that we opened. The old file is now
+unchanged and the temporary file contains all the lines that the old one
+does, except the one we deleted.</p>
+<p>After that we close both the original and the temporary files and then
+we remove the original one with <code>removeFile</code>, which, as you can see, takes
+a path to a file and deletes it. After deleting the old <code>todo.txt</code>, we
+use <code>renameFile</code> to rename the temporary file to <code>todo.txt</code>. Be careful,
+<code>removeFile</code> and <code>renameFile</code> (which are both in <code>System.Directory</code> by the
+way) take file paths as their parameters, not handles.</p>
+<p>And that&apos;s that! We could have done this in even fewer lines, but we
+were very careful not to overwrite any existing files and politely asked
+the operating system to tell us where we can put our temporary file.
+Let&apos;s give this a go!</p>
+<p>~~~~ {.plain name=&quot;code&quot;}
+$ runhaskell deletetodo.hs
+These are your TO-DO items:
+0 - Iron the dishes
+1 - Dust the dog
+2 - Take salad out of the oven
+Which one do you want to delete?
+1</p>
+<p>$ cat todo.txt
+Iron the dishes
+Take salad out of the oven</p>
+<p>$ runhaskell deletetodo.hs
+These are your TO-DO items:
+0 - Iron the dishes
+1 - Take salad out of the oven
+Which one do you want to delete?
+0</p>
+<p>$ cat todo.txt
+Take salad out of the oven</p>
+<pre><code>
+Command line arguments
+----------------------
+
+![COMMAND LINE ARGUMENTS!!!
+ARGH](img/arguments.png)
+
+Dealing with command line arguments is pretty much a necessity if you
+want to make a script or application that runs on a terminal. Luckily,
+Haskell&apos;s standard library has a nice way of getting command line
+arguments of a program.
+
+In the previous section, we made one program for adding a to-do item to
+our to-do list and one program for removing an item. There are two
+problems with the approach we took. The first one is that we just
+hardcoded the name of our to-do file in our code. We just decided that
+the file will be named `todo.txt` and that the user will never have a
+need for managing several to-do lists.
+
+One way to solve that is to always ask the user which file they want to
+use as their to-do list. We used that approach when we wanted to know
+which item the user wants to delete. It works, but it&apos;s not so good,
+because it requires the user to run the program, wait for the program to
+ask something and then tell that to the program. That&apos;s called an
+interactive program and the difficult bit with interactive command line
+programs is this — what if you want to automate the execution of that
+program, like with a batch script? It&apos;s harder to make a batch script
+that interacts with a program than a batch script that just calls one
+program or several of them.
+
+That&apos;s why it&apos;s sometimes better to have the user tell the program what
+they want when they run the program, instead of having the program ask
+the user once it&apos;s run. And what better way to have the user tell the
+program what they want it to do when they run it than via command line
+arguments!
+
+The `System.Environment` module has two cool I/O actions. One is `getArgs`,
+which has a type of `getArgs :: IO [String]` and is an I/O action that
+will get the arguments that the program was run with and have as its
+contained result a list with the arguments. `getProgName` has a type of
+`getProgName :: IO String` and is an I/O action that contains the program
+name.
+
+Here&apos;s a small program that demonstrates how these two work:
+
+~~~~haskell
+ import System.Environment
+ import Data.List
+
+ main = do
+    args &lt;- getArgs
+    progName &lt;- getProgName
+    putStrLn &quot;The arguments are:&quot;
+    mapM putStrLn args
+    putStrLn &quot;The program name is:&quot;
+    putStrLn progName
+</code></pre><p>We bind <code>getArgs</code> and <code>progName</code> to <code>args</code> and <code>progName</code>. We say
+<code>The arguments are:</code> and then for every argument in <code>args</code>, we do <code>putStrLn</code>. Finally, we
+also print out the program name. Let&apos;s compile this as <code>arg-test</code>.</p>
+<p>~~~~ {.plain name=&quot;code&quot;}
+$ ./arg-test first second w00t &quot;multi word arg&quot;
+The arguments are:
+first
+second
+w00t
+multi word arg
+The program name is:
+arg-test</p>
+<pre><code>
+Nice. Armed with this knowledge you could create some cool command line
+apps. In fact, let&apos;s go ahead and make one. In the previous section, we
+made a separate program for adding tasks and a separate program for
+deleting them. Now, we&apos;re going to join that into one program, what it
+does will depend on the command line arguments. We&apos;re also going to make
+it so it can operate on different files, not just `todo.txt`.
+
+We&apos;ll call it simply `todo` and it&apos;ll be able to do (haha!) three
+different things:
+
+-   View tasks
+-   Add tasks
+-   Delete tasks
+
+We&apos;re not going to concern ourselves with possible bad input too much
+right now.
+
+Our program will be made so that if we want to add the task
+`Find the magic sword of power` to the file `todo.txt`, we have to punch in
+`todo add todo.txt &quot;Find the magic sword of power&quot;` in our terminal. To view
+the tasks we&apos;ll just do `todo view todo.txt` and to remove the task with
+the index of 2, we&apos;ll do `todo remove todo.txt 2`.
+
+We&apos;ll start by making a dispatch association list. It&apos;s going to be a
+simple association list that has command line arguments as keys and
+functions as their corresponding values. All these functions will be of
+type `[String] -&gt; IO ()`. They&apos;re going to take the argument list as a
+parameter and return an I/O action that does the viewing, adding,
+deleting, etc.
+
+~~~~haskell
+import System.Environment
+import System.Directory
+import System.IO
+import Data.List
+
+dispatch :: [(String, [String] -&gt; IO ())]
+dispatch =  [ (&quot;add&quot;, add)
+            , (&quot;view&quot;, view)
+            , (&quot;remove&quot;, remove)
+            ]
+</code></pre><p>We have yet to define <code>main</code>, <code>add</code>, <code>view</code> and <code>remove</code>, so let&apos;s start with
+<code>main</code>:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">main</span> = <span class="hljs-keyword">do</span>
+    (command:args) &lt;- getArgs
+    <span class="hljs-keyword">let</span> (<span class="hljs-type">Just</span> action) = lookup command dispatch
+    action args
+</code></pre>
+<p>First, we get the arguments and bind them to <code>(command:args)</code>. If you
+remember your pattern matching, this means that the first argument will
+get bound to <code>command</code> and the rest of them will get bound to <code>args</code>. If we
+call our program like <code>todo add todo.txt &quot;Spank the monkey&quot;</code>, <code>command</code> will
+be <code>&quot;add&quot;</code> and args will be <code>[&quot;todo.txt&quot;, &quot;Spank the monkey&quot;]</code>.</p>
+<p>In the next line, we look up our command in the dispatch list. Because
+<code>&quot;add&quot;</code> points to <code>add</code>, we get <code>Just add</code> as a result. We use pattern
+matching again to extract our function out of the <code>Maybe</code>. What happens if
+our command isn&apos;t in the dispatch list? Well then the lookup will return
+<code>Nothing</code>, but we said we won&apos;t concern ourselves with failing gracefully
+too much, so the pattern matching will fail and our program will throw a
+fit.</p>
+<p>Finally, we call our <code>action</code> function with the rest of the argument list.
+That will return an I/O action that either adds an item, displays a list
+of items or deletes an item and because that action is part of the <code>main</code>
+<em>do</em> block, it will get performed. If we follow our concrete example so
+far and our <code>action</code> function is <code>add</code>, it will get called with <code>args</code> (so
+<code>[&quot;todo.txt&quot;, &quot;Spank the monkey&quot;]</code>) and return an I/O action that adds
+<code>Spank the monkey</code> to <code>todo.txt</code>.</p>
+<p>Great! All that&apos;s left now is to implement <code>add</code>, <code>view</code> and <code>remove</code>. Let&apos;s
+start with <code>add</code>:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">add</span> :: [<span class="hljs-type">String</span>] -&gt; <span class="hljs-type">IO</span> ()
+<span class="hljs-title">add</span> [fileName, todoItem] = appendFile fileName (todoItem ++ <span class="hljs-string">&quot;\n&quot;</span>)
+</code></pre>
+<p>If we call our program like <code>todo add todo.txt &quot;Spank the monkey&quot;</code>, the
+<code>&quot;add&quot;</code> will get bound to <code>command</code> in the first pattern match in the <code>main</code>
+block, whereas <code>[&quot;todo.txt&quot;, &quot;Spank the monkey&quot;]</code> will get passed to the
+function that we get from the dispatch list. So, because we&apos;re not
+dealing with bad input right now, we just pattern match against a list
+with those two elements right away and return an I/O action that appends
+that line to the end of the file, along with a newline character.</p>
+<p>Next, let&apos;s implement the list viewing functionality. If we want to view
+the items in a file, we do <code>todo view todo.txt</code>. So in the first pattern
+match, <code>command</code> will be <code>&quot;view&quot;</code> and <code>args</code> will be <code>[&quot;todo.txt&quot;]</code>.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">view</span> :: [<span class="hljs-type">String</span>] -&gt; <span class="hljs-type">IO</span> ()
+<span class="hljs-title">view</span> [fileName] = <span class="hljs-keyword">do</span>
+    contents &lt;- readFile fileName
+    <span class="hljs-keyword">let</span> todoTasks = lines contents
+        numberedTasks = zipWith (\n line -&gt; show n ++ <span class="hljs-string">&quot; - &quot;</span> ++ line) [<span class="hljs-number">0.</span>.] todoTasks
+    putStr $ unlines numberedTasks
+</code></pre>
+<p>We already did pretty much the same thing in the program that only
+deleted tasks when we were displaying the tasks so that the user can
+choose one for deletion, only here we just display the tasks.</p>
+<p>And finally, we&apos;re going to implement <code>remove</code>. It&apos;s going to be very
+similar to the program that only deleted the tasks, so if you don&apos;t
+understand how deleting an item here works, check out the explanation
+under that program. The main difference is that we&apos;re not hardcoding
+<code>todo.txt</code> but getting it as an argument. We&apos;re also not prompting the
+user for the task number to delete, we&apos;re getting it as an argument.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">remove</span> :: [<span class="hljs-type">String</span>] -&gt; <span class="hljs-type">IO</span> ()
+<span class="hljs-title">remove</span> [fileName, numberString] = <span class="hljs-keyword">do</span>
+    handle &lt;- openFile fileName <span class="hljs-type">ReadMode</span>
+    (tempName, tempHandle) &lt;- openTempFile <span class="hljs-string">&quot;.&quot;</span> <span class="hljs-string">&quot;temp&quot;</span>
+    contents &lt;- hGetContents handle
+    <span class="hljs-keyword">let</span> number = read numberString
+        todoTasks = lines contents
+        newTodoItems = delete (todoTasks !! number) todoTasks
+    hPutStr tempHandle $ unlines newTodoItems
+    hClose handle
+    hClose tempHandle
+    removeFile fileName
+    renameFile tempName fileName
+</code></pre>
+<p>We opened up the file based on <code>fileName</code> and opened a temporary file,
+deleted the line with the index that the user wants to delete, wrote
+that to the temporary file, removed the original file and renamed the
+temporary file back to <code>fileName</code>.</p>
+<p>Here&apos;s the whole program at once, in all its glory!</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> System.Environment
+<span class="hljs-keyword">import</span> System.Directory
+<span class="hljs-keyword">import</span> System.IO
+<span class="hljs-keyword">import</span> Data.List
+
+<span class="hljs-title">dispatch</span> :: [(<span class="hljs-type">String</span>, [<span class="hljs-type">String</span>] -&gt; <span class="hljs-type">IO</span> ())]
+<span class="hljs-title">dispatch</span> =  [ (<span class="hljs-string">&quot;add&quot;</span>, add)
+            , (<span class="hljs-string">&quot;view&quot;</span>, view)
+            , (<span class="hljs-string">&quot;remove&quot;</span>, remove)
+            ]
+
+<span class="hljs-title">main</span> = <span class="hljs-keyword">do</span>
+    (command:args) &lt;- getArgs
+    <span class="hljs-keyword">let</span> (<span class="hljs-type">Just</span> action) = lookup command dispatch
+    action args
+
+<span class="hljs-title">add</span> :: [<span class="hljs-type">String</span>] -&gt; <span class="hljs-type">IO</span> ()
+<span class="hljs-title">add</span> [fileName, todoItem] = appendFile fileName (todoItem ++ <span class="hljs-string">&quot;\n&quot;</span>)
+
+<span class="hljs-title">view</span> :: [<span class="hljs-type">String</span>] -&gt; <span class="hljs-type">IO</span> ()
+<span class="hljs-title">view</span> [fileName] = <span class="hljs-keyword">do</span>
+    contents &lt;- readFile fileName
+    <span class="hljs-keyword">let</span> todoTasks = lines contents
+        numberedTasks = zipWith (\n line -&gt; show n ++ <span class="hljs-string">&quot; - &quot;</span> ++ line) [<span class="hljs-number">0.</span>.] todoTasks
+    putStr $ unlines numberedTasks
+
+<span class="hljs-title">remove</span> :: [<span class="hljs-type">String</span>] -&gt; <span class="hljs-type">IO</span> ()
+<span class="hljs-title">remove</span> [fileName, numberString] = <span class="hljs-keyword">do</span>
+    handle &lt;- openFile fileName <span class="hljs-type">ReadMode</span>
+    (tempName, tempHandle) &lt;- openTempFile <span class="hljs-string">&quot;.&quot;</span> <span class="hljs-string">&quot;temp&quot;</span>
+    contents &lt;- hGetContents handle
+    <span class="hljs-keyword">let</span> number = read numberString
+        todoTasks = lines contents
+        newTodoItems = delete (todoTasks !! number) todoTasks
+    hPutStr tempHandle $ unlines newTodoItems
+    hClose handle
+    hClose tempHandle
+    removeFile fileName
+    renameFile tempName fileName
+</code></pre>
+<p><img src="img/salad.png" alt="fresh baked salad"></p>
+<p>To summarize our solution: we made a dispatch association that maps from
+commands to functions that take some command line arguments and return
+an I/O action. We see what the command is and based on that we get the
+appropriate function from the dispatch list. We call that function with
+the rest of the command line arguments to get back an I/O action that
+will do the appropriate thing and then just perform that action!</p>
+<p>In other languages, we might have implemented this with a big switch
+case statement or whatever, but using higher order functions allows us
+to just tell the dispatch list to give us the appropriate function and
+then tell that function to give us an I/O action for some command line
+arguments.</p>
+<p>Let&apos;s try our app out!</p>
+<p>~~~~ {.plain name=&quot;code&quot;}
+$ ./todo view todo.txt
+0 - Iron the dishes
+1 - Dust the dog
+2 - Take salad out of the oven</p>
+<p>$ ./todo add todo.txt &quot;Pick up children from drycleaners&quot;</p>
+<p>$ ./todo view todo.txt
+0 - Iron the dishes
+1 - Dust the dog
+2 - Take salad out of the oven
+3 - Pick up children from drycleaners</p>
+<p>$ ./todo remove todo.txt 2</p>
+<p>$ ./todo view todo.txt
+0 - Iron the dishes
+1 - Dust the dog
+2 - Pick up children from drycleaners</p>
+<pre><code>
+Another cool thing about this is that it&apos;s easy to add extra
+functionality. Just add an entry in the dispatch association list and
+implement the corresponding function and you&apos;re laughing! As an
+exercise, you can try implementing a `bump` function that will take a file
+and a task number and return an I/O action that bumps that task to the
+top of the to-do list.
+
+You could make this program fail a bit more gracefully in case of bad
+input (for example, if someone runs `todo UP YOURS HAHAHAHA`) by making an
+I/O action that just reports there has been an error (say,
+`errorExit :: IO ()`) and then check for possible erroneous input and if there is
+erroneous input, perform the error reporting I/O action. Another way is
+to use exceptions, which we will meet soon.
+
+&lt;a name=&quot;randomness&quot;&gt;&lt;/a&gt;
+
+Randomness
+----------
+
+![this picture is the ultimate source of randomness and
+wackiness](img/random.png)
+
+Many times while programming, you need to get some random data. Maybe
+you&apos;re making a game where a die needs to be thrown or you need to
+generate some test data to test out your program. There are a lot of
+uses for random data when programming. Well, actually, pseudo-random,
+because we all know that the only true source of randomness is a monkey
+on a unicycle with a cheese in one hand and its butt in the other. In
+this section, we&apos;ll take a look at how to make Haskell generate
+seemingly random data.
+
+In most other programming languages, you have functions that give you
+back some random number. Each time you call that function, you get back
+a (hopefully) different random number. How about Haskell? Well,
+remember, Haskell is a pure functional language. What that means is that
+it has referential transparency. What THAT means is that a function, if
+given the same parameters twice, must produce the same result twice.
+That&apos;s really cool because it allows us to reason differently about
+programs and it enables us to defer evaluation until we really need it.
+If I call a function, I can be sure that it won&apos;t do any funny stuff
+before giving me the results. All that matters are its results. However,
+this makes it a bit tricky for getting random numbers. If I have a
+function like this:
+
+~~~~haskell
+randomNumber :: (Num a) =&gt; a
+randomNumber = 4
+</code></pre><p>It&apos;s not very useful as a random number function because it will always
+return <code>4</code>, even though I can assure you that the 4 is completely random,
+because I used a die to determine it.</p>
+<p>How do other languages make seemingly random numbers? Well, they take
+various info from your computer, like the current time, how much and
+where you moved your mouse and what kind of noises you made behind your
+computer and based on that, give a number that looks really random. The
+combination of those factors (that randomness) is probably different in
+any given moment in time, so you get a different random number.</p>
+<p>Ah. So in Haskell, we can make a random number then if we make a
+function that takes as its parameter that randomness and based on that
+returns some number (or other data type).</p>
+<p>Enter the <code>System.Random</code> module. It has all the functions that satisfy
+our need for randomness. Let&apos;s just dive into one of the functions it
+exports then, namely <code>random</code>. Here&apos;s its type:
+<code>random :: (RandomGen g, Random a) =&gt; g -&gt; (a, g)</code>. Whoa! Some new typeclasses in this type
+declaration up in here! The <code>RandomGen</code> typeclass is for types that can
+act as sources of randomness. The <code>Random</code> typeclass is for things that
+can take on random values. A boolean value can take on a random value,
+namely <code>True</code> or <code>False</code>. A number can also take up a plethora of different
+random values. Can a function take on a random value? I don&apos;t think so,
+probably not! If we try to translate the type declaration of <code>random</code> to
+English, we get something like: it takes a random generator (that&apos;s our
+source of randomness) and returns a random value and a new random
+generator. Why does it also return a new generator as well as a random
+value? Well, we&apos;ll see in a moment.</p>
+<p>To use our <code>random</code> function, we have to get our hands on one of those
+random generators. The <code>System.Random</code> module exports a cool type, namely
+<code>StdGen</code> that is an instance of the <code>RandomGen</code> typeclass. We can either
+make a <code>StdGen</code> manually or we can tell the system to give us one based on
+a multitude of sort of random stuff.</p>
+<p>To manually make a random generator, use the <code>mkStdGen</code> function. It has a
+type of <code>mkStdGen :: Int -&gt; StdGen</code>. It takes an integer and based on
+that, gives us a random generator. Okay then, let&apos;s try using <code>random</code> and
+<code>mkStdGen</code> in tandem to get a (hardly random) number.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; random (mkStdGen <span class="hljs-number">100</span>)
+</code></pre>
+<p>~~~~ {.plain name=&quot;code&quot;}</p>
+<p><interactive>:1:0:
+    Ambiguous type variable <code>a&apos; in the constraint:</code>Random a&apos; arising from a use of `random&apos; at <interactive>:1:0-20
+    Probable fix: add a type signature that fixes these type variable(s)</interactive></interactive></p>
+<pre><code>
+What&apos;s this? Ah, right, the `random` function can return a value of any
+type that&apos;s part of the `Random` typeclass, so we have to inform Haskell
+what kind of type we want. Also let&apos;s not forget that it returns a
+random value and a random generator in a pair.
+
+~~~~haskell
+ghci&gt; random (mkStdGen 100) :: (Int, StdGen)
+(-1352021624,651872571 1655838864)
+</code></pre><p>Finally! A number that looks kind of random! The first component of the
+tuple is our number whereas the second component is a textual
+representation of our new random generator. What happens if we call
+<code>random</code> with the same random generator again?</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; random (mkStdGen <span class="hljs-number">100</span>) :: (<span class="hljs-type">Int</span>, <span class="hljs-type">StdGen</span>)
+(<span class="hljs-number">-1352021624</span>,<span class="hljs-number">651872571</span> <span class="hljs-number">1655838864</span>)
+</code></pre>
+<p>Of course. The same result for the same parameters. So let&apos;s try giving
+it a different random generator as a parameter.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; random (mkStdGen <span class="hljs-number">949494</span>) :: (<span class="hljs-type">Int</span>, <span class="hljs-type">StdGen</span>)
+(<span class="hljs-number">539963926</span>,<span class="hljs-number">466647808</span> <span class="hljs-number">1655838864</span>)
+</code></pre>
+<p>Alright, cool, great, a different number. We can use the type annotation
+to get different types back from that function.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; random (mkStdGen <span class="hljs-number">949488</span>) :: (<span class="hljs-type">Float</span>, <span class="hljs-type">StdGen</span>)
+(<span class="hljs-number">0.8938442</span>,<span class="hljs-number">1597344447</span> <span class="hljs-number">1655838864</span>)
+<span class="hljs-title">ghci</span>&gt; random (mkStdGen <span class="hljs-number">949488</span>) :: (<span class="hljs-type">Bool</span>, <span class="hljs-type">StdGen</span>)
+(<span class="hljs-type">False</span>,<span class="hljs-number">1485632275</span> <span class="hljs-number">40692</span>)
+<span class="hljs-title">ghci</span>&gt; random (mkStdGen <span class="hljs-number">949488</span>) :: (<span class="hljs-type">Integer</span>, <span class="hljs-type">StdGen</span>)
+(<span class="hljs-number">1691547873</span>,<span class="hljs-number">1597344447</span> <span class="hljs-number">1655838864</span>)
+</code></pre>
+<p>Let&apos;s make a function that simulates tossing a coin three times. If
+<code>random</code> didn&apos;t return a new generator along with a random value, we&apos;d
+have to make this function take three random generators as a parameter
+and then return coin tosses for each of them. But that sounds wrong
+because if one generator can make a random value of type <code>Int</code> (which can
+take on a load of different values), it should be able to make three
+coin tosses (which can take on precisely eight combinations). So this is
+where <code>random</code> returning a new generator along with a value really comes
+in handy.</p>
+<p>We&apos;ll represent a coin with a simple <code>Bool</code>. <code>True</code> is tails, <code>False</code> is
+heads.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">threeCoins</span> :: <span class="hljs-type">StdGen</span> -&gt; (<span class="hljs-type">Bool</span>, <span class="hljs-type">Bool</span>, <span class="hljs-type">Bool</span>)
+<span class="hljs-title">threeCoins</span> gen =
+    <span class="hljs-keyword">let</span> (firstCoin, newGen) = random gen
+        (secondCoin, newGen&apos;) = random newGen
+        (thirdCoin, newGen&apos;&apos;) = random newGen&apos;
+    <span class="hljs-keyword">in</span>  (firstCoin, secondCoin, thirdCoin)
+</code></pre>
+<p>We call <code>random</code> with the generator we got as a parameter to get a coin
+and a new generator. Then we call it again, only this time with our new
+generator, to get the second coin. We do the same for the third coin.
+Had we called it with the same generator every time, all the coins would
+have had the same value and we&apos;d only be able to get
+<code>(False, False, False)</code> or <code>(True, True, True)</code> as a result.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; threeCoins (mkStdGen <span class="hljs-number">21</span>)
+(<span class="hljs-type">True</span>,<span class="hljs-type">True</span>,<span class="hljs-type">True</span>)
+<span class="hljs-title">ghci</span>&gt; threeCoins (mkStdGen <span class="hljs-number">22</span>)
+(<span class="hljs-type">True</span>,<span class="hljs-type">False</span>,<span class="hljs-type">True</span>)
+<span class="hljs-title">ghci</span>&gt; threeCoins (mkStdGen <span class="hljs-number">943</span>)
+(<span class="hljs-type">True</span>,<span class="hljs-type">False</span>,<span class="hljs-type">True</span>)
+<span class="hljs-title">ghci</span>&gt; threeCoins (mkStdGen <span class="hljs-number">944</span>)
+(<span class="hljs-type">True</span>,<span class="hljs-type">True</span>,<span class="hljs-type">True</span>)
+</code></pre>
+<p>Notice that we didn&apos;t have to do <code>random gen :: (Bool, StdGen)</code>. That&apos;s
+because we already specified that we want booleans in the type
+declaration of the function. That&apos;s why Haskell can infer that we want a
+boolean value in this case.</p>
+<p>So what if we want to flip four coins? Or five? Well, there&apos;s a function
+called <code>randoms</code> that takes a generator and returns an infinite sequence
+of values based on that generator.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; take <span class="hljs-number">5</span> $ randoms (mkStdGen <span class="hljs-number">11</span>) :: [<span class="hljs-type">Int</span>]
+[<span class="hljs-number">-1807975507</span>,<span class="hljs-number">545074951</span>,<span class="hljs-number">-1015194702</span>,<span class="hljs-number">-1622477312</span>,<span class="hljs-number">-502893664</span>]
+<span class="hljs-title">ghci</span>&gt; take <span class="hljs-number">5</span> $ randoms (mkStdGen <span class="hljs-number">11</span>) :: [<span class="hljs-type">Bool</span>]
+[<span class="hljs-type">True</span>,<span class="hljs-type">True</span>,<span class="hljs-type">True</span>,<span class="hljs-type">True</span>,<span class="hljs-type">False</span>]
+<span class="hljs-title">ghci</span>&gt; take <span class="hljs-number">5</span> $ randoms (mkStdGen <span class="hljs-number">11</span>) :: [<span class="hljs-type">Float</span>]
+[<span class="hljs-number">7.904789e-2</span>,<span class="hljs-number">0.62691015</span>,<span class="hljs-number">0.26363158</span>,<span class="hljs-number">0.12223756</span>,<span class="hljs-number">0.38291094</span>]
+</code></pre>
+<p>Why doesn&apos;t <code>randoms</code> return a new generator as well as a list? We could
+implement the <code>randoms</code> function very easily like this:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">randoms&apos;</span> :: (<span class="hljs-type">RandomGen</span> g, <span class="hljs-type">Random</span> a) =&gt; g -&gt; [a]
+<span class="hljs-title">randoms&apos;</span> gen = <span class="hljs-keyword">let</span> (value, newGen) = random gen <span class="hljs-keyword">in</span> value:randoms&apos; newGen
+</code></pre>
+<p>A recursive definition. We get a random value and a new generator from
+the current generator and then make a list that has the value as its
+head and random numbers based on the new generator as its tail. Because
+we have to be able to potentially generate an infinite amount of
+numbers, we can&apos;t give the new random generator back.</p>
+<p>We could make a function that generates a finite stream of numbers and a
+new generator like this:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">finiteRandoms</span> :: (<span class="hljs-type">RandomGen</span> g, <span class="hljs-type">Random</span> a, <span class="hljs-type">Num</span> n) =&gt; n -&gt; g -&gt; ([a], g)
+<span class="hljs-title">finiteRandoms</span> <span class="hljs-number">0</span> gen = ([], gen)
+<span class="hljs-title">finiteRandoms</span> n gen =
+    <span class="hljs-keyword">let</span> (value, newGen) = random gen
+        (restOfList, finalGen) = finiteRandoms (n<span class="hljs-number">-1</span>) newGen
+    <span class="hljs-keyword">in</span>  (value:restOfList, finalGen)
+</code></pre>
+<p>Again, a recursive definition. We say that if we want 0 numbers, we just
+return an empty list and the generator that was given to us. For any
+other number of random values, we first get one random number and a new
+generator. That will be the head. Then we say that the tail will be <em>n -
+1</em> numbers generated with the new generator. Then we return the head and
+the rest of the list joined and the final generator that we got from
+getting the <em>n - 1</em> random numbers.</p>
+<p>What if we want a random value in some sort of range? All the random
+integers so far were outrageously big or small. What if we want to to
+throw a die? Well, we use <code>randomR</code> for that purpose. It has a type of
+<code>randomR :: (RandomGen g, Random a) :: (a, a) -&gt; g -&gt; (a, g)</code>, meaning
+that it&apos;s kind of like <code>random</code>, only it takes as its first parameter a
+pair of values that set the lower and upper bounds and the final value
+produced will be within those bounds.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; randomR (<span class="hljs-number">1</span>,<span class="hljs-number">6</span>) (mkStdGen <span class="hljs-number">359353</span>)
+(<span class="hljs-number">6</span>,<span class="hljs-number">1494289578</span> <span class="hljs-number">40692</span>)
+<span class="hljs-title">ghci</span>&gt; randomR (<span class="hljs-number">1</span>,<span class="hljs-number">6</span>) (mkStdGen <span class="hljs-number">35935335</span>)
+(<span class="hljs-number">3</span>,<span class="hljs-number">1250031057</span> <span class="hljs-number">40692</span>)
+</code></pre>
+<p>There&apos;s also <code>randomRs</code>, which produces a stream of random values within
+our defined ranges. Check this out:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; take <span class="hljs-number">10</span> $ randomRs (&apos;a&apos;,&apos;z&apos;) (mkStdGen <span class="hljs-number">3</span>) :: [<span class="hljs-type">Char</span>]
+<span class="hljs-string">&quot;ndkxbvmomg&quot;</span>
+</code></pre>
+<p>Nice, looks like a super secret password or something.</p>
+<p>You may be asking yourself, what does this section have to do with I/O
+anyway? We haven&apos;t done anything concerning I/O so far. Well, so far
+we&apos;ve always made our random number generator manually by making it with
+some arbitrary integer. The problem is, if we do that in our real
+programs, they will always return the same random numbers, which is no
+good for us. That&apos;s why <code>System.Random</code> offers the <code>getStdGen</code> I/O action,
+which has a type of <code>IO StdGen</code>. When your program starts, it asks the
+system for a good random number generator and stores that in a so called
+global generator. <code>getStdGen</code> fetches you that global random generator
+when you bind it to something.</p>
+<p>Here&apos;s a simple program that generates a random string.</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> System.Random
+
+<span class="hljs-title">main</span> = <span class="hljs-keyword">do</span>
+    gen &lt;- getStdGen
+    putStr $ take <span class="hljs-number">20</span> (randomRs (&apos;a&apos;,&apos;z&apos;) gen)
+</code></pre>
+<p>~~~~ {.plain name=&quot;code&quot;}
+$ runhaskell random_string.hs
+pybphhzzhuepknbykxhe
+$ runhaskell random_string.hs
+eiqgcxykivpudlsvvjpg
+$ runhaskell random_string.hs
+nzdceoconysdgcyqjruo
+$ runhaskell random_string.hs
+bakzhnnuzrkgvesqplrx</p>
+<pre><code>
+Be careful though, just performing `getStdGen` twice will ask the system
+for the same global generator twice. If you do this:
+
+~~~~haskell
+import System.Random
+
+main = do
+    gen &lt;- getStdGen
+    putStrLn $ take 20 (randomRs (&apos;a&apos;,&apos;z&apos;) gen)
+    gen2 &lt;- getStdGen
+    putStr $ take 20 (randomRs (&apos;a&apos;,&apos;z&apos;) gen2)
+</code></pre><p>you will get the same string printed out twice! One way to get two
+different strings of length 20 is to set up an infinite stream and then
+take the first 20 characters and print them out in one line and then
+take the second set of 20 characters and print them out in the second
+line. For this, we can use the <code>splitAt</code> function from <code>Data.List</code>, which
+splits a list at some index and returns a tuple that has the first part
+as the first component and the second part as the second component.</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> System.Random
+<span class="hljs-keyword">import</span> Data.List
+
+<span class="hljs-title">main</span> = <span class="hljs-keyword">do</span>
+    gen &lt;- getStdGen
+    <span class="hljs-keyword">let</span> randomChars = randomRs (&apos;a&apos;,&apos;z&apos;) gen
+        (first20, rest) = splitAt <span class="hljs-number">20</span> randomChars
+        (second20, _) = splitAt <span class="hljs-number">20</span> rest
+    putStrLn first20
+    putStr second20
+</code></pre>
+<p>Another way is to use the <code>newStdGen</code> action, which splits our current
+random generator into two generators. It updates the global random
+generator with one of them and encapsulates the other as its result.</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> System.Random
+
+<span class="hljs-title">main</span> = <span class="hljs-keyword">do</span>
+    gen &lt;- getStdGen
+    putStrLn $ take <span class="hljs-number">20</span> (randomRs (&apos;a&apos;,&apos;z&apos;) gen)
+    gen&apos; &lt;- newStdGen
+    putStr $ take <span class="hljs-number">20</span> (randomRs (&apos;a&apos;,&apos;z&apos;) gen&apos;)
+</code></pre>
+<p>Not only do we get a new random generator when we bind <code>newStdGen</code> to
+something, the global one gets updated as well, so if we do <code>getStdGen</code>
+again and bind it to something, we&apos;ll get a generator that&apos;s not the
+same as <code>gen</code>.</p>
+<p>Here&apos;s a little program that will make the user guess which number it&apos;s
+thinking of.</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> System.Random
+<span class="hljs-keyword">import</span> Control.Monad(<span class="hljs-title">when</span>)
+
+<span class="hljs-title">main</span> = <span class="hljs-keyword">do</span>
+    gen &lt;- getStdGen
+    askForNumber gen
+
+<span class="hljs-title">askForNumber</span> :: <span class="hljs-type">StdGen</span> -&gt; <span class="hljs-type">IO</span> ()
+<span class="hljs-title">askForNumber</span> gen = <span class="hljs-keyword">do</span>
+    <span class="hljs-keyword">let</span> (randNumber, newGen) = randomR (<span class="hljs-number">1</span>,<span class="hljs-number">10</span>) gen :: (<span class="hljs-type">Int</span>, <span class="hljs-type">StdGen</span>)
+    putStr <span class="hljs-string">&quot;Which number in the range from 1 to 10 am I thinking of? &quot;</span>
+    numberString &lt;- getLine
+    when (not $ null numberString) $ <span class="hljs-keyword">do</span>
+        <span class="hljs-keyword">let</span> number = read numberString
+        <span class="hljs-keyword">if</span> randNumber == number
+            <span class="hljs-keyword">then</span> putStrLn <span class="hljs-string">&quot;You are correct!&quot;</span>
+            <span class="hljs-keyword">else</span> putStrLn $ <span class="hljs-string">&quot;Sorry, it was &quot;</span> ++ show randNumber
+        askForNumber newGen
+</code></pre>
+<p><img src="img/jackofdiamonds.png" alt="jack of diamonds"></p>
+<p>We make a function <code>askForNumber</code>, which takes a random number generator
+and returns an I/O action that will prompt the user for a number and
+tell him if he guessed it right. In that function, we first generate a
+random number and a new generator based on the generator that we got as
+a parameter and call them <code>randNumber</code> and <code>newGen</code>. Let&apos;s say that the
+number generated was <code>7</code>. Then we tell the user to guess which number
+we&apos;re thinking of. We perform <code>getLine</code> and bind its result to
+<code>numberString</code>. When the user enters <code>7</code>, <code>numberString</code> becomes <code>&quot;7&quot;</code>. Next, we
+use <code>when</code> to check if the string the user entered is an empty string. If
+it is, an empty I/O action of <code>return ()</code> is performed, which effectively
+ends the program. If it isn&apos;t, the action consisting of that <em>do</em> block
+right there gets performed. We use <code>read</code> on <code>numberString</code> to convert it to
+a <code>number</code>, so number is now <code>7</code>.</p>
+<blockquote>
+<p><strong>Excuse me!</strong> If the user gives us some input here that <code>read</code> can&apos;t read
+(like <code>&quot;haha&quot;</code>), our program will crash with an ugly error message. If you
+don&apos;t want your program to crash on erroneous input, use <code>reads</code>, which
+returns an empty list when it fails to read a string. When it succeeds,
+it returns a singleton list with a tuple that has our desired value as
+one component and a string with what it didn&apos;t consume as the other.</p>
+</blockquote>
+<p>We check if the number that we entered is equal to the one generated
+randomly and give the user the appropriate message. And then we call
+<code>askForNumber</code> recursively, only this time with the new generator that we
+got, which gives us an I/O action that&apos;s just like the one we performed,
+only it depends on a different generator and we perform it.</p>
+<p><code>main</code> consists of just getting a random generator from the system and
+calling <code>askForNumber</code> with it to get the initial action.</p>
+<p>Here&apos;s our program in action!</p>
+<p>~~~~ {.plain name=&quot;code&quot;}
+$ runhaskell guess_the_number.hs
+Which number in the range from 1 to 10 am I thinking of? 4
+Sorry, it was 3
+Which number in the range from 1 to 10 am I thinking of? 10
+You are correct!
+Which number in the range from 1 to 10 am I thinking of? 2
+Sorry, it was 4
+Which number in the range from 1 to 10 am I thinking of? 5
+Sorry, it was 10
+Which number in the range from 1 to 10 am I thinking of?</p>
+<pre><code>
+Another way to make this same program is like this:
+
+~~~~haskell
+import System.Random
+import Control.Monad(when)
+
+main = do
+    gen &lt;- getStdGen
+    let (randNumber, _) = randomR (1,10) gen :: (Int, StdGen)
+    putStr &quot;Which number in the range from 1 to 10 am I thinking of? &quot;
+    numberString &lt;- getLine
+    when (not $ null numberString) $ do
+        let number = read numberString
+        if randNumber == number
+            then putStrLn &quot;You are correct!&quot;
+            else putStrLn $ &quot;Sorry, it was &quot; ++ show randNumber
+        newStdGen
+        main
+</code></pre><p>It&apos;s very similar to the previous version, only instead of making a
+function that takes a generator and then calls itself recursively with
+the new updated generator, we do all the work in <code>main</code>. After telling the
+user whether they were correct in their guess or not, we update the
+global generator and then call <code>main</code> again. Both approaches are valid but
+I like the first one more since it does less stuff in <code>main</code> and also
+provides us with a function that we can reuse easily.</p>
+<h2 id="bytestrings">Bytestrings</h2>
+<p><img src="img/chainchomp.png" alt="like normal string, only they byte ... what a pedestrian pun this
+is"></p>
+<p>Lists are a cool and useful data structure. So far, we&apos;ve used them
+pretty much everywhere. There are a multitude of functions that operate
+on them and Haskell&apos;s laziness allows us to exchange the for and while
+loops of other languages for filtering and mapping over lists, because
+evaluation will only happen once it really needs to, so things like
+infinite lists (and even infinite lists of infinite lists!) are no
+problem for us. That&apos;s why lists can also be used to represent streams,
+either when reading from the standard input or when reading from files.
+We can just open a file and read it as a string, even though it will
+only be accessed when the need arises.</p>
+<p>However, processing files as strings has one drawback: it tends to be
+slow. As you know, <code>String</code> is a type synonym for <code>[Char]</code>. <code>Char</code>s don&apos;t have
+a fixed size, because it takes several bytes to represent a character
+from, say, Unicode. Furthermore, lists are really lazy. If you have a
+list like <code>[1,2,3,4]</code>, it will be evaluated only when completely
+necessary. So the whole list is sort of a promise of a list. Remember
+that <code>[1,2,3,4]</code> is syntactic sugar for <code>1:2:3:4:[]</code>. When the first element
+of the list is forcibly evaluated (say by printing it), the rest of the
+list <code>2:3:4:[]</code> is still just a promise of a list, and so on. So you can
+think of lists as promises that the next element will be delivered once
+it really has to and along with it, the promise of the element after it.
+It doesn&apos;t take a big mental leap to conclude that processing a simple
+list of numbers as a series of promises might not be the most efficient
+thing in the world.</p>
+<p>That overhead doesn&apos;t bother us so much most of the time, but it turns
+out to be a liability when reading big files and manipulating them.
+That&apos;s why Haskell has <em>bytestrings</em>. Bytestrings are sort of like
+lists, only each element is one byte (or 8 bits) in size. The way they
+handle laziness is also different.</p>
+<p>Bytestrings come in two flavors: strict and lazy ones. Strict
+bytestrings reside in <code>Data.ByteString</code> and they do away with the laziness
+completely. There are no promises involved; a strict bytestring
+represents a series of bytes in an array. You can&apos;t have things like
+infinite strict bytestrings. If you evaluate the first byte of a strict
+bytestring, you have to evaluate it whole. The upside is that there&apos;s
+less overhead because there are no thunks (the technical term for
+<em>promise</em>) involved. The downside is that they&apos;re likely to fill your
+memory up faster because they&apos;re read into memory at once.</p>
+<p>The other variety of bytestrings resides in <code>Data.ByteString.Lazy</code>.
+They&apos;re lazy, but not quite as lazy as lists. Like we said before, there
+are as many thunks in a list as there are elements. That&apos;s what makes
+them kind of slow for some purposes. Lazy bytestrings take a different
+approach — they are stored in chunks (not to be confused with thunks!),
+each chunk has a size of 64K. So if you evaluate a byte in a lazy
+bytestring (by printing it or something), the first 64K will be
+evaluated. After that, it&apos;s just a promise for the rest of the chunks.
+Lazy bytestrings are kind of like lists of strict bytestrings with a
+size of 64K. When you process a file with lazy bytestrings, it will be
+read chunk by chunk. This is cool because it won&apos;t cause the memory
+usage to skyrocket and the 64K probably fits neatly into your CPU&apos;s L2
+cache.</p>
+<p>If you look through the
+<a href="http://www.haskell.org/ghc/docs/latest/html/libraries/bytestring/Data-ByteString-Lazy.html" target="_blank">documentation</a>
+for <code>Data.ByteString.Lazy</code>, you&apos;ll see that it has a lot of functions that
+have the same names as the ones from <code>Data.List</code>, only the type signatures
+have <code>ByteString</code> instead of <code>[a]</code> and <code>Word8</code> instead of <code>a</code> in them. The
+functions with the same names mostly act the same as the ones that work
+on lists. Because the names are the same, we&apos;re going to do a qualified
+import in a script and then load that script into GHCI to play with
+bytestrings.</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> <span class="hljs-keyword">qualified</span> Data.ByteString.Lazy <span class="hljs-keyword">as</span> B
+<span class="hljs-keyword">import</span> <span class="hljs-keyword">qualified</span> Data.ByteString <span class="hljs-keyword">as</span> S
+</code></pre>
+<p><code>B</code> has lazy bytestring types and functions, whereas <code>S</code> has strict ones.
+We&apos;ll mostly be using the lazy version.</p>
+<p>The function <code>pack</code> has the type signature <code>pack :: [Word8] -&gt; ByteString</code>.
+What that means is that it takes a list of bytes of type <code>Word8</code> and
+returns a <code>ByteString</code>. You can think of it as taking a list, which is
+lazy, and making it less lazy, so that it&apos;s lazy only at 64K intervals.</p>
+<p>What&apos;s the deal with that <code>Word8</code> type? Well, it&apos;s like <code>Int</code>, only that it
+has a much smaller range, namely 0-255. It represents an 8-bit number.
+And just like <code>Int</code>, it&apos;s in the <code>Num</code> typeclass. For instance, we know that
+the value <code>5</code> is polymorphic in that it can act like any numeral type.
+Well, it can also take the type of <code>Word8</code>.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-type">B</span>.pack [<span class="hljs-number">99</span>,<span class="hljs-number">97</span>,<span class="hljs-number">110</span>]
+<span class="hljs-type">Chunk</span> <span class="hljs-string">&quot;can&quot;</span> <span class="hljs-type">Empty</span>
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-type">B</span>.pack [<span class="hljs-number">98.</span><span class="hljs-number">.120</span>]
+<span class="hljs-type">Chunk</span> <span class="hljs-string">&quot;bcdefghijklmnopqrstuvwx&quot;</span> <span class="hljs-type">Empty</span>
+</code></pre>
+<p>As you can see, you usually don&apos;t have to worry about the <code>Word8</code> too
+much, because the type system can makes the numbers choose that type. If
+you try to use a big number, like <code>336</code> as a <code>Word8</code>, it will just wrap
+around to <code>80</code>.</p>
+<p>We packed only a handful of values into a <code>ByteString</code>, so they fit inside
+one chunk. The <code>Empty</code> is like the <code>[]</code> for lists.</p>
+<p><code>unpack</code> is the inverse function of <code>pack</code>. It takes a bytestring and turns
+it into a list of bytes.</p>
+<p><code>fromChunks</code> takes a list of strict bytestrings and converts it to a lazy
+bytestring. <code>toChunks</code> takes a lazy bytestring and converts it to a list
+of strict ones.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-type">B</span>.fromChunks [<span class="hljs-type">S</span>.pack [<span class="hljs-number">40</span>,<span class="hljs-number">41</span>,<span class="hljs-number">42</span>], <span class="hljs-type">S</span>.pack [<span class="hljs-number">43</span>,<span class="hljs-number">44</span>,<span class="hljs-number">45</span>], <span class="hljs-type">S</span>.pack [<span class="hljs-number">46</span>,<span class="hljs-number">47</span>,<span class="hljs-number">48</span>]]
+<span class="hljs-type">Chunk</span> <span class="hljs-string">&quot;()*&quot;</span> (<span class="hljs-type">Chunk</span> <span class="hljs-string">&quot;+,-&quot;</span> (<span class="hljs-type">Chunk</span> <span class="hljs-string">&quot;./0&quot;</span> <span class="hljs-type">Empty</span>))
+</code></pre>
+<p>This is good if you have a lot of small strict bytestrings and you want
+to process them efficiently without joining them into one big strict
+bytestring in memory first.</p>
+<p>The bytestring version of <code>:</code> is called <code>cons</code> It takes a byte and a
+bytestring and puts the byte at the beginning. It&apos;s lazy though, so it
+will make a new chunk even if the first chunk in the bytestring isn&apos;t
+full. That&apos;s why it&apos;s better to use the strict version of <code>cons</code>, <code>cons&apos;</code> if
+you&apos;re going to be inserting a lot of bytes at the beginning of a
+bytestring.</p>
+<pre><code class="lang-haskell"><span class="hljs-title">ghci</span>&gt; <span class="hljs-type">B</span>.cons <span class="hljs-number">85</span> $ <span class="hljs-type">B</span>.pack [<span class="hljs-number">80</span>,<span class="hljs-number">81</span>,<span class="hljs-number">82</span>,<span class="hljs-number">84</span>]
+<span class="hljs-type">Chunk</span> <span class="hljs-string">&quot;U&quot;</span> (<span class="hljs-type">Chunk</span> <span class="hljs-string">&quot;PQRT&quot;</span> <span class="hljs-type">Empty</span>)
+<span class="hljs-title">ghci</span>&gt; <span class="hljs-type">B</span>.cons&apos; <span class="hljs-number">85</span> $ <span class="hljs-type">B</span>.pack [<span class="hljs-number">80</span>,<span class="hljs-number">81</span>,<span class="hljs-number">82</span>,<span class="hljs-number">84</span>]
+<span class="hljs-type">Chunk</span> <span class="hljs-string">&quot;UPQRT&quot;</span> <span class="hljs-type">Empty</span>
+<span class="hljs-title">ghci</span>&gt; foldr <span class="hljs-type">B</span>.cons <span class="hljs-type">B</span>.empty [<span class="hljs-number">50.</span><span class="hljs-number">.60</span>]
+<span class="hljs-type">Chunk</span> <span class="hljs-string">&quot;2&quot;</span> (<span class="hljs-type">Chunk</span> <span class="hljs-string">&quot;3&quot;</span> (<span class="hljs-type">Chunk</span> <span class="hljs-string">&quot;4&quot;</span> (<span class="hljs-type">Chunk</span> <span class="hljs-string">&quot;5&quot;</span> (<span class="hljs-type">Chunk</span> <span class="hljs-string">&quot;6&quot;</span> (<span class="hljs-type">Chunk</span> <span class="hljs-string">&quot;7&quot;</span> (<span class="hljs-type">Chunk</span> <span class="hljs-string">&quot;8&quot;</span> (<span class="hljs-type">Chunk</span> <span class="hljs-string">&quot;9&quot;</span> (<span class="hljs-type">Chunk</span> <span class="hljs-string">&quot;:&quot;</span> (<span class="hljs-type">Chunk</span> <span class="hljs-string">&quot;;&quot;</span> (<span class="hljs-type">Chunk</span> <span class="hljs-string">&quot;&lt;&quot;</span>
+<span class="hljs-type">Empty</span>))))))))))
+<span class="hljs-title">ghci</span>&gt; foldr <span class="hljs-type">B</span>.cons&apos; <span class="hljs-type">B</span>.empty [<span class="hljs-number">50.</span><span class="hljs-number">.60</span>]
+<span class="hljs-type">Chunk</span> <span class="hljs-string">&quot;23456789:;&lt;&quot;</span> <span class="hljs-type">Empty</span>
+</code></pre>
+<p>As you can see <code>empty</code> makes an empty bytestring. See the difference
+between <code>cons</code> and <code>cons&apos;</code>? With the <code>foldr</code>, we started with an empty
+bytestring and then went over the list of numbers from the right, adding
+each number to the beginning of the bytestring. When we used <code>cons</code>, we
+ended up with one chunk for every byte, which kind of defeats the
+purpose.</p>
+<p>Otherwise, the bytestring modules have a load of functions that are
+analogous to those in <code>Data.List</code>, including, but not limited to, <code>head</code>,
+<code>tail</code>, <code>init</code>, <code>null</code>, <code>length</code>, <code>map</code>, <code>reverse</code>, <code>foldl</code>, <code>foldr</code>, <code>concat</code>, <code>takeWhile</code>,
+<code>filter</code>, etc.</p>
+<p>It also has functions that have the same name and behave the same as
+some functions found in <code>System.IO</code>, only <code>String</code>s are replaced with
+<code>ByteString</code>s. For instance, the <code>readFile</code> function in <code>System.IO</code> has a type
+of <code>readFile :: FilePath -&gt; IO String</code>, while the <code>readFile</code> from the
+bytestring modules has a type of <code>readFile :: FilePath -&gt; IO ByteString</code>.
+Watch out, if you&apos;re using strict bytestrings and you attempt to read a
+file, it will read it into memory at once! With lazy bytestrings, it
+will read it into neat chunks.</p>
+<p>Let&apos;s make a simple program that takes two filenames as command-line
+arguments and copies the first file into the second file. Note that
+<code>System.Directory</code> already has a function called <code>copyFile</code>, but we&apos;re going
+to implement our own file copying function and program anyway.</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> System.Environment
+<span class="hljs-keyword">import</span> <span class="hljs-keyword">qualified</span> Data.ByteString.Lazy <span class="hljs-keyword">as</span> B
+
+<span class="hljs-title">main</span> = <span class="hljs-keyword">do</span>
+    (fileName1:fileName2:_) &lt;- getArgs
+    copyFile fileName1 fileName2
+
+<span class="hljs-title">copyFile</span> :: <span class="hljs-type">FilePath</span> -&gt; <span class="hljs-type">FilePath</span> -&gt; <span class="hljs-type">IO</span> ()
+<span class="hljs-title">copyFile</span> source dest = <span class="hljs-keyword">do</span>
+    contents &lt;- <span class="hljs-type">B</span>.readFile source
+    <span class="hljs-type">B</span>.writeFile dest contents
+</code></pre>
+<p>We make our own function that takes two <code>FilePath</code>s (remember, <code>FilePath</code> is
+just a synonym for <code>String</code>) and returns an I/O action that will copy one
+file into another using bytestring. In the <code>main</code> function, we just get
+the arguments and call our function with them to get the I/O action,
+which is then performed.</p>
+<p>~~~~ {.plain name=&quot;code&quot;}
+$ runhaskell bytestringcopy.hs something.txt ../../something.txt</p>
+<pre><code>
+Notice that a program that doesn&apos;t use bytestrings could look just like
+this, the only difference is that we used `B.readFile` and `B.writeFile`
+instead of `readFile` and `writeFile`. Many times, you can convert a program
+that uses normal strings to a program that uses bytestrings by just
+doing the necessary imports and then putting the qualified module names
+in front of some functions. Sometimes, you have to convert functions
+that you wrote to work on strings so that they work on bytestrings, but
+that&apos;s not hard.
+
+Whenever you need better performance in a program that reads a lot of
+data into strings, give bytestrings a try, chances are you&apos;ll get some
+good performance boosts with very little effort on your part. I usually
+write programs by using normal strings and then convert them to use
+bytestrings if the performance is not satisfactory.
+
+Exceptions
+----------
+
+![timberr!!!!](img/timber.png)
+
+All languages have procedures, functions, and pieces of code that might
+fail in some way. That&apos;s just a fact of life. Different languages have
+different ways of handling those failures. In C, we usually use some
+abnormal return value (like `-1` or a null pointer) to indicate that what
+a function returned shouldn&apos;t be treated like a normal value. Java and
+C\#, on the other hand, tend to use exceptions to handle failure. When
+an exception is thrown, the control flow jumps to some code that we&apos;ve
+defined that does some cleanup and then maybe re-throws the exception so
+that some other error handling code can take care of some other stuff.
+
+Haskell has a very good type system. Algebraic data types allow for
+types like `Maybe` and `Either` and we can use values of those types to
+represent results that may be there or not. In C, returning, say, `-1` on
+failure is completely a matter of convention. It only has special
+meaning to humans. If we&apos;re not careful, we might treat these abnormal
+values as ordinary ones and then they can cause havoc and dismay in our
+code. Haskell&apos;s type system gives us some much-needed safety in that
+aspect. A function `a -&gt; Maybe b` clearly indicates that it it may
+produce a `b` wrapped in `Just` or that it may return `Nothing`. The type is
+different from just plain `a -&gt; b` and if we try to use those two
+functions interchangeably, the compiler will complain at us.
+
+Despite having expressive types that support failed computations,
+Haskell still has support for exceptions, because they make more sense
+in I/O contexts. A lot of things can go wrong when dealing with the
+outside world because it is so unreliable. For instance, when opening a
+file, a bunch of things can go wrong. The file might be locked, it might
+not be there at all or the hard disk drive or something might not be
+there at all. So it&apos;s good to be able to jump to some error handling
+part of our code when such an error occurs.
+
+Okay, so I/O code (i.e. impure code) can throw exceptions. It makes
+sense. But what about pure code? Well, it can throw exceptions too.
+Think about the `div` and `head` functions. They have types of
+`(Integral a) =&gt; a -&gt; a -&gt; a` and `[a] -&gt; a`, respectively. No `Maybe` or `Either` in
+their return type and yet they can both fail! `div` explodes in your face
+if you try to divide by zero and `head` throws a tantrum when you give it
+an empty list.
+
+~~~~haskell
+ghci&gt; 4 `div` 0
+*** Exception: divide by zero
+ghci&gt; head []
+*** Exception: Prelude.head: empty list
+</code></pre><p><img src="img/police.png" alt="Stop right there, criminal scum! Nobody breaks the law on my watch!
+Now pay your fine or it&apos;s off to
+jail."></p>
+<p>Pure code can throw exceptions, but they can only be caught in the
+I/O part of our code (when we&apos;re inside a <em>do</em> block that goes into
+<code>main</code>). That&apos;s because you don&apos;t know when (or if) anything will be
+evaluated in pure code, because it is lazy and doesn&apos;t have a
+well-defined order of execution, whereas I/O code does.</p>
+<p>Earlier, we talked about how we should spend as little time as possible
+in the I/O part of our program. The logic of our program should reside
+mostly within our pure functions, because their results are dependant
+only on the parameters that the functions are called with. When dealing
+with pure functions, you only have to think about what a function
+returns, because it can&apos;t do anything else. This makes your life easier.
+Even though doing some logic in I/O is necessary (like opening files and
+the like), it should preferably be kept to a minimum. Pure functions are
+lazy by default, which means that we don&apos;t know when they will be
+evaluated and that it really shouldn&apos;t matter. However, once pure
+functions start throwing exceptions, it matters when they are evaluated.
+That&apos;s why we can only catch exceptions thrown from pure functions in
+the I/O part of our code. And that&apos;s bad, because we want to keep the
+I/O part as small as possible. However, if we don&apos;t catch them in the
+I/O part of our code, our program crashes. The solution? Don&apos;t mix
+exceptions and pure code. Take advantage of Haskell&apos;s powerful type
+system and use types like <code>Either</code> and <code>Maybe</code> to represent results that may
+have failed.</p>
+<p>That&apos;s why we&apos;ll just be looking at how to use I/O exceptions for now.
+I/O exceptions are exceptions that are caused when something goes wrong
+while we are communicating with the outside world in an I/O action
+that&apos;s part of <code>main</code>. For example, we can try opening a file and then it
+turns out that the file has been deleted or something. Take a look at
+this program that opens a file whose name is given to it as a command
+line argument and tells us how many lines the file has.</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> System.Environment
+<span class="hljs-keyword">import</span> System.IO
+
+<span class="hljs-title">main</span> = <span class="hljs-keyword">do</span> (fileName:_) &lt;- getArgs
+          contents &lt;- readFile fileName
+          putStrLn $ <span class="hljs-string">&quot;The file has &quot;</span> ++ show (length (lines contents)) ++ <span class="hljs-string">&quot; lines!&quot;</span>
+</code></pre>
+<p>A very simple program. We perform the <code>getArgs</code> I/O action and bind the
+first string in the list that it yields to <code>fileName</code>. Then we call the
+<code>contents</code> of the file with that name contents. Lastly, we apply <code>lines</code> to
+those contents to get a list of lines and then we get the length of that
+list and give it to <code>show</code> to get a string representation of that number.
+It works as expected, but what happens when we give it the name of a
+file that doesn&apos;t exist?</p>
+<p>~~~~ {.plain name=&quot;code&quot;}
+$ runhaskell linecount.hs i_dont_exist.txt
+linecount.hs: i_dont_exist.txt: openFile: does not exist (No such file or directory)</p>
+<pre><code>
+Aha, we get an error from GHC, telling us that the file does not exist.
+Our program crashes. What if we wanted to print out a nicer message if
+the file doesn&apos;t exist? One way to do that is to check if the file
+exists before trying to open it by using the `doesFileExist` function from
+`System.Directory`.
+
+~~~~haskell
+import System.Environment
+import System.IO
+import System.Directory
+
+main = do (fileName:_) &lt;- getArgs
+          fileExists &lt;- doesFileExist fileName
+          if fileExists
+              then do contents &lt;- readFile fileName
+                      putStrLn $ &quot;The file has &quot; ++ show (length (lines contents)) ++ &quot; lines!&quot;
+              else do putStrLn &quot;The file doesn&apos;t exist!&quot;
+</code></pre><p>We did <code>fileExists &lt;- doesFileExist fileName</code> because <code>doesFileExist</code> has a
+type of <code>doesFileExist :: FilePath -&gt; IO Bool</code>, which means that it
+returns an I/O action that has as its result a boolean value which tells
+us if the file exists. We can&apos;t just use <code>doesFileExist</code> in an <em>if</em>
+expression directly.</p>
+<p>Another solution here would be to use exceptions. It&apos;s perfectly
+acceptable to use them in this context. A file not existing is an
+exception that arises from I/O, so catching it in I/O is fine and dandy.</p>
+<p>To deal with this by using exceptions, we&apos;re going to take advantage of
+the <code>catch</code> function from <code>System.IO.Error</code>. Its type is
+<code>catch :: IO a -&gt; (IOError -&gt; IO a) -&gt; IO a</code>.
+It takes two parameters. The first one is
+an I/O action. For instance, it could be an I/O action that tries to
+open a file. The second one is the so-called handler. If the first I/O
+action passed to <code>catch</code> throws an I/O exception, that exception gets
+passed to the handler, which then decides what to do. So the final
+result is an I/O action that will either act the same as the first
+parameter or it will do what the handler tells it if the first I/O
+action throws an exception.</p>
+<p><img src="img/puppy.png" alt="non sequitor"></p>
+<p>If you&apos;re familiar with <em>try-catch</em> blocks in languages like Java or
+Python, the <code>catch</code> function is similar to them. The first parameter is
+the thing to try, kind of like the stuff in the <em>try</em> block in other,
+imperative languages. The second parameter is the handler that takes an
+exception, just like most <em>catch</em> blocks take exceptions that you can
+then examine to see what happened. The handler is invoked if an
+exception is thrown.</p>
+<p>The handler takes a value of type <code>IOError</code>, which is a value that
+signifies that an I/O exception occurred. It also carries information
+regarding the type of the exception that was thrown. How this type is
+implemented depends on the implementation of the language itself, which
+means that we can&apos;t inspect values of the type <code>IOError</code> by pattern
+matching against them, just like we can&apos;t pattern match against values
+of type <code>IO &lt;something&gt;</code>. We can use a bunch of useful predicates to find
+out stuff about values of type <code>IOError</code> as we&apos;ll learn in a second.</p>
+<p>So let&apos;s put our new friend <code>catch</code> to use!</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> System.Environment
+<span class="hljs-keyword">import</span> System.IO
+<span class="hljs-keyword">import</span> System.IO.Error
+
+<span class="hljs-title">main</span> = toTry `catch` handler
+
+<span class="hljs-title">toTry</span> :: <span class="hljs-type">IO</span> ()
+<span class="hljs-title">toTry</span> = <span class="hljs-keyword">do</span> (fileName:_) &lt;- getArgs
+           contents &lt;- readFile fileName
+           putStrLn $ <span class="hljs-string">&quot;The file has &quot;</span> ++ show (length (lines contents)) ++ <span class="hljs-string">&quot; lines!&quot;</span>
+
+<span class="hljs-title">handler</span> :: <span class="hljs-type">IOError</span> -&gt; <span class="hljs-type">IO</span> ()
+<span class="hljs-title">handler</span> e = putStrLn <span class="hljs-string">&quot;Whoops, had some trouble!&quot;</span>
+</code></pre>
+<p>First of all, you&apos;ll see that put backticks around it so that we can use
+it as an infix function, because it takes two parameters. Using it as an
+infix function makes it more readable. So <code>toTry `catch` handler</code> is the
+same as <code>catch toTry handler</code>, which fits well with its type. <code>toTry</code> is the
+I/O action that we try to carry out and <code>handler</code> is the function that
+takes an <code>IOError</code> and returns an action to be carried out in case of an
+exception.</p>
+<p>Let&apos;s give this a go:</p>
+<p>~~~~ {.plain name=&quot;code&quot;}
+$ runhaskell count_lines.hs i_exist.txt
+The file has 3 lines!</p>
+<p>$ runhaskell count_lines.hs i_dont_exist.txt
+Whoops, had some trouble!</p>
+<pre><code>
+In the handler, we didn&apos;t check to see what kind of `IOError` we got. We
+just say `&quot;Whoops, had some trouble!&quot;` for any kind of error. Just
+catching all types of exceptions in one handler is bad practice in
+Haskell just like it is in most other languages. What if some other
+exception happens that we don&apos;t want to catch, like us interrupting the
+program or something? That&apos;s why we&apos;re going to do the same thing that&apos;s
+usually done in other languages as well: we&apos;ll check to see what kind of
+exception we got. If it&apos;s the kind of exception we&apos;re waiting to catch,
+we do our stuff. If it&apos;s not, we throw that exception back into the
+wild. Let&apos;s modify our program to catch only the exceptions caused by a
+file not existing.
+
+~~~~haskell
+import System.Environment
+import System.IO
+import System.IO.Error
+
+main = toTry `catch` handler
+
+toTry :: IO ()
+toTry = do (fileName:_) &lt;- getArgs
+           contents &lt;- readFile fileName
+           putStrLn $ &quot;The file has &quot; ++ show (length (lines contents)) ++ &quot; lines!&quot;
+
+handler :: IOError -&gt; IO ()
+handler e
+    | isDoesNotExistError e = putStrLn &quot;The file doesn&apos;t exist!&quot;
+    | otherwise = ioError e
+</code></pre><p>Everything stays the same except the handler, which we modified to only
+catch a certain group of I/O exceptions. Here we used two new functions
+from <code>System.IO.Error</code> — <code>isDoesNotExistError</code> and <code>ioError</code>.
+<code>isDoesNotExistError</code> is a predicate over <code>IOErrors</code>, which means that it&apos;s
+a function that takes an <code>IOError</code> and returns a <code>True</code> or <code>False</code>, meaning it
+has a type of <code>isDoesNotExistError</code> :: IOError -&gt; Bool<code>. We use it on the
+exception that gets passed to our handler to see if it&apos;s an error caused
+by a file not existing. We use
+[guard](#guards-guards) syntax here, but we could
+have also used an *if else*. If it&apos;s not caused by a file not existing,
+we re-throw the exception that was passed by the handler with the</code>ioError<code>function. It has a type of</code>ioError :: IOException -&gt; IO a<code>, so
+it takes an</code>IOError<code>and produces an I/O action that will throw it. The
+I/O action has a type of</code>IO a<code>, because it never actually yields a
+result, so it can act as</code>IO <anything>`.</anything></p>
+<p>So the exception thrown in the <code>toTry</code> I/O action that we glued together
+with a <em>do</em> block isn&apos;t caused by a file existing,
+<code>toTry `catch` handler</code> will catch that and then re-throw it. Pretty cool, huh?</p>
+<p>There are several predicates that act on <code>IOError</code> and if a guard doesn&apos;t
+evaluate to <code>True</code>, evaluation falls through to the next guard. The
+predicates that act on <code>IOError</code> are:</p>
+<ul>
+<li><code>isAlreadyExistsError</code></li>
+<li><code>isDoesNotExistError</code></li>
+<li><code>isAlreadyInUseError</code></li>
+<li><code>isFullError</code></li>
+<li><code>isEOFError</code></li>
+<li><code>isIllegalOperation</code></li>
+<li><code>isPermissionError</code></li>
+<li><code>isUserError</code></li>
+</ul>
+<p>Most of these are pretty self-explanatory. <code>isUserError</code> evaluates to <code>True</code>
+when we use the function <code>userError</code> to make the exception, which is used
+for making exceptions from our code and equipping them with a string.
+For instance, you can do
+<code>ioError $ userError &quot;remote computer unplugged!&quot;</code>,
+although it&apos;s prefered you use types like <code>Either</code> and <code>Maybe</code>
+to express possible failure instead of throwing exceptions yourself <code>with</code>
+<code>userError</code>.</p>
+<p>So you could have a handler that looks something like this:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">handler</span> :: <span class="hljs-type">IOError</span> -&gt; <span class="hljs-type">IO</span> ()
+<span class="hljs-title">handler</span> e
+    | isDoesNotExistError e = putStrLn <span class="hljs-string">&quot;The file doesn&apos;t exist!&quot;</span>
+    | isFullError e = freeSomeSpace
+    | isIllegalOperation e = notifyCops
+    | otherwise = ioError e
+</code></pre>
+<p>Where <code>notifyCops</code> and <code>freeSomeSpace</code> are some I/O actions that you define.
+Be sure to re-throw exceptions if they don&apos;t match any of your criteria,
+otherwise you&apos;re causing your program to fail silently in some cases
+where it shouldn&apos;t.</p>
+<p><code>System.IO.Error</code> also exports functions that enable us to ask our
+exceptions for some attributes, like what the handle of the file that
+caused the error is, or what the filename is. These start with <code>ioe</code> and
+you can see a <a href="http://www.haskell.org/ghc/docs/6.10.1/html/libraries/base/System-IO-Error.html#3" target="_blank">full list of
+them</a>
+in the documentation. Say we want to print the filename that caused our
+error. We can&apos;t print the <code>fileName</code> that we got from <code>getArgs</code>, because
+only the <code>IOError</code> is passed to the handler and the handler doesn&apos;t know
+about anything else. A function depends only on the parameters it was
+called with. That&apos;s why we can use the <code>ioeGetFileName</code> function, which
+has a type of <code>ioeGetFileName :: IOError -&gt; Maybe FilePath</code>. It takes an
+<code>IOError</code> as a parameter and maybe returns a <code>FilePath</code> (which is just a
+type synonym for <code>String</code>, remember, so it&apos;s kind of the same thing).
+Basically, what it does is it extracts the file path from the <code>IOError</code>,
+if it can. Let&apos;s modify our program to print out the file path that&apos;s
+responsible for the exception occurring.</p>
+<pre><code class="lang-haskell"><span class="hljs-keyword">import</span> System.Environment
+<span class="hljs-keyword">import</span> System.IO
+<span class="hljs-keyword">import</span> System.IO.Error
+
+<span class="hljs-title">main</span> = toTry `catch` handler
+
+<span class="hljs-title">toTry</span> :: <span class="hljs-type">IO</span> ()
+<span class="hljs-title">toTry</span> = <span class="hljs-keyword">do</span> (fileName:_) &lt;- getArgs
+           contents &lt;- readFile fileName
+           putStrLn $ <span class="hljs-string">&quot;The file has &quot;</span> ++ show (length (lines contents)) ++ <span class="hljs-string">&quot; lines!&quot;</span>
+
+<span class="hljs-title">handler</span> :: <span class="hljs-type">IOError</span> -&gt; <span class="hljs-type">IO</span> ()
+<span class="hljs-title">handler</span> e
+    | isDoesNotExistError e =
+        <span class="hljs-keyword">case</span> ioeGetFileName e <span class="hljs-keyword">of</span> <span class="hljs-type">Just</span> path -&gt; putStrLn $ <span class="hljs-string">&quot;Whoops! File does not exist at: &quot;</span> ++ path
+                                 <span class="hljs-type">Nothing</span> -&gt; putStrLn <span class="hljs-string">&quot;Whoops! File does not exist at unknown location!&quot;</span>
+    | otherwise = ioError e
+</code></pre>
+<p>In the guard where <code>isDoesNotExistError</code> is <code>True</code>, we used a <em>case</em>
+expression to call <code>ioeGetFileName</code> with <code>e</code> and then pattern match against
+the <code>Maybe</code> value that it returned. Using <em>case</em> expressions is commonly
+used when you want to pattern match against something without bringing
+in a new function.</p>
+<p>You don&apos;t have to use one handler to <code>catch</code> exceptions in your whole I/O
+part. You can just cover certain parts of your I/O code with <code>catch</code> or
+you can cover several of them with <code>catch</code> and use different handlers for
+them, like so:</p>
+<pre><code class="lang-haskell"><span class="hljs-title">main</span> = <span class="hljs-keyword">do</span> toTry `catch` handler1
+          thenTryThis `catch` handler2
+          launchRockets
+</code></pre>
+<p>Here, <code>toTry</code> uses <code>handler1</code> as the handler and <code>thenTryThis</code> uses <code>handler2</code>.
+<code>launchRockets</code> isn&apos;t a parameter to <code>catch</code>, so whichever exceptions it
+might throw will likely crash our program, unless <code>launchRockets</code> uses
+<code>catch</code> internally to handle its own exceptions. Of course <code>toTry</code>,
+<code>thenTryThis</code> and <code>launchRockets</code> are I/O actions that have been glued
+together using <em>do</em> syntax and hypothetically defined somewhere else.
+This is kind of similar to <em>try-catch</em> blocks of other languages, where
+you can surround your whole program in a single <em>try-catch</em> or you can
+use a more fine-grained approach and use different ones in different
+parts of your code to control what kind of error handling happens where.</p>
+<p>Now you know how to deal with I/O exceptions! Throwing exceptions from
+pure code and dealing with them hasn&apos;t been covered here, mainly
+because, like we said, Haskell offers much better ways to indicate
+errors than reverting to I/O to catch them. Even when glueing together
+I/O actions that might fail, I prefer to have their type be something
+like <code>IO (Either a b)</code>, meaning that they&apos;re normal I/O actions but the
+result that they yield when performed is of type <code>Either a b</code>, meaning
+it&apos;s either <code>Left a</code> or <code>Right b</code>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="08-making-our-own-types-and-typeclasses.html" class="navigation navigation-prev " aria-label="Previous page: 8. Making Our Own Types and Typeclasses">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="10-functionally-solving-problems.html" class="navigation navigation-next " aria-label="Next page: 10. Functionally Solving Problems">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"9. Input and Output","level":"1.10","depth":1,"next":{"title":"10. Functionally Solving Problems","level":"1.11","depth":1,"path":"10-functionally-solving-problems.md","ref":"10-functionally-solving-problems.md","articles":[]},"previous":{"title":"8. Making Our Own Types and Typeclasses","level":"1.9","depth":1,"path":"08-making-our-own-types-and-typeclasses.md","ref":"08-making-our-own-types-and-typeclasses.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"09-input-and-output.md","mtime":"2021-12-25T07:58:26.460Z","type":"markdown"},"gitbook":{"version":"3.6.23","time":"2021-12-25T08:06:05.597Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
